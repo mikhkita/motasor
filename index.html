@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Главная</title>
 	<meta name="keywords" content=''>
 	<meta name="description" content=''>
 
@@ -12,70 +12,141 @@
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
-	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="css/layout-tablet.css">
-	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css">
+	<!-- <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="css/layout-tablet.css">
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css"> -->
 
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
 </head>
 <body>
-	<ul class="ps-lines">
-		<li class="v" style="margin-left:-501px"></li>
-		<li class="v" style="margin-left:500px"></li>
-		<li class="v" ></li>
-	</ul>
-	<div class="b b-1">
-		<div class="b-block">
-			<div class="b-logo-cont left">
-				<div class="b-logo-text left blue">ФРАНШИЗА "ELECTROFROG"<br/>ОТ КРУПНЕЙШЕГО ЗАВОДА ЗАО "ЛИТМАШДЕТАЛЬ"</div>
+	<div class="b b-header">
+		<div class="b-header-top clearfix">
+			<div class="b-block">
+				<a href="/" class="b-header-logo"></a>
+				<div class="b-header-top-right">
+					<div class="b-header-soc">
+						<a href="//vk.com" class="icon-vk" target="_blank">Вконтакте</a>
+						<a href="//facebook.com" class="icon-facebook" target="_blank">Facebook</a>
+						<a href="//gmail.com" class="icon-gmail" target="_blank">Gmail</a>
+					</div>
+					<a href="#" class="b-header-search icon-search"></a>
+					<a href="#" class="b-header-community">Присоединиться к cообществу</a>
+				</div>
 			</div>
-			<div class="b-date-cont right">
-				<h2 class="blue">8 (800) 555 15 24</h2>
-				<p class="right"><a href="#b-popup-1" class="b-get-callback b-orange-butt fancy goal-click" data-goal="CALLBACK_B">Заказать звонок</a></p>
+		</div>
+		<div class="b-header-menu">
+			<div class="b-block">
+				<div class="b-btn-menu">
+					<div class="icon-menu"></div>
+					<span>Меню</span>
+				</div>
+				<div class="b-menu-list-wrap">
+					<ul class="b-menu-list clearfix">
+						<li><a href="#">О программе инновационного развития</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Рид</a></li>
+						<li><a href="#">Контент</a></li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="b b-2">
+
+	<div class="b b-content">
 		<div class="b-block">
-			
+			<div class="b-main-slider">
+				<div class="b-main-slider-item">
+					<img src="i/slider-1.jpg">
+				</div>
+				<div class="b-main-slider-item">
+					<img src="i/slider-1.jpg">
+				</div>
+				<div class="b-main-slider-item">
+					<img src="i/slider-1.jpg">
+				</div>
+				<div class="b-main-slider-item">
+					<img src="i/slider-1.jpg">
+				</div>
+			</div>
+			<div class="b-news-days clearfix">
+				<div class="b-size-3-4 clearfix">
+					<div class="b-news-days-yesterday b-news-days-item">
+						<h2>Вчера</h2>
+						<div class="days-list">
+							<div class="days-item">
+								<div class="date">с 27 сен по 06 окт 2019</div>
+								<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
+							</div>
+							<div class="days-item">
+								<div class="date">с 27 сен по 04 окт 2019</div>
+								<p>"Росатом" предложит комплекс мер по развитию водородной энергетики в России</p>
+							</div>
+							<div class="days-item">
+								<div class="date">с 27 сен по 04 окт 2019</div>
+								<p>Корпус исследовательского реактор МБИР успешно прошел комплекс испытаний</p>
+							</div>
+						</div>
+						<a href="#" class="with-arrow">Подробнее</a>
+					</div>
+					<div class="b-news-days-today b-news-days-item">
+						<h2>Сегодня</h2>
+						<div class="days-list">
+							<div class="days-item">
+								<div class="date">с 27 сен по 06 окт 2019</div>
+								<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
+							</div>
+							<div class="days-item">
+								<div class="date">с 27 сен по 04 окт 2019</div>
+								<p>"Росатом" предложит комплекс мер по развитию водородной энергетики в России</p>
+							</div>
+							<div class="days-item">
+								<div class="date">с 27 сен по 04 окт 2019</div>
+								<p>Корпус исследовательского реактор МБИР успешно прошел комплекс испытаний</p>
+							</div>
+						</div>
+						<a href="#" class="with-arrow">Подробнее</a>
+					</div>
+					<div class="b-news-days-tomorrow b-news-days-item">
+						<h2>Завтра</h2>
+						<div class="days-list">
+							<div class="days-item">
+								<div class="date">с 27 сен по 06 окт 2019</div>
+								<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
+							</div>
+							<div class="days-item">
+								<div class="date">с 27 сен по 04 окт 2019</div>
+								<p>"Росатом" предложит комплекс мер по развитию водородной энергетики в России</p>
+							</div>
+							<div class="days-item">
+								<div class="date">с 27 сен по 04 окт 2019</div>
+								<p>Корпус исследовательского реактор МБИР успешно прошел комплекс испытаний</p>
+							</div>
+						</div>
+						<a href="#" class="with-arrow">Подробнее</a>
+					</div>
+				</div>
+				<div class="b-size-1-4 b-news-days-right">
+					<div class="b-news-days-right-top">
+						<h3>Восемьдесят три процента всех дней в году начинаются одинаково: звенит будильник.</h3>
+						<div class="b-news-days-person">
+							<img src="i/person-1.png" class="b-img">
+							<div class="b-name"><b>Мотькина</b><br> Юлия Валерьевна</div>
+						</div>
+					</div>
+					<div class="b-news-days-right-bottom">
+						<h3>Программа инновационного развития</h3>
+						<div class="b-line"></div>
+						<a href="#" class="with-arrow">Подробнее</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="b b-3">
-		<div class="b-block">
-			
-		</div>
-	</div>
-	<div class="b b-4">
-		<div class="b-block">
-			
-		</div>
-	</div>
-	<div class="b b-5">
-		<div class="b-block">
-			
-		</div>
-	</div>
-	<div class="b b-6">
-		<div class="b-block">
-			
-		</div>
-	</div>
-	<div class="b b-7">
-		<div class="b-block">
-			
-		</div>
-	</div>
-	<div class="b b-8">
-		<div class="b-block">
-			
-		</div>
-	</div>
-	<div class="b b-9">
-		<div class="b-block">
-			
-		</div>
-	</div>
+	
 	<div style="display:none;">
 		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
 		<div class="b-popup" id="b-popup-1">
@@ -114,6 +185,7 @@
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/mask.js"></script>
 	<script type="text/javascript" src="js/KitSend.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
