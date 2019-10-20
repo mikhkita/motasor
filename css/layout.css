@@ -160,7 +160,7 @@ h2.b-title{
 
 .icon-vk:before {
   content: "\e900";
-  font-size: 6px;
+  font-size: 7px;
   color: #FFF;
 }
 .icon-facebook:before {
@@ -175,7 +175,7 @@ h2.b-title{
 }
 .icon-search:before {
   content: "\e903";
-  font-size: 12px;
+  font-size: 17px;
   color: #2B64DB;
 }
 .icon-arrow-left:before{
@@ -293,6 +293,7 @@ h2.b-title{
 					margin-right: 0;
 				}
 			.b-header-search{
+				padding-top: 2px;
 				display: inline-block;
 				vertical-align: top;
 				margin-right: 84px;
@@ -453,7 +454,7 @@ h2.b-title{
 				color: #FFF;
 			}
 			.b-news-days-person{
-				width: 100%;
+				width: calc(100% - 48px);
 				position: absolute;
 				left: 24px;
 				bottom: 30px; 
@@ -474,6 +475,28 @@ h2.b-title{
 					line-height: 20px;
 					padding-top: 2px;
 				}
+			.b-news-days-right-top .quotes-left{
+				position: absolute;
+				left: 38px;
+				top: 13px;
+				width: 62px;
+				height: 48px;
+				background-image: url(../i/quotes-left.png);
+				background-position: 50% 50%;
+			    background-repeat: no-repeat;
+			    background-size: 62px;
+			}
+			.b-news-days-right-top .quotes-right{
+				position: absolute;
+				right: 20px;
+				bottom: 28px;
+				width: 113px;
+				height: 87px;
+				background-image: url(../i/quotes-right.png);
+				background-position: 50% 50%;
+			    background-repeat: no-repeat;
+			    background-size: 113px;
+			}
 		.b-news-days-right-bottom{
 			height: 222px;
 			padding: 24px;
@@ -499,16 +522,86 @@ h2.b-title{
 			}
 
 .b-question-calendar{
-	min-height: 490px;
+	height: 490px;
 	margin-bottom: 60px;
 }
+.b-question-calendar .b-block{
+	height: 100%;
+}
 	.b-question-calendar-left{
+		position: relative;
+		padding: 24px 22px;
 		height: 100%;
+		background-color: #231E78;
 	}
+		.b-question-calendar-left .ask-question{
+			position: absolute;
+			left: 22px;
+			bottom: 24px;
+			display: inline-block;
+			color: #FFF;
+			font-size: 40px;
+			line-height: 47px;
+			font-family: 'FiraSans-Bold';
+		}
+			.b-question-calendar-left .ask-question .icon-arrow-right{
+				position: absolute;
+			    right: -34px;
+				bottom: 2px;	
+			}
+			.b-question-calendar-left .ask-question .icon-arrow-right:before{
+				color: #FFF;
+				font-size: 18px;
+			}
+		.question-back-1{
+			position: absolute;
+		    width: 35px;
+		    height: 56px;
+		    top: 245px;
+		    left: 29px;
+		    background-image: url(../i/question-1.svg);
+		    background-position: 50% 50%;
+		    background-repeat: no-repeat;
+		    background-size: 35px;
+		    opacity: 0.5;
+		    -moz-transform: rotate(-25deg);
+		    -ms-transform: rotate(-25deg);
+		    -webkit-transform: rotate(-25deg);
+		    -o-transform: rotate(-25deg);
+		    transform: rotate(-25deg);
+		}
+		.question-back-2{
+			position: absolute;
+			width: 49px;
+			height: 78px;
+			top: 221px;
+			left: 55px;
+			background-image: url(../i/question-1.svg);
+			background-position: 50% 50%;
+		    background-repeat: no-repeat;
+		    background-size: 49px;
+		}
+		.question-back-3{
+			position: absolute;
+		    width: 40px;
+		    height: 67px;
+		    top: 241px;
+		    left: 94px;
+		    background-image: url(../i/question-1.svg);
+		    background-position: 50% 50%;
+		    background-repeat: no-repeat;
+		    background-size: 40px;
+		    opacity: 0.5;
+		    -moz-transform: rotate(25deg);
+		    -ms-transform: rotate(25deg);
+		    -webkit-transform: rotate(25deg);
+		    -o-transform: rotate(25deg);
+		    transform: rotate(25deg);
+		}
 	.b-question-calendar-right{
 		height: 100%;
 	}
-	.b-calendar{
+	.b-calendar-cont{
 		float: left;
 		width: 53%;
 		background-color: #6E8EC1;
@@ -516,29 +609,80 @@ h2.b-title{
 		height: 100%;
 		color: #FFF;
 	}
-		.b-calendar h2{
+		.b-calendar-cont h2{
 			font-size: 40px;
 	    	line-height: 47px;
 	    	margin-bottom: 32px;
 		}
+		.b-month-list{
+			margin-bottom: 32px;
+		}
+			.b-month-list .month{
+				display: inline-block;
+				width: 110px;
+				margin-right: 4px;
+				font-family: 'FiraSans-Medium';
+				font-size: 19px;
+				line-height: 29px;
+				color: #FFF;
+				opacity: 0.5;
+			}
+			.b-month-list .month.active{
+				width: 140px;
+				font-size: 24px;
+				line-height: 29px;
+				opacity: 1;
+			}
+			.b-month-list .icon-arrow-right{
+				display: inline-block;
+				color: #FFF;
+			}
+		.b-calendar{
+			width: 100%;
+		}
+			.b-calendar th{
+				width: 60px;
+				padding-bottom: 20px;
+			}
+				.b-calendar td{
+					position: relative;
+					padding-bottom: 28px;
+				}
+					.b-calendar td a{
+						position: absolute;
+					    padding: 5px 10px;
+					    display: inline-block;
+					    background-color: #FFF;
+					    border-radius: 100px;
+					    color: #43469A;
+					    font-family: 'FiraSans-Bold';
+					    top: -5px;
+					    left: -11px;
+					}
 	.b-events{
 		position: relative;
 		float: left;
 		width: 47%;
 		color: #FFF;
 		padding: 24px 42px 85px 42px;
-		background-color: #231E78;
+		background-color: #2E4A8A;
 		height: 100%;
 	}
 		.b-events-list{
 
 		}
 			.b-events-item{
-				margin-bottom: 24px;
+				margin-bottom: 22px;
 			}
 				.b-events-item .date{
 					font-family: 'FiraSans-Bold';
-					margin-bottom: 8px;
+					font-size: 14px;
+					line-height: 20px;
+					text-transform: uppercase;
+					margin-bottom: 6px;
+				}
+				.b-events-item p{
+					line-height: 22px;
 				}
 		.all-events{
 			position: absolute;
@@ -753,11 +897,12 @@ h2.b-title{
 		}
 		.b-footer-search .b-input .icon-search{
 			position: absolute;
-			top: 10px;
+			top: 11px;
 			left: 14px;
 		}
 		.b-footer-search .b-input .icon-search:before{
 			color: #000;
+			font-size: 14px;
 		}
 		.b-footer-search .b-soc{
 			display: inline-block;
