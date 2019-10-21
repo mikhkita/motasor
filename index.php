@@ -1,4 +1,4 @@
-<?include 'header.php'?>
+<?include 'header.php';?>
 
 		<div class="b-block">
 			<div class="b-main-slider">
@@ -284,5 +284,5 @@
 			</div>
 		</div>
 
-<?include 'footer.php'?>
+<?include 'footer.php';?>
 		

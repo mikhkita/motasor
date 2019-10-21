@@ -37,6 +37,18 @@
 }
 
 @font-face {
+    font-family: 'FiraSans-Light';
+    src: url('../fonts/FiraSans-Light.eot');
+    src: url('../fonts/FiraSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FiraSans-Light.woff2') format('woff2'),
+        url('../fonts/FiraSans-Light.woff') format('woff'),
+        url('../fonts/FiraSans-Light.ttf') format('truetype'),
+        url('../fonts/FiraSans-Light.svg#FiraSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?ilezgv');
   src:  url('../fonts/icomoon.eot?ilezgv#iefix') format('embedded-opentype'),
@@ -101,7 +113,8 @@ input:-moz-placeholder {
 }
 [class^="icon-"]:before, 
 [class*=" icon-"]:before,
-.with-arrow:after{
+.with-arrow:after,
+.b-nav > li > ul > li > a:before{
 	font-family: 'icomoon' !important;
 	speak: none;
 	font-style: normal;
@@ -649,6 +662,7 @@ h2.b-title{
 			}
 				.b-calendar td{
 					position: relative;
+					font-family: 'FiraSans-Light';
 					padding-bottom: 28px;
 				}
 					.b-calendar td a{
@@ -958,7 +972,8 @@ h2.b-title{
 				.b-breadcrumbs li:after {
 				    position: relative;
 				    content: "—";
-				    padding: 0 4px;
+				    padding: 0 5px;
+				    line-height: 20px;
 				    display: block;
 				    float: left;
 				    font-family: 'FiraSans-Regular';
@@ -993,11 +1008,12 @@ h2.b-title{
 		margin-bottom: 24px;
 	}
 	.b-nav > li.active{
-
+		padding-top: 10px;
 	}
 		.b-nav > li.active > a{
 			padding: 22px 27px;
 			background-color: #2E4A8A;
+			font-family: 'FiraSans-Bold';
 			color: #FFF;
 		}
 		.b-nav > li > a{
@@ -1005,9 +1021,12 @@ h2.b-title{
 		}
 		/* === второй уровень === */
 		.b-nav > li > ul{
-			padding-left: 70px;
+			margin-top: 32px;
+			margin-bottom: 56px;
+			padding-left: 36px;
 		}
 			.b-nav > li > ul > li{
+				position: relative;
 				margin-bottom: 24px;
 			}
 			.b-nav > li > ul > li.active{
@@ -1017,8 +1036,44 @@ h2.b-title{
 					font-family: 'FiraSans-Bold';
 				}
 				.b-nav > li > ul > li > a{
+					padding-left: 34px;
 					color: #2E4A8A;
 				}
+				.b-nav > li > ul > li > a:before{
+					position: absolute;
+					top: 3px;
+					left: 0;
+					content: "\e904";
+					color: #2E4A8A;
+  					font-size: 13px;
+				}
+				/* === третий уровень === */
+				.b-nav > li > ul > li > ul{
+					margin: 40px 0;
+					padding-left: 40px;
+				}
+					.b-nav > li > ul > li > ul > li{
+						position: relative;
+						margin-bottom: 24px;
+					}
+					.b-nav > li > ul > li > ul > li.active{
+
+					}
+						.b-nav > li > ul > li > ul > li.active > a{
+							font-family: 'FiraSans-Bold';
+						}
+						.b-nav > li > ul > li > ul > li > a{
+							padding-left: 32px;
+							color: #2E4A8A;
+						}
+						.b-nav > li > ul > li > ul > li > a:before{
+							position: absolute;
+							top: 0;
+							left: 0;
+							content: "-";
+							color: #2E4A8A;
+		  					font-size: 13px;
+						}
 
 .b-content-inner{
 	float: right;
@@ -1070,10 +1125,10 @@ h2.b-title{
 		.b-contacts a:before{
 			content: "";
 			position: absolute;
-			top: 6px;
+			top: 5px;
 			left: 0;
 			width: 18px;
-			height: 14px;
+			height: 15px;
 			background-image: url(../i/icon-email-white.svg);
 			background-position: 50% 50%;
 		    background-repeat: no-repeat;
@@ -1175,7 +1230,7 @@ h2.b-title{
 
 }
 	.b-text h2{
-		padding-top: 22px;
+		
 	}
 	.b-text h3{
 		font-size: 24px;
