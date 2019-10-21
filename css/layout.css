@@ -130,10 +130,7 @@ input:-moz-placeholder {
 	background-color: #F2F5F7;
 }
 
-h1{
-	font-family: 'FiraSans-Bold';
-}
-h2, h3{
+h1, h2, h3, h4{
 	font-family: "FiraSans-Bold";
 }
 h2.b-title{
@@ -192,6 +189,12 @@ h2.b-title{
   font-size: 13px;
   color: #000;
 }
+.icon-select:before {
+  content: "\e907";
+  font-size: 13px;
+  color: #000;
+}
+
 
 .b-line{
 	height: 2px;
@@ -658,6 +661,8 @@ h2.b-title{
 					    font-family: 'FiraSans-Bold';
 					    top: -5px;
 					    left: -11px;
+					    text-align: center;
+    					width: 35px;
 					}
 	.b-events{
 		position: relative;
@@ -665,7 +670,7 @@ h2.b-title{
 		width: 47%;
 		color: #FFF;
 		padding: 24px 42px 85px 42px;
-		background-color: #2E4A8A;
+		background-color: #383b9d;
 		height: 100%;
 	}
 		.b-events-list{
@@ -715,7 +720,9 @@ h2.b-title{
 			.b-news-item .date{
 				color: #B0B0B0;
 				font-family: 'FiraSans-Bold';
-				margin-bottom: 8px;
+				font-size: 14px;
+				line-height: 20px;
+				margin-bottom: 12px;
 			}
 			.b-news-item p{
 				font-size: 20px;
@@ -918,6 +925,279 @@ h2.b-title{
 		background-color: #1A2985;
 		color: #FFF;
 	}
+
+/* ===== Сообщества ===== */
+
+.b-header-inner{
+	height: 334px;
+	background-image: url(../i/header-inner.jpg);
+	background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 56px 0;
+    color: #FFF;
+}
+	.b-header-inner-left{
+		display: inline-block;
+		vertical-align: top;
+		width: 483px;
+		margin-right: 100px;
+	}
+		.b-breadcrumbs{
+			margin-bottom: 16px;
+		}
+			.b-breadcrumbs li{
+				font-size: 14px;
+				line-height: 22px;
+			}
+				.b-breadcrumbs li a,
+				.b-breadcrumbs li span{
+					float: left;
+					color: #FFF;
+				}
+				.b-breadcrumbs li:after {
+				    position: relative;
+				    content: "—";
+				    padding: 0 4px;
+				    display: block;
+				    float: left;
+				    font-family: 'FiraSans-Regular';
+				}
+
+	.b-breadcrumbs li:last-child:after {
+	    display: none;
+	}
+		.b-header-inner-left h1{
+			font-size: 55px;
+			line-height: 56px;
+		}
+	.b-header-inner-right{
+		display: inline-block;
+		vertical-align: top;
+		width: calc(100% - 590px);
+	}
+
+.b-nav{
+	float: left;
+	padding-top: 45px;
+	width: 467px;
+}
+	/* === первый уровень === */
+	.b-nav li a{
+		display: block;
+		font-size: 18px;
+		line-height: 20px;
+		color: #022D47;
+	}
+	.b-nav > li{
+		margin-bottom: 24px;
+	}
+	.b-nav > li.active{
+
+	}
+		.b-nav > li.active > a{
+			padding: 22px 27px;
+			background-color: #2E4A8A;
+			color: #FFF;
+		}
+		.b-nav > li > a{
+			padding: 0 27px;
+		}
+		/* === второй уровень === */
+		.b-nav > li > ul{
+			padding-left: 70px;
+		}
+			.b-nav > li > ul > li{
+				margin-bottom: 24px;
+			}
+			.b-nav > li > ul > li.active{
+
+			}
+				.b-nav > li > ul > li.active > a{
+					font-family: 'FiraSans-Bold';
+				}
+				.b-nav > li > ul > li > a{
+					color: #2E4A8A;
+				}
+
+.b-content-inner{
+	float: right;
+	width: calc(100% - 467px);
+	padding: 0 119px;
+	padding-top: 30px;
+	box-shadow: inset 35px 4px 54px -46px rgba(0, 0, 0, 0.1);
+}
+	.b-sections-list{
+		width: 100%;
+		background-color: #2E4A8A;
+		padding: 24px 35px 24px 3px;
+		margin-bottom: 32px;
+		color: #FFF;
+	}
+		.b-sections-list a{
+			position: relative;
+			padding: 0 32px;
+			font-size: 16px;
+			line-height: 20px;
+			color: #FFF;
+			text-decoration: underline;
+		}
+		.b-sections-list a:after{
+			content: "";
+			position: absolute;
+			top: 0;
+			right: -1px;
+			width: 1px;
+			height: 20px;
+			background-color: #FFF;
+		}
+		.b-sections-list a:last-child:after{
+			display: none;
+		}
+	.b-contacts{
+		padding: 20px 40px 40px 40px;
+		color: #FFF;
+		background-color: #2E4A8A;
+		margin-bottom: 24px;
+	}
+		.b-contacts a{
+			position: relative;
+			display: inline-block;
+			padding-left: 58px;
+			margin-bottom: 26px;
+			color: #FFF;
+		}
+		.b-contacts a:before{
+			content: "";
+			position: absolute;
+			top: 6px;
+			left: 0;
+			width: 18px;
+			height: 14px;
+			background-image: url(../i/icon-email-white.svg);
+			background-position: 50% 50%;
+		    background-repeat: no-repeat;
+		    background-size: 18px;
+		}
+		.b-contacts a:last-child{
+			margin-bottom: 0;
+		}
+	.b-questions-list{
+		margin-bottom: 34px;
+	}
+		.b-questions-item{
+			padding: 24px 32px;
+			background-color: #F2F5F7;
+			margin-bottom: 16px;
+		}
+			.b-questions-item h4{
+				font-size: 14px;
+				line-height: 20px;
+				margin-bottom: 16px;
+				text-transform: uppercase;
+				font-family: 'FiraSans-Bold';
+				letter-spacing: 0.6px;
+			}
+			.b-questions-item p{
+				margin-bottom: 16px;
+			}
+			.b-questions-item .b-open-answer{
+				position: relative;
+				display: inline-block;
+				font-size: 14px;
+				line-height: 20px;
+				color: #231E78;
+				text-transform: uppercase;
+				font-family: 'FiraSans-Bold';
+				padding-right: 34px;
+				letter-spacing: 0.6px;
+			}
+				.b-questions-item .b-open-answer .icon-select:before{
+					position: absolute;
+					top: 5px;
+					right: 0;
+					color: #231E78;    
+					font-size: 9px;
+				}
+			.b-answer{
+				margin-top: 24px;
+				padding: 26px 32px;
+				background-color: #FFF;
+			}
+	.b-materials-list{
+		margin-bottom: 34px;
+	}
+		.b-materials-item{
+			position: relative;
+			display: block;
+			padding-left: 40px;
+			font-size: 16px;
+			line-height: 22px;
+			color: #0B6093;
+			margin-bottom: 20px;
+		}
+		.b-materials-item:before{
+			content: "";
+			position: absolute;
+			top: 6px;
+			left: 0;
+			width: 17px;
+			height: 20px;
+			background-image: url(../i/icon-pdf.svg);
+			background-position: 50% 50%;
+		    background-repeat: no-repeat;
+		    background-size: 17px;
+		}
+		.b-materials-item:last-child{
+			margin-bottom: 0;
+		}
+	.b-content-inner .b-news{
+		padding: 0;
+		margin-bottom: 80px;
+	}
+		.b-content-inner .b-news .b-news-item{
+			width: calc(50% - 12px);
+			margin-right: 24px;
+			background-color: #F2F5F7;
+		}
+		.b-content-inner .b-news .b-news-item:nth-child(2n){
+			margin-right: 0;
+		}
+		.b-content-inner .b-news .all-news{
+			float: right;
+		}
+		.b-content-inner .b-news .with-arrow{
+			min-width: 160px;
+		}
+
+/* ==== */
+.b-text{
+
+}
+	.b-text h2{
+		padding-top: 22px;
+	}
+	.b-text h3{
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 22px;
+	}
+	.b-text h4{
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 22px;
+	}
+	.b-text > p{
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 32px;
+	}
+	.b-text > img{
+		width: 100%;
+		margin-bottom: 32px;
+	}
+
+/* ==== */
 
 .b-input{
 

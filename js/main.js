@@ -53,6 +53,17 @@ $(document).ready(function(){
         nextArrow: '<div class="slick-next slick-arrow"><div class="icon-arrow-right"></div></div>',
     });
 
+    $(".b-answer").each(function () {
+        $(this).slideUp(0);
+    });
+
+    $(".b-open-answer").click(function () {
+        var $block = $(this).parent().find(".b-answer");
+        //$(this).addClass("opened");
+        $block.slideToggle(500);
+        return false;
+    })
+
     // // Первая анимация элементов в слайде
     // $(".b-step-slide[data-slick-index='0'] .slider-anim").addClass("show");
 
