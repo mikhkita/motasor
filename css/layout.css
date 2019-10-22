@@ -1555,6 +1555,7 @@ h2.b-title{
 			position: relative;
 		}
 		.b-input .input .icon-clear{
+			cursor: pointer;
 			display: none;
 		}
 		.b-input .input .icon-clear.show{
@@ -1568,13 +1569,15 @@ h2.b-title{
 			width: 12px;
 			height: 12px;
 			font-size: 12px;
-			cursor: pointer;
 			color: #FFF;
 			padding: 8px;
 		}
 		.b-input .input .icon-clear:hover:before{
 			color: #DDD;
 		}
+.b-input input::-ms-clear {
+    display: none;
+}
 
 .b-select{
 
@@ -1608,6 +1611,12 @@ h2.b-title{
 			cursor: pointer;
 			color: #FFF;
 		}
+.b-select select::-ms-expand {
+    display: none;
+}
+.b-select select option {
+	color: #000;
+}
 
 /* =====slick =====*/
 
