@@ -186,6 +186,30 @@
 				</div>
 			</div>
 		</div>
+		<div class="b-tablet-block clearfix">
+			<div class="b-block">
+				<div class="b-tablet-block-item b-question-calendar-left">
+					<a href="#" class="ask-question">Задать<br> вопрос <div class="icon-arrow-right"></div></a>
+					<div class="question-back-1"></div>
+					<div class="question-back-2"></div>
+					<div class="question-back-3"></div>
+				</div>
+				<div class="b-tablet-block-item b-news-days-right-top">
+					<h3>Восемьдесят три процента всех дней в году начинаются одинаково: звенит будильник.</h3>
+					<div class="b-news-days-person">
+						<img src="i/person-1.png" class="b-img">
+						<div class="b-name"><b>Мотькина</b><br> Юлия Валерьевна</div>
+					</div>
+					<div class="quotes-left"></div>
+					<div class="quotes-right"></div>
+				</div>
+				<div class="b-tablet-block-item b-news-days-right-bottom">
+					<h3>Программа инновационного развития</h3>
+					<div class="b-line"></div>
+					<a href="#" class="with-arrow">Подробнее</a>
+				</div>
+			</div>
+		</div>
 		<div class="b b-news b-gray">
 			<div class="b-block">
 				<h2 class="b-title">Новости</h2>
@@ -213,71 +237,75 @@
 			<div class="b-block">
 				<h2 class="b-title">Направления</h2>
 				<div class="b-directions-list">
-					<div class="b-directions-half">
-						<div class="b-directions-item wide b-color-blue">
-							<h2>Сообщества</h2>
-							<div class="b-line"></div>
-							<ul>
-								<li><a href="#">Эксперты</a></li>
-								<li><a href="#">Инновационная вертикаль</a></li>
-								<li><a href="#">Конференции</a></li>
-							</ul>
-							<a href="#" class="with-arrow block-bottom">Подробнее</a>
+					<div class="b-directions-row">
+						<div class="b-directions-half">
+							<div class="b-directions-item wide b-color-blue">
+								<h2>Сообщества</h2>
+								<div class="b-line"></div>
+								<ul>
+									<li><a href="#">Эксперты</a></li>
+									<li><a href="#">Инновационная вертикаль</a></li>
+									<li><a href="#">Конференции</a></li>
+								</ul>
+								<a href="#" class="with-arrow block-bottom">Подробнее</a>
+							</div>
+						</div>
+						<div class="b-directions-half">
+							<div class="b-directions-item">
+								<h2>Мероприятия</h2>
+								<div class="b-line"></div>
+								<ul>
+									<li><a href="#">Вчера</a></li>
+									<li><a href="#">Сегодня</a></li>
+									<li><a href="#">Завтра</a></li>
+								</ul>
+								<a href="#" class="with-arrow block-bottom">Подробнее</a>
+							</div>
+							<div class="b-directions-item b-color-blue-dark">
+								<h2>Новости</h2>
+								<div class="b-line"></div>
+								<ul>
+									<li><a href="#">Вчера</a></li>
+									<li><a href="#">Сегодня</a></li>
+									<li><a href="#">Завтра</a></li>
+								</ul>
+								<a href="#" class="with-arrow block-bottom">Подробнее</a>
+							</div>
 						</div>
 					</div>
-					<div class="b-directions-half">
-						<div class="b-directions-item">
-							<h2>Мероприятия</h2>
-							<div class="b-line"></div>
-							<ul>
-								<li><a href="#">Вчера</a></li>
-								<li><a href="#">Сегодня</a></li>
-								<li><a href="#">Завтра</a></li>
-							</ul>
-							<a href="#" class="with-arrow block-bottom">Подробнее</a>
+					<div class="b-directions-row">
+						<div class="b-directions-half">
+							<div class="b-directions-item b-color-blue-dark">
+								<h2>Услуги</h2>
+								<div class="b-line"></div>
+								<ul>
+									<li><a href="#">Сервис конкурсов</a></li>
+									<li><a href="#">Сервис конференций</a></li>
+									<li><a href="#">Сервис рассылок</a></li>
+								</ul>
+								<a href="#" class="with-arrow block-bottom">Подробнее</a>
+							</div>
+							<div class="b-directions-item">
+								<h2>Рид</h2>
+								<div class="b-line"></div>
+								<ul>
+									<li><a href="#">ИС УПРИД</a></li>
+									<li><a href="#">Информация про портфели</a></li>
+								</ul>
+								<a href="#" class="with-arrow block-bottom">Подробнее</a>
+							</div>
 						</div>
-						<div class="b-directions-item b-color-blue-dark">
-							<h2>Новости</h2>
-							<div class="b-line"></div>
-							<ul>
-								<li><a href="#">Вчера</a></li>
-								<li><a href="#">Сегодня</a></li>
-								<li><a href="#">Завтра</a></li>
-							</ul>
-							<a href="#" class="with-arrow block-bottom">Подробнее</a>
-						</div>
-					</div>
-					<div class="b-directions-half">
-						<div class="b-directions-item b-color-blue-dark">
-							<h2>Услуги</h2>
-							<div class="b-line"></div>
-							<ul>
-								<li><a href="#">Сервис конкурсов</a></li>
-								<li><a href="#">Сервис конференций</a></li>
-								<li><a href="#">Сервис рассылок</a></li>
-							</ul>
-							<a href="#" class="with-arrow block-bottom">Подробнее</a>
-						</div>
-						<div class="b-directions-item">
-							<h2>Рид</h2>
-							<div class="b-line"></div>
-							<ul>
-								<li><a href="#">ИС УПРИД</a></li>
-								<li><a href="#">Информация про портфели</a></li>
-							</ul>
-							<a href="#" class="with-arrow block-bottom">Подробнее</a>
-						</div>
-					</div>
-					<div class="b-directions-half">
-						<div class="b-directions-item wide b-color-blue">
-							<h2>Контент</h2>
-							<div class="b-line"></div>
-							<ul>
-								<li><a href="#">Научные достижения</a></li>
-								<li><a href="#">Аванроекты</a></li>
-								<li><a href="#">Единый отраслевой темплан</a></li>
-							</ul>
-							<a href="#" class="with-arrow block-bottom">Подробнее</a>
+						<div class="b-directions-half">
+							<div class="b-directions-item wide b-color-blue">
+								<h2>Контент</h2>
+								<div class="b-line"></div>
+								<ul>
+									<li><a href="#">Научные достижения</a></li>
+									<li><a href="#">Аванроекты</a></li>
+									<li><a href="#">Единый отраслевой темплан</a></li>
+								</ul>
+								<a href="#" class="with-arrow block-bottom">Подробнее</a>
+							</div>
 						</div>
 					</div>
 				</div>

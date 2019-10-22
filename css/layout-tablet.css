@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+body {
+	min-width: 768px;
+}
+.b-block{
+	width: calc(100% - 54px);
+}
+
+.b-news-days-right-top h3{
+	font-size: 23px;
+}
+
+.b-calendar-cont{
+	width: 55%;
+	padding-left: 32px;
+}
+	.b-month-list .month{
+		width: 95px;
+	}
+	.b-month-list .month.active{
+		width: 120px;
+	}
+
+	.b-events-item:nth-child(n+4){
+		display: none;
+	}
+	.question-back-1{
+		top: 305px;
+	}
+	.question-back-2{
+		top: 281px;
+	}
+	.question-back-3{
+		top: 301px;
+	}
+.b-events{
+	width: 45%;
+	padding: 24px 35px 85px 35px;
+}
+
+@media screen and (max-width: 1170px){
+	.b-tablet-block{
+		display: block;
+		height: 300px;
+		margin-bottom: 60px;
+	}
+		.b-tablet-block .b-block{
+			height: 100%;
+		}
+			.b-tablet-block .b-tablet-block-item{
+				float: left;
+				height: 100%;
+				width: calc(100%/3 - 16px);
+				margin-right: 20px;
+			}
+			.b-tablet-block .b-tablet-block-item:last-child{
+				margin-right: 0;
+			}
+			.b-tablet-block .question-back-1{
+				top: 125px;
+			}
+			.b-tablet-block .question-back-2{
+				top: 101px;
+			}
+			.b-tablet-block .question-back-3{
+				top: 121px;
+			}
+			.b-tablet-block .b-news-days-right-top h3{
+				font-size: 25px;
+			}
+			.b-tablet-block .b-news-days-right-bottom a.with-arrow{
+				position: absolute;
+    			left: 24px;
+    			bottom: 24px;
+			}
+			.b-tablet-block .b-news-days-right-bottom a.with-arrow:after {
+			    top: 5px;
+			}
+
+	.b-question-calendar .b-question-calendar-left,
+	.b-news-days .b-news-days-right{
+		display: none;
+	}
+
+	.b-size-3-4 {
+	    width: 100%;
+	}
+	.b-size-3-4.b-size-left,
+	.b-size-3-4.b-size-right{
+		float: none;
+	}
+
+	.b-news-days,
+	.b-question-calendar{
+	    margin-bottom: 16px;
+	}
+	.b-events-item {
+	    max-width: 343px;
+	}
+
+	.b-btn-menu{
+		margin-right: 48px;
+	}
+	.b-menu-list-wrap {
+    	width: calc(100% - 170px);
+	}
+
+	.b-news-item {
+	    width: calc(100%/3 - 12px);
+	    margin-right: 16px;
+	    padding: 28px 20px;
+	}
+
+	.b-directions-row .b-directions-half{
+		width: calc(40% - 10px);
+	}
+	.b-directions-row .b-directions-half:nth-child(2n){
+		width: calc(60% - 10px);
+	}
+	.b-directions-row:nth-child(2n) .b-directions-half{
+		width: calc(60% - 10px);
+	}
+	.b-directions-row:nth-child(2n) .b-directions-half:nth-child(2n){
+		width: calc(40% - 10px);
+	}
+
+	.b-footer-logo{
+		margin-right: 50px;
+	}
+	.b-footer-menu-left {
+	    margin-right: 12px;
+	}
+	.b-footer-search .b-input {
+	    margin-left: 60px;
+	}
+}
+

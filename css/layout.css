@@ -114,7 +114,11 @@ input:-moz-placeholder {
 [class^="icon-"]:before, 
 [class*=" icon-"]:before,
 .with-arrow:after,
-.b-nav > li > ul > li > a:before{
+.b-nav > li > ul > li > a:before,
+.b-nav > li > ul > li > ul > li > a:before,
+.b-nav > li > ul > li > ul > li > a.active:before,
+.b-input .input .icon-clear:before,
+.b-select .select:before{
 	font-family: 'icomoon' !important;
 	speak: none;
 	font-style: normal;
@@ -180,7 +184,7 @@ h2.b-title{
 }
 .icon-gmail:before {
   content: "\e902";
-  font-size: 17px;
+  font-size: 19px;
   color: #FFF;
 }
 .icon-search:before {
@@ -252,6 +256,96 @@ h2.b-title{
 .b-color-blue-dark{
 	background-color: #202E86;
 }
+
+/* ======= */
+
+.b-text{
+
+}
+	.b-text h2{
+		
+	}
+	.b-text h3{
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 22px;
+	}
+	.b-text h4{
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 22px;
+	}
+	.b-text .blue{
+		color: #2E4A8A;
+	}
+	.b-text .text-block{
+		margin-bottom: 56px;
+	}
+	.b-text > p{
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.b-text a{
+		color: #0B6093;
+		text-decoration: underline;
+	}
+	.b-text a:hover{
+		text-decoration: none;
+	}
+	.b-text .with-back{
+		display: inline-block;
+		background-color: #2E4A8A;
+		padding: 23px 40px;
+		margin-bottom: 32px;
+	}
+		.b-text .with-back a{
+			color: #FFF;
+		}
+	.b-text img.wide{
+		width: 100%;
+	}
+	.b-text img{
+		margin-bottom: 32px;
+	}
+
+	.b-text ul{
+	    list-style: none;
+	    padding-top: 10px;
+	    margin-left: 12px;
+	}
+		.b-text ul li{
+			position: relative;
+			padding-left: 22px;
+			margin-bottom: 20px;
+		}
+		.b-text ul li:before {
+			content: " ";
+			position: absolute;
+			top: 10px;
+			left: 0;
+			width: 6px;
+			height: 6px;
+			background-color: #2E4A8A;
+			border-radius: 3px;
+		}
+	.b-text ol{
+		counter-reset:item;
+		padding-top: 10px;
+		margin-left: 68px;
+	}
+		.b-text ol li{
+			position: relative;
+			margin-bottom: 20px;
+		}
+		.b-text ol li:before{
+			content: counter(item) '.';
+			counter-increment: item;
+			position: absolute;
+			top: 0;
+			left: -30px;
+			color: #0B6093;
+		    font-family: "FiraSans-Bold";
+		}
 
 /* ===== Главная ===== */
 
@@ -435,6 +529,7 @@ h2.b-title{
 						.days-item .date{
 							font-family: 'FiraSans-Bold';
 							color: #B0B0B0;
+							text-transform: uppercase;
 							margin-bottom: 10px;
 						}
 						.days-item p{
@@ -514,6 +609,7 @@ h2.b-title{
 			    background-size: 113px;
 			}
 		.b-news-days-right-bottom{
+			position: relative;
 			height: 222px;
 			padding: 24px;
 			background-color: #F2F5F7;
@@ -712,6 +808,10 @@ h2.b-title{
 			border: 1px solid #FFF;
 			color: #FFF;
 		}
+
+.b-tablet-block{
+	display: none;
+}
 
 .b-news{
 	padding: 40px 0;
@@ -917,14 +1017,26 @@ h2.b-title{
 			margin-left: 248px;
 			margin-right: 116px;
 		}
-		.b-footer-search .b-input .icon-search{
+		.b-footer-search .b-input .input input{
+			background-color: #FFF;
+			padding: 14px 32px 14px 44px;
+		}
+		.b-footer-search .b-input .input .icon-search{
 			position: absolute;
-			top: 11px;
+			top: 12px;
 			left: 14px;
 		}
-		.b-footer-search .b-input .icon-search:before{
+		.b-footer-search .b-input .input .icon-search:before{
 			color: #000;
 			font-size: 14px;
+		}
+		.b-footer-search .b-input .input .icon-clear:before{
+			top: 10px;
+    		right: 7px;
+			color: #ECEBED;
+		}
+		.b-footer-search .b-input .input .icon-clear:hover:before{
+			color: #2E4A8A;
 		}
 		.b-footer-search .b-soc{
 			display: inline-block;
@@ -994,7 +1106,7 @@ h2.b-title{
 
 .b-nav{
 	float: left;
-	padding-top: 45px;
+	padding-top: 40px;
 	width: 467px;
 }
 	/* === первый уровень === */
@@ -1022,7 +1134,7 @@ h2.b-title{
 		/* === второй уровень === */
 		.b-nav > li > ul{
 			margin-top: 32px;
-			margin-bottom: 56px;
+			margin-bottom: 40px;
 			padding-left: 36px;
 		}
 			.b-nav > li > ul > li{
@@ -1038,6 +1150,7 @@ h2.b-title{
 				.b-nav > li > ul > li > a{
 					padding-left: 34px;
 					color: #2E4A8A;
+					padding-right: 16px;
 				}
 				.b-nav > li > ul > li > a:before{
 					position: absolute;
@@ -1065,23 +1178,33 @@ h2.b-title{
 						.b-nav > li > ul > li > ul > li > a{
 							padding-left: 32px;
 							color: #2E4A8A;
+							padding-right: 16px;
 						}
 						.b-nav > li > ul > li > ul > li > a:before{
 							position: absolute;
-							top: 0;
+							top: 4px;
 							left: 0;
-							content: "-";
+							content: "\e909";
 							color: #2E4A8A;
 		  					font-size: 13px;
+						}
+						.b-nav > li > ul > li > ul > li.active > a:before{
+							content: "\e908";
 						}
 
 .b-content-inner{
 	float: right;
+	min-height: 500px;
 	width: calc(100% - 467px);
 	padding: 0 119px;
 	padding-top: 30px;
 	box-shadow: inset 35px 4px 54px -46px rgba(0, 0, 0, 0.1);
 }
+	.b-content-inner h4{
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 16px;
+	}
 	.b-sections-list{
 		width: 100%;
 		background-color: #2E4A8A;
@@ -1109,20 +1232,23 @@ h2.b-title{
 		.b-sections-list a:last-child:after{
 			display: none;
 		}
-	.b-contacts{
+	.b-comm-contacts{
 		padding: 20px 40px 40px 40px;
 		color: #FFF;
 		background-color: #2E4A8A;
-		margin-bottom: 24px;
+		margin-bottom: 56px;
 	}
-		.b-contacts a{
+		.b-comm-contacts h4{
+			margin-bottom: 24px;
+		}
+		.b-comm-contacts a{
 			position: relative;
 			display: inline-block;
 			padding-left: 58px;
 			margin-bottom: 26px;
 			color: #FFF;
 		}
-		.b-contacts a:before{
+		.b-comm-contacts a:before{
 			content: "";
 			position: absolute;
 			top: 5px;
@@ -1134,11 +1260,11 @@ h2.b-title{
 		    background-repeat: no-repeat;
 		    background-size: 18px;
 		}
-		.b-contacts a:last-child{
+		.b-comm-contacts a:last-child{
 			margin-bottom: 0;
 		}
 	.b-questions-list{
-		margin-bottom: 34px;
+		margin-bottom: 56px;
 	}
 		.b-questions-item{
 			padding: 24px 32px;
@@ -1180,7 +1306,7 @@ h2.b-title{
 				background-color: #FFF;
 			}
 	.b-materials-list{
-		margin-bottom: 34px;
+		margin-bottom: 56px;
 	}
 		.b-materials-item{
 			position: relative;
@@ -1225,45 +1351,263 @@ h2.b-title{
 			min-width: 160px;
 		}
 
-/* ==== */
-.b-text{
+/* ===== Управление инновациями ===== */
 
+.b-innov-contacts{
+	background-color: #2E4A8A;
+	border-radius: 10px;
+	padding: 20px 37px 23px 37px;
+	color: #FFF;
+	margin-bottom: 56px;
 }
-	.b-text h2{
-		
+	.b-innov-contacts .b-img{
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 46px;
+		margin-right: 54px;
+		width: 106px;
+		height: 106px;
+		border-radius: 100px;
+		overflow: hidden;
 	}
-	.b-text h3{
+	.b-innov-contacts-right{
+		display: inline-block;
+		vertical-align: top;
+		width: calc(100% - 166px);
+	}
+		.b-innov-contacts-right h4{
+			margin-bottom: 22px;
+		}
+		.b-innov-contacts-right p{
+			line-height: 22px;
+		}
+		.b-innov-contacts-right .phone{
+			margin-right: 72px;
+			color: #FFF;
+		}
+		.b-innov-contacts-right .email{
+			color: #FFF;
+		}
+	.b-innov-share{
+		display: inline-block;
+		position: relative;
+		padding-left: 50px;
+		color: #0B6093;
+	}
+	.b-innov-share:before {
+	    content: "";
+	    position: absolute;
+	    top: -3px;
+	    left: 0;
+	    width: 25px;
+	    height: 28px;
+	    background-image: url(../i/icon-share.svg);
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-size: 25px;
+	}
+	.b-innov-pdf{
+		padding: 24px 31px 26px;
+		background: #2E4A8A;
+		border-radius: 5px;
+		margin-top: 20px;
+		margin-bottom: 72px;
+	}
+		.b-innov-pdf a{
+			display: inline-block;
+			position: relative;
+			padding-left: 80px;
+			color: #FFF;
+			text-decoration: underline;
+		}
+		.b-innov-pdf a:before {
+		    content: "";
+		    position: absolute;
+		    top: -3px;
+		    left: 0;
+		    width: 31px;
+		    height: 35px;
+		    background-image: url(../i/icon-pdf-white.svg);
+		    background-position: 50% 50%;
+		    background-repeat: no-repeat;
+		    background-size: 31px;
+		}
+
+/* ===== Инновационная вертикаль ===== */
+
+.b-partners-list{
+	margin-bottom: 76px;
+}
+	.b-partner-item{
+		position: relative;
+		float: left;
+		text-align: center;
+		height: 96px;
+		width: calc(50% - 10px);
+		margin-right: 20px;
+		margin-bottom: 16px;
+		background-color: #FFF;
+		box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.11);
+	}
+	.b-partner-item:nth-child(2n){
+		margin-right: 0;
+	}
+		.b-partner-item .b-img,
+		.b-partner-item a{
+			position: absolute;
+	        top: 50%;
+	        left: 50%;
+	        -webkit-transform: translateY(-50%) translateX(-50%);
+		    -moz-transform: translateY(-50%) translateX(-50%);
+		    -ms-transform: translateY(-50%) translateX(-50%);
+		    -o-transform: translateY(-50%) translateX(-50%);
+		    transform: translateY(-50%) translateX(-50%);
+		}
+		.b-partner-item .b-img{
+			max-width: 206px;
+			max-height: 76px;
+			width: auto;
+			height: auto;
+			background-position: 50% 50%;
+		    background-repeat: no-repeat;
+		    background-size: contain;
+		}
+		.b-partner-item a{
+			width: 100%;
+			padding: 0 24px;
+			color: #0B6093;
+			text-decoration: underline;
+		}
+		.b-partner-item a:hover{
+			text-decoration: none;
+		}
+
+/* ==== Форма ==== */
+
+.b-form{
+	padding: 34px 125px 34px 32px;
+	background-color: #2E4A8A;
+}
+	.b-form h2{
+		color: #FFF;
+		margin-bottom: 32px;
+	}
+	.b-form h3{
 		font-size: 24px;
 		line-height: 29px;
-		margin-bottom: 22px;
+		font-family: 'FiraSans-Medium';
+		color: #FFF;
+		padding-top: 16px;
+		margin-bottom: 24px;
 	}
-	.b-text h4{
-		font-size: 20px;
-		line-height: 24px;
-		margin-bottom: 22px;
-	}
-	.b-text > p{
-		font-size: 16px;
-		line-height: 22px;
+	.b-form .b-input{
 		margin-bottom: 32px;
 	}
-	.b-text > img{
-		width: 100%;
+		.b-form .b-input p,
+		.b-form .b-select p{
+			color: #FFF;
+		}
+		.b-form .b-input .input{
+
+		}
+			.b-form .b-input .input input{
+				border: 1px solid #FFF;
+				border-radius: 5px;
+				padding: 20px 16px;
+				color: #FFF;
+			}
+			/*.b-form input::-webkit-input-placeholder {
+				color: #FFF;
+			}
+			.b-form input:-moz-placeholder {
+				color: #FFF;
+			}*/
+	.b-form .b-select{
 		margin-bottom: 32px;
 	}
+		.b-form .b-select .select{
+
+		}
+			.b-form .b-select .select select{
+				padding: 20px 16px;
+				color: #FFF;
+			}
 
 /* ==== */
 
 .b-input{
 
 }
+	.b-input p{
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 6px;
+	}
 	.b-input input{
 		width: 100%;
-		background-color: #FFF;
+		background-color: transparent;
 		border: 1px solid #ECEBED;
 		border-radius: 5px;
-		padding: 14px 14px 14px 44px;
+		padding: 20px 32px 20px 44px;
+		font-size: 16px;
 	}
+		.b-input .input{
+			position: relative;
+		}
+		.b-input .input .icon-clear{
+			display: none;
+		}
+		.b-input .input .icon-clear.show{
+			display: block;
+		}
+		.b-input .input .icon-clear:before{
+			content: "\e90a";
+			position: absolute;
+			top: 16px;
+    		right: 13px;
+			width: 12px;
+			height: 12px;
+			font-size: 12px;
+			cursor: pointer;
+			color: #FFF;
+			padding: 8px;
+		}
+		.b-input .input .icon-clear:hover:before{
+			color: #DDD;
+		}
+
+.b-select{
+
+}
+	.b-select p{
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 6px;
+	}
+	.b-select select{
+		width: 100%;
+		background-color: transparent;
+		border: 1px solid #ECEBED;
+		border-radius: 5px;
+		padding: 20px 32px 20px 44px;
+		font-size: 16px;
+		-webkit-appearance: none;
+    	-moz-appearance: none;
+    	appearance: none;
+    	cursor: pointer;
+	}
+		.b-select .select{
+			position: relative;
+		}
+		.b-select .select:before{
+			content: "\e907";
+			position: absolute;
+			top: 26px;
+    		right: 22px;
+    		font-size: 8px;
+			cursor: pointer;
+			color: #FFF;
+		}
 
 /* =====slick =====*/
 
@@ -1340,7 +1684,5 @@ h2.b-title{
 	
 }	
 @media screen and (max-width: 1440px){
-	.b-block{
-		width: calc(100% - 54px);
-	}
+	
 }

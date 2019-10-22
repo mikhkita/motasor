@@ -1,4 +1,4 @@
-$(document).ready(function(){	
+$(document).ready(function(){
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
             myWidth = window.innerWidth;
@@ -11,6 +11,15 @@ $(document).ready(function(){
             myWidth = document.body.clientWidth;
             myHeight = document.body.clientHeight;
         }
+        // if(myWidth < 1170){
+        //     if(!$(".b-news-days-right-tablet .b-news-days-right").length){
+        //         $(".b-news-days-right-tablet").append($(".b-news-days .b-about-top-right"));
+        //     }
+        // }else{
+        //     if(!$(".b-news-days .b-news-days-right").length){
+        //         $(".b-news-days").append($(".b-news-days-right-tablet .b-about-top-right"));
+        //     }
+        // }
     }
     $(window).resize(resize);
     resize();
@@ -59,10 +68,22 @@ $(document).ready(function(){
 
     $(".b-open-answer").click(function () {
         var $block = $(this).parent().find(".b-answer");
-        //$(this).addClass("opened");
         $block.slideToggle(500);
         return false;
-    })
+    });
+
+    $(document).on("input change", ".b-input input", function(){
+        if($(this).val() !== ""){
+            $(this).parent().children(".icon-clear").addClass("show");
+        }else{
+            $(this).parent().children(".icon-clear").removeClass("show");
+        }
+    });
+
+    $(document).on("click", ".b-input .icon-clear", function(){
+        $(this).parent().children("input").val("").change();
+        $(this).removeClass("show");
+    });
 
     // // Первая анимация элементов в слайде
     // $(".b-step-slide[data-slick-index='0'] .slider-anim").addClass("show");

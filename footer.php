@@ -24,8 +24,11 @@
 			<div class="b-footer-search b-gray">
 				<div class="b-block">
 					<div class="b-input">
-						<div class="icon-search"></div>
-						<input type="text" name="">
+						<div class="input">
+							<div class="icon-search"></div>
+							<input type="text" name="">
+							<div class="icon-clear"></div>
+						</div>
 					</div>
 					<div class="b-soc">
 						<a href="//vk.com" class="icon-vk" target="_blank">Вконтакте</a>
