@@ -150,7 +150,7 @@ input:-moz-placeholder {
 h1, h2, h3, h4{
 	font-family: "FiraSans-Bold";
 }
-h2.b-title{
+h1.b-title, h2.b-title{
 	font-size: 40px;
 	line-height: 47px;
 	margin-bottom: 32px;
@@ -192,7 +192,7 @@ h2.b-title{
   color: #FFF;
 }
 .icon-search:before {
-  content: "\e903";
+  content: "\e90c";
   font-size: 17px;
   color: #2B64DB;
 }
@@ -556,12 +556,16 @@ h2.b-title{
 		/*height: 310px;*/
 		border-radius: 5px;
 	}
-		.b-main-slider-item{
-
+		.b-main-slider .slick-list{
+			border-radius: 5px;
+			overflow: hidden;
 		}
-			.b-main-slider-item img	{
-				width: 100%;
+			.b-main-slider-item{
+
 			}
+				.b-main-slider-item img	{
+					width: 100%;
+				}
 
 	.b-news-days{
 		margin-bottom: 20px;
@@ -704,10 +708,23 @@ h2.b-title{
 		position: relative;
 		padding: 24px 22px;
 		height: 100%;
-		background-color: #231E78;
+		background-image: url(../i/question-back.jpg);
+		background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-size: cover;
 	}
+		.b-question-back{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(35,30,120,0.9);
+		}
 		.b-question-calendar-left .ask-question{
 			position: absolute;
+			z-index: 5;
 			left: 22px;
 			bottom: 24px;
 			display: inline-block;
@@ -731,6 +748,7 @@ h2.b-title{
 		    height: 56px;
 		    top: 245px;
 		    left: 29px;
+		    z-index: 2;
 		    background-image: url(../i/question-1.svg);
 		    background-position: 50% 50%;
 		    background-repeat: no-repeat;
@@ -748,6 +766,7 @@ h2.b-title{
 			height: 78px;
 			top: 221px;
 			left: 55px;
+			z-index: 2;
 			background-image: url(../i/question-1.svg);
 			background-position: 50% 50%;
 		    background-repeat: no-repeat;
@@ -759,6 +778,7 @@ h2.b-title{
 		    height: 67px;
 		    top: 241px;
 		    left: 94px;
+		    z-index: 2;
 		    background-image: url(../i/question-1.svg);
 		    background-position: 50% 50%;
 		    background-repeat: no-repeat;
@@ -1022,6 +1042,7 @@ h2.b-title{
 				margin-bottom: 0;
 			}
 				.b-footer-menu li a{
+					display: inline-block;
 					font-size: 14px;
 					line-height: 20px;
 				}
@@ -1157,7 +1178,7 @@ h2.b-title{
 	.b-breadcrumbs li:last-child:after {
 	    display: none;
 	}
-		.b-header-inner-left h1{
+		.b-header-inner-left h2{
 			font-size: 55px;
 			line-height: 56px;
 		}
@@ -1223,7 +1244,7 @@ h2.b-title{
 					position: absolute;
 					top: 3px;
 					left: 0;
-					content: "\e904";
+					content: "\e903";
 					color: #2E4A8A;
   					font-size: 13px;
 				}
@@ -1885,14 +1906,14 @@ h2.b-title{
 }
 .slick-arrow.slick-prev .icon-arrow-left:before{
 	position: absolute;
-	top: 12px;
-	left: 11px;
+	top: 13px;
+	left: 14px;
 	color: #FFF;
 }
 .slick-arrow.slick-next .icon-arrow-right:before{
 	position: absolute;
-	top: 12px;
-	left: 14px;
+	top: 13px;
+	left: 15px;
 	color: #FFF;
 }
 

@@ -95,6 +95,7 @@
 					<div class="question-back-1"></div>
 					<div class="question-back-2"></div>
 					<div class="question-back-3"></div>
+					<div class="b-question-back"></div>
 				</a>
 				<div class="b-size-3-4 b-size-right b-question-calendar-right">
 					<div class="b-calendar-cont">
@@ -189,10 +190,11 @@
 		<div class="b-tablet-block clearfix">
 			<div class="b-block">
 				<a href="#" class="b-tablet-block-item b-question-calendar-left">
-					<span href="#" class="ask-question">Задать<br> вопрос <div class="icon-arrow-right"></div></span>
+					<span class="ask-question">Задать<br> вопрос <div class="icon-arrow-right"></div></span>
 					<div class="question-back-1"></div>
 					<div class="question-back-2"></div>
 					<div class="question-back-3"></div>
+					<div class="b-question-back"></div>
 				</a>
 				<div class="b-tablet-block-item b-news-days-right-top">
 					<h3>Восемьдесят три процента всех дней в году начинаются одинаково: звенит будильник.</h3>
