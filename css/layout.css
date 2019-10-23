@@ -583,7 +583,7 @@ h2.b-title{
 
 				}
 					.days-item{
-
+						display: block;
 					}
 						.days-item .date{
 							font-family: 'FiraSans-Bold';
@@ -594,7 +594,8 @@ h2.b-title{
 						.days-item p{
 							margin-bottom: 20px;
 						}
-				.b-news-days-item a{
+				.b-news-days-item a.with-arrow,
+				.b-news-days-item span.with-arrow{
 					text-transform: uppercase;
 					color: #43469A;
 				}
@@ -846,7 +847,9 @@ h2.b-title{
 
 		}
 			.b-events-item{
+				display: block;
 				margin-bottom: 22px;
+				color: #FFF;
 			}
 				.b-events-item .date{
 					font-family: 'FiraSans-Bold';
@@ -880,6 +883,7 @@ h2.b-title{
 	}
 		.b-news-item{
 			position: relative;
+			display: block;
 			float: left;
 			width: calc(100%/3 - 16px);
 			height: 224px;
@@ -901,7 +905,7 @@ h2.b-title{
 				font-size: 20px;
 				line-height: 22px;
 			}
-			.b-news-item a{
+			.b-news-item .with-arrow{
 				left: 28px;
 			    text-transform: uppercase;
 			    color: #231E78;
@@ -1503,6 +1507,7 @@ h2.b-title{
 }
 	.b-partner-item{
 		position: relative;
+		display: block;
 		float: left;
 		text-align: center;
 		height: 96px;
@@ -1551,6 +1556,7 @@ h2.b-title{
 	padding: 34px 125px 45px 32px;
 	background-color: #2E4A8A;
 	max-width: 683px;
+	margin-bottom: 80px;
 }
 	.b-form h2{
 		color: #FFF;
@@ -1580,12 +1586,12 @@ h2.b-title{
 				padding: 20px 16px;
 				color: #FFF;
 			}
-			/*.b-form input::-webkit-input-placeholder {
-				color: #FFF;
+			.b-form input::-webkit-input-placeholder {
+				color: rgba(255,255,255,0.5);
 			}
 			.b-form input:-moz-placeholder {
-				color: #FFF;
-			}*/
+				color: rgba(255,255,255,0.5);
+			}
 	.b-form .b-select{
 		margin-bottom: 32px;
 	}
@@ -1599,6 +1605,78 @@ h2.b-title{
 	.b-form .b-checkbox{
 		margin-bottom: 36px;
 	}
+
+/* ==== Опросы ==== */
+
+.b-quiz{
+	padding: 36px 32px 32px;
+	background-color: #F2F5F7;
+	margin-bottom: 80px;
+}
+	.b-quiz h3{
+		font-family: 'FiraSans-Medium';
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 26px;
+	}
+	.b-question{
+		
+	}
+		.b-question p{
+			font-size: 20px;
+			line-height: 28px;
+			margin-bottom: 20px;
+		}
+		.b-question p.choose-answer{
+			font-family: 'FiraSans-Bold';
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: 0.6px;
+			text-transform: uppercase;
+			margin-bottom: 12px;
+		}
+		.b-options-list{
+			margin-bottom: 12px;
+		}
+			.b-options-list .b-options-item{
+
+			}
+				.b-options-list input {
+				    position: absolute;
+				    opacity: 0;
+				    visibility: hidden;
+				    margin-bottom: 0;
+				}
+		.b-options-block{
+
+		}
+			.b-options-block li{
+				display: inline-block;
+				vertical-align: top;
+				width: calc(50% - 12px);
+				margin-right: 16px;
+				margin-bottom: 20px;
+			}
+				.b-options-block li .b-options-item{
+					display: block;
+					width: 100%;
+					background-color: #2E4A8A;
+					border-radius: 5px;
+					padding: 18px 23px;
+					color: #FFF;
+					font-size: 16px;
+					line-height: 20px;
+					font-family: 'FiraSans-Bold';
+					border: 2px solid #2E4A8A;
+					cursor: pointer;
+				}
+				.b-options-block li:nth-child(2n){
+					margin-right: 0;
+				}
+				.b-options-block li.selected .b-options-item{
+					background-color: transparent;
+					color: #2E4A8A;
+				}
 
 /* ==== */
 

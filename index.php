@@ -22,50 +22,50 @@
 					<div class="b-news-days-yesterday b-news-days-item">
 						<h2>Вчера</h2>
 						<div class="days-list">
-							<div class="days-item">
+							<a href="#" class="days-item">
 								<div class="date">с 27 сен по 06 окт 2019</div>
 								<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
-							</div>
-							<div class="days-item">
+							</a>
+							<a href="#" class="days-item">
 								<div class="date">с 27 сен по 04 окт 2019</div>
 								<p>"Росатом" предложит комплекс мер по развитию водородной энергетики в России</p>
-							</div>
-							<div class="days-item">
+							</a>
+							<a href="#" class="days-item">
 								<div class="date">с 27 сен по 04 окт 2019</div>
 								<p>Корпус исследовательского реактор МБИР успешно прошел комплекс испытаний</p>
-							</div>
+							</a>
 						</div>
 						<a href="#" class="with-arrow block-bottom">Подробнее</a>
 					</div>
 					<div class="b-news-days-today b-news-days-item">
 						<h2>Сегодня</h2>
 						<div class="days-list">
-							<div class="days-item">
+							<a href="#" class="days-item">
 								<div class="date">с 01 окт по 20 окт 2019</div>
 								<p>Конференция «Управление инновациями Росатома»</p>
-							</div>
-							<div class="days-item">
+							</a>
+							<a href="#" class="days-item">
 								<div class="date">с 30 сен по 18 окт 2019</div>
 								<p>На семинаре в МГСУ был представлен проект «Новый дизайн рабочего пространства Росатома»</p>
-							</div>
-							<div class="days-item">
+							</a>
+							<a href="#" class="days-item">
 								<div class="date">с 27 сен по 17 окт 2019</div>
 								<p>Корпус исследовательского реактор МБИР успешно прошел комплекс испытаний </p>
-							</div>
+							</a>
 						</div>
 						<a href="#" class="with-arrow block-bottom">Подробнее</a>
 					</div>
 					<div class="b-news-days-tomorrow b-news-days-item">
 						<h2>Завтра</h2>
 						<div class="days-list">
-							<div class="days-item">
+							<a href="#" class="days-item">
 								<div class="date">с 27 сен по 06 окт 2019</div>
 								<p>Международная конференция по управлению ядерными знаниями и развитию человеческих ресурсов: вызовы и возможности</p>
-							</div>
-							<div class="days-item">
+							</a>
+							<a href="#" class="days-item">
 								<div class="date">с 27 сен по 04 окт 2019</div>
 								<p>В ноябре состоится Молодежная конференция по теоретической и экспериментальной физике (МКТЭФ-2019)</p>
-							</div>
+							</a>
 						</div>
 						<a href="#" class="with-arrow block-bottom">Подробнее</a>
 					</div>
@@ -90,12 +90,12 @@
 		</div>
 		<div class="b-question-calendar clearfix">
 			<div class="b-block">
-				<div class="b-size-1-4 b-size-left b-question-calendar-left">
-					<a href="#" class="ask-question">Задать<br> вопрос <div class="icon-arrow-right"></div></a>
+				<a href="#" class="b-size-1-4 b-size-left b-question-calendar-left">
+					<span class="ask-question">Задать<br> вопрос <div class="icon-arrow-right"></div></span>
 					<div class="question-back-1"></div>
 					<div class="question-back-2"></div>
 					<div class="question-back-3"></div>
-				</div>
+				</a>
 				<div class="b-size-3-4 b-size-right b-question-calendar-right">
 					<div class="b-calendar-cont">
 						<h2>Календарь событий</h2>
@@ -164,22 +164,22 @@
 					</div>
 					<div class="b-events">
 						<div class="b-events-list">
-							<div class="b-events-item">
+							<a href="#" class="b-events-item">
 								<div class="date">с 27 сен по 06 окт 2019</div>
 								<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
-							</div>
-							<div class="b-events-item">
+							</a>
+							<a href="#" class="b-events-item">
 								<div class="date">с 27 сен по 04 окт 2019</div>
 								<p>"Росатом" предложит комплекс мер по развитию водородной энергетики в России</p>
-							</div>
-							<div class="b-events-item">
+							</a>
+							<a href="#" class="b-events-item">
 								<div class="date">с 27 сен по 06 окт 2019</div>
 								<p>На семинаре в МГСУ был представлен проект «Новый дизайн рабочего пространства Росатома»</p>
-							</div>
-							<div class="b-events-item">
+							</a>
+							<a href="#" class="b-events-item">
 								<div class="date">с 27 сен по 06 окт 2019</div>
 								<p>На семинаре в МГСУ был представлен проект «Новый дизайн рабочего пространства Росатома»</p>
-							</div>
+							</a>
 						</div>
 						<a href="#" class="b-btn all-events">Все события<div class="icon-arrow-right"></div></a>
 					</div>
@@ -188,12 +188,12 @@
 		</div>
 		<div class="b-tablet-block clearfix">
 			<div class="b-block">
-				<div class="b-tablet-block-item b-question-calendar-left">
-					<a href="#" class="ask-question">Задать<br> вопрос <div class="icon-arrow-right"></div></a>
+				<a href="#" class="b-tablet-block-item b-question-calendar-left">
+					<span href="#" class="ask-question">Задать<br> вопрос <div class="icon-arrow-right"></div></span>
 					<div class="question-back-1"></div>
 					<div class="question-back-2"></div>
 					<div class="question-back-3"></div>
-				</div>
+				</a>
 				<div class="b-tablet-block-item b-news-days-right-top">
 					<h3>Восемьдесят три процента всех дней в году начинаются одинаково: звенит будильник.</h3>
 					<div class="b-news-days-person">
@@ -214,21 +214,21 @@
 			<div class="b-block">
 				<h2 class="b-title">Новости</h2>
 				<div class="b-news-list clearfix">
-					<div class="b-news-item">
+					<a href="#" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>На Ставрополье структура «Росатома» построит крупнейшую ветростанцию</p>
-						<a href="#" class="with-arrow block-bottom">Перейти</a>
-					</div>
-					<div class="b-news-item">
+						<span class="with-arrow block-bottom">Перейти</span>
+					</a>
+					<a href="#" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
-						<a href="#" class="with-arrow block-bottom">Перейти</a>
-					</div>
-					<div class="b-news-item">
+						<span class="with-arrow block-bottom">Перейти</span>
+					</a>
+					<a href="#" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>"Росатом" начал опытную эксплуатацию двухлазерного 3D-принтера</p>
-						<a href="#" class="with-arrow block-bottom">Перейти</a>
-					</div>
+						<span class="with-arrow block-bottom">Перейти</span>
+					</a>
 				</div>
 				<a href="#" class="b-btn all-news">Все новости<div class="icon-arrow-right"></div></a>
 			</div>

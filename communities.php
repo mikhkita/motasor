@@ -118,16 +118,16 @@
 			<div class="b-news clearfix">
 				<h2 class="b-title">Новости</h2>
 				<div class="b-news-list clearfix">
-					<div class="b-news-item">
+					<a href="#" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>На Ставрополье структура «Росатома» построит крупнейшую ветростанцию</p>
-						<a href="#" class="with-arrow block-bottom">Перейти</a>
-					</div>
-					<div class="b-news-item">
+						<span href="#" class="with-arrow block-bottom">Перейти</span>
+					</a>
+					<a href="#" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
-						<a href="#" class="with-arrow block-bottom">Перейти</a>
-					</div>
+						<span href="#" class="with-arrow block-bottom">Перейти</span>
+					</a>
 				</div>
 				<a href="#" class="b-btn all-news">Все новости<div class="icon-arrow-right"></div></a>
 			</div>

@@ -46,27 +46,27 @@
 				</div>
 			</div>
 			<div class="b-partners-list clearfix">
-				<div class="b-partner-item">
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-1.jpg">
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-2.jpg">
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-3.jpg">
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-4.jpg">
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-5.jpg">
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-6.jpg">
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-7.jpg">
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>

@@ -135,42 +135,42 @@
 				</div>
 			</div>
 			<div class="b-partners-list clearfix">
-				<div class="b-partner-item">
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-science-1.jpg">
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-science-2.jpg">
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-science-3.jpg">
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-science-4.jpg">
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-science-5.jpg">
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-science-6.jpg">
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-science-7.jpg">
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-science-8.jpg">
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<img class="b-img" src="i/partner-science-9.jpg">
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<a href="#">АО "НИИЭФА им. Д.В. Ефремова"</a>
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<a href="#">АО «Радиевый институт<br>  им. В.Г. Хлопина»</a>
-				</div>
-				<div class="b-partner-item">
+				</a>
+				<a href="#" class="b-partner-item">
 					<a href="#">АО «ИРМ»</a>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>

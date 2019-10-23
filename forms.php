@@ -6,7 +6,7 @@
 				<div class="b-input">
 					<p>ФИО</p>
 					<div class="input">
-						<input type="text" name="">
+						<input type="text" name="" placeholder="Иванов Иван Иванович">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
@@ -75,7 +75,7 @@
 				<div class="b-input">
 					<p>ФИО</p>
 					<div class="input">
-						<input type="text" name="">
+						<input type="text" name="" placeholder="Иванов Иван Иванович">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
@@ -144,7 +144,7 @@
 				<div class="b-input">
 					<p>ФИО</p>
 					<div class="input">
-						<input type="text" name="">
+						<input type="text" name="" placeholder="Иванов Иван Иванович">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
