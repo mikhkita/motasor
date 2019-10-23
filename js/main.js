@@ -85,6 +85,11 @@ $(document).ready(function(){
         $(this).removeClass("show");
     });
 
+    $(document).on("input", ".divide", function(){
+        var value = $(this).val();
+        $(this).val(String(value).replace(/[^0-9.]/g,'').replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 '));
+    });
+
     // // Первая анимация элементов в слайде
     // $(".b-step-slide[data-slick-index='0'] .slider-anim").addClass("show");
 

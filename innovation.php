@@ -14,7 +14,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="b-block clearfix">
+	<div class="b-block">
+	<div class="b-content-inner-wrap">
 		<ul class="b-nav">
 			<li class="active">
 				<a href="#">Научные достижения и НИОКР</a>
@@ -61,6 +62,7 @@
 				<a href="#">Электронная версия Каталога</a>
 			</div>
 		</div>
+	</div>
 	</div>
 <?include 'footer.php';?>
 		

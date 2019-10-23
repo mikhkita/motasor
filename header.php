@@ -16,9 +16,9 @@
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
 	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1440px)" href="css/layout-tablet.css">
-	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css">
+	<!-- <link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css"> -->
 
-	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+	<!-- <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico"> -->
 </head>
 <body>
 	<div class="b b-header">

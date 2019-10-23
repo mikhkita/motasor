@@ -15,7 +15,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="b-block clearfix">
+	<div class="b-block">
+	<div class="b-content-inner-wrap">
 		<ul class="b-nav">
 			<li><a href="#">Конференции</a></li>
 			<li><a href="#">Семинары/сессии </a></li>
@@ -125,19 +126,28 @@
 				<div class="b-input">
 					<p>Телефон</p>
 					<div class="input">
-						<input type="text" name="">
+						<input type="text" name="phone" required>
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input">
 					<p>E-mail</p>
 					<div class="input">
-						<input type="text" name="">
+						<input type="text" name="email">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
+				<div class="b-checkbox">
+					<input id="checkbox-agreement" type="checkbox" name="agreement" checked required>
+					<label for="checkbox-agreement">
+						<div class="b-checked icon-checked"></div>
+						<p>Я принимаю условия пользовательского соглашения</p>
+					</label>
+				</div>
+				<a href="#" class="b-btn white ajax">Отправить<div class="icon-arrow-right"></div></a>
 			</form>
 		</div>
+	</div>
 	</div>
 <?include 'footer.php';?>
 		

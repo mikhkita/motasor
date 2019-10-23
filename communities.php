@@ -14,7 +14,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="b-block clearfix">
+	<div class="b-block">
+	<div class="b-content-inner-wrap">
 		<ul class="b-nav">
 			<li><a href="#">Инновационная вертикаль </a></li>
 			<li><a href="#">Конференции</a></li>
@@ -131,6 +132,7 @@
 				<a href="#" class="b-btn all-news">Все новости<div class="icon-arrow-right"></div></a>
 			</div>
 		</div>
+	</div>
 	</div>
 <?include 'footer.php';?>
 		

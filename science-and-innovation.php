@@ -16,7 +16,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="b-block clearfix">
+	<div class="b-block">
+	<div class="b-content-inner-wrap">
 		<ul class="b-nav">
 			<li class="active">
 				<a href="#">Инновационная вертикаль</a>
@@ -172,6 +173,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 <?include 'footer.php';?>
 		

@@ -83,7 +83,7 @@ label.error{
 }
 input.error,textarea.error{
 	border: 1px solid #F00 !important;
-	box-shadow: 0 0px 0px 1px #F00;
+	/*box-shadow: 0 0px 0px 1px #F00;*/
 }
 .fancybox-inner{
 	overflow: visible !important;
@@ -171,6 +171,10 @@ h2.b-title{
 		top: 18px;
 		right: 18px;
 	}
+.b-btn.white{
+	color: #FFF;
+	border: 1px solid #FFF;
+}
 
 .icon-vk:before {
   content: "\e900";
@@ -308,6 +312,10 @@ h2.b-title{
 		margin-bottom: 32px;
 	}
 
+	.b-text .img-with-signature img{
+		margin-bottom: 16px;
+	}
+
 	.b-text ul{
 	    list-style: none;
 	    padding-top: 10px;
@@ -346,6 +354,57 @@ h2.b-title{
 			color: #0B6093;
 		    font-family: "FiraSans-Bold";
 		}
+	.b-text .small-text{
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+.b-quote{
+	position: relative;
+	padding: 34px 32px 22px;
+	background-color: #F2F5F7;
+	border-radius: 5px;
+	margin-bottom: 32px;
+}
+	.b-quote p{
+		position: relative;
+		z-index: 1;
+		font-size: 20px;
+		line-height: 28px;
+		margin-bottom: 20px;
+	}
+	.b-quote .signature{
+		position: relative;
+		z-index: 1;
+		font-size: 14px;
+		line-height: 20px;
+		font-family: "FiraSans-Bold";
+		text-transform: uppercase;
+	}
+	.b-quote:before{
+		content: "";
+		position: absolute;
+		top: 22px;
+		left: 22px;
+		width: 147px;
+		height: 119px;
+		background-image: url(../i/quotes-1.svg);
+		background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-size: 147px;
+	}
+	.b-quote:after{
+		content: "";
+		position: absolute;
+		bottom: 17px;
+		right: 22px;
+		width: 147px;
+		height: 119px;
+		background-image: url(../i/quotes-2.svg);
+		background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-size: 147px;
+	}
 
 /* ===== Главная ===== */
 
@@ -1104,9 +1163,13 @@ h2.b-title{
 		width: calc(100% - 590px);
 	}
 
+.b-content-inner-wrap{
+	display: table;
+}
 .b-nav{
-	float: left;
-	padding-top: 40px;
+	display: table-cell;
+	height: 100%;
+	padding: 40px 0;
 	width: 467px;
 }
 	/* === первый уровень === */
@@ -1193,8 +1256,8 @@ h2.b-title{
 						}
 
 .b-content-inner{
-	float: right;
-	min-height: 500px;
+	display: table-cell;
+	height: 100%;
 	width: calc(100% - 467px);
 	padding: 0 119px;
 	padding-top: 30px;
@@ -1485,8 +1548,9 @@ h2.b-title{
 /* ==== Форма ==== */
 
 .b-form{
-	padding: 34px 125px 34px 32px;
+	padding: 34px 125px 45px 32px;
 	background-color: #2E4A8A;
+	max-width: 683px;
 }
 	.b-form h2{
 		color: #FFF;
@@ -1532,6 +1596,9 @@ h2.b-title{
 				padding: 20px 16px;
 				color: #FFF;
 			}
+	.b-form .b-checkbox{
+		margin-bottom: 36px;
+	}
 
 /* ==== */
 
@@ -1617,6 +1684,69 @@ h2.b-title{
 .b-select select option {
 	color: #000;
 }
+
+.icon-checked:before{
+	content: "\e90b";
+	font-size: 12px;
+    color: #FFF;
+}
+.b-checkbox{
+	position: relative;
+}
+
+.b-checkbox input[type="checkbox"].error + label + label .b-checked,
+.b-checkbox input[type="checkbox"].error + label .b-checked{
+	border: 2px solid #F00;
+}
+.b-checkbox label{
+	font-size: 16px;
+	line-height: 20px;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.b-checkbox input[type="checkbox"]{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+	.b-checkbox .b-checked{
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 25px;
+		height: 25px;
+		border-radius: 4px;
+		border: 2px solid #FFF;
+		margin-right: 30px;
+	}
+		.b-checkbox .b-checked:before{
+			position: absolute;
+			left: 4px;
+    		top: 4px;
+			display: none;
+		}
+		.b-checkbox label:hover .b-checked:before{
+			opacity: 0.3;
+			display: block;
+		}
+		.b-checkbox input[type="checkbox"]:checked + label + label .b-checked:before,
+		.b-checkbox input[type="checkbox"]:checked + label .b-checked:before{
+			display: block;
+		}
+		.b-checkbox input[type="checkbox"]:checked + label + label:hover .b-checked:before,
+		.b-checkbox input[type="checkbox"]:checked + label:hover .b-checked:before{
+			opacity: 1;
+		}
+
+	.b-checkbox p{
+		display: inline-block;
+		vertical-align: top;
+		width: calc(100% - 62px);
+		max-width: 273px;
+	}
 
 /* =====slick =====*/
 
