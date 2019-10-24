@@ -194,7 +194,7 @@ h1.b-title, h2.b-title{
 .icon-search:before {
   content: "\e90c";
   font-size: 17px;
-  color: #2B64DB;
+  color: #48569D;
 }
 .icon-arrow-left:before{
   content: "\e905";
@@ -444,8 +444,13 @@ h1.b-title, h2.b-title{
 					font-size: 0px;
 					margin-right: 23px;
 					text-align: center;
-					background-color: #2B64DB;
+					background-color: #2E4A8A;
 					overflow: hidden;
+					-webkit-transition: box-shadow 100ms ease-out;
+					   -moz-transition: box-shadow 100ms ease-out;
+					    -ms-transition: box-shadow 100ms ease-out;
+					   	 -o-transition: box-shadow 100ms ease-out;
+							transition: box-shadow 100ms ease-out;
 				}
 				.b-soc a.icon-vk{
 					padding-top: 4px;
@@ -461,31 +466,67 @@ h1.b-title, h2.b-title{
 				.b-soc a:last-child{
 					margin-right: 0;
 				}
+				.b-soc a:hover{
+					box-shadow: 0px 0px 18px rgba(72, 86, 157, 0.45);
+				}
 			.b-header-search{
-				padding-top: 2px;
+				width: 32px;
+			    height: 32px;
+			    border-radius: 100px;
+			    position: relative;
+			    top: -2px;
 				display: inline-block;
 				vertical-align: top;
 				margin-right: 84px;
+				background-color: #FFF;
+				-webkit-transition: box-shadow 100ms ease-out;
+				   -moz-transition: box-shadow 100ms ease-out;
+				    -ms-transition: box-shadow 100ms ease-out;
+				   	 -o-transition: box-shadow 100ms ease-out;
+						transition: box-shadow 100ms ease-out;
 			}
+			.b-header-search:hover{
+				box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+			}
+				.b-header-search.icon-search:before{
+					position: absolute;
+					left: 8px;
+					top: 8px;
+				}
 			.b-header-community{
 				position: relative;
 				display: inline-block;
 				vertical-align: top;
 				padding-left: 38px;
 				font-size: 14px;
-				line-height: 25px;
+				line-height: 30px;
 			}
 			.b-header-community:before{
 				content: "";
 				position: absolute;
-				top: 0;
-				left: 0;
-				width: 22px;
-				height: 22px;
+				top: -2px;
+				left: -5px;
+				width: 32px;
+				height: 32px;
+				padding: 5px;
+				box-sizing: border-box;
+				border-radius: 100px;
 				background-image: url(../i/icon-community.svg);
 				background-position: 50% 50%;
-			    background-repeat: no-repeat;
-			    background-size: 22px;
+				background-repeat: no-repeat;
+				background-size: 22px;
+				-webkit-transition: box-shadow 100ms ease-out, background-size 100ms;
+				   -moz-transition: box-shadow 100ms ease-out, background-size 100ms;
+				    -ms-transition: box-shadow 100ms ease-out, background-size 100ms;
+				   	 -o-transition: box-shadow 100ms ease-out, background-size 100ms;
+						transition: box-shadow 100ms ease-out, background-size 100ms;
+			}
+			.b-header-community:hover{
+				text-decoration: underline;
+			}
+			.b-header-community:hover:before{
+				background-size: 17px;
+				box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 			}
 
 	.b-header-menu{
@@ -500,7 +541,28 @@ h1.b-title, h2.b-title{
 			padding: 5px 17px;
 			margin-right: 118px;
 			cursor: pointer;
+			-webkit-transition: box-shadow 100ms ease-out, border 100ms;
+			   -moz-transition: box-shadow 100ms ease-out, border 100ms;
+			    -ms-transition: box-shadow 100ms ease-out, border 100ms;
+			   	 -o-transition: box-shadow 100ms ease-out, border 100ms;
+					transition: box-shadow 100ms ease-out, border 100ms;
 		}
+		.b-btn-menu:hover{
+			border: 1px solid transparent;
+			box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+		}
+			.b-btn-menu > span,
+			.b-btn-menu .icon-menu:before{
+				-webkit-transition: color 100ms;
+				   -moz-transition: color 100ms;
+				    -ms-transition: color 100ms;
+				   	 -o-transition: color 100ms;
+						transition: color 100ms;
+			}
+			.b-btn-menu:hover > span,
+			.b-btn-menu:hover .icon-menu:before{
+				color: #48569D
+			}
 			.b-btn-menu .icon-menu{
 				display: inline-block;
 				vertical-align: top;
@@ -534,6 +596,35 @@ h1.b-title, h2.b-title{
 					text-transform: uppercase;
 					font-family: 'FiraSans-Medium';
 					color: #454545;
+					position: relative;
+					-webkit-transition: color 100ms;
+					   -moz-transition: color 100ms;
+					    -ms-transition: color 100ms;
+					   	 -o-transition: color 100ms;
+							transition: color 100ms;
+				}
+				.b-menu-list li a:after {
+					content: '';
+					position: absolute;
+					left: 0;
+					display: inline-block;
+					height: 1em;
+					width: 100%;
+					border-bottom: 1px solid;
+					margin-top: 8px;
+					opacity: 0;
+					-webkit-transition: opacity 0.25s, -webkit-transform 0.25s;
+					transition: opacity 0.25s, transform 0.25s;
+					-webkit-transform: scale(0,1);
+					transform: scale(0,1);
+				}
+				.b-menu-list li a:hover{
+					color: #48569D;
+				}
+				.b-menu-list li a:hover:after{
+					 opacity: 1;
+					-webkit-transform: scale(1);
+					transform: scale(1);
 				}
 
 .block-bottom{
@@ -586,9 +677,24 @@ h1.b-title, h2.b-title{
 				.days-list{
 
 				}
+				.days-list.hover-children{
+
+				}
+					.days-list.hover-children .days-item:not(.hover) .date,
+					.days-list.hover-children .days-item:not(.hover) p{
+						opacity: 0.5;
+					}
 					.days-item{
 						display: block;
 					}
+						.days-item .date,
+						.days-item p{
+							-webkit-transition: opacity 100ms;
+							   -moz-transition: opacity 100ms;
+							    -ms-transition: opacity 100ms;
+							   	 -o-transition: opacity 100ms;
+									transition: opacity 100ms;
+						}
 						.days-item .date{
 							font-family: 'FiraSans-Bold';
 							color: #B0B0B0;
@@ -818,6 +924,14 @@ h1.b-title, h2.b-title{
 				line-height: 29px;
 				color: #FFF;
 				opacity: 0.5;
+				-webkit-transition: opacity 100ms;
+				   -moz-transition: opacity 100ms;
+				    -ms-transition: opacity 100ms;
+				   	 -o-transition: opacity 100ms;
+						transition: opacity 100ms;
+			}
+			.b-month-list .month:hover{
+				opacity: 1;
 			}
 			.b-month-list .month.active{
 				width: 140px;
@@ -827,7 +941,35 @@ h1.b-title, h2.b-title{
 			}
 			.b-month-list .icon-arrow-right{
 				display: inline-block;
+				vertical-align: top;
+				margin-top: 4px;
 				color: #FFF;
+				width: 24px;
+    			height: 24px;
+    			border-radius: 100px;
+    			position: relative;
+    			-webkit-transition: background-color 100ms, box-shadow 100ms;
+				   -moz-transition: background-color 100ms, box-shadow 100ms;
+				    -ms-transition: background-color 100ms, box-shadow 100ms;
+				   	 -o-transition: background-color 100ms, box-shadow 100ms;
+						transition: background-color 100ms, box-shadow 100ms;
+			}
+			.b-month-list .icon-arrow-right:before{
+				position: absolute;
+				top: 6px;
+				left: 9px;
+			    -webkit-transition: color 100ms;
+				   -moz-transition: color 100ms;
+				    -ms-transition: color 100ms;
+				   	 -o-transition: color 100ms;
+						transition: color 100ms;
+			}
+			.b-month-list .icon-arrow-right:hover{
+				background-color: #FFF;
+				box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+			}
+			.b-month-list .icon-arrow-right:hover:before{
+				color: #48569D;
 			}
 		.b-calendar{
 			width: 100%;
@@ -853,6 +995,14 @@ h1.b-title, h2.b-title{
 					    left: -11px;
 					    text-align: center;
     					width: 35px;
+    					-webkit-transition: box-shadow 100ms;
+						   -moz-transition: box-shadow 100ms;
+						    -ms-transition: box-shadow 100ms;
+						   	 -o-transition: box-shadow 100ms;
+								transition: box-shadow 100ms;
+					}
+					.b-calendar td a:hover{
+						box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
 					}
 	.b-events{
 		position: relative;
@@ -1127,9 +1277,6 @@ h1.b-title, h2.b-title{
 			vertical-align: top;
 			padding-top: 10px;
 		}
-			.b-footer-search .b-soc a{
-				background-color: #2E4A8A;
-			}
 	.b-footer-bottom{
 		padding: 20px 0 18px 0;
 		background-color: #1A2985;

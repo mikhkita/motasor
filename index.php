@@ -16,8 +16,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="b-news-days clearfix">
-			<div class="b-block">
+		<div class="b-news-days">
+			<div class="b-block clearfix">
 				<div class="b-size-3-4 b-size-left clearfix">
 					<div class="b-news-days-yesterday b-news-days-item">
 						<h2>Вчера</h2>
@@ -88,8 +88,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="b-question-calendar clearfix">
-			<div class="b-block">
+		<div class="b-question-calendar">
+			<div class="b-block clearfix">
 				<a href="#" class="b-size-1-4 b-size-left b-question-calendar-left">
 					<span class="ask-question">Задать<br> вопрос <div class="icon-arrow-right"></div></span>
 					<div class="question-back-1"></div>
@@ -187,8 +187,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="b-tablet-block clearfix">
-			<div class="b-block">
+		<div class="b-tablet-block">
+			<div class="b-block clearfix">
 				<a href="#" class="b-tablet-block-item b-question-calendar-left">
 					<span class="ask-question">Задать<br> вопрос <div class="icon-arrow-right"></div></span>
 					<div class="question-back-1"></div>
@@ -235,8 +235,8 @@
 				<a href="#" class="b-btn all-news">Все новости<div class="icon-arrow-right"></div></a>
 			</div>
 		</div>
-		<div class="b-directions clearfix">
-			<div class="b-block">
+		<div class="b-directions">
+			<div class="b-block clearfix">
 				<h2 class="b-title">Направления</h2>
 				<div class="b-directions-list">
 					<div class="b-directions-row">

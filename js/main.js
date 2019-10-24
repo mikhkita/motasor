@@ -90,6 +90,17 @@ $(document).ready(function(){
         $(this).val(String(value).replace(/[^0-9.]/g,'').replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 '));
     });
 
+    $('.b-news-days-item .days-item').hover(
+        function(){
+            $(this).addClass("hover");
+            $(this).parent().addClass("hover-children");
+        },
+        function(){
+            $(this).removeClass("hover");
+            $(this).parent().removeClass("hover-children");
+        }
+    );
+
     // // Первая анимация элементов в слайде
     // $(".b-step-slide[data-slick-index='0'] .slider-anim").addClass("show");
 
