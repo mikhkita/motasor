@@ -50,6 +50,9 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
 
+    $(".b-main-slider").on('init', function(event, slick){
+        $(".b-main-slider").removeClass("slick-loading");
+    });
     $(".b-main-slider").slick({
         dots: true,
         slidesToShow: 1,

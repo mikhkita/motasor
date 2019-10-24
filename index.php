@@ -1,7 +1,7 @@
 <?include 'header.php';?>
 
 		<div class="b-block">
-			<div class="b-main-slider">
+			<div class="b-main-slider slick-loading">
 				<div class="b-main-slider-item">
 					<img src="i/slider-1.jpg">
 				</div>

@@ -752,8 +752,10 @@ h1.b-title, h2.b-title{
 		margin-top: 16px;
 		margin-bottom: 90px;
 		width: 100%;
-		/*height: 310px;*/
 		border-radius: 5px;
+	}
+	.b-main-slider.slick-loading .b-main-slider-item:not(:first-child){
+		display: none;
 	}
 		.b-main-slider .slick-list{
 			border-radius: 5px;
@@ -1409,6 +1411,7 @@ h1.b-title, h2.b-title{
     background-size: cover;
     padding: 56px 0;
     color: #FFF;
+    background-color: #2E4A8A;
 }
 	.b-header-inner-left{
 		display: inline-block;
