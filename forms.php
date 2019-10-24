@@ -66,7 +66,11 @@
 						<p>Я принимаю условия пользовательского соглашения</p>
 					</label>
 				</div>
-				<a href="#" class="b-btn white ajax">Отправить<div class="icon-arrow-right"></div></a>
+				<a href="#" class="b-btn b-btn-white-border ajax">
+					<span class="b-btn-content">Отправить</span>
+					<div class="icon-arrow-right"></div>
+					<div class="icon-arrow-right-bold"></div>
+				</a>
 			</form>
 			<br>
 			<br>
@@ -135,7 +139,11 @@
 						<p>Я принимаю условия пользовательского соглашения</p>
 					</label>
 				</div>
-				<a href="#" class="b-btn white ajax">Отправить<div class="icon-arrow-right"></div></a>
+				<a href="#" class="b-btn b-btn-white-border ajax">
+					<span class="b-btn-content">Отправить</span>
+					<div class="icon-arrow-right"></div>
+					<div class="icon-arrow-right-bold"></div>
+				</a>
 			</form>
 			<br>
 			<br>
@@ -211,7 +219,11 @@
 						<p>Я принимаю условия пользовательского соглашения</p>
 					</label>
 				</div>
-				<a href="#" class="b-btn white ajax">Отправить<div class="icon-arrow-right"></div></a>
+				<a href="#" class="b-btn b-btn-white-border ajax">
+					<span class="b-btn-content">Отправить</span>
+					<div class="icon-arrow-right"></div>
+					<div class="icon-arrow-right-bold"></div>
+				</a>
 			</form>
 		</div>
 <?include 'footer.php';?>

@@ -163,13 +163,13 @@
 					<img class="b-img" src="i/partner-science-9.jpg">
 				</a>
 				<a href="#" class="b-partner-item">
-					<a href="#">АО "НИИЭФА им. Д.В. Ефремова"</a>
+					<span href="#">АО "НИИЭФА им. Д.В. Ефремова"</span>
 				</a>
 				<a href="#" class="b-partner-item">
-					<a href="#">АО «Радиевый институт<br>  им. В.Г. Хлопина»</a>
+					<span href="#">АО «Радиевый институт<br> им. В.Г. Хлопина»</span>
 				</a>
 				<a href="#" class="b-partner-item">
-					<a href="#">АО «ИРМ»</a>
+					<span href="#">АО «ИРМ»</span>
 				</a>
 			</div>
 		</div>

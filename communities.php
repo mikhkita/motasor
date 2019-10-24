@@ -129,7 +129,11 @@
 						<span href="#" class="with-arrow block-bottom">Перейти</span>
 					</a>
 				</div>
-				<a href="#" class="b-btn all-news">Все новости<div class="icon-arrow-right"></div></a>
+				<a href="#" class="b-btn b-btn-tr all-news">
+					<span class="b-btn-content">Все новости</span>
+					<div class="icon-arrow-right"></div>
+					<div class="icon-arrow-right-bold"></div>
+				</a>
 			</div>
 		</div>
 	</div>
