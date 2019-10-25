@@ -196,7 +196,7 @@
 				<div class="b-input">
 					<p>E-mail</p>
 					<div class="input">
-						<input type="text" name="email">
+						<input type="text" name="email" required>
 						<div class="icon-clear"></div>
 					</div>
 				</div>

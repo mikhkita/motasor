@@ -35,7 +35,9 @@
 								<p>Корпус исследовательского реактор МБИР успешно прошел комплекс испытаний</p>
 							</a>
 						</div>
-						<a href="#" class="with-arrow block-bottom">Подробнее</a>
+						<a href="#" class="with-arrow block-bottom">
+							<span class="text">Подробнее</span>
+						</a>
 					</div>
 					<div class="b-news-days-today b-news-days-item">
 						<h2>Сегодня</h2>
@@ -53,7 +55,9 @@
 								<p>Корпус исследовательского реактор МБИР успешно прошел комплекс испытаний </p>
 							</a>
 						</div>
-						<a href="#" class="with-arrow block-bottom">Подробнее</a>
+						<a href="#" class="with-arrow block-bottom">
+							<span class="text">Подробнее</span>
+						</a>
 					</div>
 					<div class="b-news-days-tomorrow b-news-days-item">
 						<h2>Завтра</h2>
@@ -67,7 +71,9 @@
 								<p>В ноябре состоится Молодежная конференция по теоретической и экспериментальной физике (МКТЭФ-2019)</p>
 							</a>
 						</div>
-						<a href="#" class="with-arrow block-bottom">Подробнее</a>
+						<a href="#" class="with-arrow block-bottom">
+							<span class="text">Подробнее</span>
+						</a>
 					</div>
 				</div>
 				<div class="b-size-1-4 b-size-right b-news-days-right">
@@ -83,7 +89,9 @@
 					<a href="#" class="b-news-days-right-bottom">
 						<h3>Программа инновационного развития</h3>
 						<div class="b-line"></div>
-						<span href="#" class="with-arrow">Подробнее</span>
+						<span class="with-arrow">
+							<span class="text">Подробнее</span>
+						</span>
 					</a>
 				</div>
 			</div>
@@ -212,7 +220,9 @@
 				<div class="b-tablet-block-item b-news-days-right-bottom">
 					<h3>Программа инновационного развития</h3>
 					<div class="b-line"></div>
-					<a href="#" class="with-arrow">Подробнее</a>
+					<a href="#" class="with-arrow">
+						<span class="text">Подробнее</span>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -223,17 +233,23 @@
 					<a href="#" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>На Ставрополье структура «Росатома» построит крупнейшую ветростанцию</p>
-						<span class="with-arrow block-bottom">Перейти</span>
+						<span class="with-arrow block-bottom">
+							<span class="text">Перейти</span>
+						</span>
 					</a>
 					<a href="#" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
-						<span class="with-arrow block-bottom">Перейти</span>
+						<span class="with-arrow block-bottom">
+							<span class="text">Перейти</span>
+						</span>
 					</a>
 					<a href="#" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>"Росатом" начал опытную эксплуатацию двухлазерного 3D-принтера</p>
-						<span class="with-arrow block-bottom">Перейти</span>
+						<span class="with-arrow block-bottom">
+							<span class="text">Перейти</span>
+						</span>
 					</a>
 				</div>
 				<a href="#" class="b-btn b-btn-tr all-news">
@@ -257,7 +273,9 @@
 									<li><a href="#">Инновационная вертикаль</a></li>
 									<li><a href="#">Конференции</a></li>
 								</ul>
-								<a href="#" class="with-arrow block-bottom">Подробнее</a>
+								<a href="#" class="with-arrow block-bottom">
+									<span class="text">Подробнее</span>
+								</a>
 							</div>
 						</div>
 						<div class="b-directions-half">
@@ -269,7 +287,9 @@
 									<li><a href="#">Сегодня</a></li>
 									<li><a href="#">Завтра</a></li>
 								</ul>
-								<a href="#" class="with-arrow block-bottom">Подробнее</a>
+								<a href="#" class="with-arrow block-bottom">
+									<span class="text">Подробнее</span>
+								</a>
 							</div>
 							<div class="b-directions-item b-color-blue-dark">
 								<h2>Новости</h2>
@@ -279,7 +299,9 @@
 									<li><a href="#">Сегодня</a></li>
 									<li><a href="#">Завтра</a></li>
 								</ul>
-								<a href="#" class="with-arrow block-bottom">Подробнее</a>
+								<a href="#" class="with-arrow block-bottom">
+									<span class="text">Подробнее</span>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -293,7 +315,9 @@
 									<li><a href="#">Сервис конференций</a></li>
 									<li><a href="#">Сервис рассылок</a></li>
 								</ul>
-								<a href="#" class="with-arrow block-bottom">Подробнее</a>
+								<a href="#" class="with-arrow block-bottom">
+									<span class="text">Подробнее</span>
+								</a>
 							</div>
 							<div class="b-directions-item">
 								<h2>Рид</h2>
@@ -302,7 +326,9 @@
 									<li><a href="#">ИС УПРИД</a></li>
 									<li><a href="#">Информация про портфели</a></li>
 								</ul>
-								<a href="#" class="with-arrow block-bottom">Подробнее</a>
+								<a href="#" class="with-arrow block-bottom">
+									<span class="text">Подробнее</span>
+								</a>
 							</div>
 						</div>
 						<div class="b-directions-half">
@@ -314,7 +340,9 @@
 									<li><a href="#">Аванроекты</a></li>
 									<li><a href="#">Единый отраслевой темплан</a></li>
 								</ul>
-								<a href="#" class="with-arrow block-bottom">Подробнее</a>
+								<a href="#" class="with-arrow block-bottom">
+									<span class="text">Подробнее</span>
+								</a>
 							</div>
 						</div>
 					</div>

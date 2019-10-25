@@ -49,7 +49,6 @@ $(document).ready(function(){
 	$.validator.addMethod('customPhone', function (value) {
 		return rePhone.test(value);
 	});
-
 	$(".ajax").parents("form").each(function(){
 		$(this).validate({
 			rules: {
@@ -81,6 +80,12 @@ $(document).ready(function(){
 				}
 			});
 		}
+	});
+
+	$.extend($.validator.messages, {
+	    required: "Ошибка: значение не может быть пустым",
+	    email: "Ошибка: недопустимое значение",
+	    customPhone: "Ошибка: недопустимое значение",
 	});
 
 	function whenScroll(){
