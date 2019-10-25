@@ -104,7 +104,7 @@ $(document).ready(function(){
         $($block).removeClass("hide").find("input, select, textarea").prop({"disabled": false});
     });
 
-    $('.b-news-days-item .days-item').hover(
+    $('.b-news-days-item .days-item, .b-news .b-news-item').hover(
         function(){
             $(this).addClass("hover");
             $(this).parent().addClass("hover-children");
@@ -114,6 +114,21 @@ $(document).ready(function(){
             $(this).parent().removeClass("hover-children");
         }
     );
+
+    $('.b-nav > li > a, .b-nav > li > ul > li > a, .b-nav > li > ul > li > ul > li > a').hover(
+        function(){
+            $(this).addClass("hover");
+            $(this).closest("ul").addClass("hover-children");
+        },
+        function(){
+            $(this).removeClass("hover");
+            $(this).closest("ul").removeClass("hover-children");
+        }
+    );
+
+    $(document).on("click", ".b-btn-menu", function(){
+        $(".b-header-menu-window").toggleClass("open");
+    });
 
     ripple.init();
     $('.b-btn').on('click touchstart', ripple.click);

@@ -637,7 +637,12 @@ h1.b-title, h2.b-title{
 				box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 			}
 
+	.b-header-menu-cont{
+		position: relative;
+		z-index: 10;
+	}
 	.b-header-menu{
+		position: relative;
 		padding: 18px 0;
 		border: 1px solid #E2E2E2;
 	}
@@ -734,6 +739,67 @@ h1.b-title, h2.b-title{
 					-webkit-transform: scale(1);
 					transform: scale(1);
 				}
+	.b-header-menu-window-cont{
+		position: relative;
+	}
+	.b-header-menu-window{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 5;
+		width: 100%;
+		background-color: #FFF;
+		box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.15);
+		padding: 40px 0 30px 0;
+		opacity: 0;
+		visibility: hidden;
+		-moz-transform: translateY(-10px);
+	    -ms-transform: translateY(-10px);
+	    -webkit-transform: translateY(-10px);
+	    -o-transform: translateY(-10px);
+	    transform: translateY(-10px);
+	    -webkit-transition: opacity 200ms, visibility 200ms, transform 200ms;
+		   -moz-transition: opacity 200ms, visibility 200ms, transform 200ms;
+		    -ms-transition: opacity 200ms, visibility 200ms, transform 200ms;
+		   	 -o-transition: opacity 200ms, visibility 200ms, transform 200ms;
+				transition: opacity 200ms, visibility 200ms, transform 200ms;
+	}
+	.b-header-menu-window.open{
+		opacity: 1;
+		visibility: visible;
+		-moz-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	    -webkit-transform: translateY(0);
+	    -o-transform: translateY(0);
+	    transform: translateY(0);
+	}
+		.b-header-menu-window ul.menu-window-item{
+			width: 25%;
+			float: left;
+			padding-right: 24px;
+		}
+			.b-header-menu-window ul.menu-window-item > li {
+				font-size: 16px;
+				line-height: 20px;
+				margin-bottom: 16px;
+			}
+				.b-header-menu-window ul.menu-window-item > li a{
+					color: #48569D;
+				}
+
+				.b-header-menu-window ul.menu-window-item > li > ul{
+					margin-top: 16px;
+					margin-left: 20px;
+				}
+					.b-header-menu-window ul.menu-window-item > li > ul > li{
+						font-size: 16px;
+						line-height: 22px;
+						margin-bottom: 16px;
+					}
+						.b-header-menu-window ul.menu-window-item > li > ul > li > a{
+							font-family: 'FiraSans-Light';
+							color: #48569D;
+						}
 
 .block-bottom{
 	position: absolute;
@@ -1179,7 +1245,18 @@ h1.b-title, h2.b-title{
 			margin-right: 24px;
 			padding: 28px;
 			background-color: #FFF;
+			-webkit-transition: opacity 100ms;
+			   -moz-transition: opacity 100ms;
+			    -ms-transition: opacity 100ms;
+			   	 -o-transition: opacity 100ms;
+					transition: opacity 100ms;
 		}
+		.b-news-list.hover-children{
+
+		}
+			.b-news-list.hover-children .b-news-item:not(.hover){
+				opacity: 0.5;
+			}
 		.b-news-item:last-child{
 			margin-right: 0;
 		}
@@ -1472,7 +1549,7 @@ h1.b-title, h2.b-title{
 		color: #022D47;
 	}
 	.b-nav > li{
-		margin-bottom: 24px;
+
 	}
 	.b-nav > li.active{
 		padding-top: 10px;
@@ -1484,17 +1561,16 @@ h1.b-title, h2.b-title{
 			color: #FFF;
 		}
 		.b-nav > li > a{
-			padding: 0 27px;
+			padding: 12px 27px;
 		}
 		/* === второй уровень === */
 		.b-nav > li > ul{
-			margin-top: 32px;
-			margin-bottom: 40px;
+   			margin-top: 16px;
+    		margin-bottom: 24px;
 			padding-left: 36px;
 		}
 			.b-nav > li > ul > li{
 				position: relative;
-				margin-bottom: 24px;
 			}
 			.b-nav > li > ul > li.active{
 
@@ -1503,13 +1579,12 @@ h1.b-title, h2.b-title{
 					font-family: 'FiraSans-Bold';
 				}
 				.b-nav > li > ul > li > a{
-					padding-left: 34px;
+					padding: 12px 16px 12px 34px;
 					color: #2E4A8A;
-					padding-right: 16px;
 				}
 				.b-nav > li > ul > li > a:before{
 					position: absolute;
-					top: 3px;
+					top: 15px;
 					left: 0;
 					content: "\e903";
 					color: #2E4A8A;
@@ -1517,12 +1592,11 @@ h1.b-title, h2.b-title{
 				}
 				/* === третий уровень === */
 				.b-nav > li > ul > li > ul{
-					margin: 40px 0;
+					margin: 16px 0;
 					padding-left: 40px;
 				}
 					.b-nav > li > ul > li > ul > li{
 						position: relative;
-						margin-bottom: 24px;
 					}
 					.b-nav > li > ul > li > ul > li.active{
 
@@ -1531,13 +1605,12 @@ h1.b-title, h2.b-title{
 							font-family: 'FiraSans-Bold';
 						}
 						.b-nav > li > ul > li > ul > li > a{
-							padding-left: 32px;
+							padding: 12px 16px 12px 32px;
 							color: #2E4A8A;
-							padding-right: 16px;
 						}
 						.b-nav > li > ul > li > ul > li > a:before{
 							position: absolute;
-							top: 4px;
+							top: 16px;
 							left: 0;
 							content: "\e909";
 							color: #2E4A8A;
@@ -1546,6 +1619,27 @@ h1.b-title, h2.b-title{
 						.b-nav > li > ul > li > ul > li.active > a:before{
 							content: "\e908";
 						}
+
+.b-nav.hover-children > li > a{
+
+}
+.b-nav.hover-children > li > a:not(.hover){
+	opacity: 0.5;
+}
+
+	.b-nav > li > ul.hover-children > li > a{
+
+	}
+	.b-nav > li > ul.hover-children > li > a:not(.hover){
+		opacity: 0.5;
+	}
+
+		.b-nav > li > ul > li > ul.hover-children > li > a{
+
+		}
+		.b-nav > li > ul > li > ul.hover-children > li > a:not(.hover){
+			opacity: 0.5;
+		}
 
 .b-content-inner{
 	display: table-cell;
