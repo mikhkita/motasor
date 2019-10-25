@@ -407,7 +407,7 @@ h1.b-title, h2.b-title{
 	.b-text .with-back{
 		display: inline-block;
 		background-color: #2E4A8A;
-		padding: 23px 40px;
+		padding: 21px 40px;
 		margin-bottom: 32px;
 	}
 		.b-text .with-back a{
@@ -889,6 +889,7 @@ h1.b-title, h2.b-title{
 			    background-size: 113px;
 			}
 		.b-news-days-right-bottom{
+			display: block;
 			position: relative;
 			height: 222px;
 			padding: 24px;
@@ -1621,39 +1622,42 @@ h1.b-title, h2.b-title{
 		margin-bottom: 56px;
 	}
 		.b-questions-item{
-			padding: 24px 32px;
 			background-color: #F2F5F7;
+			padding: 24px 32px;
 			margin-bottom: 16px;
 		}
-			.b-questions-item h4{
-				font-size: 14px;
-				line-height: 20px;
-				margin-bottom: 16px;
-				text-transform: uppercase;
-				font-family: 'FiraSans-Bold';
-				letter-spacing: 0.6px;
+			.b-questions-item-ref{
+				cursor: pointer;
 			}
-			.b-questions-item p{
-				margin-bottom: 16px;
-			}
-			.b-questions-item .b-open-answer{
-				position: relative;
-				display: inline-block;
-				font-size: 14px;
-				line-height: 20px;
-				color: #231E78;
-				text-transform: uppercase;
-				font-family: 'FiraSans-Bold';
-				padding-right: 34px;
-				letter-spacing: 0.6px;
-			}
-				.b-questions-item .b-open-answer .icon-select:before{
-					position: absolute;
-					top: 5px;
-					right: 0;
-					color: #231E78;    
-					font-size: 9px;
+				.b-questions-item h4{
+					font-size: 14px;
+					line-height: 20px;
+					margin-bottom: 16px;
+					text-transform: uppercase;
+					font-family: 'FiraSans-Bold';
+					letter-spacing: 0.6px;
 				}
+				.b-questions-item p{
+					margin-bottom: 16px;
+				}
+				.b-questions-item .b-open-answer{
+					position: relative;
+					display: inline-block;
+					font-size: 14px;
+					line-height: 20px;
+					color: #231E78;
+					text-transform: uppercase;
+					font-family: 'FiraSans-Bold';
+					padding-right: 34px;
+					letter-spacing: 0.6px;
+				}
+					.b-questions-item .b-open-answer .icon-select:before{
+						position: absolute;
+						top: 5px;
+						right: 0;
+						color: #231E78;    
+						font-size: 9px;
+					}
 			.b-answer{
 				margin-top: 24px;
 				padding: 26px 32px;
@@ -1819,8 +1823,8 @@ h1.b-title, h2.b-title{
 		    transform: translateY(-50%) translateX(-50%);
 		}
 		.b-partner-item .b-img{
-			max-width: 206px;
-			max-height: 76px;
+			max-width: 203px;
+			max-height: 75px;
 			width: auto;
 			height: auto;
 			background-position: 50% 50%;

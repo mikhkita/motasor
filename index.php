@@ -80,11 +80,11 @@
 						<div class="quotes-left"></div>
 						<div class="quotes-right"></div>
 					</div>
-					<div class="b-news-days-right-bottom">
+					<a href="#" class="b-news-days-right-bottom">
 						<h3>Программа инновационного развития</h3>
 						<div class="b-line"></div>
-						<a href="#" class="with-arrow">Подробнее</a>
-					</div>
+						<span href="#" class="with-arrow">Подробнее</span>
+					</a>
 				</div>
 			</div>
 		</div>

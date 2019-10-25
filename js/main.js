@@ -59,7 +59,9 @@ $(document).ready(function(){
         slidesToScroll: 1,
         infinite: true,
         cssEase: 'ease', 
-        speed: 500,
+        speed: 600,
+        autoplay: true,
+        autoplaySpeed: 3000,
         arrows: true,
         prevArrow: '<div class="slick-prev slick-arrow"><div class="icon-arrow-left"></div></div>',
         nextArrow: '<div class="slick-next slick-arrow"><div class="icon-arrow-right"></div></div>',
@@ -69,7 +71,7 @@ $(document).ready(function(){
         $(this).slideUp(0);
     });
 
-    $(".b-open-answer").click(function () {
+    $(".b-questions-item-ref").click(function () {
         var $block = $(this).parent().find(".b-answer");
         $block.slideToggle(500);
         return false;
@@ -91,6 +93,15 @@ $(document).ready(function(){
     $(document).on("input", ".divide", function(){
         var value = $(this).val();
         $(this).val(String(value).replace(/[^0-9.]/g,'').replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 '));
+    });
+
+    $(document).on("change", ".select-experts", function(){
+        var $block = $(this).find("option:selected").attr("data-block");
+        $(".form-toggle-blocks").each( function(){
+            $(this).addClass("hide");
+            $(this).find("input, select, textarea").prop({"disabled": true})
+        });
+        $($block).removeClass("hide").find("input, select, textarea").prop({"disabled": false});
     });
 
     $('.b-news-days-item .days-item').hover(

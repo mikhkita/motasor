@@ -60,7 +60,7 @@
 					</div>
 				</div>
 				<div class="b-checkbox">
-					<input id="checkbox-agreement-1" type="checkbox" name="agreement" checked required>
+					<input id="checkbox-agreement-1" type="checkbox" name="agreement" required>
 					<label for="checkbox-agreement-1">
 						<div class="b-checked icon-checked"></div>
 						<p>Я принимаю условия пользовательского соглашения</p>
@@ -133,7 +133,7 @@
 					</div>
 				</div>
 				<div class="b-checkbox">
-					<input id="checkbox-agreement-2" type="checkbox" name="agreement" checked required>
+					<input id="checkbox-agreement-2" type="checkbox" name="agreement" required>
 					<label for="checkbox-agreement-2">
 						<div class="b-checked icon-checked"></div>
 						<p>Я принимаю условия пользовательского соглашения</p>
@@ -213,7 +213,7 @@
 					</div>
 				</div>
 				<div class="b-checkbox">
-					<input id="checkbox-agreement-3" type="checkbox" name="agreement" checked required>
+					<input id="checkbox-agreement-3" type="checkbox" name="agreement" required>
 					<label for="checkbox-agreement-3">
 						<div class="b-checked icon-checked"></div>
 						<p>Я принимаю условия пользовательского соглашения</p>
