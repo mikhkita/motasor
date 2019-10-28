@@ -2,7 +2,7 @@
 			<div class="b-footer-top clearfix">
 				<div class="b-block">
 					<a href="/" class="b-footer-logo"></a>
-					<ul class="b-footer-menu b-footer-menu-left">
+					<!-- <ul class="b-footer-menu b-footer-menu-left">
 						<li><a href="#">Программа<br> инновационого развития</a></li>
 						<li><a href="#">Новости</a></li>
 						<li><a href="#">РИД</a></li>
@@ -14,11 +14,81 @@
 						<li><a href="#">О сайте</a></li>
 						<li><a href="#">Политика конфиденциальности</a></li>
 						<li><a href="#">Контактная информация</a></li>
-					</ul>
+					</ul> -->
 					<div class="b-footer-contacts">
 						<a href="mailto:innovation@rosatom.ru" class="email">innovation@rosatom.ru</a><br>
 						<a href="tel:+74955323278" class="phone">+7 (495) 532-32-78</a>
 					</div>
+				</div>
+			</div>
+			<div class="b-footer-menu">
+				<div class="b-block clearfix">
+					<ul class="b-footer-menu-item">
+						<li><a href="#" class="bold">Сообщества</a></li>
+						<li><a href="#">Инновационная вертикаль</a></li>
+						<li>
+							<a href="#">Конференции</a>
+							<ul>
+								<li><a href="#">Прорыв</a></li>
+								<li><a href="#">УИР</a></li>
+								<li><a href="#">Школа инновационного<br> лидера</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="bold">Семинары</a></li>
+						<li>
+							<a href="#">Конкурсы</a>
+							<ul>
+								<li><a href="#">Конкурс аванпроектов </a></li>
+								<li><a href="#">Инновационный лидер</a></li>
+								<li><a href="#">Премия молодым ученым</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Alumni</a>
+							<ul>
+								<li><a href="#">Сколково-Росатом</a></li>
+								<li><a href="#">Инновационный лидер</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="b-footer-menu-item">
+						<li>
+							<a href="#">Экспертиза </a>
+							<ul>
+								<li><a href="#">База экспертов </a></li>
+								<li><a href="#">Цифровая платформа экспертизы </a></li>
+								<li><a href="#">Стать экспертом Росатома </a></li>
+							</ul>
+						</li>
+						<li><a href="#">Научно-технический совет</a></li>
+						<li>
+							<a href="#">Тематические группы </a>
+							<ul>
+								<li><a href="#">ЕОТП</a></li>
+								<li><a href="#">Аванпроекты</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="b-footer-menu-item">
+						<li><a href="#" class="bold">Контент</a></li>
+						<li><a href="#">Научные достижения</a></li>
+						<li>
+							<a href="#">Нормативная документация</a>
+							<ul>
+								<li><a href="#">Инновационная программа развития</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Портал НТИ</a></li>
+						<li><a href="#">Аванпроекты</a></li>
+						<li><a href="#" class="bold">Фото и видео материалы</a></li>
+					</ul>
+					<ul class="b-footer-menu-item">
+						<li><a href="#" class="bold">РИД</a></li>
+						<li><a href="#">ИС УПРИД </a></li>
+						<li><a href="#">Информация про портфели</a></li>
+						<li><a href="#" class="bold">Новости</a></li>
+						<li><a href="#" class="bold">О нас</a></li>
+					</ul>
 				</div>
 			</div>
 			<div class="b-footer-search b-gray">
@@ -30,10 +100,10 @@
 							<div class="icon-clear"></div>
 						</div>
 					</div>
+					<span class="b-soc-text">Мы в соцсетях:</span>
 					<div class="b-soc">
 						<a href="//vk.com" class="icon-vk" target="_blank">Вконтакте</a>
 						<a href="//facebook.com" class="icon-facebook" target="_blank">Facebook</a>
-						<a href="//gmail.com" class="icon-gmail" target="_blank">Gmail</a>
 					</div>
 				</div>
 			</div>

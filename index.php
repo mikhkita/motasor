@@ -1,83 +1,117 @@
 <?include 'header.php';?>
 
 		<div class="b-block">
-			<div class="b-main-slider slick-loading">
-				<div class="b-main-slider-item">
-					<img src="i/slider-1.jpg">
+			<div class="b-main-slider-cont">
+				<div class="b-main-slider slick-loading">
+					<div class="b-main-slider-item">
+						<div class="b-img" style="background-image: url(i/slider-1.jpg)"></div>
+					</div>
+					<div class="b-main-slider-item">
+						<div class="b-img" style="background-image: url(i/slider-1.jpg)"></div>
+					</div>
+					<div class="b-main-slider-item">
+						<div class="b-img" style="background-image: url(i/slider-1.jpg)"></div>
+					</div>
+					<div class="b-main-slider-item">
+						<div class="b-img" style="background-image: url(i/slider-1.jpg)"></div>
+					</div>
 				</div>
-				<div class="b-main-slider-item">
-					<img src="i/slider-1.jpg">
+				<div class="mobile-controls">
+					<div class="mobile-arrow-left">
+						<div class="icon-arrow-left"></div>
+					</div>
+					<div class="mobile-dots"></div>
+					<div class="mobile-arrow-right">
+						<div class="icon-arrow-right"></div>
+					</div>
 				</div>
-				<div class="b-main-slider-item">
-					<img src="i/slider-1.jpg">
-				</div>
-				<div class="b-main-slider-item">
-					<img src="i/slider-1.jpg">
+				<div class="desktop-controls">
+					<div class="b-main-slider-arrows slick-prev icon-arrow-left"></div>
+					<div class="b-main-slider-arrows slick-next icon-arrow-right"></div>
 				</div>
 			</div>
 		</div>
 		<div class="b-news-days">
 			<div class="b-block clearfix">
-				<div class="b-size-3-4 b-size-left clearfix">
-					<div class="b-news-days-yesterday b-news-days-item">
-						<h2>Вчера</h2>
-						<div class="days-list">
-							<a href="#" class="days-item">
-								<div class="date">с 27 сен по 06 окт 2019</div>
-								<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
-							</a>
-							<a href="#" class="days-item">
-								<div class="date">с 27 сен по 04 окт 2019</div>
-								<p>"Росатом" предложит комплекс мер по развитию водородной энергетики в России</p>
-							</a>
-							<a href="#" class="days-item">
-								<div class="date">с 27 сен по 04 окт 2019</div>
-								<p>Корпус исследовательского реактор МБИР успешно прошел комплекс испытаний</p>
+				<div class="b-news-days-list b-size-3-4 b-size-left">
+					<div class="mobile-slider clearfix">
+						<div class="b-news-days-yesterday b-news-days-item">
+							<h2>Вчера</h2>
+							<div class="days-list">
+								<a href="#" class="days-item">
+									<div class="date">с 27 сен по 06 окт 2019</div>
+									<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
+								</a>
+								<a href="#" class="days-item">
+									<div class="date">с 27 сен по 04 окт 2019</div>
+									<p>"Росатом" предложит комплекс мер по развитию водородной энергетики в России</p>
+								</a>
+								<a href="#" class="days-item">
+									<div class="date">с 27 сен по 04 окт 2019</div>
+									<p>Корпус исследовательского реактор МБИР успешно прошел комплекс испытаний</p>
+								</a>
+							</div>
+							<a href="#" class="with-arrow block-bottom">
+								<span class="text">Подробнее</span>
 							</a>
 						</div>
-						<a href="#" class="with-arrow block-bottom">
-							<span class="text">Подробнее</span>
-						</a>
+						<div class="b-news-days-today b-news-days-item">
+							<h2>Сегодня</h2>
+							<div class="days-list">
+								<a href="#" class="days-item">
+									<div class="date">с 01 окт по 20 окт 2019</div>
+									<p>Конференция «Управление инновациями Росатома»</p>
+								</a>
+								<a href="#" class="days-item">
+									<div class="date">с 30 сен по 18 окт 2019</div>
+									<p>На семинаре в МГСУ был представлен проект «Новый дизайн рабочего пространства Росатома»</p>
+								</a>
+								<a href="#" class="days-item">
+									<div class="date">с 27 сен по 17 окт 2019</div>
+									<p>Корпус исследовательского реактор МБИР успешно прошел комплекс испытаний </p>
+								</a>
+							</div>
+							<a href="#" class="with-arrow block-bottom">
+								<span class="text">Подробнее</span>
+							</a>
+						</div>
+						<div class="b-news-days-tomorrow b-news-days-item">
+							<h2>Завтра</h2>
+							<div class="days-list">
+								<a href="#" class="days-item">
+									<div class="date">с 27 сен по 06 окт 2019</div>
+									<p>Международная конференция по управлению ядерными знаниями и развитию человеческих ресурсов: вызовы и возможности</p>
+								</a>
+								<a href="#" class="days-item">
+									<div class="date">с 27 сен по 04 окт 2019</div>
+									<p>В ноябре состоится Молодежная конференция по теоретической и экспериментальной физике (МКТЭФ-2019)</p>
+								</a>
+							</div>
+							<a href="#" class="with-arrow block-bottom">
+								<span class="text">Подробнее</span>
+							</a>
+						</div>
 					</div>
-					<div class="b-news-days-today b-news-days-item">
-						<h2>Сегодня</h2>
-						<div class="days-list">
-							<a href="#" class="days-item">
-								<div class="date">с 01 окт по 20 окт 2019</div>
-								<p>Конференция «Управление инновациями Росатома»</p>
-							</a>
-							<a href="#" class="days-item">
-								<div class="date">с 30 сен по 18 окт 2019</div>
-								<p>На семинаре в МГСУ был представлен проект «Новый дизайн рабочего пространства Росатома»</p>
-							</a>
-							<a href="#" class="days-item">
-								<div class="date">с 27 сен по 17 окт 2019</div>
-								<p>Корпус исследовательского реактор МБИР успешно прошел комплекс испытаний </p>
-							</a>
+					<div class="mobile-controls">
+						<div class="mobile-arrow-left">
+							<div class="icon-arrow-left"></div>
 						</div>
-						<a href="#" class="with-arrow block-bottom">
-							<span class="text">Подробнее</span>
-						</a>
-					</div>
-					<div class="b-news-days-tomorrow b-news-days-item">
-						<h2>Завтра</h2>
-						<div class="days-list">
-							<a href="#" class="days-item">
-								<div class="date">с 27 сен по 06 окт 2019</div>
-								<p>Международная конференция по управлению ядерными знаниями и развитию человеческих ресурсов: вызовы и возможности</p>
-							</a>
-							<a href="#" class="days-item">
-								<div class="date">с 27 сен по 04 окт 2019</div>
-								<p>В ноябре состоится Молодежная конференция по теоретической и экспериментальной физике (МКТЭФ-2019)</p>
-							</a>
+						<div class="mobile-dots"></div>
+						<div class="mobile-arrow-right">
+							<div class="icon-arrow-right"></div>
 						</div>
-						<a href="#" class="with-arrow block-bottom">
-							<span class="text">Подробнее</span>
-						</a>
 					</div>
 				</div>
+
 				<div class="b-size-1-4 b-size-right b-news-days-right">
-					<div class="b-news-days-right-top">
+					<a href="#" class="b-news-days-right-top">
+						<h3>Программа инновационного развития</h3>
+						<div class="b-line"></div>
+						<span class="with-arrow">
+							<span class="text">Подробнее</span>
+						</span>
+					</a>
+					<div class="b-news-days-right-bottom">
 						<h3>Восемьдесят три процента всех дней в году начинаются одинаково: звенит будильник.</h3>
 						<div class="b-news-days-person">
 							<img src="i/person-1.png" class="b-img">
@@ -86,13 +120,6 @@
 						<div class="quotes-left"></div>
 						<div class="quotes-right"></div>
 					</div>
-					<a href="#" class="b-news-days-right-bottom">
-						<h3>Программа инновационного развития</h3>
-						<div class="b-line"></div>
-						<span class="with-arrow">
-							<span class="text">Подробнее</span>
-						</span>
-					</a>
 				</div>
 			</div>
 		</div>
@@ -108,12 +135,16 @@
 				<div class="b-size-3-4 b-size-right b-question-calendar-right">
 					<div class="b-calendar-cont">
 						<h2>Календарь событий</h2>
-						<div class="b-month-list">
-							<a href="#" class="month active">Октябрь</a>
-							<a href="#" class="month">Ноябрь</a>
-							<a href="#" class="month">Декабрь</a>
+						<div class="b-calendar-months">
+							<a href="#" class="icon-arrow-left"></a>
+							<div class="b-month-list">
+								<a href="#" class="month active">Октябрь</a>
+								<a href="#" class="month">Ноябрь</a>
+								<a href="#" class="month">Декабрь</a>
+							</div>
 							<a href="#" class="icon-arrow-right"></a>
 						</div>
+						
 						<table class="b-calendar">
 							<tr>
 								<th>Пн</th>
@@ -190,7 +221,7 @@
 								<p>На семинаре в МГСУ был представлен проект «Новый дизайн рабочего пространства Росатома»</p>
 							</a>
 						</div>
-						<a href="#" class="b-btn b-btn-white-border all-events">
+						<a href="#" class="b-btn b-btn-tr all-events">
 							<span class="b-btn-content">Все события</span>
 							<div class="icon-arrow-right"></div>
 							<div class="icon-arrow-right-bold"></div>
@@ -209,6 +240,13 @@
 					<div class="b-question-back"></div>
 				</a>
 				<div class="b-tablet-block-item b-news-days-right-top">
+					<h3>Программа инновационного развития</h3>
+					<div class="b-line"></div>
+					<a href="#" class="with-arrow">
+						<span class="text">Подробнее</span>
+					</a>
+				</div>
+				<div class="b-tablet-block-item b-news-days-right-bottom">
 					<h3>Восемьдесят три процента всех дней в году начинаются одинаково: звенит будильник.</h3>
 					<div class="b-news-days-person">
 						<img src="i/person-1.png" class="b-img">
@@ -216,13 +254,6 @@
 					</div>
 					<div class="quotes-left"></div>
 					<div class="quotes-right"></div>
-				</div>
-				<div class="b-tablet-block-item b-news-days-right-bottom">
-					<h3>Программа инновационного развития</h3>
-					<div class="b-line"></div>
-					<a href="#" class="with-arrow">
-						<span class="text">Подробнее</span>
-					</a>
 				</div>
 			</div>
 		</div>

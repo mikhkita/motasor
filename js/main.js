@@ -1,4 +1,10 @@
 $(document).ready(function(){
+
+    var isDesktop = false,
+        isTablet = false,
+        isMobile = false,
+        isMobileSmall = false;
+
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
             myWidth = window.innerWidth;
@@ -20,6 +26,58 @@ $(document).ready(function(){
         //         $(".b-news-days").append($(".b-news-days-right-tablet .b-about-top-right"));
         //     }
         // }
+        if( myWidth > 1024 ){
+            isDesktop = true;
+            isTablet = false;
+            isMobile = false;
+            isMobileSmall = false;
+        }else if( myWidth > 767 ){
+            isDesktop = false;
+            isTablet = true;
+            isMobile = false;
+            isMobileSmall = false;
+        }else{
+            isDesktop = false;
+            isTablet = false;
+            isMobile = true;
+            isMobileSmall = (myWidth <= 530);
+        }
+
+        if(isMobile){
+            $(".mobile-slider").each(function() {//поставить слайдеры
+                if(!$(this).hasClass("slick-initialized")){
+                    $(this).not('.slick-initialized').slick({
+                        dots: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        cssEase: 'ease', 
+                        speed: 600,
+                        arrows: true,
+                        prevArrow: $(this).parent().find(".mobile-arrow-left"),
+                        nextArrow: $(this).parent().find(".mobile-arrow-right"),
+                        appendDots: $(this).parent().find(".mobile-dots")
+                    });
+                    if($(this).parent().hasClass("b-news-days-list")){
+                        var $slider = $(this);
+                        $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+                            var $current = $(slick.$slides.get(nextSlide));
+                            if($current.hasClass("b-news-days-today")){
+                                $current.closest(".b-news-days-list").find(".mobile-controls").addClass("white-controls");
+                            }else{
+                                $current.closest(".b-news-days-list").find(".mobile-controls").removeClass("white-controls");
+                            }
+                        });
+                    }
+                }
+            });
+        }else{
+            $(".mobile-slider").each(function() {//удалить слайдеры
+                if($(this).hasClass("slick-initialized")){
+                    $(this).slick('unslick');
+                }
+            });
+        }
     }
     $(window).resize(resize);
     resize();
@@ -63,8 +121,18 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 3000,
         arrows: true,
-        prevArrow: '<div class="slick-prev slick-arrow"><div class="icon-arrow-left"></div></div>',
-        nextArrow: '<div class="slick-next slick-arrow"><div class="icon-arrow-right"></div></div>',
+        prevArrow: $(".b-main-slider").parent().find(".desktop-controls .slick-prev"),
+        nextArrow: $(".b-main-slider").parent().find(".desktop-controls .slick-next"),
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                prevArrow: $(".b-main-slider").parent().find(".mobile-arrow-left"),
+                nextArrow: $(".b-main-slider").parent().find(".mobile-arrow-right"),
+                appendDots: $(".b-main-slider").parent().find(".mobile-dots"),
+              }
+            }
+        ]
     });
 
     $(".b-answer").each(function () {
