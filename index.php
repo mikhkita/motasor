@@ -125,13 +125,22 @@
 		</div>
 		<div class="b-question-calendar">
 			<div class="b-block clearfix">
-				<a href="#" class="b-size-1-4 b-size-left b-question-calendar-left">
-					<span class="ask-question">Задать<br> вопрос <div class="icon-arrow-right"></div></span>
-					<div class="question-back-1"></div>
-					<div class="question-back-2"></div>
-					<div class="question-back-3"></div>
-					<div class="b-question-back"></div>
-				</a>
+				<div href="#" class="b-size-1-4 b-size-left b-question-calendar-left">
+					<a href="#" class="b-news-days-right-top">
+						<h3>Программа инновационного развития</h3>
+						<div class="b-line"></div>
+						<span class="with-arrow">
+							<span class="text">Подробнее</span>
+						</span>
+					</a>
+					<a href="#" class="b-ask-question">
+						<span class="ask-question">Задать<br> вопрос <div class="icon-arrow-right"></div></span>
+						<div class="question-back-1"></div>
+						<div class="question-back-2"></div>
+						<div class="question-back-3"></div>
+						<div class="b-question-back"></div>
+					</a>
+				</div>
 				<div class="b-size-3-4 b-size-right b-question-calendar-right">
 					<div class="b-calendar-cont">
 						<h2>Календарь событий</h2>
@@ -232,7 +241,7 @@
 		</div>
 		<div class="b-tablet-block">
 			<div class="b-block clearfix">
-				<a href="#" class="b-tablet-block-item b-question-calendar-left">
+				<a href="#" class="b-tablet-block-item b-ask-question">
 					<span class="ask-question">Задать<br> вопрос <div class="icon-arrow-right"></div></span>
 					<div class="question-back-1"></div>
 					<div class="question-back-2"></div>

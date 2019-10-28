@@ -25,7 +25,7 @@ body {
 	.b-events-item:nth-child(n+4){
 		display: none;
 	}
-	.question-back-1{
+	/*.question-back-1{
 		top: 305px;
 	}
 	.question-back-2{
@@ -33,7 +33,7 @@ body {
 	}
 	.question-back-3{
 		top: 301px;
-	}
+	}*/
 .b-events{
 	width: 45%;
 	padding: 24px 35px 85px 35px;

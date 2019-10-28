@@ -342,10 +342,14 @@ h1.b-title, h2.b-title{
 
 .b-line{
 	height: 2px;
-	background-image: linear-gradient(90deg, #2B64DB 0%, rgba(43, 100, 219, 0) 88.22%);
+	background-image: -webkit-gradient(linear, left top, right top, from(#2B64DB), color-stop(88.22%, rgba(43, 100, 219, 0)));
+    background-image: -o-linear-gradient(left, #2B64DB 0%, rgba(43, 100, 219, 0) 88.22%);
+    background-image: linear-gradient(90deg, #2B64DB 0%, rgba(43, 100, 219, 0) 88.22%);
 }
 .b-color-blue .b-line,
 .b-color-blue-dark .b-line{
+	background-image: -webkit-gradient(linear, left top, right top, from(#FFFFFF), color-stop(88.22%, rgba(255, 255, 255, 0)));
+	background-image: -o-linear-gradient(left, #FFFFFF 0%, rgba(255, 255, 255, 0) 88.22%);
 	background-image: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 88.22%);
 }
 .with-arrow{
@@ -859,7 +863,37 @@ h1.b-title, h2.b-title{
 			float: left;
 			padding-right: 24px;
 		}
-			.b-header-menu-window ul.menu-window-item > li,
+			.b-header-menu-window ul.menu-window-item > ul{
+				margin-bottom: 28px;
+			}
+			.b-header-menu-window ul.menu-window-item a{
+				color: #48569D;
+			}
+				.b-header-menu-window ul.menu-window-item > ul > li{
+					margin-bottom: 12px;
+				}
+					.b-header-menu-window ul.menu-window-item > ul > li > ul{
+
+					}
+						.b-header-menu-window ul.menu-window-item > ul > li > ul > li{
+							margin-bottom: 12px;
+						}
+							.b-header-menu-window ul.menu-window-item > ul > li > ul > li > ul{
+								margin-left: 20px;
+							}
+							.b-header-menu-window ul.menu-window-item > ul > li > ul > li > ul > li{
+
+							}
+								.b-header-menu-window ul.menu-window-item > ul > li > ul > li > ul > li > a{
+									font-family: 'FiraSans-Light';
+								}
+
+
+
+
+
+
+			/*.b-header-menu-window ul.menu-window-item > ul > li,
 			.b-footer-menu-item > li {
 				font-size: 16px;
 				line-height: 20px;
@@ -885,7 +919,7 @@ h1.b-title, h2.b-title{
 						.b-footer-menu-item > li > ul > li > a{
 							font-family: 'FiraSans-Light';
 							color: #48569D;
-						}
+						}*/
 
 .block-bottom{
 	position: absolute;
@@ -1070,6 +1104,8 @@ h1.b-title, h2.b-title{
 				width: 100%;
 				max-width: 238px;
 				margin-bottom: 25px;
+				background-image: -webkit-gradient(linear, left top, right top, from(#2B64DB), color-stop(88.22%, rgba(43, 100, 219, 0)));
+				background-image: -o-linear-gradient(left, #2B64DB 0%, rgba(43, 100, 219, 0) 88.22%);
 				background-image: linear-gradient(90deg, #2B64DB 0%, rgba(43, 100, 219, 0) 88.22%);
 			}
 			.b-news-days-right-top .with-arrow{
@@ -1089,99 +1125,103 @@ h1.b-title, h2.b-title{
 	height: 100%;
 }
 	.b-question-calendar-left{
-		position: relative;
-		padding: 24px 22px;
 		height: 100%;
-		background-image: url(../i/question-back.jpg);
-		background-position: 50% 50%;
-	    background-repeat: no-repeat;
-	    background-size: cover;
 	}
-	.b-question-calendar-left:hover .b-question-back{
-		background-color: rgba(165,81,157,0.95);
-	}
-		.b-question-back{
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 1;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(184,109,178,0.95);
-			-webkit-transition: background-color 100ms;
-			   -moz-transition: background-color 100ms;
-			    -ms-transition: background-color 100ms;
-			   	 -o-transition: background-color 100ms;
-					transition: background-color 100ms;
-		}
-		.b-question-calendar-left .ask-question{
-			position: absolute;
-			z-index: 5;
-			left: 22px;
-			bottom: 24px;
-			display: inline-block;
-			color: #FFF;
-			font-size: 40px;
-			line-height: 47px;
-			font-family: 'FiraSans-Bold';
-		}
-			.b-question-calendar-left .ask-question .icon-arrow-right{
-				position: absolute;
-			    right: -34px;
-				bottom: 2px;	
-			}
-			.b-question-calendar-left .ask-question .icon-arrow-right:before{
-				color: #FFF;
-				font-size: 18px;
-			}
-		.question-back-1{
-			position: absolute;
-		    width: 35px;
-		    height: 56px;
-		    top: 245px;
-		    left: 29px;
-		    z-index: 2;
-		    background-image: url(../i/question-1.svg);
-		    background-position: 50% 50%;
-		    background-repeat: no-repeat;
-		    background-size: 35px;
-		    opacity: 0.5;
-		    -moz-transform: rotate(-25deg);
-		    -ms-transform: rotate(-25deg);
-		    -webkit-transform: rotate(-25deg);
-		    -o-transform: rotate(-25deg);
-		    transform: rotate(-25deg);
-		}
-		.question-back-2{
-			position: absolute;
-			width: 49px;
-			height: 78px;
-			top: 221px;
-			left: 55px;
-			z-index: 2;
-			background-image: url(../i/question-1.svg);
+		.b-ask-question{
+			display: block;
+			position: relative;
+			padding: 24px 22px;
+			height: 254px;
+			background-image: url(../i/question-back.jpg);
 			background-position: 50% 50%;
 		    background-repeat: no-repeat;
-		    background-size: 49px;
+		    background-size: cover;
 		}
-		.question-back-3{
-			position: absolute;
-		    width: 40px;
-		    height: 67px;
-		    top: 241px;
-		    left: 94px;
-		    z-index: 2;
-		    background-image: url(../i/question-1.svg);
-		    background-position: 50% 50%;
-		    background-repeat: no-repeat;
-		    background-size: 40px;
-		    opacity: 0.5;
-		    -moz-transform: rotate(25deg);
-		    -ms-transform: rotate(25deg);
-		    -webkit-transform: rotate(25deg);
-		    -o-transform: rotate(25deg);
-		    transform: rotate(25deg);
+		.b-ask-question:hover .b-question-back{
+			background-color: rgba(165,81,157,0.95);
 		}
+			.b-question-back{
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 1;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(184,109,178,0.95);
+				-webkit-transition: background-color 100ms;
+				   -moz-transition: background-color 100ms;
+				    -ms-transition: background-color 100ms;
+				   	 -o-transition: background-color 100ms;
+						transition: background-color 100ms;
+			}
+			.b-ask-question .ask-question{
+				position: absolute;
+				z-index: 5;
+				left: 22px;
+				bottom: 24px;
+				display: inline-block;
+				color: #FFF;
+				font-size: 40px;
+				line-height: 47px;
+				font-family: 'FiraSans-Bold';
+			}
+				.b-ask-question .ask-question .icon-arrow-right{
+					position: absolute;
+				    right: -34px;
+					bottom: 2px;	
+				}
+				.b-ask-question .ask-question .icon-arrow-right:before{
+					color: #FFF;
+					font-size: 18px;
+				}
+			.question-back-1{
+				position: absolute;
+			    width: 35px;
+			    height: 56px;
+			    top: 65px;
+			    left: 29px;
+			    z-index: 2;
+			    background-image: url(../i/question-1.svg);
+			    background-position: 50% 50%;
+			    background-repeat: no-repeat;
+			    background-size: 35px;
+			    opacity: 0.5;
+			    -moz-transform: rotate(-25deg);
+			    -ms-transform: rotate(-25deg);
+			    -webkit-transform: rotate(-25deg);
+			    -o-transform: rotate(-25deg);
+			    transform: rotate(-25deg);
+			}
+			.question-back-2{
+				position: absolute;
+				width: 49px;
+				height: 78px;
+				top: 41px;
+				left: 55px;
+				z-index: 2;
+				background-image: url(../i/question-1.svg);
+				background-position: 50% 50%;
+			    background-repeat: no-repeat;
+			    background-size: 49px;
+			}
+			.question-back-3{
+				position: absolute;
+			    width: 40px;
+			    height: 67px;
+			    top: 61px;
+			    left: 94px;
+			    z-index: 2;
+			    background-image: url(../i/question-1.svg);
+			    background-position: 50% 50%;
+			    background-repeat: no-repeat;
+			    background-size: 40px;
+			    opacity: 0.5;
+			    -moz-transform: rotate(25deg);
+			    -ms-transform: rotate(25deg);
+			    -webkit-transform: rotate(25deg);
+			    -o-transform: rotate(25deg);
+			    transform: rotate(25deg);
+			}
 	.b-question-calendar-right{
 		box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
 		background-color: #FFF;
@@ -1526,6 +1566,17 @@ h1.b-title, h2.b-title{
 			    background-repeat: no-repeat;
 			    background-size: 11px;
 			}
+
+	.b-footer-menu{
+		background-color: #F8FAFB;
+	}
+		.b-footer-menu .b-block{
+			padding: 55px 55px 22px 55px;
+		}
+			.b-footer-menu .b-footer-menu-item > li a{
+				color: #000;
+			}
+
 	.b-footer-search{
 		padding: 47px 0 37px 0;
 	}
