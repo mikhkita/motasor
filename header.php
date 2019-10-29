@@ -32,7 +32,7 @@
 						<a href="//vk.com" class="icon-vk" target="_blank">Вконтакте</a>
 						<a href="//facebook.com" class="icon-facebook" target="_blank">Facebook</a>
 					</div>
-					<a href="#" class="b-header-community">Присоединиться к cообществу</a>
+					<a href="#b-popup-register" class="b-header-community fancy">Присоединиться к cообществу</a>
 				</div>
 				<div class="b-btn-menu mobile">
 					<div class="icon-menu"></div>

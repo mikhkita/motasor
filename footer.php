@@ -167,6 +167,130 @@
 				</div>
 			</form>
 		</div>
+
+		<div class="b-popup b-popup-auth" id="b-popup-auth">
+			<h2 class="b-title">Авторизация</h2>
+			<p>Войдите с помошью социальных сетей</h4>
+			<div class="b-popup-auth-soc">
+				<a href="//vk.com" class="auth-soc" target="_blank">
+					<span class="icon-vk"></span>
+					<span class="auth-soc-text">Вконтакте</span>
+				</a>
+				<a href="//facebook.com" class="auth-soc" target="_blank">
+					<span class="icon-facebook"></span>
+					<span class="auth-soc-text">Facebook</span>
+				</a>
+			</div>
+			<div class="b-popup-auth-or"><span>или</span><div class="line"></div></div>
+			<form action="" method="POST">
+				<div class="b-input">
+					<p>Логин</p>
+					<div class="input">
+						<input type="text" name="login" required>
+						<div class="icon-clear"></div>
+					</div>
+				</div>
+				<div class="b-input">
+					<p>Пароль</p>
+					<div class="input">
+						<input type="text" name="password" required>
+						<div class="icon-clear"></div>
+					</div>
+				</div>
+				<div class="b-checkbox">
+					<input id="checkbox-stay" type="checkbox" name="">
+					<label for="checkbox-stay">
+						<div class="b-checked icon-checked"></div>
+						<p>Оставаться в системе</p>
+					</label>
+				</div>
+				<div class="clearfix">
+					<a href="#" class="b-btn b-btn-tr ajax">
+						<span class="b-btn-content">Войти</span>
+						<div class="icon-arrow-right"></div>
+						<div class="icon-arrow-right-bold"></div>
+					</a>
+					<a href="#b-popup-forgot" class="forgot fancy">Забыли пароль?</a>
+				</div>
+				<p class="register">Нет аккаунта? <a href="#b-popup-register" class="fancy">Зарегистрируйтесь</a></p>
+			</form>
+		</div>
+
+		<div class="b-popup b-popup-register" id="b-popup-register">
+			<h2 class="b-title">Регистрация</h2>
+			<form action="" method="POST">
+				<div class="b-input">
+					<p>Имя</p>
+					<div class="input">
+						<input type="text" name="" placeholder="Ваше имя">
+						<div class="icon-clear"></div>
+					</div>
+				</div>
+				<div class="b-input">
+					<p>Фамилия</p>
+					<div class="input">
+						<input type="text" name="" placeholder="Ваша фамилия">
+						<div class="icon-clear"></div>
+					</div>
+				</div>
+				<div class="b-input">
+					<p>Логин<span class="required">*</span></p>
+					<div class="input">
+						<input type="text" name="login" required>
+						<div class="icon-clear"></div>
+					</div>
+				</div>
+				<div class="b-input">
+					<p>Пароль<span class="required">*</span></p>
+					<div class="input">
+						<input type="text" name="password" required>
+						<div class="icon-clear"></div>
+					</div>
+				</div>
+				<div class="b-input">
+					<p>Подтверждение пароля<span class="required">*</span></p>
+					<div class="input">
+						<input type="text" name="password-confirmation" required>
+						<div class="icon-clear"></div>
+					</div>
+				</div>
+				<div class="b-input">
+					<p>E-mail<span class="required">*</span></p>
+					<div class="input">
+						<input type="text" name="email">
+						<div class="icon-clear"></div>
+					</div>
+				</div>
+				<div class="b-input captcha">
+					<p>Код с картинки<span class="required">*</span></p>
+					<div class="input">
+						<input type="text" name="email">
+						<div class="icon-clear"></div>
+					</div>
+					<img src="i/captcha.jpg">
+				</div>
+
+				<div class="form-after">
+					<p><span class="required">*</span>Обязательные поля</p>
+					<p>Пароль должен быть не менее 6 символов длиной.</p>
+				</div>
+				
+				<div class="b-checkbox">
+					<input id="checkbox-agree" type="checkbox" name="">
+					<label for="checkbox-agree">
+						<div class="b-checked icon-checked"></div>
+						<p>Нажимая на кнопку отправки формы, Я принимаю <a href="#">«Пользовательское соглашение»</a> и <a href="#">«Правила рассмотрения жалоб»</a></p>
+					</label>
+				</div>
+				<a href="#" class="b-btn b-btn-tr ajax">
+					<span class="b-btn-content">Регистрация</span>
+					<div class="icon-arrow-right"></div>
+					<div class="icon-arrow-right-bold"></div>
+				</a>
+				<p class="register">Уже есть аккаунт? <a href="#b-popup-auth" class="fancy">Авторизируйтесь</a></p>
+			</form>
+		</div>
+
 		<div class="b-thanks b-popup" id="b-popup-success">
 			<h3>Спасибо!</h3>
 			<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
