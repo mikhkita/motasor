@@ -2,19 +2,15 @@
 			<div class="b-footer-top clearfix">
 				<div class="b-block">
 					<a href="/" class="b-footer-logo"></a>
-					<!-- <ul class="b-footer-menu b-footer-menu-left">
-						<li><a href="#">Программа<br> инновационого развития</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">РИД</a></li>
+					<ul class="b-footer-menu-mobile">
+						<li><a href="#">О нас</a></li>
 						<li><a href="#">Контент</a></li>
-						<li><a href="#">Сообщетсва</a></li>
+						<li><a href="#">РИД</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Опросы</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Сообщества</a></li>
 					</ul>
-					<ul class="b-footer-menu b-footer-menu-right">
-						<li><a href="#">Ваши вопросы<br> и предложения</a></li>
-						<li><a href="#">О сайте</a></li>
-						<li><a href="#">Политика конфиденциальности</a></li>
-						<li><a href="#">Контактная информация</a></li>
-					</ul> -->
 					<div class="b-footer-contacts">
 						<a href="mailto:innovation@rosatom.ru" class="email">innovation@rosatom.ru</a><br>
 						<a href="tel:+74955323278" class="phone">+7 (495) 532-32-78</a>
@@ -23,72 +19,108 @@
 			</div>
 			<div class="b-footer-menu">
 				<div class="b-block clearfix">
-					<ul class="b-footer-menu-item">
-						<li><a href="#" class="bold">Сообщества</a></li>
-						<li><a href="#">Инновационная вертикаль</a></li>
-						<li>
-							<a href="#">Конференции</a>
-							<ul>
-								<li><a href="#">Прорыв</a></li>
-								<li><a href="#">УИР</a></li>
-								<li><a href="#">Школа инновационного<br> лидера</a></li>
+						<ul class="menu-window-item">
+							<ul class="section">
+								<li><a href="#" class="bold">О нас</a></li>
+								<li>
+									<ul class="sub-section">
+										<li><a href="#">Фото- и видеоматериалы</a></li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-						<li><a href="#" class="bold">Семинары</a></li>
-						<li>
-							<a href="#">Конкурсы</a>
-							<ul>
-								<li><a href="#">Конкурс аванпроектов </a></li>
-								<li><a href="#">Инновационный лидер</a></li>
-								<li><a href="#">Премия молодым ученым</a></li>
+							<ul class="section">
+								<li><a href="#" class="bold">Контент</a></li>
+								<li>
+									<ul class="sub-section">
+										<li><a href="#">Научные достижения</a></li>
+										<li><a href="#">Нормативная документация</a></li>
+										<li>
+											<ul class="sub-sub-section">
+												<li><a href="#">Программа инновационного развития</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Портал НТИ</a></li>
+										<li><a href="#">Единый отраслевой тематический план</a></li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-						<li>
-							<a href="#">Alumni</a>
-							<ul>
-								<li><a href="#">Сколково-Росатом</a></li>
-								<li><a href="#">Инновационный лидер</a></li>
+						</ul>
+						<ul class="menu-window-item">
+							<ul class="section">
+								<li><a href="#" class="bold">РИД</a></li>
+								<li>
+									<ul class="sub-section">
+										<li><a href="#">ИС УПРИД </a></li>
+										<li><a href="#">Портфели</a></li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-					</ul>
-					<ul class="b-footer-menu-item">
-						<li>
-							<a href="#">Экспертиза </a>
-							<ul>
-								<li><a href="#">База экспертов </a></li>
-								<li><a href="#">Цифровая платформа экспертизы </a></li>
-								<li><a href="#">Стать экспертом Росатома </a></li>
+							<ul class="section">
+								<li><a href="#" class="bold">Новости</a></li>
 							</ul>
-						</li>
-						<li><a href="#">Научно-технический совет</a></li>
-						<li>
-							<a href="#">Тематические группы </a>
-							<ul>
-								<li><a href="#">ЕОТП</a></li>
-								<li><a href="#">Аванпроекты</a></li>
+							<ul class="section">
+								<li><a href="#" class="bold">Опросы</a></li>
 							</ul>
-						</li>
-					</ul>
-					<ul class="b-footer-menu-item">
-						<li><a href="#" class="bold">Контент</a></li>
-						<li><a href="#">Научные достижения</a></li>
-						<li>
-							<a href="#">Нормативная документация</a>
-							<ul>
-								<li><a href="#">Инновационная программа развития</a></li>
+							<ul class="section">
+								<li><a href="#" class="bold">Контакты</a></li>
+								<li>
+									<ul class="sub-section">
+										<li><a href="#">Задать вопрос</a></li>
+										<li><a href="#">Портфели</a></li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-						<li><a href="#">Портал НТИ</a></li>
-						<li><a href="#">Аванпроекты</a></li>
-						<li><a href="#" class="bold">Фото и видео материалы</a></li>
-					</ul>
-					<ul class="b-footer-menu-item">
-						<li><a href="#" class="bold">РИД</a></li>
-						<li><a href="#">ИС УПРИД </a></li>
-						<li><a href="#">Информация про портфели</a></li>
-						<li><a href="#" class="bold">Новости</a></li>
-						<li><a href="#" class="bold">О нас</a></li>
-					</ul>
+
+						</ul>
+						<ul class="menu-window-item">
+							<ul class="section">
+								<li><a href="#" class="bold">Сообщества</a></li>
+								<li>
+									<ul class="sub-section">
+										<li><a href="#">Инновационная вертикаль</a></li>
+										<li><a href="#">Мероприятия</a></li>
+										<li>
+											<ul class="sub-sub-section">
+												<li><a href="#">Прорыв</a></li>
+												<li><a href="#">УИР</a></li>
+												<li><a href="#">Школа инновационного<br> лидера </a></li>
+											</ul>
+										</li>
+										<li><a href="#">Конкурсы</a></li>
+										<li>
+											<ul class="sub-sub-section">
+												<li><a href="#">Конкурс аванпроектов </a></li>
+												<li><a href="#">Инновационный лидер</a></li>
+												<li><a href="#">Премия молодым ученым</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</ul>
+						<ul class="menu-window-item">
+							<li>
+								<ul class="section">
+									<li><a href="#">Alumni</a></li>
+									<li><a href="#">Экспертиза </a></li>
+									<li>
+										<ul class="sub-sub-section">
+											<li><a href="#">База экспертов</a></li>
+											<li><a href="#">Цифровая платформа экспертизы </a></li>
+											<li><a href="#">Стать экспертом Росатома</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Научно-технический совет</a></li>
+									<li><a href="#">Тематические группы </a></li>
+									<li>
+										<ul class="sub-sub-section">
+											<li><a href="#">ЕОТП</a></li>
+											<li><a href="#">Аванпроекты</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
 				</div>
 			</div>
 			<div class="b-footer-search b-gray">

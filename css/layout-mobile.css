@@ -186,7 +186,6 @@ h2.b-title{
 
 	.b-news-days-right-bottom{
 		height: auto;
-		margin-bottom: 8px;
 	}
 	.b-news-days-right-bottom h3{
 		font-size: 20px;
@@ -203,6 +202,7 @@ h2.b-title{
 
 	.b-news-days-right-top{
 		height: auto;
+		margin-bottom: 8px;
 	}
 		.b-news-days-right-top h3{
 			font-size: 20px;
@@ -216,34 +216,49 @@ h2.b-title{
 	.b-question-calendar{
 		height: auto;
 	}
-	.b-question-calendar-left{
+	.b-ask-question{
 		display: block;
 		height: 166px;
+		margin-bottom: 10px;
 	}
-	.b-question-calendar-left .ask-question{
+	.b-ask-question .ask-question{
 		font-size: 30px;
 		line-height: 35px;
 	}
-	.b-question-calendar-left .ask-question br{
+	.b-ask-question .ask-question br{
 		display: none;
 	}
-	.b-question-calendar-left .ask-question .icon-arrow-right{
+	.b-ask-question .ask-question .icon-arrow-right{
 		bottom: 0;
 	}
 
 	.b-question-calendar .b-question-calendar-left{
 	    display: none;
 	}
+	.b-calendar th{
+		text-align: center;
+	}
+		.b-calendar td{
+			text-align: center;
+		}
+			.b-calendar td a{
+			    left: 9px;
+			}
 	.b-tablet-block {
 	    display: block;
-	    height: 166px;
+	    height: auto;
 	    margin-bottom: 44px;
+	}
+	.b-mobile-block{
+		display: block;
 	}
 	.b-tablet-block .b-news-days-right-bottom,
 	.b-tablet-block .b-news-days-right-top{
 		display: none;
 	}
-
+	.b-question-calendar{
+		margin-bottom: 10px;
+	}
 	.b-question-calendar .b-block{
 		width: 100%;
 	}
@@ -297,6 +312,50 @@ h2.b-title{
 	    top: 41px;
 	    left: 70px;
 	    background-size: 25px;
+	}
+
+	.b-footer-top {
+	    padding: 40px 0 40px 0;
+	}
+	.b-footer-logo {
+	    width: 166px;
+	    height: 49px;
+	    background-size: 166px;
+	    margin-top: 0;
+	    margin-right: 0;
+	    margin-bottom: 49px;
+	}
+	.b-footer-contacts{
+		margin-top: 32px;
+		padding-top: 0;
+		float: none;
+	}
+	.b-footer-menu{
+		display: none;
+	}
+	.b-footer-menu-mobile{
+		display: block;
+	}
+		.b-footer-menu-mobile li{
+			margin-bottom: 16px;
+		}
+			.b-footer-menu-mobile li a{
+				font-size: 16px;
+				line-height: 20px;
+				color: #2E2E2E;
+			}
+	.b-footer-search {
+	    padding: 30px 0 35px 0;
+	}
+	.b-footer-search .b-input {
+	    width: 100%;
+	    margin-left: 0;
+	    margin-right: 0;
+	    margin-bottom: 24px;
+	}
+
+	.b-footer-bottom .b-block{
+		padding: 0 10px;
 	}
 
 }

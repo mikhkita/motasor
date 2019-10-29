@@ -40,7 +40,7 @@ body {
 }
 
 @media screen and (max-width: 1170px){
-	.b-main-slider{
+	.b-main-slider-cont{
 		height: 262px;
 	}
 	.b-tablet-block{
@@ -137,7 +137,7 @@ body {
 }
 
 @media screen and (max-width: 1024px){
-	.b-main-slider{
+	.b-main-slider-cont{
 		height: 228px;
 	}
 }

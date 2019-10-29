@@ -857,34 +857,36 @@ h1.b-title, h2.b-title{
 	    -o-transform: translateY(0);
 	    transform: translateY(0);
 	}
-		.b-header-menu-window ul.menu-window-item,
-		.b-footer-menu-item{
+		ul.menu-window-item{
 			width: 25%;
 			float: left;
 			padding-right: 24px;
 		}
-			.b-header-menu-window ul.menu-window-item > ul{
+			ul.menu-window-item .section{
 				margin-bottom: 28px;
 			}
-			.b-header-menu-window ul.menu-window-item a{
+			ul.menu-window-item a{
 				color: #48569D;
 			}
-				.b-header-menu-window ul.menu-window-item > ul > li{
+			.b-footer-menu ul.menu-window-item a{
+				color: #000;
+			}
+				ul.menu-window-item .section > li{
 					margin-bottom: 12px;
 				}
-					.b-header-menu-window ul.menu-window-item > ul > li > ul{
+					 ul.menu-window-item .sub-section{
 
 					}
-						.b-header-menu-window ul.menu-window-item > ul > li > ul > li{
+						ul.menu-window-item .sub-section > li{
 							margin-bottom: 12px;
 						}
-							.b-header-menu-window ul.menu-window-item > ul > li > ul > li > ul{
+							ul.menu-window-item .sub-sub-section{
 								margin-left: 20px;
 							}
-							.b-header-menu-window ul.menu-window-item > ul > li > ul > li > ul > li{
-
+							ul.menu-window-item .sub-sub-section > li{
+								margin-bottom: 10px;
 							}
-								.b-header-menu-window ul.menu-window-item > ul > li > ul > li > ul > li > a{
+								ul.menu-window-item .sub-sub-section > li > a{
 									font-family: 'FiraSans-Light';
 								}
 
@@ -1127,6 +1129,37 @@ h1.b-title, h2.b-title{
 	.b-question-calendar-left{
 		height: 100%;
 	}
+		.b-expert-rosatom{
+			display: block;
+			position: relative;
+			height: 222px;
+			padding: 24px;
+			background-color: #48569D;
+			color: #FFF;
+			margin-bottom: 14px;
+		}
+			.b-expert-rosatom h3{
+				font-family: 'FiraSans-Medium';
+				font-size: 25px;
+				line-height: 32px;
+				margin-bottom: 27px;
+			}
+			.b-expert-rosatom .b-line{
+				width: 100%;
+				max-width: 238px;
+				margin-bottom: 25px;
+				background-image: -webkit-gradient(linear, left top, right top, from(#FFFFFF), color-stop(88.22%, rgba(255, 255, 255, 0)));
+				background-image: -o-linear-gradient(left, #FFFFFF 0%, rgba(255, 255, 255, 0) 88.22%);
+				background-image: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 88.22%);
+			}
+			.b-expert-rosatom .with-arrow{
+				font-size: 14px;
+				line-height: 20px;
+				font-family: 'FiraSans-Bold';
+				letter-spacing: 1.5px;
+				text-transform: uppercase;
+				color: #FFF;
+			}
 		.b-ask-question{
 			display: block;
 			position: relative;
@@ -1379,7 +1412,8 @@ h1.b-title, h2.b-title{
 			color: #FFF;
 		}
 
-.b-tablet-block{
+.b-tablet-block,
+.b-mobile-block{
 	display: none;
 }
 
@@ -1509,7 +1543,7 @@ h1.b-title, h2.b-title{
 }
 
 	.b-footer-top{
-		padding: 63px 0 56px 0;
+		padding: 50px 0 46px 0;
 	}
 		.b-footer-logo{
 		    display: inline-block;
@@ -1520,6 +1554,7 @@ h1.b-title, h2.b-title{
 			background-position: 50% 50%;
 		    background-repeat: no-repeat;
 		    background-size: 138px;
+		    margin-top: 15px;
 		    margin-right: 106px;
 		}
 		.b-footer-contacts{
@@ -1535,7 +1570,7 @@ h1.b-title, h2.b-title{
 				display: inline-block;
 				padding-left: 32px;
 				color: #2B64DB;
-				margin-bottom: 28px;
+				margin-bottom: 24px;
 			}
 			.b-footer-contacts .email:before{
 				content: "";
@@ -1576,6 +1611,9 @@ h1.b-title, h2.b-title{
 			.b-footer-menu .b-footer-menu-item > li a{
 				color: #000;
 			}
+	.b-footer-menu-mobile{
+		display: none;
+	}
 
 	.b-footer-search{
 		padding: 47px 0 37px 0;
@@ -1629,7 +1667,7 @@ h1.b-title, h2.b-title{
 			}
 	.b-footer-bottom{
 		padding: 20px 0 18px 0;
-		background-color: #1A2985;
+		background-color: #48569D;
 		color: #FFF;
 	}
 

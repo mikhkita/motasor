@@ -126,8 +126,8 @@
 		<div class="b-question-calendar">
 			<div class="b-block clearfix">
 				<div href="#" class="b-size-1-4 b-size-left b-question-calendar-left">
-					<a href="#" class="b-news-days-right-top">
-						<h3>Программа инновационного развития</h3>
+					<a href="#" class="b-expert-rosatom">
+						<h3>Стать<br> экспертом<br> Росатома</h3>
 						<div class="b-line"></div>
 						<span class="with-arrow">
 							<span class="text">Подробнее</span>
@@ -247,6 +247,13 @@
 					<div class="question-back-2"></div>
 					<div class="question-back-3"></div>
 					<div class="b-question-back"></div>
+				</a>
+				<a href="#" class="b-expert-rosatom b-mobile-block">
+					<h3>Стать<br> экспертом<br> Росатома</h3>
+					<div class="b-line"></div>
+					<span class="with-arrow">
+						<span class="text">Подробнее</span>
+					</span>
 				</a>
 				<div class="b-tablet-block-item b-news-days-right-top">
 					<h3>Программа инновационного развития</h3>
