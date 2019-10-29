@@ -47,11 +47,39 @@
 					<b>Цель конкурса</b> - обеспечить качественное обоснование будущих НИОКР, снизить вероятность затрат на дорогостоящие работы с низким потенциалом реализации, снизить стоимость и сократить сроки на разработку нового продукта или технологии.<br><br>
 					<b>Результат аванпроекта</b> - обоснованное ТЗ на выполнение НИОКР</p>
 				</div>
+			</div>
+			<div class="b-news-inner clearfix">
+				<h2 class="b-title">Новости</h2>
+				<div class="b-news-list clearfix">
+					<a href="#" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
+					</a>
+					<a href="#" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
+					</a>
+					<a href="#" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
+					</a>
+					<a href="#" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
+					</a>
+				</div>
+				<a href="#" class="b-btn b-btn-tr all-news">
+					<span class="b-btn-content">Все новости</span>
+					<div class="icon-arrow-right"></div>
+					<div class="icon-arrow-right-bold"></div>
+				</a>
+			</div>
+			<div class="b-text">
 				<h2 class="b-title">Конкурс аванпроектов 2019</h2>
 				<div class="b-sections-list">
 					<a href="#">Контакты</a>
 					<a href="#">FAQ</a>
-					<a href="#">Новости</a>
+					<a href="#" class="b-go" data-block=".b-news-inner">Новости</a>
 					<a href="#">Материалы для скачивания</a>
 				</div>
 				<h4>Сбор заявок на Конкурс аванпроектов завершен.</h4>
@@ -120,26 +148,6 @@
 				<a href="#" class="b-materials-item">Презентация_21.05.2019_Научный мониторинг ЕОТ_АндриановаМС</a>
 				<a href="#" class="b-materials-item">Презентация_21.05.2019_Управление интеллектуальной собственностью через создание IP-портфолио компании_ОрловаВВ</a>
 				<a href="#" class="b-materials-item">Презентация_21.05.2019_Факторы успеха и препятствия в реализации научно-технических проектов_КоваленкоДА</a>
-			</div>
-			<div class="b-news clearfix">
-				<h2 class="b-title">Новости</h2>
-				<div class="b-news-list clearfix">
-					<a href="#" class="b-news-item">
-						<div class="date">29.6.2017</div>
-						<p>На Ставрополье структура «Росатома» построит крупнейшую ветростанцию</p>
-						<span href="#" class="with-arrow block-bottom">Перейти</span>
-					</a>
-					<a href="#" class="b-news-item">
-						<div class="date">29.6.2017</div>
-						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
-						<span href="#" class="with-arrow block-bottom">Перейти</span>
-					</a>
-				</div>
-				<a href="#" class="b-btn b-btn-tr all-news">
-					<span class="b-btn-content">Все новости</span>
-					<div class="icon-arrow-right"></div>
-					<div class="icon-arrow-right-bold"></div>
-				</a>
 			</div>
 		</div>
 	</div>

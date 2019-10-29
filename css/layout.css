@@ -890,39 +890,6 @@ h1.b-title, h2.b-title{
 									font-family: 'FiraSans-Light';
 								}
 
-
-
-
-
-
-			/*.b-header-menu-window ul.menu-window-item > ul > li,
-			.b-footer-menu-item > li {
-				font-size: 16px;
-				line-height: 20px;
-				margin-bottom: 16px;
-			}
-				.b-header-menu-window ul.menu-window-item > li a,
-				.b-footer-menu-item > li a{
-					color: #48569D;
-				}
-
-				.b-header-menu-window ul.menu-window-item > li > ul,
-				.b-footer-menu-item > li > ul{
-					margin-top: 16px;
-					margin-left: 20px;
-				}
-					.b-header-menu-window ul.menu-window-item > li > ul > li,
-					.b-footer-menu-item > li > ul > li{
-						font-size: 16px;
-						line-height: 22px;
-						margin-bottom: 16px;
-					}
-						.b-header-menu-window ul.menu-window-item > li > ul > li > a,
-						.b-footer-menu-item > li > ul > li > a{
-							font-family: 'FiraSans-Light';
-							color: #48569D;
-						}*/
-
 .block-bottom{
 	position: absolute;
 	left: 24px;
@@ -1847,9 +1814,9 @@ h1.b-title, h2.b-title{
 		margin-bottom: 16px;
 	}
 	.b-sections-list{
-		width: 100%;
+		display: inline-block;
 		background-color: #2E4A8A;
-		padding: 24px 35px 24px 3px;
+		padding: 24px 10px 24px 10px;
 		margin-bottom: 32px;
 		color: #FFF;
 	}
@@ -1988,12 +1955,41 @@ h1.b-title, h2.b-title{
 		.b-content-inner .b-news .b-news-item:nth-child(2n){
 			margin-right: 0;
 		}
-		.b-content-inner .b-news .all-news{
-			float: right;
+.b-news-inner{
+	margin-bottom: 56px;
+}
+	.b-news-inner .b-news-list{
+		margin-bottom: 12px;
+	}
+
+	.b-news-inner .b-news-item{
+		width: calc(50% - 29px);
+		height: auto;
+		padding: 0;
+		margin-right: 52px;
+		margin-bottom: 20px;
+	}
+	.b-news-inner .b-news-item:nth-child(2n){
+		margin-right: 0;
+	}
+		.b-news-inner .b-news-item .date{
+			font-size: 14px;
+			line-height: 20px;
+			text-transform: uppercase;
+			color: #B0B0B0;
+			font-family: 'FiraSans-Bold';
+			margin-bottom: 9px;
 		}
-		.b-content-inner .b-news .with-arrow{
-			min-width: 160px;
+		.b-news-inner .b-news-item p{
+			font-size: 16px;
+			line-height: 22px;
 		}
+	.b-news-inner .all-news{
+		float: right;
+	}
+	.b-news-inner .with-arrow{
+		min-width: 160px;
+	}
 
 /* ===== Управление инновациями ===== */
 
@@ -2352,6 +2348,9 @@ h1.b-title, h2.b-title{
 .b-checkbox{
 	position: relative;
 }
+.b-checkbox a{
+	color: #48569D;
+}
 
 .b-checkbox input[type="checkbox"].error + label + label .b-checked,
 .b-checkbox input[type="checkbox"].error + label .b-checked{
@@ -2375,6 +2374,7 @@ h1.b-title, h2.b-title{
 		position: relative;
 		display: inline-block;
 		vertical-align: top;
+		margin-top: 2px;
 		width: 25px;
 		height: 25px;
 		border-radius: 4px;
@@ -2496,15 +2496,32 @@ h1.b-title, h2.b-title{
 	box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.06);
     padding: 66px 122px;
 }
+.fancybox-slide--html{
+	padding: 16px;
+}
 
 .b-popup{
 
 }
 	.b-popup h2{
-		margin-bottom: 18px;
+		margin-bottom: 24px;
+	}
+	.b-popup .subtitle{
+		margin-bottom: 36px;
 	}
 	.b-popup .b-input{
 		margin-bottom: 20px;
+	}
+	.b-popup .b-input.captcha .input{
+		display: inline-block;
+		vertical-align: top;
+		width: 156px;
+		margin-right: 12px;
+	}
+	.b-popup .b-input.captcha img{
+		display: inline-block;
+		vertical-align: top;
+		width: calc(100% - 174px);
 	}
 	.b-popup .b-btn{
 		font-family: 'FiraSans-Regular';
@@ -2522,7 +2539,7 @@ h1.b-title, h2.b-title{
 		}
 		.b-popup .b-checkbox label{
 			color: #000;
-			line-height: 18px;
+			line-height: 22px;
 		}
 		.b-popup .b-checkbox label:hover .b-checked{
 			background-color: rgba(72, 86, 157, 0.5);
@@ -2533,7 +2550,7 @@ h1.b-title, h2.b-title{
 		.b-popup .b-checkbox input[type="checkbox"]:checked + label:hover .b-checked{
 			background-color: rgba(72, 86, 157, 1);
 		}
-		.b-popup .b-checkbox input[type="checkbox"]:checked + label: .b-checked{
+		.b-popup .b-checkbox input[type="checkbox"]:checked + label .b-checked{
 			background-color: rgba(72, 86, 157, 1);
 		}
 			.b-popup .b-checkbox .b-checked{
@@ -2544,7 +2561,7 @@ h1.b-title, h2.b-title{
 				margin-right: 10px;
 			}
 				.b-popup .b-checkbox .b-checked:before{
-					left: 4px;
+					left: 3px;
    					top: 3px;
    					font-size: 8px;
 				}
@@ -2574,6 +2591,9 @@ h1.b-title, h2.b-title{
 		    background-repeat: no-repeat;
 		    background-size: 10px;
 		}
+	.b-popup .register a{
+		color: #48569D;
+	}
 
 .b-popup-auth{
 	width: 672px;
@@ -2646,26 +2666,12 @@ h1.b-title, h2.b-title{
 	.b-popup-auth .register{
 		margin-top: 20px;
 	}
-		.b-popup-auth .register a{
-			color: #48569D;
-		}
 
 .b-popup-register{
 	width: 682px;
 }
 	.b-popup-register .b-input {
 	    margin-bottom: 32px;
-	}
-	.b-popup-register .b-input.captcha .input{
-		display: inline-block;
-		vertical-align: top;
-		width: 156px;
-		margin-right: 12px;
-	}
-	.b-popup-register .b-input.captcha img{
-		display: inline-block;
-		vertical-align: top;
-		width: calc(100% - 174px);
 	}
 	.b-popup-register .form-after{
 		margin-bottom: 32px;
@@ -2684,6 +2690,15 @@ h1.b-title, h2.b-title{
 		margin-bottom: 24px;
 	}
 
+.b-popup-forgot{
+	width: 672px;
+}
+	.b-popup-forgot .b-input.captcha{
+		margin-bottom: 36px;
+	}
+	.b-popup-forgot .b-btn{
+		margin-bottom: 16px;
+	}
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	

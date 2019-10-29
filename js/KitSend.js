@@ -108,6 +108,7 @@ $(document).ready(function(){
 	            	locked: true 
 	         	}
 	      	},
+	      	closeExisting: true,
 	      	btnTpl : {
                 smallBtn   : '<button data-fancybox-close class="fancybox-close-small" title="Закрыть"></button>',
             },

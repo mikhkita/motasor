@@ -170,7 +170,7 @@
 
 		<div class="b-popup b-popup-auth" id="b-popup-auth">
 			<h2 class="b-title">Авторизация</h2>
-			<p>Войдите с помошью социальных сетей</h4>
+			<p class="subtitle">Войдите с помошью социальных сетей</p>
 			<div class="b-popup-auth-soc">
 				<a href="//vk.com" class="auth-soc" target="_blank">
 					<span class="icon-vk"></span>
@@ -284,6 +284,42 @@
 				</div>
 				<a href="#" class="b-btn b-btn-tr ajax">
 					<span class="b-btn-content">Регистрация</span>
+					<div class="icon-arrow-right"></div>
+					<div class="icon-arrow-right-bold"></div>
+				</a>
+				<p class="register">Уже есть аккаунт? <a href="#b-popup-auth" class="fancy">Авторизируйтесь</a></p>
+			</form>
+		</div>
+
+		<div class="b-popup b-popup-forgot" id="b-popup-forgot">
+			<h2 class="b-title">Восстановление пароля</h2>
+			<p class="subtitle">Если вы забыли пароль, введите логин или E-Mail.<br><br>Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам по E-Mail.</p>
+			<form action="" method="POST">
+				<div class="b-input">
+					<p>Логин</p>
+					<div class="input">
+						<input type="text" name="login">
+						<div class="icon-clear"></div>
+					</div>
+				</div>
+				<div class="b-popup-auth-or"><span>или</span><div class="line"></div></div>
+				<div class="b-input">
+					<p>E-mail</p>
+					<div class="input">
+						<input type="text" name="email">
+						<div class="icon-clear"></div>
+					</div>
+				</div>
+				<div class="b-input captcha">
+					<p>Код с картинки<span class="required">*</span></p>
+					<div class="input">
+						<input type="text" name="email">
+						<div class="icon-clear"></div>
+					</div>
+					<img src="i/captcha.jpg">
+				</div>
+				<a href="#" class="b-btn b-btn-tr ajax">
+					<span class="b-btn-content">Выслать</span>
 					<div class="icon-arrow-right"></div>
 					<div class="icon-arrow-right-bold"></div>
 				</a>
