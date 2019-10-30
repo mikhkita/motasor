@@ -2088,6 +2088,9 @@ h1.b-title, h2.b-title{
 			color: #FFF;
 			text-decoration: underline;
 		}
+		.b-innov-pdf a:hover{
+			text-decoration: none;
+		}
 		.b-innov-pdf a:before {
 		    content: "";
 		    position: absolute;
