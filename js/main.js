@@ -197,6 +197,47 @@ $(document).ready(function(){
     $(document).on("click", ".b-btn-menu", function(){
         $(".b-header-menu-window").toggleClass("open");
     });
+    $(document).on("click", ".b-menu-mobile", function(){
+        if(!$(this).hasClass("open")){//открываем
+            $("body, html").animate({scrollTop : 0}, 200);
+            $(this).addClass("open");
+            $(".b-menu-mobile-window").addClass("open");
+            $("body").addClass("no-scroll");
+        }else{//закрываем
+            $(this).removeClass("open");
+            $(".b-menu-mobile-window").removeClass("open");
+            $("body").removeClass("no-scroll");
+            $(".sub-section-slide, .sub-sub-section-slide").removeClass("open");
+        }
+    });
+
+    $(document).on("click", ".b-menu-mobile-list a, .sub-section-slide a", function(){
+        if($(this).siblings(".open-section").length > 0){//если есть вложенные секции
+            var $section = $(this).siblings(".open-section"),
+                depth = $section.attr("data-depth"),
+                $items = $section.children("li"),
+                $clone = $items.clone();
+            if(depth == "1"){
+                fillSection(".sub-section-slide", $(this).text(), $clone);
+            }else{
+                fillSection(".sub-sub-section-slide", $(this).text(), $clone);
+            }
+            return false;
+        }
+    });
+    function fillSection($block, text, $items) {
+        $($block).html("");
+        $($block).append("<h3>"+text+"</h3>");
+        $($block).append("<ul></ul>");
+        $($block).addClass("open").children("ul").append($items);
+    }
+    $(document).on("click", ".b-menu-mobile-window .slide-cont h3", function(){
+        $(this).parent().removeClass("open");
+    });
+
+    $(document).on("click", ".b-header-show-more", function(){
+        $(".b-header-inner-right").toggleClass("open");
+    });
 
     ripple.init();
     $('.b-btn').on('click touchstart', ripple.click);

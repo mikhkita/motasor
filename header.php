@@ -34,16 +34,97 @@
 					</div>
 					<a href="#b-popup-auth" class="b-header-community fancy">Присоединиться к cообществу</a>
 				</div>
-				<div class="b-btn-menu mobile">
-					<div class="icon-menu"></div>
-					<span>Меню</span>
+				<div class="b-menu-mobile">
+					<div class="b-btn-menu">
+						<div class="icon-menu"></div>
+						<span>Меню</span>
+					</div>
+					<div class="mobile-close">
+						<div class="icon-close"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="b-menu-mobile-cont">
+			<div class="b-menu-mobile-window">
+				<ul class="b-menu-mobile-list">
+					<li>
+						<a href="#">О нас</a>
+						<ul class="open-section" data-depth="1">
+							<li>
+								<a href="#">Фото- и видеоматериалы</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Контент</a>
+						<ul class="open-section" data-depth="1">
+							<li><a href="#">Научные достижения</a></li>
+							<li>
+								<a href="#">Нормативная документация</a>
+								<ul class="open-section" data-depth="2">
+									<li><a href="#">Программа инновационного развития</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Портал НТИ</a></li>
+							<li><a href="#">Единый отраслевой тематический план</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">РИД</a>
+						<ul class="open-section" data-depth="1">
+							<li><a href="#">ИС УПРИД </a></li>
+							<li><a href="#">Портфели</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="#">Опросы</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+						<ul class="open-section" data-depth="1">
+							<li><a href="#">Задать вопрос </a></li>
+							<li><a href="#">Портфели</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Сообщества</a>
+						<ul class="open-section" data-depth="1">
+							<li><a href="#">Инновационная вертикаль</a></li>
+							<li>
+								<a href="#">Мероприятия</a>
+								<ul class="open-section" data-depth="2">
+									<li><a href="#">Прорыв </a></li>
+									<li><a href="#">УИР </a></li>
+									<li><a href="#">Школа инновационного  лидера </a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Конкурсы</a>
+								<ul class="open-section" data-depth="2">
+									<li><a href="#">Конкурс аванпроектов </a></li>
+									<li><a href="#">Инновационный лидер </a></li>
+									<li><a href="#">Премия молодым ученым</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</li>
+				</ul>
+				<div class="slide-cont sub-section-slide"></div>
+				<div class="slide-cont sub-sub-section-slide"></div>
+				<div class="community">
+					<a href="#b-popup-auth" class="b-header-community fancy fancy-binded">Присоединиться к cообществу</a>
 				</div>
 			</div>
 		</div>
 		<div class="b-header-menu-cont">
 			<div class="b-header-menu">
 				<div class="b-block">
-					<div class="b-btn-menu desktop">
+					<div class="b-btn-menu b-btn-menu-desktop">
 						<div class="icon-menu"></div>
 						<span>Меню</span>
 					</div>
