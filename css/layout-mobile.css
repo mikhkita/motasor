@@ -395,7 +395,7 @@ h2.b-title{
 			text-align: center;
 		}
 			.b-calendar td a{
-			    left: 9px;
+			    left: 8px;
 			}
 	.b-tablet-block {
 	    display: block;
@@ -431,7 +431,7 @@ h2.b-title{
 	    margin-bottom: 22px;
 	}
 	.b-month-list .month{
-		width: 90px;
+		width: 80px;
 	    font-size: 14px;
 	}
 	.b-month-list .month.active {
@@ -509,6 +509,11 @@ h2.b-title{
 
 	.b-footer-bottom .b-block{
 		padding: 0 10px;
+	}
+
+	.b-news-index,
+	.b-directions{
+		display: none;
 	}
 
 	.b-header-inner{

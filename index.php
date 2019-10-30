@@ -273,7 +273,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="b b-news b-gray">
+		<div class="b b-news b-news-index b-gray">
 			<div class="b-block">
 				<h2 class="b-title">Новости</h2>
 				<div class="b-news-list clearfix">
