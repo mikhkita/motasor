@@ -582,6 +582,12 @@ h2.b-title{
 		font-size: 12px;
 	}
 
+	.b-news-days-item h2 {
+	    font-size: 30px;
+	    line-height: 37px;
+	    margin-bottom: 20px;
+	}
+
 	.b-news-days-list{
 		position: relative;
 		margin-bottom: 8px;
