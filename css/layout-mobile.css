@@ -694,8 +694,8 @@ h2.b-title{
 		.b-calendar td{
 			text-align: center;
 		}
-			.b-calendar td a{
-			    left: 8px;
+			.b-calendar td a {
+			    left: calc(50% - 18px);
 			}
 	
 	.b-question-calendar{
