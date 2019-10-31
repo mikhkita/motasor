@@ -17,15 +17,7 @@ $(document).ready(function(){
             myWidth = document.body.clientWidth;
             myHeight = document.body.clientHeight;
         }
-        // if(myWidth < 1170){
-        //     if(!$(".b-news-days-right-tablet .b-news-days-right").length){
-        //         $(".b-news-days-right-tablet").append($(".b-news-days .b-about-top-right"));
-        //     }
-        // }else{
-        //     if(!$(".b-news-days .b-news-days-right").length){
-        //         $(".b-news-days").append($(".b-news-days-right-tablet .b-about-top-right"));
-        //     }
-        // }
+
         if( myWidth > 1024 ){
             isDesktop = true;
             isTablet = false;
@@ -40,10 +32,12 @@ $(document).ready(function(){
             isDesktop = false;
             isTablet = false;
             isMobile = true;
-            isMobileSmall = (myWidth <= 530);
+            isMobileSmall = (myWidth <= 665);
         }
 
-        if(isMobile){
+        $(".b-menu-mobile-window").css({"height": (window.innerHeight - 82)+"px"});
+
+        if(isMobileSmall){
             $(".mobile-slider").each(function() {//поставить слайдеры
                 if(!$(this).hasClass("slick-initialized")){
                     $(this).not('.slick-initialized').slick({
@@ -125,7 +119,7 @@ $(document).ready(function(){
         nextArrow: $(".b-main-slider").parent().find(".desktop-controls .slick-next"),
         responsive: [
             {
-              breakpoint: 768,
+              breakpoint: 665,
               settings: {
                 prevArrow: $(".b-main-slider").parent().find(".mobile-arrow-left"),
                 nextArrow: $(".b-main-slider").parent().find(".mobile-arrow-right"),
@@ -238,6 +232,40 @@ $(document).ready(function(){
     $(document).on("click", ".b-header-show-more", function(){
         $(".b-header-inner-right").toggleClass("open");
     });
+
+    var calendarAjax;
+    $(document).on("click", ".b-calendar-page-left .b-calendar a", function(){
+        if(calendarAjax){
+            calendarAjax.abort();
+        }
+        var $this = $(this);
+        $(".b-calendar-page-left .b-calendar a").removeClass("selected");
+        $this.addClass("selected");
+        calendarAjax = $.ajax({
+            type: "GET",
+            url: "../send/getNewsByDate.php",
+            data: "date="+$(this).attr("data-date"),
+            success: function(data){
+                var $html = $(data);
+
+                var $title = $html.find("h2.b-title").html();
+                $(".b-calendar-page-right h2").html($title);
+                var $news = $html.find(".b-news-list").html();
+                $(".b-calendar-page-right .b-news-list").html($news);
+                var $nav = $html.find(".b-page-nav").html();
+                $(".b-calendar-page-right .b-page-nav").html($nav);
+            },
+            complete: function(){
+                calendarAjax = false;
+            },
+            error: function(){
+                $this.removeClass("selected");
+            },
+        });
+        return false;
+    });
+
+
 
     ripple.init();
     $('.b-btn').on('click touchstart', ripple.click);

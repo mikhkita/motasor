@@ -1,4 +1,7 @@
-<?include 'header.php';?>
+<?
+$title = "Конкурс аванпроектов";
+include 'header.php';
+?>
 
 	<div class="b-header-inner">
 		<div class="b-block">
@@ -52,24 +55,24 @@
 			<div class="b-news-inner clearfix">
 				<h2 class="b-title">Новости</h2>
 				<div class="b-news-list clearfix">
-					<a href="#" class="b-news-item">
+					<a href="news-detail.php" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
 					</a>
-					<a href="#" class="b-news-item">
+					<a href="news-detail.php" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
 					</a>
-					<a href="#" class="b-news-item">
+					<a href="news-detail.php" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
 					</a>
-					<a href="#" class="b-news-item">
+					<a href="news-detail.php" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
 					</a>
 				</div>
-				<a href="#" class="b-btn b-btn-tr all-news">
+				<a href="news.php" class="b-btn b-btn-tr all-news">
 					<span class="b-btn-content">Все новости</span>
 					<div class="icon-arrow-right"></div>
 					<div class="icon-arrow-right-bold"></div>

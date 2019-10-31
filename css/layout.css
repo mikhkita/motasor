@@ -1244,6 +1244,9 @@ h1.b-title, h2.b-title{
 			    -o-transform: rotate(25deg);
 			    transform: rotate(25deg);
 			}
+	.b-question-calendar-right-wrap{
+		height: 100%;
+	}
 	.b-question-calendar-right{
 		box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
 		background-color: #FFF;
@@ -1269,7 +1272,7 @@ h1.b-title, h2.b-title{
 		}
 			.b-month-list .month{
 				display: inline-block;
-				width: 105px;
+				width: 95px;
 				margin-right: 4px;
 				font-family: 'FiraSans-Medium';
 				font-size: 19px;
@@ -1285,7 +1288,7 @@ h1.b-title, h2.b-title{
 				opacity: 1;
 			}
 			.b-month-list .month.active{
-				width: 135px;
+				width: 125px;
 				font-size: 24px;
 				line-height: 29px;
 				opacity: 1;
@@ -1346,7 +1349,7 @@ h1.b-title, h2.b-title{
 				}
 					.b-calendar td a{
 						position: absolute;
-					    padding: 5px 10px;
+					    padding: 5px 0;
 					    display: inline-block;
 					    background-color: #48569D;
 					    border-radius: 100px;
@@ -1364,6 +1367,12 @@ h1.b-title, h2.b-title{
 					}
 					.b-calendar td a:hover{
 						box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+					}
+					.b-calendar td a.selected{
+						background-color: transparent;
+						border: 1px solid #48569D;
+						color: #48569D;
+						padding: 4px 0;
 					}
 	.b-events{
 		position: relative;
@@ -1433,7 +1442,7 @@ h1.b-title, h2.b-title{
 			.b-news-list.hover-children .b-news-item:not(.hover){
 				opacity: 0.5;
 			}
-		.b-news-item:nth-child(3n){
+		.b-news-index .b-news-item:nth-child(3n){
 			margin-right: 0;
 		}
 			.b-news-item .date{
@@ -1546,6 +1555,9 @@ h1.b-title, h2.b-title{
 		    margin-top: 15px;
 		    margin-right: 106px;
 		}
+		.b-footer-carry{
+			display: none;
+		}
 		.b-footer-contacts{
 			display: inline-block;
 			vertical-align: top;
@@ -1636,24 +1648,28 @@ h1.b-title, h2.b-title{
 		.b-footer-search .b-input .input .icon-clear:hover:before{
 			color: #2E4A8A;
 		}
-		.b-footer-search .b-soc-text{
-			padding-top: 12px;
-		}
-		.b-footer-search .b-soc{
+		.b-footer-soc{
 			display: inline-block;
-			vertical-align: top;
-			padding-top: 8px;
 		}
-			.b-footer-search .b-soc a{
-				width: 30px;
-				height: 30px;
+			.b-footer-soc .b-soc-text{
+				padding-top: 12px;
 			}
-			.b-footer-search .b-soc a.icon-vk{
-				padding-top: 6px;
-			}
-			.b-footer-search .b-soc a.icon-facebook{
+			.b-footer-soc .b-soc{
+				display: inline-block;
+				vertical-align: top;
 				padding-top: 8px;
+				margin-right: 0;
 			}
+				.b-footer-soc .b-soc a{
+					width: 30px;
+					height: 30px;
+				}
+				.b-footer-soc .b-soc a.icon-vk{
+					padding-top: 6px;
+				}
+				.b-footer-soc .b-soc a.icon-facebook{
+					padding-top: 8px;
+				}
 	.b-footer-bottom{
 		padding: 20px 0 18px 0;
 		background-color: #48569D;
@@ -2288,6 +2304,8 @@ h1.b-title, h2.b-title{
 	margin: 54px 0 89px 0;
 }
 	.b-news-page h1{
+		font-size: 55px;
+		line-height: 56px;
 		margin-bottom: 35px;
 	}
 	.b-news-page .b-filter-days{
@@ -2333,6 +2351,9 @@ h1.b-title, h2.b-title{
 		.b-news-page .b-news-list .b-news-item{
 			background-color: #F2F5F7;
 			margin-bottom: 24px;
+		}
+		.b-news-page .b-news-list .b-news-item:nth-child(3n){
+			margin-right: 0;
 		}
 	.b-page-nav{
 		margin-top: 26px;
@@ -2402,6 +2423,12 @@ h1.b-title, h2.b-title{
 		.b-news-detail .b-news-detail-share{
 			margin-bottom: 24px;
 		}
+			.b-news-detail .b-news-detail-share span{
+				display: inline-block;
+				padding-top: 5px;
+				margin-right: 18px;
+				color: rgba(0, 0, 0, 0.5);
+			}
 			.b-news-detail .b-news-detail-share a{
 				display: inline-block;
 				vertical-align: top;
@@ -2410,7 +2437,76 @@ h1.b-title, h2.b-title{
 				text-align: center;
 				background-color: #2E4A8A;
 				overflow: hidden;
+			}
+			.b-news-detail .b-news-detail-share a.icon-vk{
 				padding: 0 10px;
+			}
+			.b-news-detail .b-news-detail-share a.icon-vk:before {
+			    font-size: 12px;
+			    line-height: 37px;
+			}
+			.b-news-detail .b-news-detail-share a.icon-facebook{
+				padding: 0 14px;
+			}
+			.b-news-detail .b-news-detail-share a.icon-facebook:before {
+			    font-size: 19px;
+    			line-height: 37px;
+			}
+		.b-tags{
+			text-transform: uppercase;
+			color: rgba(0, 0, 0, 0.5);
+			font-family: 'FiraSans-Bold';
+		}
+
+/* ==== Календарь событий ==== */
+
+.b-calendar-page{
+	margin: 54px 0 110px 0;
+}
+	.b-calendar-page h1{
+		font-size: 55px;
+		line-height: 56px;
+		margin-bottom: 44px;
+	}
+	.b-calendar-page-left{
+		float: left;
+		width: calc(100%/3 - 26px);
+		padding: 30px 10px 20px 10px;
+		margin-right: 24px;
+		box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+	}
+		.b-calendar-page-left .b-calendar{
+			text-align: center;
+		}
+		.b-calendar-page-left .b-calendar-months {
+		    padding-left: 20px;
+		}
+			.b-calendar-page-left .b-calendar td a{
+				left: 12px;
+			}
+			.b-calendar-page-left .b-month-list .month.active {
+			    width: 114px;
+			}
+			.b-calendar-page-left .b-month-list .month {
+			    width: 85px;
+			}
+	.b-calendar-page-right{
+		float: right;
+		width: calc(100%/3*2);
+	}
+		.b-calendar-page-right h2{
+			margin-bottom: 24px;
+		}
+		.b-calendar-page-right .b-news-list{
+
+		}
+			.b-calendar-page-right .b-news-list .b-news-item{
+				width: calc(50% - 12px);
+				background-color: #F2F5F7;
+				margin-bottom: 24px;
+			}
+			.b-calendar-page-right .b-news-list .b-news-item:nth-child(2n){
+				margin-right: 0;
 			}
 
 /* ==== */

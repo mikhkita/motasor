@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title><?echo isset($title) ? $title : "";?></title>
 	<meta name="keywords" content=''>
 	<meta name="description" content=''>
 
@@ -78,7 +78,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">Новости</a>
+						<a href="news.php">Новости</a>
 					</li>
 					<li>
 						<a href="#">Опросы</a>
@@ -117,7 +117,7 @@
 				<div class="slide-cont sub-section-slide"></div>
 				<div class="slide-cont sub-sub-section-slide"></div>
 				<div class="community">
-					<a href="#b-popup-auth" class="b-header-community fancy fancy-binded">Присоединиться к cообществу</a>
+					<a href="#b-popup-auth" class="b-header-community fancy">Присоединиться к cообществу</a>
 				</div>
 			</div>
 		</div>
@@ -131,7 +131,7 @@
 					<div class="b-menu-list-wrap">
 						<ul class="b-menu-list clearfix">
 							<li><a href="#">О нас</a></li>
-							<li><a href="#">Новости</a></li>
+							<li><a href="news.php">Новости</a></li>
 							<li><a href="#">Мероприятия</a></li>
 							<li><a href="#">Сообщества</a></li>
 							<li><a href="#">Рид</a></li>
@@ -180,7 +180,7 @@
 								</li>
 							</ul>
 							<ul class="section">
-								<li><a href="#" class="bold">Новости</a></li>
+								<li><a href="news.php" class="bold">Новости</a></li>
 							</ul>
 							<ul class="section">
 								<li><a href="#" class="bold">Опросы</a></li>

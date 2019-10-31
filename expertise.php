@@ -1,5 +1,7 @@
-<?include 'header.php';?>
-
+<?
+$title = "Эксперты Росатома";
+include 'header.php';
+?>
 	<div class="b-header-inner">
 		<div class="b-block">
 			<div class="b-header-inner-left">

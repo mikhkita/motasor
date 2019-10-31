@@ -1,4 +1,7 @@
-<?include 'header.php';?>
+<?
+$title = "Главная";
+include 'header.php';
+?>
 
 		<div class="b-block">
 			<div class="b-main-slider-cont">
@@ -142,99 +145,135 @@
 					</a>
 				</div>
 				<div class="b-size-3-4 b-size-right b-question-calendar-right">
-					<div class="b-calendar-cont">
-						<h2>Календарь событий</h2>
-						<div class="b-calendar-months">
-							<a href="#" class="icon-arrow-left"></a>
-							<div class="b-month-list">
-								<a href="#" class="month active">Октябрь</a>
-								<a href="#" class="month">Ноябрь</a>
-								<a href="#" class="month">Декабрь</a>
+					<div class="b-question-calendar-right-wrap">
+						<div class="b-calendar-cont">
+							<h2>Календарь событий</h2>
+							<div class="b-calendar-months">
+								<a href="#" class="icon-arrow-left"></a>
+								<div class="b-month-list">
+									<a href="#" class="month active">Октябрь</a>
+									<a href="#" class="month">Ноябрь</a>
+									<a href="#" class="month">Декабрь</a>
+								</div>
+								<a href="#" class="icon-arrow-right"></a>
 							</div>
-							<a href="#" class="icon-arrow-right"></a>
+							
+							<table class="b-calendar">
+								<tr>
+									<th>Пн</th>
+									<th>Вт</th>
+									<th>Ср</th>
+									<th>Чт</th>
+									<th>Пт</th>
+									<th>Сб</th>
+									<th>Вс</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>2</td>
+									<td><a href="#">3</a></td>
+									<td>4</td>
+									<td>5</td>
+									<td>6</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>9</td>
+									<td>10</td>
+									<td>11</td>
+									<td><a href="#">12</a></td>
+									<td>13</td>
+									<td>14</td>
+								</tr>
+								<tr>
+									<td>15</td>
+									<td>16</td>
+									<td>17</td>
+									<td>18</td>
+									<td>19</td>
+									<td>20</td>
+									<td>21</td>
+								</tr>
+								<tr>
+									<td>22</td>
+									<td>23</td>
+									<td>24</td>
+									<td>25</td>
+									<td>26</td>
+									<td>27</td>
+									<td>28</td>
+								</tr>
+								<tr>
+									<td>29</td>
+									<td>30</td>
+									<td>31</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
 						</div>
-						
-						<table class="b-calendar">
-							<tr>
-								<th>Пн</th>
-								<th>Вт</th>
-								<th>Ср</th>
-								<th>Чт</th>
-								<th>Пт</th>
-								<th>Сб</th>
-								<th>Вс</th>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>2</td>
-								<td><a href="#">3</a></td>
-								<td>4</td>
-								<td>5</td>
-								<td>6</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>8</td>
-								<td>9</td>
-								<td>10</td>
-								<td>11</td>
-								<td><a href="#">12</a></td>
-								<td>13</td>
-								<td>14</td>
-							</tr>
-							<tr>
-								<td>15</td>
-								<td>16</td>
-								<td>17</td>
-								<td>18</td>
-								<td>19</td>
-								<td>20</td>
-								<td>21</td>
-							</tr>
-							<tr>
-								<td>22</td>
-								<td>23</td>
-								<td>24</td>
-								<td>25</td>
-								<td>26</td>
-								<td>27</td>
-								<td>28</td>
-							</tr>
-							<tr>
-								<td>29</td>
-								<td>30</td>
-								<td>31</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</table>
+						<div class="b-events">
+							<div class="b-events-list">
+								<a href="#" class="b-events-item">
+									<div class="date">с 27 сен по 06 окт 2019</div>
+									<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
+								</a>
+								<a href="#" class="b-events-item">
+									<div class="date">с 27 сен по 04 окт 2019</div>
+									<p>"Росатом" предложит комплекс мер по развитию водородной энергетики в России</p>
+								</a>
+								<a href="#" class="b-events-item">
+									<div class="date">с 27 сен по 06 окт 2019</div>
+									<p>На семинаре в МГСУ был представлен проект «Новый дизайн рабочего пространства Росатома»</p>
+								</a>
+								<a href="#" class="b-events-item">
+									<div class="date">с 27 сен по 06 окт 2019</div>
+									<p>На семинаре в МГСУ был представлен проект «Новый дизайн рабочего пространства Росатома»</p>
+								</a>
+							</div>
+							<a href="calendar.php" class="b-btn b-btn-tr all-events">
+								<span class="b-btn-content">Все события</span>
+								<div class="icon-arrow-right"></div>
+								<div class="icon-arrow-right-bold"></div>
+							</a>
+						</div>
 					</div>
-					<div class="b-events">
-						<div class="b-events-list">
-							<a href="#" class="b-events-item">
-								<div class="date">с 27 сен по 06 окт 2019</div>
-								<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
+					<div class="b-mobile-block">
+						<div class="b-mobile-block-margin">
+							<div class="b-mobile-block-item b-news-days-right-top">
+								<h3>Программа инновационного развития</h3>
+								<div class="b-line"></div>
+								<a href="#" class="with-arrow">
+									<span class="text">Подробнее</span>
+								</a>
+							</div>
+							<div class="b-mobile-block-item b-news-days-right-bottom">
+								<h3>Восемьдесят три процента всех дней в году начинаются одинаково: звенит будильник.</h3>
+								<div class="b-news-days-person">
+									<img src="i/person-1.png" class="b-img">
+									<div class="b-name"><b>Мотькина</b><br> Юлия Валерьевна</div>
+								</div>
+								<div class="quotes-left"></div>
+								<div class="quotes-right"></div>
+							</div>
+							<a href="#" class="b-mobile-block-item b-ask-question">
+								<span class="ask-question">Задать<br> вопрос <div class="icon-arrow-right"></div></span>
+								<div class="question-back-1"></div>
+								<div class="question-back-2"></div>
+								<div class="question-back-3"></div>
+								<div class="b-question-back"></div>
 							</a>
-							<a href="#" class="b-events-item">
-								<div class="date">с 27 сен по 04 окт 2019</div>
-								<p>"Росатом" предложит комплекс мер по развитию водородной энергетики в России</p>
-							</a>
-							<a href="#" class="b-events-item">
-								<div class="date">с 27 сен по 06 окт 2019</div>
-								<p>На семинаре в МГСУ был представлен проект «Новый дизайн рабочего пространства Росатома»</p>
-							</a>
-							<a href="#" class="b-events-item">
-								<div class="date">с 27 сен по 06 окт 2019</div>
-								<p>На семинаре в МГСУ был представлен проект «Новый дизайн рабочего пространства Росатома»</p>
+							<a href="#" class="b-mobile-block-item b-expert-rosatom">
+								<h3>Стать<br> экспертом<br> Росатома</h3>
+								<div class="b-line"></div>
+								<span class="with-arrow">
+									<span class="text">Подробнее</span>
+								</span>
 							</a>
 						</div>
-						<a href="#" class="b-btn b-btn-tr all-events">
-							<span class="b-btn-content">Все события</span>
-							<div class="icon-arrow-right"></div>
-							<div class="icon-arrow-right-bold"></div>
-						</a>
 					</div>
 				</div>
 			</div>
@@ -248,20 +287,6 @@
 					<div class="question-back-3"></div>
 					<div class="b-question-back"></div>
 				</a>
-				<a href="#" class="b-expert-rosatom b-mobile-block">
-					<h3>Стать<br> экспертом<br> Росатома</h3>
-					<div class="b-line"></div>
-					<span class="with-arrow">
-						<span class="text">Подробнее</span>
-					</span>
-				</a>
-				<div class="b-tablet-block-item b-news-days-right-top">
-					<h3>Программа инновационного развития</h3>
-					<div class="b-line"></div>
-					<a href="#" class="with-arrow">
-						<span class="text">Подробнее</span>
-					</a>
-				</div>
 				<div class="b-tablet-block-item b-news-days-right-bottom">
 					<h3>Восемьдесят три процента всех дней в году начинаются одинаково: звенит будильник.</h3>
 					<div class="b-news-days-person">
@@ -271,27 +296,34 @@
 					<div class="quotes-left"></div>
 					<div class="quotes-right"></div>
 				</div>
+				<div class="b-tablet-block-item b-news-days-right-top">
+					<h3>Программа инновационного развития</h3>
+					<div class="b-line"></div>
+					<a href="#" class="with-arrow">
+						<span class="text">Подробнее</span>
+					</a>
+				</div>
 			</div>
 		</div>
 		<div class="b b-news b-news-index b-gray">
 			<div class="b-block">
 				<h2 class="b-title">Новости</h2>
 				<div class="b-news-list clearfix">
-					<a href="#" class="b-news-item">
+					<a href="news-detail.php" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>На Ставрополье структура «Росатома» построит крупнейшую ветростанцию</p>
 						<span class="with-arrow block-bottom">
 							<span class="text">Перейти</span>
 						</span>
 					</a>
-					<a href="#" class="b-news-item">
+					<a href="news-detail.php" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
 						<span class="with-arrow block-bottom">
 							<span class="text">Перейти</span>
 						</span>
 					</a>
-					<a href="#" class="b-news-item">
+					<a href="news-detail.php" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>"Росатом" начал опытную эксплуатацию двухлазерного 3D-принтера</p>
 						<span class="with-arrow block-bottom">
@@ -299,7 +331,7 @@
 						</span>
 					</a>
 				</div>
-				<a href="#" class="b-btn b-btn-tr all-news">
+				<a href="news.php" class="b-btn b-btn-tr all-news">
 					<span class="b-btn-content">Все новости</span>
 					<div class="icon-arrow-right"></div>
 					<div class="icon-arrow-right-bold"></div>

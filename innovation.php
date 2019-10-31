@@ -1,4 +1,7 @@
-<?include 'header.php';?>
+<?
+$title = "Научные достижения и НИОКР";
+include 'header.php';
+?>
 
 	<div class="b-header-inner">
 		<div class="b-block">

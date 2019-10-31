@@ -1,4 +1,8 @@
-<?include 'header.php';?>
+<?
+$title = "Детальная";
+include 'header.php';
+?>
+
 
 	<div class="b-news-detail">
 		<div class="b-block">

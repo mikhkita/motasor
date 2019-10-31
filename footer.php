@@ -2,6 +2,7 @@
 			<div class="b-footer-top clearfix">
 				<div class="b-block">
 					<a href="/" class="b-footer-logo"></a>
+					<div class="b-footer-carry"></div>
 					<ul class="b-footer-menu-mobile">
 						<li><a href="#">О нас</a></li>
 						<li><a href="#">Контент</a></li>
@@ -132,10 +133,12 @@
 							<div class="icon-clear"></div>
 						</div>
 					</div>
-					<span class="b-soc-text">Мы в соцсетях:</span>
-					<div class="b-soc">
-						<a href="//vk.com" class="icon-vk" target="_blank">Вконтакте</a>
-						<a href="//facebook.com" class="icon-facebook" target="_blank">Facebook</a>
+					<div class="b-footer-soc">
+						<span class="b-soc-text">Мы в соцсетях:</span>
+						<div class="b-soc">
+							<a href="//vk.com" class="icon-vk" target="_blank">Вконтакте</a>
+							<a href="//facebook.com" class="icon-facebook" target="_blank">Facebook</a>
+						</div>
 					</div>
 				</div>
 			</div>
