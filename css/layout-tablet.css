@@ -11,7 +11,7 @@ body {
 	font-size: 23px;
 }
 
-.b-calendar-cont{
+.b-question-calendar .b-calendar-cont{
 	width: 55%;
 	padding-left: 32px;
 }
