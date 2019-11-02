@@ -612,37 +612,84 @@ h1.b-title, h2.b-title{
 		    background-repeat: no-repeat;
 		    background-size: 161px;
 		}
-		.b-header-top-right{
-			padding-top: 14px;
-			display: inline-block;
-			vertical-align: top;
-			float: right;
-		}
-			.b-header-search{
-				width: 32px;
-			    height: 32px;
-			    border-radius: 100px;
-			    position: relative;
-			    top: -4px;
+			.b-header-top-right{
+				padding-top: 2px;
 				display: inline-block;
 				vertical-align: top;
-				margin-right: 45px;
-				background-color: #FFF;
-				-webkit-transition: box-shadow 100ms ease-out;
-				   -moz-transition: box-shadow 100ms ease-out;
-				    -ms-transition: box-shadow 100ms ease-out;
-				   	 -o-transition: box-shadow 100ms ease-out;
-						transition: box-shadow 100ms ease-out;
+				float: right;
 			}
-			.b-header-search:hover{
-				box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+			.b-header-search{
+				width: 291px;
+				display: inline-block;
+				vertical-align: top;
+				position: relative;
+				margin-right: 37px;
 			}
-				.b-header-search.icon-search:before{
+				.b-header-search-btn{
 					position: absolute;
-					left: 8px;
-					top: 8px;
+					z-index: 5;
+					top: 4px;
+					right: 8px;
+					display: block;
+					width: 32px;
+				    height: 32px;
+				    border-radius: 100px;
+					background-color: #FFF;
+					-webkit-transition: box-shadow 100ms ease-out;
+					   -moz-transition: box-shadow 100ms ease-out;
+					    -ms-transition: box-shadow 100ms ease-out;
+					   	 -o-transition: box-shadow 100ms ease-out;
+							transition: box-shadow 100ms ease-out;
 				}
-
+				.b-header-search-btn:hover{
+					box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+				}
+				.b-header-search.open .b-header-search-btn:hover{
+					box-shadow: none;
+				}
+					.b-header-search-btn.icon-search:before{
+						position: absolute;
+						left: 8px;
+						top: 8px;
+					}
+				.b-header-search.open .b-header-search-input{
+					opacity: 1;
+					visibility: visible;
+					-moz-transform: translateX(0);
+				    -ms-transform: translateX(0);
+				    -webkit-transform: translateX(0);
+				    -o-transform: translateX(0);
+				    transform: translateX(0);
+				}
+				.b-header-search-form{
+					position: relative;
+					z-index: 1;
+				}
+				.b-header-search .b-header-search-input{
+					width: 100%;
+					padding: 12px 40px 12px 18px;
+					border: 1px solid #48569D;
+					border-radius: 100px;
+					background-color: transparent;
+					opacity: 0;
+					visibility: hidden;
+					-moz-transform: translateX(10px);
+				    -ms-transform: translateX(10px);
+				    -webkit-transform: translateX(10px);
+				    -o-transform: translateX(10px);
+				    transform: translateX(10px);
+					-webkit-transition: opacity 200ms, visibility 200ms, transform 200ms ease-out;
+					   -moz-transition: opacity 200ms, visibility 200ms, transform 200ms ease-out;
+					    -ms-transition: opacity 200ms, visibility 200ms, transform 200ms ease-out;
+					   	 -o-transition: opacity 200ms, visibility 200ms, transform 200ms ease-out;
+							transition: opacity 200ms, visibility 200ms, transform 200ms ease-out;
+				}
+			.b-header-top-right .b-soc{
+				margin-top: 7px;
+			}
+			.b-header-top-right .b-soc-text{
+				margin-top: 9px;
+			}
 			.b-soc-text{
 				display: inline-block;
 				margin-right: 40px;
@@ -694,6 +741,7 @@ h1.b-title, h2.b-title{
 				position: relative;
 				display: inline-block;
 				vertical-align: top;
+				margin-top: 5px;
 				padding-left: 38px;
 				font-size: 14px;
 				line-height: 30px;
@@ -712,11 +760,11 @@ h1.b-title, h2.b-title{
 				background-position: 50% 50%;
 				background-repeat: no-repeat;
 				background-size: 22px;
-				-webkit-transition: box-shadow 100ms ease-out, background-size 100ms;
-				   -moz-transition: box-shadow 100ms ease-out, background-size 100ms;
-				    -ms-transition: box-shadow 100ms ease-out, background-size 100ms;
-				   	 -o-transition: box-shadow 100ms ease-out, background-size 100ms;
-						transition: box-shadow 100ms ease-out, background-size 100ms;
+				-webkit-transition: box-shadow 100ms ease-out, background-size 100ms ease-out;
+				   -moz-transition: box-shadow 100ms ease-out, background-size 100ms ease-out;
+				    -ms-transition: box-shadow 100ms ease-out, background-size 100ms ease-out;
+				   	 -o-transition: box-shadow 100ms ease-out, background-size 100ms ease-out;
+						transition: box-shadow 100ms ease-out, background-size 100ms ease-out;
 			}
 			.b-header-community:hover{
 				text-decoration: underline;
@@ -746,11 +794,11 @@ h1.b-title, h2.b-title{
 			padding: 5px 17px;
 			margin-right: 118px;
 			cursor: pointer;
-			-webkit-transition: box-shadow 100ms ease-out, border 100ms;
-			   -moz-transition: box-shadow 100ms ease-out, border 100ms;
-			    -ms-transition: box-shadow 100ms ease-out, border 100ms;
-			   	 -o-transition: box-shadow 100ms ease-out, border 100ms;
-					transition: box-shadow 100ms ease-out, border 100ms;
+			-webkit-transition: box-shadow 100ms ease-out, border 100ms ease-out;
+			   -moz-transition: box-shadow 100ms ease-out, border 100ms ease-out;
+			    -ms-transition: box-shadow 100ms ease-out, border 100ms ease-out;
+			   	 -o-transition: box-shadow 100ms ease-out, border 100ms ease-out;
+					transition: box-shadow 100ms ease-out, border 100ms ease-out;
 		}
 		.b-btn-menu-desktop{
 			display: inline-block;
@@ -1430,11 +1478,14 @@ h1.b-title, h2.b-title{
 			margin-right: 24px;
 			padding: 28px;
 			background-color: #FFF;
-			-webkit-transition: opacity 100ms;
-			   -moz-transition: opacity 100ms;
-			    -ms-transition: opacity 100ms;
-			   	 -o-transition: opacity 100ms;
-					transition: opacity 100ms;
+			-webkit-transition: opacity 100ms, background-color 100ms;
+			   -moz-transition: opacity 100ms, background-color 100ms;
+			    -ms-transition: opacity 100ms, background-color 100ms;
+			   	 -o-transition: opacity 100ms, background-color 100ms;
+					transition: opacity 100ms, background-color 100ms;
+		}
+		.b-news-gray .b-news-list .b-news-item:hover{
+			background-color: #E7E9EB ;
 		}
 		.b-news-list.hover-children{
 
@@ -1533,6 +1584,7 @@ h1.b-title, h2.b-title{
 
 					}
 			.b-directions-item > a{
+				color: #231E78;
 				text-transform: uppercase;
 			}
 
@@ -1734,12 +1786,13 @@ h1.b-title, h2.b-title{
 
 .b-content-inner-wrap{
 	display: table;
+	width: 100%;
 }
 .b-nav{
 	display: table-cell;
 	height: 100%;
 	padding: 40px 0;
-	width: 467px;
+	width: 448px;
 }
 	/* === первый уровень === */
 	.b-nav li a{
@@ -1847,8 +1900,9 @@ h1.b-title, h2.b-title{
 .b-content-inner{
 	display: table-cell;
 	height: 100%;
-	width: calc(100% - 467px);
-	padding: 0 119px;
+	width: calc(100% - 448px);
+	max-width: 683px;
+	padding: 0 50px;
 	padding-top: 30px;
 	box-shadow: inset 35px 4px 54px -46px rgba(0, 0, 0, 0.1);
 }
@@ -2136,9 +2190,17 @@ h1.b-title, h2.b-title{
 		margin-bottom: 16px;
 		background-color: #FFF;
 		box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.11);
+		-webkit-transition: box-shadow 100ms ease-out;
+		   -moz-transition: box-shadow 100ms ease-out;
+		    -ms-transition: box-shadow 100ms ease-out;
+		   	 -o-transition: box-shadow 100ms ease-out;
+				transition: box-shadow 100ms ease-out;
 	}
 	.b-partner-item:nth-child(2n){
 		margin-right: 0;
+	}
+	.b-partner-item:hover{
+		box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.11);
 	}
 		.b-partner-item .b-img,
 		.b-partner-item span{
@@ -2345,15 +2407,15 @@ h1.b-title, h2.b-title{
 		.b-news-page .b-filter-days a:last-child:after{
 			display: none;
 		}
-	.b-news-page .b-news-list{
-
-	}
-		.b-news-page .b-news-list .b-news-item{
-			background-color: #F2F5F7;
-			margin-bottom: 24px;
-		}
 		.b-news-page .b-news-list .b-news-item:nth-child(3n){
 			margin-right: 0;
+		}
+	.b-news-gray .b-news-list{
+
+	}
+		.b-news-gray .b-news-list .b-news-item{
+			background-color: #F2F5F7;
+			margin-bottom: 24px;
 		}
 	.b-page-nav{
 		margin-top: 26px;
@@ -2502,7 +2564,6 @@ h1.b-title, h2.b-title{
 		}
 			.b-calendar-page-right .b-news-list .b-news-item{
 				width: calc(50% - 12px);
-				background-color: #F2F5F7;
 				margin-bottom: 24px;
 			}
 			.b-calendar-page-right .b-news-list .b-news-item:nth-child(2n){

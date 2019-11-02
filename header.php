@@ -25,7 +25,13 @@
 			<div class="b-block">
 				<a href="/" class="b-header-logo"></a>
 				<div class="b-header-top-right">
-					<a href="#" class="b-header-search icon-search"></a>
+					<div class="b-header-search">
+						<a href="#" class="b-header-search-btn icon-search"></a>
+						<form action="search.php" method="GET" class="b-header-search-form">
+							<input type="text" name="" placeholder="Поиск" class="b-header-search-input">
+							<input type="submit" value="Поиск" style="display:none;">
+						</form>
+					</div>
 					<span class="b-soc-text">Мы в соцсетях:</span>
 					<div class="b-soc">
 						<a href="//vk.com" class="icon-vk" target="_blank">Вконтакте</a>

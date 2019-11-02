@@ -264,8 +264,15 @@ $(document).ready(function(){
         });
         return false;
     });
-
-
+    
+    $(document).on("click", ".b-header-search-btn", function(){
+        if($(".b-header-search").hasClass("open")){
+            $(".b-header-search-form").submit();
+        }else{
+            $(".b-header-search").addClass("open");
+        }
+        return false;
+    });
 
     ripple.init();
     $('.b-btn').on('click touchstart', ripple.click);
@@ -308,12 +315,6 @@ $(document).ready(function(){
 
 var ripple = {
     click: function(event){
-    /*
-    if ( $(this).find('.ripple').length ){
-    return;
-    }
-    */
-    event.preventDefault();
 
     var $this = $(this);
 

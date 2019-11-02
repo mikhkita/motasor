@@ -348,9 +348,9 @@ include 'header.php';
 								<h2>Сообщества</h2>
 								<div class="b-line"></div>
 								<ul>
-									<li><a href="#">Эксперты</a></li>
 									<li><a href="#">Инновационная вертикаль</a></li>
-									<li><a href="#">Конференции</a></li>
+									<li><a href="#">Эксперты</a></li>
+									<li><a href="#">Конкурсы</a></li>
 								</ul>
 								<a href="#" class="with-arrow block-bottom">
 									<span class="text">Подробнее</span>
@@ -371,12 +371,10 @@ include 'header.php';
 								</a>
 							</div>
 							<div class="b-directions-item b-color-blue-dark">
-								<h2>Новости</h2>
+								<h2>Конкурсы</h2>
 								<div class="b-line"></div>
 								<ul>
-									<li><a href="#">Вчера</a></li>
-									<li><a href="#">Сегодня</a></li>
-									<li><a href="#">Завтра</a></li>
+									<li><a href="#">Конкурс аванпроектов</a></li>
 								</ul>
 								<a href="#" class="with-arrow block-bottom">
 									<span class="text">Подробнее</span>
@@ -387,12 +385,10 @@ include 'header.php';
 					<div class="b-directions-row">
 						<div class="b-directions-half">
 							<div class="b-directions-item b-color-blue-dark">
-								<h2>Услуги</h2>
+								<h2>Опросы</h2>
 								<div class="b-line"></div>
 								<ul>
-									<li><a href="#">Сервис конкурсов</a></li>
-									<li><a href="#">Сервис конференций</a></li>
-									<li><a href="#">Сервис рассылок</a></li>
+									<li><a href="#">Принять участие в опросе</a></li>
 								</ul>
 								<a href="#" class="with-arrow block-bottom">
 									<span class="text">Подробнее</span>
@@ -403,7 +399,7 @@ include 'header.php';
 								<div class="b-line"></div>
 								<ul>
 									<li><a href="#">ИС УПРИД</a></li>
-									<li><a href="#">Информация про портфели</a></li>
+									<li><a href="#">Портфели</a></li>
 								</ul>
 								<a href="#" class="with-arrow block-bottom">
 									<span class="text">Подробнее</span>
@@ -416,8 +412,8 @@ include 'header.php';
 								<div class="b-line"></div>
 								<ul>
 									<li><a href="#">Научные достижения</a></li>
-									<li><a href="#">Аванроекты</a></li>
-									<li><a href="#">Единый отраслевой темплан</a></li>
+									<li><a href="#">Программа инновационного развития</a></li>
+									<li><a href="#">Аванпроекты</a></li>
 								</ul>
 								<a href="#" class="with-arrow block-bottom">
 									<span class="text">Подробнее</span>

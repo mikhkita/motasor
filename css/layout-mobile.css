@@ -242,10 +242,6 @@ h2.b-title{
     height: 8px;
 }
 
-.b-news-days {
-    width: 951px;
-}
-
 .with-arrow{
 	min-width: 190px;
 }
@@ -259,6 +255,13 @@ h2.b-title{
 .b-size-1-4.b-size-left,
 .b-size-1-4.b-size-right{
 	float: none;
+}
+
+.b-news-days {
+    overflow: auto;
+}
+.b-news-days-list{
+	width: 951px;
 }
 
 .b-question-calendar-right{
@@ -463,6 +466,13 @@ h2.b-title{
 	
 	.b-header-top .b-block {
 	    width: calc(100% - 24px);
+	}
+
+	.b-news-days {
+	    overflow: auto;
+	}
+	.b-news-days-list{
+		width: 100%;
 	}
 	.b-size-3-4,
 	.b-size-1-4{

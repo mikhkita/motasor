@@ -13,91 +13,93 @@ include 'header.php';
 				<a href="#" class="yesterday">Вчера</a>
 				<a href="#" class="tomorrow">Завтра</a>
 			</div>
-			<div class="b-news-list clearfix">
-				<a href="news-detail.php" class="b-news-item">
-					<div class="date">29.6.2017</div>
-					<p>На Ставрополье структура «Росатома» построит крупнейшую ветростанцию</p>
-					<span class="with-arrow block-bottom">
-						<span class="text">Перейти</span>
-					</span>
-				</a>
-				<a href="news-detail.php" class="b-news-item">
-					<div class="date">29.6.2017</div>
-					<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
-					<span class="with-arrow block-bottom">
-						<span class="text">Перейти</span>
-					</span>
-				</a>
-				<a href="news-detail.php" class="b-news-item">
-					<div class="date">29.6.2017</div>
-					<p>"Росатом" начал опытную эксплуатацию двухлазерного 3D-принтера</p>
-					<span class="with-arrow block-bottom">
-						<span class="text">Перейти</span>
-					</span>
-				</a>
-				<a href="news-detail.php" class="b-news-item">
-					<div class="date">29.6.2017</div>
-					<p>На Ставрополье структура «Росатома» построит крупнейшую ветростанцию</p>
-					<span class="with-arrow block-bottom">
-						<span class="text">Перейти</span>
-					</span>
-				</a>
-				<a href="news-detail.php" class="b-news-item">
-					<div class="date">29.6.2017</div>
-					<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
-					<span class="with-arrow block-bottom">
-						<span class="text">Перейти</span>
-					</span>
-				</a>
-				<a href="news-detail.php" class="b-news-item">
-					<div class="date">29.6.2017</div>
-					<p>"Росатом" начал опытную эксплуатацию двухлазерного 3D-принтера</p>
-					<span class="with-arrow block-bottom">
-						<span class="text">Перейти</span>
-					</span>
-				</a>
-				<a href="news-detail.php" class="b-news-item">
-					<div class="date">29.6.2017</div>
-					<p>На Ставрополье структура «Росатома» построит крупнейшую ветростанцию</p>
-					<span class="with-arrow block-bottom">
-						<span class="text">Перейти</span>
-					</span>
-				</a>
-				<a href="news-detail.php" class="b-news-item">
-					<div class="date">29.6.2017</div>
-					<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
-					<span class="with-arrow block-bottom">
-						<span class="text">Перейти</span>
-					</span>
-				</a>
-				<a href="news-detail.php" class="b-news-item">
-					<div class="date">29.6.2017</div>
-					<p>"Росатом" начал опытную эксплуатацию двухлазерного 3D-принтера</p>
-					<span class="with-arrow block-bottom">
-						<span class="text">Перейти</span>
-					</span>
-				</a>
-				<a href="news-detail.php" class="b-news-item">
-					<div class="date">29.6.2017</div>
-					<p>На Ставрополье структура «Росатома» построит крупнейшую ветростанцию</p>
-					<span class="with-arrow block-bottom">
-						<span class="text">Перейти</span>
-					</span>
-				</a>
-				<a href="news-detail.php" class="b-news-item">
-					<div class="date">29.6.2017</div>
-					<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
-					<span class="with-arrow block-bottom">
-						<span class="text">Перейти</span>
-					</span>
-				</a>
-				<a href="news-detail.php" class="b-news-item">
-					<div class="date">29.6.2017</div>
-					<p>"Росатом" начал опытную эксплуатацию двухлазерного 3D-принтера</p>
-					<span class="with-arrow block-bottom">
-						<span class="text">Перейти</span>
-					</span>
-				</a>
+			<div class="b-news-gray">
+				<div class="b-news-list clearfix">
+					<a href="news-detail.php" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>На Ставрополье структура «Росатома» построит крупнейшую ветростанцию</p>
+						<span class="with-arrow block-bottom">
+							<span class="text">Перейти</span>
+						</span>
+					</a>
+					<a href="news-detail.php" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
+						<span class="with-arrow block-bottom">
+							<span class="text">Перейти</span>
+						</span>
+					</a>
+					<a href="news-detail.php" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>"Росатом" начал опытную эксплуатацию двухлазерного 3D-принтера</p>
+						<span class="with-arrow block-bottom">
+							<span class="text">Перейти</span>
+						</span>
+					</a>
+					<a href="news-detail.php" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>На Ставрополье структура «Росатома» построит крупнейшую ветростанцию</p>
+						<span class="with-arrow block-bottom">
+							<span class="text">Перейти</span>
+						</span>
+					</a>
+					<a href="news-detail.php" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
+						<span class="with-arrow block-bottom">
+							<span class="text">Перейти</span>
+						</span>
+					</a>
+					<a href="news-detail.php" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>"Росатом" начал опытную эксплуатацию двухлазерного 3D-принтера</p>
+						<span class="with-arrow block-bottom">
+							<span class="text">Перейти</span>
+						</span>
+					</a>
+					<a href="news-detail.php" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>На Ставрополье структура «Росатома» построит крупнейшую ветростанцию</p>
+						<span class="with-arrow block-bottom">
+							<span class="text">Перейти</span>
+						</span>
+					</a>
+					<a href="news-detail.php" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
+						<span class="with-arrow block-bottom">
+							<span class="text">Перейти</span>
+						</span>
+					</a>
+					<a href="news-detail.php" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>"Росатом" начал опытную эксплуатацию двухлазерного 3D-принтера</p>
+						<span class="with-arrow block-bottom">
+							<span class="text">Перейти</span>
+						</span>
+					</a>
+					<a href="news-detail.php" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>На Ставрополье структура «Росатома» построит крупнейшую ветростанцию</p>
+						<span class="with-arrow block-bottom">
+							<span class="text">Перейти</span>
+						</span>
+					</a>
+					<a href="news-detail.php" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
+						<span class="with-arrow block-bottom">
+							<span class="text">Перейти</span>
+						</span>
+					</a>
+					<a href="news-detail.php" class="b-news-item">
+						<div class="date">29.6.2017</div>
+						<p>"Росатом" начал опытную эксплуатацию двухлазерного 3D-принтера</p>
+						<span class="with-arrow block-bottom">
+							<span class="text">Перейти</span>
+						</span>
+					</a>
+				</div>
 			</div>
 			<div class="b-page-nav">
 				<a href="#" class="active">1</a>

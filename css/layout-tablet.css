@@ -6,6 +6,10 @@ body {
 .b-block{
 	width: calc(100% - 54px);
 }
+.b-block.b-block-inner{
+	width: calc(100% - 27px);
+	margin-left: 0;
+}
 
 .b-news-days-right-bottom h3{
 	font-size: 23px;

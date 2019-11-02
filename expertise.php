@@ -18,7 +18,7 @@ include 'header.php';
 			<div class="b-header-show-more">Развернуть<span class="icon-select"></span></div>
 		</div>
 	</div>
-	<div class="b-block">
+	<div class="b-block b-block-inner">
 	<div class="b-content-inner-wrap">
 		<ul class="b-nav">
 			<li><a href="#">Конференции</a></li>
