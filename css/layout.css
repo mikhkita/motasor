@@ -1731,7 +1731,7 @@ h1.b-title, h2.b-title{
 /* ===== Сообщества ===== */
 
 .b-header-inner{
-	height: 334px;
+	min-height: 334px;
 	background-image: url(../i/header-inner.jpg);
 	background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -1782,7 +1782,24 @@ h1.b-title, h2.b-title{
 	}
 	.b-header-show-more{
 		display: none;
+		position: relative;
+		width: 200px;
+		text-transform: uppercase;
+		font-size: 14px;
+	    line-height: 20px;
+	    font-family: 'FiraSans-Bold';
+	    letter-spacing: 1.5px;
+	    cursor: pointer;
 	}
+		.b-header-show-more .icon-select{
+			position: absolute;
+			top: -2px;
+			right: 0;
+		}
+		.b-header-show-more .icon-select:before{
+			color: #FFF;
+			font-size: 10px;
+		}
 
 .b-content-inner-wrap{
 	display: table;
@@ -2820,7 +2837,7 @@ h1.b-title, h2.b-title{
 }
 
 .b-popup{
-
+	width: 682px;
 }
 	.b-popup h2{
 		margin-bottom: 24px;
@@ -2915,7 +2932,7 @@ h1.b-title, h2.b-title{
 	}
 
 .b-popup-auth{
-	width: 672px;
+
 }
 	.b-popup-auth h2{
 
@@ -2987,7 +3004,7 @@ h1.b-title, h2.b-title{
 	}
 
 .b-popup-register{
-	width: 682px;
+
 }
 	.b-popup-register .b-input {
 	    margin-bottom: 32px;
@@ -3010,7 +3027,7 @@ h1.b-title, h2.b-title{
 	}
 
 .b-popup-forgot{
-	width: 672px;
+
 }
 	.b-popup-forgot .b-input.captcha{
 		margin-bottom: 36px;
