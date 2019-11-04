@@ -188,7 +188,7 @@ $(document).ready(function(){
         }
     );
 
-    $(document).on("click", ".b-btn-menu", function(){
+    $(document).on("click", ".b-btn-menu, .mobile-close", function(){
         $(".b-header-menu-window").toggleClass("open");
     });
     $(document).on("click", ".b-menu-mobile", function(){

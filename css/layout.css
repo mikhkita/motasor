@@ -180,7 +180,7 @@ h1.b-title, h2.b-title{
     border-radius: 100px;
     font-family: 'FiraSans-Bold';
     min-width: 280px;
-
+    line-height: 25px;
     overflow: hidden;
 	-webkit-transform: translate(0);
         -ms-transform: translate(0);
@@ -316,11 +316,13 @@ h1.b-title, h2.b-title{
 .icon-gmail:before {
   content: "\e902";
   font-size: 19px;
+  line-height: 25px;
   color: #FFF;
 }
 .icon-search:before {
   content: "\e90c";
   font-size: 17px;
+  line-height: 25px;
   color: #48569D;
 }
 .icon-arrow-left:before{
@@ -502,6 +504,7 @@ h1.b-title, h2.b-title{
 		width: 100%;
 	}
 	.b-text img{
+		display: block;
 		margin-bottom: 32px;
 	}
 
@@ -662,7 +665,7 @@ h1.b-title, h2.b-title{
 					.b-header-search-btn.icon-search:before{
 						position: absolute;
 						left: 8px;
-						top: 8px;
+						top: 3px;
 					}
 				.b-header-search.open .b-header-search-input{
 					opacity: 1;
@@ -1424,9 +1427,10 @@ h1.b-title, h2.b-title{
 					    border-radius: 100px;
 					    color: #FFF;
 					    font-family: 'FiraSans-Bold';
-					    top: -5px;
+					    top: -7px;
 					    left: -11px;
 					    text-align: center;
+					    line-height: 25px;
     					width: 35px;
     					-webkit-transition: box-shadow 100ms;
 						   -moz-transition: box-shadow 100ms;
@@ -2662,6 +2666,10 @@ h1.b-title, h2.b-title{
 		border-radius: 5px;
 		padding: 20px 32px 20px 44px;
 		font-size: 16px;
+		box-shadow: none;
+		-webkit-appearance: none;
+    	-moz-appearance: none;
+    	appearance: none;
 	}
 		.b-input .input{
 			position: relative;
@@ -2710,6 +2718,7 @@ h1.b-title, h2.b-title{
     	-moz-appearance: none;
     	appearance: none;
     	cursor: pointer;
+    	box-shadow: none;
 	}
 		.b-select .select{
 			position: relative;
