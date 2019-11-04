@@ -166,7 +166,7 @@ $(document).ready(function(){
         $($block).removeClass("hide").find("input, select, textarea").prop({"disabled": false});
     });
 
-    $('.b-news-days-item .days-item, .b-news .b-news-item').hover(
+    $('.b-news-days-item .days-item, .b-news .b-news-item, .b-news-gray .b-news-item').hover(
         function(){
             $(this).addClass("hover");
             $(this).parent().addClass("hover-children");
@@ -193,7 +193,7 @@ $(document).ready(function(){
     });
     $(document).on("click", ".b-menu-mobile", function(){
         if(!$(this).hasClass("open")){//открываем
-            $("body, html").animate({scrollTop : 0}, 200);
+            // $("body, html").animate({scrollTop : 0}, 200);
             $(this).addClass("open");
             $(".b-menu-mobile-window").addClass("open");
             $("body").addClass("no-scroll");
@@ -230,7 +230,11 @@ $(document).ready(function(){
     });
 
     $(document).on("click", ".b-header-show-more", function(){
-        $(".b-header-inner-right").toggleClass("open");
+        if(!$(".b-header-inner-right").hasClass("open")){
+            $(".b-header-inner-right, .b-header-show-more").addClass("open");
+        }else{
+            $(".b-header-inner-right, .b-header-show-more").removeClass("open");
+        }
     });
 
     var calendarAjax;
@@ -272,6 +276,43 @@ $(document).ready(function(){
             $(".b-header-search").addClass("open");
         }
         return false;
+    });
+
+    $(document).on("click", ".b-footer-search-form .icon-search", function(){
+        $(".b-footer-search-form .input-search").focus();
+        return false;
+    });
+
+    $(window).scroll(function (){
+        if($(this).scrollTop() > 0){
+            $(".b-header-top").addClass("fixed");
+            $(".b-nav-mobile").addClass("open");
+        }else{
+            $(".b-header-top").removeClass("fixed");
+            $(".b-nav-mobile").removeClass("open");
+        }
+    });
+
+    $(document).on("click", ".b-nav-mobile .main-section a", function(){
+        if($(".b-nav-mobile .items li").length > 0){//если есть вложенные секции
+            if(!$(".b-nav-mobile").hasClass("visible-sub")){
+                $(".b-nav-mobile").addClass("visible-sub");
+            }else{
+                $(".b-nav-mobile").removeClass("visible-sub");
+            }
+            return false;
+        }
+    });
+
+    $(document).on("click", ".b-nav-mobile .items > li > a", function(){
+        if($(this).siblings("ul").length > 0){//если есть вложенные секции
+            if(!$(".b-nav-mobile").hasClass("visible-sub-sub")){
+                $(".b-nav-mobile").addClass("visible-sub-sub");
+            }else{
+                $(".b-nav-mobile").removeClass("visible-sub-sub");
+            }
+            return false;
+        }
     });
 
     ripple.init();

@@ -2,6 +2,37 @@
 $title = "Научные достижения и НИОКР";
 include 'header.php';
 ?>
+	<div class="b-nav-mobile">
+		<div class="main-section">
+			<a href="#">Инновационная вертикаль</a>
+			<span class="icon-select"></span>
+		</div>
+		<ul class="items">
+			<li>
+				<a href="#">АО «Наука и инновации»</a>
+				<ul>
+					<li><a href="#">АО «ВНИИХТ»</a></li>
+					<li><a href="#">АО «Гиредмет»</a></li>
+					<li><a href="#">АО «ГНЦ НИИАР»</a></li>
+					<li><a href="#">АО «ГНЦ РФ - ФЭИ им. А.И.Лейпунского»</a></li>
+					<li><a href="#">АО «ГНЦ РФ ТРИНИТИ»</a></li>
+					<li><a href="#">АО «НИИграфит»</a></li>
+					<li><a href="#">АО «НИИП» г. Лыткарино</a></li>
+					<li><a href="#">АО «НТЦ «ЯФИ»</a></li>
+					<li><a href="#">АО «Радиевый институт им. В.Г. Хлопина»</a></li>
+					<li><a href="#">ФГУП «НИИ НПО «Луч»</a></li>
+					<li><a href="#">АО «ИРМ»</a></li>
+					<li><a href="#">АО "НИИЭФА им. Д.В. Ефремова"</a></li>
+				</ul>
+			</li>
+			<li><a href="#">АО «Концерн Росэнергоатом»</a></li>
+			<li><a href="#">АО «АТОМПРОЕКТ»</a></li>
+			<li><a href="#">АО «Атомэнергомаш»</a></li>
+			<li><a href="#">Дивизион ЗСЖЦ (АО ФЦЯРБ)</a></li>
+			<li><a href="#">АО ИК «АСЭ» (АО «НИАЭП»)</a></li>
+			<li><a href="#">Урановый холдинг «АРМЗ»</a></li>
+		</ul>
+	</div>
 
 	<div class="b-header-inner">
 		<div class="b-block">
@@ -15,7 +46,11 @@ include 'header.php';
 			<div class="b-header-inner-right">
 				Лидерство в атомной энергетике во многом зависит от интеллектуального и технологического превосходства. Ежегодно Росатом наращивает объемы заказа на научно-исследовательские и опытно-конструкторские работы, увеличивает финансирование на эти цели, поэтому подход отраслевых заказчиков к формированию НИОКР должен соответствовать тенденциям времени и профессиональному уровню передовых международных практик. Чтобы увеличить эффективность заказа на НИОКР и повысить «прозрачность» формирования программ исследований и разработок Блок по управлению инновациями Госкорпорации «Росатом» реализует ряд мероприятий в области управления НИОКР.
 			</div>
-			<div class="b-header-show-more">Развернуть<span class="icon-select"></span></div>
+			<div class="b-header-show-more">
+				<span class="text-open">Развернуть</span>
+				<span class="text-close">Свернуть</span>
+				<span class="icon-select"></span>
+			</div>
 		</div>
 	</div>
 	<div class="b-block b-block-inner">
@@ -48,12 +83,13 @@ include 'header.php';
 				</div>
 			</div>
 			<div class="b-innov-contacts">
+				<h4 class="mobile">Контакты</h4>
 				<img src="i/innov-1.png" class="b-img">
 				<div class="b-innov-contacts-right">
-					<h4>Контакты</h4>
+					<h4 class="desktop">Контакты</h4>
 					<p><b>Мотькина Юлия Валерьевна</b><br><br>
 					Советник Блока по управлению инновациями Госкорпорации «Росатом»<br><br>
-					<a href="tel:+74999494431" class="phone">+7 (499) 949-44-31</a>
+					<a href="tel:+74999494431" class="phone">+7 (499) 949-44-31</a><br class="mobile">
 					<a href="mailto:YVMotkina@rosatom.ru" class="email">YVMotkina@rosatom.ru</a>
 				</p>
 				</div>

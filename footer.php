@@ -127,13 +127,15 @@
 		</div>
 		<div class="b-footer-search b-gray">
 			<div class="b-block">
-				<div class="b-input">
-					<div class="input">
-						<div class="icon-search"></div>
-						<input type="text" name="">
-						<div class="icon-clear"></div>
+				<form action="search.php" method="GET" class="b-footer-search-form">
+					<div class="b-input">
+						<div class="input">
+							<div class="icon-search"></div>
+							<input type="text" name="" class="input-search">
+							<div class="icon-clear"></div>
+						</div>
 					</div>
-				</div>
+				</form>
 				<div class="b-footer-soc">
 					<span class="b-soc-text">Мы в соцсетях:</span>
 					<div class="b-soc">
@@ -151,7 +153,7 @@
 	</div>
 	
 	<div style="display:none;">
-		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
+		<!-- <a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
 		<div class="b-popup" id="b-popup-1">
 			<h3>Оставьте заявку</h3>
 			<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
@@ -169,7 +171,7 @@
 					<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 				</div>
 			</form>
-		</div>
+		</div> -->
 
 		<div class="b-popup b-popup-auth" id="b-popup-auth">
 			<h2 class="b-title">Авторизация</h2>
@@ -341,7 +343,7 @@
 			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
 		</div>
 	</div>
-
+<!-- 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/jquery.touch.min.js"></script>
@@ -351,8 +353,8 @@
 	<script type="text/javascript" src="js/imask.min.js"></script>
 	<script type="text/javascript" src="js/KitSend.min.js"></script>
 	<script type="text/javascript" src="js/main.min.js"></script>
-
-	<!--
+ -->
+	
 	<script type="text/javascript" src="js_originals/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js_originals/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js_originals/jquery.touch.min.js"></script>
@@ -362,7 +364,7 @@
 	<script type="text/javascript" src="js_originals/imask.min.js"></script>
 	<script type="text/javascript" src="js_originals/KitSend.js"></script>
 	<script type="text/javascript" src="js_originals/main.js"></script>
-	-->
+	
 
 </body>
 </html>

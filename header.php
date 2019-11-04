@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?echo isset($title) ? $title : "";?></title>
+	<title><?echo isset($title) ? $title : "Росатом";?></title>
 	<meta name="keywords" content=''>
 	<meta name="description" content=''>
 
