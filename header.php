@@ -303,7 +303,7 @@ $isMain = (end($arPage) == 'index.php') ? true : false;
 			<? if (!$params['WITHOUT_HEADER']): ?>
 				<div class="b-header-inner">
 					<picture>
-						<img src="i/header-inner.jpg">
+						<img src="i/bg.jpg">
 					</picture>
 					<div class="b-block">
 						<div class="b-header-inner-left">

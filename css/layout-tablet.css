@@ -166,6 +166,10 @@ body {
 	    padding: 28px 20px;
 	}
 
+	.b-flex-news .b-news-item{
+		margin-right: 0;
+	}
+
 	.b-directions-row .b-directions-half{
 		width: calc(40% - 10px);
 	}
@@ -476,6 +480,9 @@ body {
 	.b-partner-item .b-img {
 	    max-width: 180px;
 	    max-height: 60px;
+	}
+	.b-flex-news .b-news-item{
+		width: calc(100%/2 - 12px);
 	}
 }
 

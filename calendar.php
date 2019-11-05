@@ -83,7 +83,7 @@ include 'header.php';
 			<div class="b-calendar-page-right">
 				<h2>Все события</h2>
 				<div class="b-news-gray">
-					<div class="b-news-list clearfix">
+					<div class="b-news-list b-flex-news clearfix">
 						<a href="news-detail.php" class="b-news-item">
 							<div class="date">29.6.2017</div>
 							<p>На Ставрополье структура «Росатома» построит крупнейшую ветростанцию</p>

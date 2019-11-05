@@ -18,7 +18,7 @@ include 'header.php';
 				<a href="#" class="tomorrow">Завтра</a>
 			</div>
 			<div class="b-news-gray">
-				<div class="b-news-list clearfix">
+				<div class="b-news-list clearfix b-flex-news">
 					<a href="news-detail.php" class="b-news-item">
 						<div class="date">29.6.2017</div>
 						<p>На Ставрополье структура «Росатома» построит крупнейшую ветростанцию</p>

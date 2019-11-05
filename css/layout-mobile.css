@@ -617,6 +617,9 @@ h1, h2{
     padding: 18px 14px 0 14px;
     height: 440px;
 }
+	.b-calendar-page-right{
+		width: 100%;
+	}
 .b-events {
     float: none;
     width: 100%;
@@ -780,6 +783,9 @@ h1, h2{
 }
 .b-news-inner{
 	margin-top: 36px;
+}
+.b-flex-news .b-news-item{
+	width: calc(100%/2 - 12px);
 }
 
 @media screen and (max-width: 665px){
@@ -1210,6 +1216,12 @@ h1, h2{
 		.b-text blockquote:after{
 			display: none;
 		}
+	.b-calendar-page-right .b-news-list.b-flex-news .b-news-item{
+		width: 100%;
+	}
+	.b-flex-news .b-news-item{
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 450px){
