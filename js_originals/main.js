@@ -291,6 +291,9 @@ $(document).ready(function(){
         if($(".b-header-search").hasClass("open")){
             $(".b-header-search-form").submit();
         }else{
+            setTimeout(function() {
+                $(".b-header-search-input").focus();
+            }, 100);
             $(".b-header-search").addClass("open");
         }
         return false;
