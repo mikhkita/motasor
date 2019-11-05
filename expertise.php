@@ -115,19 +115,19 @@ include 'header.php';
 				</ol>
 			</div>
 			<form class="b-form" action="" method="POST">
-				<h2 class="b-title">Стать экспертом Росатома</h2>
+				<h2>Стать экспертом Росатома</h2>
 				<div class="b-form-content">
 					<div class="b-input">
 						<label for="label-name">ФИО</label>
 						<div class="input">
-							<input id="label-name" type="text" name="" placeholder="Иванов Иван Иванович">
+							<input id="label-name" type="text" name="name" placeholder="Иванов Иван Иванович">
 							<div class="icon-clear"></div>
 						</div>
 					</div>
 					<div class="b-select b-select-chosen">
-						<p>Сфера вашей экспертизы</p>
+						<label for="label-field">Сфера вашей экспертизы</label>
 						<div class="select">
-							<select class="select-experts" name="">
+							<select id="label-field" class="select-experts" name="field">
 								<option value="scientific-expert" data-block=".scientific-fields">Научный эксперт</option>
 								<option value="tech-expert" data-block=".tech-fields">Технологический эксперт</option>
 								<option value="business-expert" data-block=".business-fields">Бизнес эксперт</option>
@@ -137,9 +137,9 @@ include 'header.php';
 
 					<div class="scientific-fields form-toggle-blocks">
 						<div class="b-select b-select-chosen">
-							<p>Ученая степень, ученое звание</p>
+							<label for="label-degree">Ученая степень, ученое звание</label>
 							<div class="select">
-								<select name="">
+								<select id="label-degree" name="degree">
 									<option value="">Научный эксперт </option>
 									<option value="">Научный эксперт 2</option>
 									<option value="">Научный эксперт 3</option>
@@ -147,25 +147,25 @@ include 'header.php';
 							</div>
 						</div>
 						<div class="b-input">
-							<p>Индекс цитирования</p>
+							<label for="label-index">Индекс цитирования</label>
 							<div class="input">
-								<input type="text" name="">
+								<input id="label-index" type="text" name="">
 								<div class="icon-clear"></div>
 							</div>
 						</div>
 						<div class="b-input">
-							<p>Опыт работы научно-исследовательской деятельности</p>
+							<label for="label-experience-science">Опыт работы научно-исследовательской деятельности</label>
 							<div class="input">
-								<input type="text" name="">
+								<input id="label-experience-science" type="text" name="">
 								<div class="icon-clear"></div>
 							</div>
 						</div>
 					</div>
 					<div class="tech-fields form-toggle-blocks hide">
 						<div class="b-select b-select-chosen">
-							<p>Стаж работы на управленческих должностях</p>
+							<label for="label-experience">Стаж работы на управленческих должностях</label>
 							<div class="select">
-								<select name="">
+								<select id="label-experience" name="">
 									<option value="">9 лет </option>
 									<option value="">8 лет </option>
 									<option value="">7 лет </option>
@@ -173,25 +173,25 @@ include 'header.php';
 							</div>
 						</div>
 						<div class="b-input">
-							<p>Уровень должности</p>
+							<label for="label-post">Уровень должности</label>
 							<div class="input">
-								<input type="text" name="">
+								<input id="label-post" type="text" name="">
 								<div class="icon-clear"></div>
 							</div>
 						</div>
 						<div class="b-input">
-							<p>Ученая степень</p>
+							<label for="label-academic-degree">Ученая степень</label>
 							<div class="input">
-								<input type="text" name="">
+								<input id="label-academic-degree" type="text" name="">
 								<div class="icon-clear"></div>
 							</div>
 						</div>
 					</div>
 					<div class="business-fields form-toggle-blocks hide">
 						<div class="b-select b-select-chosen">
-							<p>Стаж работы на управленческих должностях</p>
+							<label for="label-experience-managerial">Стаж работы на управленческих должностях</label>
 							<div class="select">
-								<select name="">
+								<select id="label-experience-managerial" name="">
 									<option value="">9 лет </option>
 									<option value="">8 лет </option>
 									<option value="">7 лет </option>
@@ -199,23 +199,23 @@ include 'header.php';
 							</div>
 						</div>
 						<div class="b-input">
-							<p>Опыт коммерциализации научно-технических разработок, запуска инвестиционных/инновационных проектов в качестве руководителя проекта</p>
+							<label for="label-commercial">Опыт коммерциализации научно-технических разработок, запуска инвестиционных/инновационных проектов в качестве руководителя проекта</label>
 							<div class="input">
-								<input type="text" name="">
+								<input id="label-commercial" type="text" name="">
 								<div class="icon-clear"></div>
 							</div>
 						</div>
 						<div class="b-input">
-							<p>Бюджет инвестиционных/инновационных проектов</p>
+							<label for="label-budget">Бюджет инвестиционных/инновационных проектов</label>
 							<div class="input">
-								<input type="text" name="" class="divide">
+								<input id="label-budget" type="text" name="" class="divide">
 								<div class="icon-clear"></div>
 							</div>
 						</div>
 						<div class="b-input">
-							<p>Ученая степень</p>
+							<label for="label-academic-degree-2">Ученая степень</label>
 							<div class="input">
-								<input type="text" name="">
+								<input id="label-academic-degree-2" type="text" name="">
 								<div class="icon-clear"></div>
 							</div>
 						</div>
@@ -223,16 +223,16 @@ include 'header.php';
 
 					<h3>Ваши контакты</h3>
 					<div class="b-input">
-						<p>Телефон</p>
+						<label for="label-phone">Телефон</label>
 						<div class="input">
-							<input type="text" name="phone" required>
+							<input id="label-phone" type="text" name="phone" required>
 							<div class="icon-clear"></div>
 						</div>
 					</div>
 					<div class="b-input">
-						<p>E-mail</p>
+						<label for="label-email">E-mail</label>
 						<div class="input">
-							<input type="text" name="email" required>
+							<input id="label-email" type="text" name="email" required>
 							<div class="icon-clear"></div>
 						</div>
 					</div>
@@ -243,11 +243,11 @@ include 'header.php';
 							<p>Я принимаю условия <a href="#">пользовательского соглашения</a></p>
 						</label>
 					</div>
-					<a href="#" class="b-btn b-btn-white-border ajax">
+					<button class="b-btn b-btn-white-border ajax">
 						<span class="b-btn-content">Отправить</span>
 						<div class="icon-arrow-right"></div>
 						<div class="icon-arrow-right-bold"></div>
-					</a>
+					</button>
 				</div>
 			</form>
 		</div>

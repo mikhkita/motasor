@@ -321,7 +321,7 @@ include 'header.php';
 		</div>
 		<div class="b b-news b-news-index b-gray">
 			<div class="b-block">
-				<h2 class="b-title">Новости</h2>
+				<h2>Новости</h2>
 				<div class="b-news-list clearfix">
 					<a href="news-detail.php" class="b-news-item">
 						<div class="date">29.6.2017</div>
@@ -354,7 +354,7 @@ include 'header.php';
 		</div>
 		<div class="b-directions">
 			<div class="b-block clearfix">
-				<h2 class="b-title">Направления</h2>
+				<h2>Направления</h2>
 				<div class="b-directions-list">
 					<div class="b-directions-row">
 						<div class="b-directions-half">

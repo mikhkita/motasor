@@ -99,13 +99,12 @@ include 'header.php';
 			<div class="b-text">
 				<h1>АО «Наука и инновации»</h1>
 				<img src="i/science-1.jpg">
-			</div>
-			<div class="b-sections-list">
-				<a href="#" class="b-go" data-block=".b-news-inner">Новости</a>
-				<a href="#">Контакты</a>
-				<a href="#">Обратная связь</a>
-			</div>
-			<div class="b-text">
+			
+				<div class="b-sections-list">
+					<a href="#" class="b-go" data-block=".b-news-inner">Новости</a>
+					<a href="#">Контакты</a>
+					<a href="#">Обратная связь</a>
+				</div>
 				<p>Управляющая организация АО «Наука и инновации» создана для координации активов и научно-исследовательской деятельности институтов, входящих в периметр Блока по управлению инновациями Госкорпорации «Росатом». Всего АО «Наука и инновации» координирует деятельность 12 институтов: 
 					<a href="#">АО «ГНЦ РФ - ФЭИ им. А.И.Лейпунского»</a>, 
 					<a href="#">АО «ГНЦ РФ ТРИНИТИ»</a>,
@@ -125,34 +124,32 @@ include 'header.php';
 			    	<li>Электрофизический</li>
 			    	<li>Химико-технологический</li>
 			    </ul>
-			</div>
-			<div class="b-news-inner clearfix">
-				<h2 class="b-title">Новости</h2>
-				<div class="b-news-list clearfix">
-					<a href="news-detail.php" class="b-news-item">
-						<div class="date">29.6.2017</div>
-						<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
-					</a>
-					<a href="news-detail.php" class="b-news-item">
-						<div class="date">29.6.2017</div>
-						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
-					</a>
-					<a href="news-detail.php" class="b-news-item">
-						<div class="date">29.6.2017</div>
-						<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
-					</a>
-					<a href="news-detail.php" class="b-news-item">
-						<div class="date">29.6.2017</div>
-						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
+				<div class="b-news-inner clearfix">
+					<h2>Новости</h2>
+					<div class="b-news-list clearfix">
+						<a href="news-detail.php" class="b-news-item">
+							<div class="date">с 27 сен по 06 окт 2019</div>
+							<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
+						</a>
+						<a href="news-detail.php" class="b-news-item">
+							<div class="date">с 27 сен по 06 окт 2019</div>
+							<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
+						</a>
+						<a href="news-detail.php" class="b-news-item">
+							<div class="date">с 27 сен по 06 окт 2019</div>
+							<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
+						</a>
+						<a href="news-detail.php" class="b-news-item">
+							<div class="date">с 27 сен по 06 окт 2019</div>
+							<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
+						</a>
+					</div>
+					<a href="news.php" class="b-btn b-btn-tr all-news">
+						<span class="b-btn-content">Все новости</span>
+						<div class="icon-arrow-right"></div>
+						<div class="icon-arrow-right-bold"></div>
 					</a>
 				</div>
-				<a href="news.php" class="b-btn b-btn-tr all-news">
-					<span class="b-btn-content">Все новости</span>
-					<div class="icon-arrow-right"></div>
-					<div class="icon-arrow-right-bold"></div>
-				</a>
-			</div>
-			<div class="b-text">
 				<h3 class="blue">Физико-энергетический блок</h3>
 				<p>Научный руководитель – <b>Рисованый Владимир Дмитриевич</b>, доктор технических наук, профессор.</p>
 				<p>Задачи физико-энергетического блока - обеспечение Госкорпорации «Росатом» мирового лидерства в области приоритетных направлений исследований и разработок, таких как реакторные и изотопные технологии, прикладная и ядерная медицина, инновационные неядерные технологии, испытательная реакторная база и горячие камеры, испытательная внереакторная база.</p>
@@ -197,44 +194,44 @@ include 'header.php';
 			    	<li><a href="#">АО «Гиредмет»</a></li>
 			    	<li><a href="#">АО «НИИграфит»</a></li>
 			    </ul>
-			</div>
-			<div class="b-partners-list clearfix">
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-science-1.jpg">
-				</a>
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-science-2.jpg">
-				</a>
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-science-3.jpg">
-				</a>
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-science-4.jpg">
-				</a>
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-science-5.jpg">
-				</a>
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-science-6.jpg">
-				</a>
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-science-7.jpg">
-				</a>
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-science-8.jpg">
-				</a>
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-science-9.jpg">
-				</a>
-				<a href="#" class="b-partner-item">
-					<span href="#">АО "НИИЭФА им. Д.В. Ефремова"</span>
-				</a>
-				<a href="#" class="b-partner-item">
-					<span href="#">АО «Радиевый институт<br> им. В.Г. Хлопина»</span>
-				</a>
-				<a href="#" class="b-partner-item">
-					<span href="#">АО «ИРМ»</span>
-				</a>
+				<div class="b-partners-list clearfix">
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-science-1.jpg">
+					</a>
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-science-2.jpg">
+					</a>
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-science-3.jpg">
+					</a>
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-science-4.jpg">
+					</a>
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-science-5.jpg">
+					</a>
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-science-6.jpg">
+					</a>
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-science-7.jpg">
+					</a>
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-science-8.jpg">
+					</a>
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-science-9.jpg">
+					</a>
+					<a href="#" class="b-partner-item">
+						<span href="#">АО "НИИЭФА им. Д.В. Ефремова"</span>
+					</a>
+					<a href="#" class="b-partner-item">
+						<span href="#">АО «Радиевый институт<br> им. В.Г. Хлопина»</span>
+					</a>
+					<a href="#" class="b-partner-item">
+						<span href="#">АО «ИРМ»</span>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>

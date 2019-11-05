@@ -5,7 +5,7 @@ include 'header.php';
 
 	<div class="b-calendar-page">
 		<div class="b-block clearfix">
-			<h1 class="b-title">Календарь событий</h1>
+			<h1>Календарь событий</h1>
 			<div class="b-calendar-page-left b-calendar-cont">
 				<div class="b-calendar-months">
 					<a href="#" class="icon-arrow-left"></a>
@@ -75,7 +75,7 @@ include 'header.php';
 				</table>
 			</div>
 			<div class="b-calendar-page-right">
-				<h2 class="b-title">Все события</h2>
+				<h2>Все события</h2>
 				<div class="b-news-gray">
 					<div class="b-news-list clearfix">
 						<a href="news-detail.php" class="b-news-item">

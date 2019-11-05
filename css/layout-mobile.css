@@ -11,7 +11,7 @@ body {
 .b-block.b-block-inner{
 	padding-right: 0;
 }
-h1.b-title, h2.b-title{
+h1, h2{
 	font-size: 30px;
 	line-height: 38px;
 	margin-bottom: 18px;
@@ -33,23 +33,24 @@ h1.b-title, h2.b-title{
 	    height: auto;
 	    width: 100%;
 	    max-width: none;
-	    padding: 30px 0 40px 0;
+	    padding: 30px 0 0 0;
 	    box-shadow: none;
 	}
 
 .b-text{
-
+	line-height: 22px;
+	margin-bottom: 50px
 }
 	.b-text h1{
 		font-size: 30px;
 		line-height: 38px;
-		margin-bottom: 18px;
+		margin-bottom: 24px;
 	}
 	.b-text h2{
 		font-size: 30px;
 		line-height: 38px;
 		margin-top: 26px;
-		margin-bottom: 18px;
+		margin-bottom: 24px;
 	}
 	.b-text h3{
 		margin-bottom: 16px;
@@ -60,6 +61,8 @@ h1.b-title, h2.b-title{
 	.b-text p{
 		font-size: 14px;
 		line-height: 22px;
+	}
+	.b-text > p{
 		margin-bottom: 20px;
 	}
 	.b-text img{
@@ -84,6 +87,9 @@ h1.b-title, h2.b-title{
 		.b-text ol li:before{
 
 		}
+	.b-text .b-comm-contacts h4{
+		margin-bottom: 24px;
+	}
 
 /* === Мобильное меню на внутренних страницах === */
 
@@ -738,16 +744,16 @@ h1.b-title, h2.b-title{
     margin-bottom: 30px;
 }
 .b-innov-pdf{
-	padding: 24px;
+	padding: 16px 24px;
 	margin-bottom: 50px;
 }
-	.b-innov-pdf a{
+	/*.b-innov-pdf a{
 		padding-left: 52px;
 	}
 	.b-innov-pdf a:before {
 	    top: -7px;
-	}
-.b-innov-share {
+	}*/
+.b-innov-share a{
     padding-left: 40px;
 }
 
@@ -1117,6 +1123,9 @@ h1.b-title, h2.b-title{
 			display: inline-block;
 			margin-bottom: 14px;
 		}
+		.b-innov-contacts-ref{
+			display: block;
+		}
 	.b-comm-contacts {
 	    padding: 20px 24px 40px 24px;
 	    margin-bottom: 30px;
@@ -1128,9 +1137,13 @@ h1.b-title, h2.b-title{
 		    top: 2px;
 		}
 
+	.b-news-inner .b-news-list{
+		margin-bottom: 8px;
+	}
 	.b-news-inner .b-news-item {
 	    width: 100%;
 	    margin-right: 0;
+	    margin-bottom: 20px;
 	}
 	.b-news-inner .b-news-item:nth-child(n+3){
 		display: none;
@@ -1165,6 +1178,9 @@ h1.b-title, h2.b-title{
 	.b-form-content{
 		padding-right: 0;
 	}
+		.b-form h2{
+			margin-bottom: 20px;
+		}
 		.b-form h3 {
 		    padding-top: 6px;
 		    margin-bottom: 16px;
@@ -1178,23 +1194,20 @@ h1.b-title, h2.b-title{
 		margin-bottom: 24px;
 	}
 
-	.b-quote{
+	.b-text blockquote{
 		position: relative;
 		padding: 24px;
 		background-color: #F2F5F7;
 		border-radius: 5px;
 		margin-bottom: 32px;
 	}
-		.b-quote p{
+		.b-text blockquote p{
 			font-size: 18px;
 			line-height: 28px;
 			margin-bottom: 14px;
 		}
-		.b-quote .signature{
-
-		}
-		.b-quote:before,
-		.b-quote:after{
+		.b-text blockquote:before,
+		.b-text blockquote:after{
 			display: none;
 		}
 }

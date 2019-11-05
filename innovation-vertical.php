@@ -82,55 +82,57 @@ include 'header.php';
 			<div class="b-text">
 				<h1>Инновационная вертикаль</h1>
 				<p>Процесс консолидации инновационной деятельности обусловлен задачей достижения технологического лидерства отрасли и подкреплен решением руководства Росатома о построении функциональных вертикалей, которые бы пронизывали все дивизионы. Принцип дивизионального построения корпорации с функциональной вертикалью уже реализован внутри Госкорпорации в сферах управления финансами, кадрами, безопасностью, внутреннего контроля, инвестиций. Перед Блоком по управлению инновациями стояла задача – выстроить собственную вертикаль в части управления инновациями. В первую очередь речь идет о портфельном подходе к управлению НИОКРами, технологиями, результатами интеллектуальной деятельности, с обеспечением соответствующей экспертизы и инфраструктуры.</p>
-			</div>
-			<div class="b-news-inner clearfix">
-				<h2 class="b-title">Новости</h2>
-				<div class="b-news-list clearfix">
-					<a href="news-detail.php" class="b-news-item">
-						<div class="date">29.6.2017</div>
-						<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
-					</a>
-					<a href="news-detail.php" class="b-news-item">
-						<div class="date">29.6.2017</div>
-						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
-					</a>
-					<a href="news-detail.php" class="b-news-item">
-						<div class="date">29.6.2017</div>
-						<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
-					</a>
-					<a href="news-detail.php" class="b-news-item">
-						<div class="date">29.6.2017</div>
-						<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
+
+				<div class="b-news-inner clearfix">
+					<h2>Новости</h2>
+					<div class="b-news-list clearfix">
+						<a href="news-detail.php" class="b-news-item">
+							<div class="date">с 27 сен по 06 окт 2019</div>
+							<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
+						</a>
+						<a href="news-detail.php" class="b-news-item">
+							<div class="date">с 27 сен по 06 окт 2019</div>
+							<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
+						</a>
+						<a href="news-detail.php" class="b-news-item">
+							<div class="date">с 27 сен по 06 окт 2019</div>
+							<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
+						</a>
+						<a href="news-detail.php" class="b-news-item">
+							<div class="date">с 27 сен по 06 окт 2019</div>
+							<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
+						</a>
+					</div>
+					<a href="news.php" class="b-btn b-btn-tr all-news">
+						<span class="b-btn-content">Все новости</span>
+						<div class="icon-arrow-right"></div>
+						<div class="icon-arrow-right-bold"></div>
 					</a>
 				</div>
-				<a href="news.php" class="b-btn b-btn-tr all-news">
-					<span class="b-btn-content">Все новости</span>
-					<div class="icon-arrow-right"></div>
-					<div class="icon-arrow-right-bold"></div>
-				</a>
-			</div>
-			<div class="b-partners-list clearfix">
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-1.jpg">
-				</a>
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-2.jpg">
-				</a>
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-3.jpg">
-				</a>
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-4.jpg">
-				</a>
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-5.jpg">
-				</a>
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-6.jpg">
-				</a>
-				<a href="#" class="b-partner-item">
-					<img class="b-img" src="i/partner-7.jpg">
-				</a>
+				<div class="b-partners-list clearfix">
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-1.jpg">
+					</a>
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-2.jpg">
+					</a>
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-3.jpg">
+					</a>
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-4.jpg">
+					</a>
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-5.jpg">
+					</a>
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-6.jpg">
+					</a>
+					<a href="#" class="b-partner-item">
+						<img class="b-img" src="i/partner-7.jpg">
+					</a>
+				</div>
+
 			</div>
 		</div>
 	</div>
