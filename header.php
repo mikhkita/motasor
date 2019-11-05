@@ -12,12 +12,19 @@
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
+	<link rel="stylesheet" href="css/chosen.min.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
 	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1440px)" href="css/layout-tablet.css">
 	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css">
 
-	<!-- <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico"> -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
 	<div class="b b-header">
@@ -40,12 +47,9 @@
 					<a href="#b-popup-auth" class="b-header-community fancy">Присоединиться к cообществу</a>
 				</div>
 				<div class="b-menu-mobile">
-					<div class="b-btn-menu">
+					<div class="b-btn-menu b-btn-menu-mobile">
 						<div class="icon-menu"></div>
 						<span>Меню</span>
-					</div>
-					<div class="mobile-close">
-						<div class="icon-close"></div>
 					</div>
 				</div>
 			</div>

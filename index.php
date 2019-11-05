@@ -19,6 +19,20 @@ include 'header.php';
 						<div class="b-img" style="background-image: url(i/slider-1.jpg)"></div>
 					</div>
 				</div>
+				<div class="b-main-slider-mobile slick-loading">
+					<div class="b-main-slider-mobile-item">
+						<div class="b-img" style="background-image: url(i/slider-mobile-1.jpg)"></div>
+					</div>
+					<div class="b-main-slider-mobile-item">
+						<div class="b-img" style="background-image: url(i/slider-mobile-1.jpg)"></div>
+					</div>
+					<div class="b-main-slider-mobile-item">
+						<div class="b-img" style="background-image: url(i/slider-mobile-1.jpg)"></div>
+					</div>
+					<div class="b-main-slider-mobile-item">
+						<div class="b-img" style="background-image: url(i/slider-mobile-1.jpg)"></div>
+					</div>
+				</div>
 				<div class="mobile-controls">
 					<div class="mobile-arrow-left">
 						<div class="icon-arrow-left"></div>

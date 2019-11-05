@@ -5,6 +5,42 @@ $(document).ready(function(){
         isMobile = false,
         isMobileSmall = false;
 
+    function swapSliders(showSlider, hideSlider) {
+        $(hideSlider).addClass("hide");
+        $(showSlider).removeClass("hide");
+        if($(hideSlider).hasClass("slick-initialized")){
+            $(hideSlider).slick('unslick');
+        }
+        if(!$(showSlider).hasClass("slick-initialized")){
+            $(showSlider).on('init', function(event, slick){
+                $(showSlider).removeClass("slick-loading");
+            });
+            $(showSlider).slick({
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                cssEase: 'ease', 
+                speed: 600,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: true,
+                prevArrow: $(".b-main-slider").parent().find(".desktop-controls .slick-prev"),
+                nextArrow: $(".b-main-slider").parent().find(".desktop-controls .slick-next"),
+                responsive: [
+                    {
+                      breakpoint: 665,
+                      settings: {
+                        prevArrow: $(".b-main-slider").parent().find(".mobile-arrow-left"),
+                        nextArrow: $(".b-main-slider").parent().find(".mobile-arrow-right"),
+                        appendDots: $(".b-main-slider").parent().find(".mobile-dots"),
+                      }
+                    }
+                ]
+            });
+        }
+    }
+
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
             myWidth = window.innerWidth;
@@ -36,6 +72,12 @@ $(document).ready(function(){
         }
 
         $(".b-menu-mobile-window").css({"height": (myHeight - 82)+"px"});
+
+        if(isMobile){
+            swapSliders(".b-main-slider-mobile",".b-main-slider");
+        }else{
+            swapSliders(".b-main-slider",".b-main-slider-mobile");
+        }
 
         if(isMobileSmall){
             $(".mobile-slider").each(function() {//поставить слайдеры
@@ -102,33 +144,6 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
 
-    $(".b-main-slider").on('init', function(event, slick){
-        $(".b-main-slider").removeClass("slick-loading");
-    });
-    $(".b-main-slider").slick({
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        cssEase: 'ease', 
-        speed: 600,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: true,
-        prevArrow: $(".b-main-slider").parent().find(".desktop-controls .slick-prev"),
-        nextArrow: $(".b-main-slider").parent().find(".desktop-controls .slick-next"),
-        responsive: [
-            {
-              breakpoint: 665,
-              settings: {
-                prevArrow: $(".b-main-slider").parent().find(".mobile-arrow-left"),
-                nextArrow: $(".b-main-slider").parent().find(".mobile-arrow-right"),
-                appendDots: $(".b-main-slider").parent().find(".mobile-dots"),
-              }
-            }
-        ]
-    });
-
     $(".b-answer").each(function () {
         $(this).slideUp(0);
     });
@@ -188,10 +203,11 @@ $(document).ready(function(){
         }
     );
 
-    $(document).on("click", ".b-btn-menu, .mobile-close", function(){
+    $(document).on("click", ".b-btn-menu-desktop", function(){
+        $(this).toggleClass("open");
         $(".b-header-menu-window").toggleClass("open");
     });
-    $(document).on("click", ".b-menu-mobile", function(){
+    $(document).on("click", ".b-btn-menu-mobile", function(){
         if(!$(this).hasClass("open")){//открываем
             // $("body, html").animate({scrollTop : 0}, 200);
             $(this).addClass("open");
@@ -313,6 +329,18 @@ $(document).ready(function(){
             }
             return false;
         }
+    });
+
+    $(".b-select-chosen select").chosen({
+        width: "100%",
+        disable_search_threshold: 10000
+    });
+
+    $('.b-select-chosen select').on('chosen:showing_dropdown', function(evt, params) {
+        $(this).parents(".b-select").addClass("open");
+    });
+    $('.b-select-chosen select').on('chosen:hiding_dropdown', function(evt, params) {
+        $(this).parents(".b-select").removeClass("open");
     });
 
     ripple.init();

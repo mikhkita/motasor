@@ -343,7 +343,7 @@
 			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
 		</div>
 	</div>
-
+<!-- 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/jquery.touch.min.js"></script>
@@ -351,10 +351,11 @@
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/imask.min.js"></script>
+	<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
 	<script type="text/javascript" src="js/KitSend.min.js"></script>
 	<script type="text/javascript" src="js/main.min.js"></script>
-
-<!-- 	
+ -->
+	
 	<script type="text/javascript" src="js_originals/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js_originals/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js_originals/jquery.touch.min.js"></script>
@@ -362,9 +363,10 @@
 	<script type="text/javascript" src="js_originals/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js_originals/slick.min.js"></script>
 	<script type="text/javascript" src="js_originals/imask.min.js"></script>
+	<script type="text/javascript" src="js_originals/chosen.jquery.min.js"></script>
 	<script type="text/javascript" src="js_originals/KitSend.js"></script>
 	<script type="text/javascript" src="js_originals/main.js"></script>
-	 -->
+	
 
 </body>
 </html>

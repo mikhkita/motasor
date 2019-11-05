@@ -5,7 +5,7 @@ include 'header.php';
 
 	<div class="b-calendar-page">
 		<div class="b-block clearfix">
-			<h1>Календарь событий</h1>
+			<h1 class="b-title">Календарь событий</h1>
 			<div class="b-calendar-page-left b-calendar-cont">
 				<div class="b-calendar-months">
 					<a href="#" class="icon-arrow-left"></a>

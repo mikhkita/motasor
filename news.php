@@ -6,7 +6,7 @@ include 'header.php';
 
 	<div class="b-news-page">
 		<div class="b-block">
-			<h1>Новости</h1>
+			<h1 class="b-title">Новости</h1>
 			<div class="b-filter-days">
 				<a href="#" class="all active">Все</a>
 				<a href="#" class="today">Сегодня</a>
