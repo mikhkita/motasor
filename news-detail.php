@@ -1,9 +1,13 @@
 <?
-$title = "Детальная";
+
+$params = array(
+	"TITLE" => "Детальная",
+	"WITHOUT_HEADER" => true,
+);
+
 include 'header.php';
+
 ?>
-
-
 	<div class="b-news-detail">
 		<div class="b-block">
 			<ul class="b-breadcrumbs clearfix">

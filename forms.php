@@ -1,4 +1,10 @@
-<?include 'header.php';?>
+<?
+
+$params = array(
+	"WITHOUT_HEADER" => true,
+);
+
+include 'header.php';?>
 		<div class="b-block">
 			<br>
 			<br>

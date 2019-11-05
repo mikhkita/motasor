@@ -1,9 +1,13 @@
 <?
-$title = "Новости";
+
+$params = array(
+	"TITLE" => "Новости",
+	"WITHOUT_HEADER" => true,
+);
+
 include 'header.php';
+
 ?>
-
-
 	<div class="b-news-page">
 		<div class="b-block">
 			<h1 class="b-title">Новости</h1>

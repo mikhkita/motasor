@@ -1,7 +1,13 @@
+<?
+
+$arPage = explode('/', $_SERVER['REQUEST_URI']);
+$isMain = (end($arPage) == 'index.php') ? true : false;
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?echo isset($title) ? $title : "Росатом";?></title>
+	<title><?echo isset($params['TITLE']) ? $params['TITLE'] : "Росатом";?></title>
 	<meta name="keywords" content=''>
 	<meta name="description" content=''>
 
@@ -30,7 +36,7 @@
 	<div class="b b-header">
 		<div class="b-header-top clearfix">
 			<div class="b-block">
-				<a href="/" class="b-header-logo"></a>
+				<a href="index.php" class="b-header-logo"></a>
 				<div class="b-header-top-right">
 					<div class="b-header-search">
 						<a href="#" class="b-header-search-btn icon-search"></a>
@@ -262,3 +268,64 @@
 		
 	</div>
 	<div class="b b-content">
+		<? if (!$isMain): ?>
+			<div class="b-nav-mobile">
+				<div class="main-section">
+					<a href="#">Инновационная вертикаль</a>
+					<span class="icon-select"></span>
+				</div>
+				<ul class="items">
+					<li>
+						<a href="#">АО «Наука и инновации»</a>
+						<ul>
+							<li><a href="#">АО «ВНИИХТ»</a></li>
+							<li><a href="#">АО «Гиредмет»</a></li>
+							<li><a href="#">АО «ГНЦ НИИАР»</a></li>
+							<li><a href="#">АО «ГНЦ РФ - ФЭИ им. А.И.Лейпунского»</a></li>
+							<li><a href="#">АО «ГНЦ РФ ТРИНИТИ»</a></li>
+							<li><a href="#">АО «НИИграфит»</a></li>
+							<li><a href="#">АО «НИИП» г. Лыткарино</a></li>
+							<li><a href="#">АО «НТЦ «ЯФИ»</a></li>
+							<li><a href="#">АО «Радиевый институт им. В.Г. Хлопина»</a></li>
+							<li><a href="#">ФГУП «НИИ НПО «Луч»</a></li>
+							<li><a href="#">АО «ИРМ»</a></li>
+							<li><a href="#">АО "НИИЭФА им. Д.В. Ефремова"</a></li>
+						</ul>
+					</li>
+					<li><a href="#">АО «Концерн Росэнергоатом»</a></li>
+					<li><a href="#">АО «АТОМПРОЕКТ»</a></li>
+					<li><a href="#">АО «Атомэнергомаш»</a></li>
+					<li><a href="#">Дивизион ЗСЖЦ (АО ФЦЯРБ)</a></li>
+					<li><a href="#">АО ИК «АСЭ» (АО «НИАЭП»)</a></li>
+					<li><a href="#">Урановый холдинг «АРМЗ»</a></li>
+				</ul>
+			</div>
+			<? if (!$params['WITHOUT_HEADER']): ?>
+				<div class="b-header-inner">
+					<picture>
+						<img src="i/header-inner.jpg">
+					</picture>
+					<div class="b-block">
+						<div class="b-header-inner-left">
+							<? if( isset($params["BREADCRUMBS"]) ): ?>
+								<ul class="b-breadcrumbs clearfix">
+									<? foreach ($params["BREADCRUMBS"] as $title => $url): ?>
+										<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="<?=$url?>" title="<?=$title?>" itemprop="url"><span itemprop="title"><?=$title?></span></a></li>
+									<? endforeach; ?>
+									<li><span><?=($params["BREADCRUMBS_TITLE"])?$params["BREADCRUMBS_TITLE"]:$params["TITLE"]?></span></li>
+								</ul>
+							<?endif;?>
+							<h2><?=($params["BREADCRUMBS_TITLE"])?$params["BREADCRUMBS_TITLE"]:$params["TITLE"]?></h2>
+						</div>
+						<? if ($innerText): ?>
+							<div class="b-header-inner-right"><?=$innerText?></div>
+						<? endif; ?>
+						<div class="b-header-show-more">
+							<span class="text-open">Развернуть</span>
+							<span class="text-close">Свернуть</span>
+							<span class="icon-select"></span>
+						</div>
+					</div>
+				</div>
+			<? endif; ?>
+		<? endif ?>

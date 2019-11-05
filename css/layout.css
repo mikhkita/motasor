@@ -981,6 +981,7 @@ h1.b-title, h2.b-title{
 			}
 			.b-footer-menu ul.menu-window-item a{
 				color: #000;
+				display: inline-block;
 			}
 			.b-footer-menu ul.menu-window-item a:hover{
 				text-decoration: underline;
@@ -1797,14 +1798,34 @@ h1.b-title, h2.b-title{
 
 .b-header-inner{
 	min-height: 334px;
-	background-image: url(../i/header-inner.jpg);
+	/*background-image: url(../i/header-inner.jpg);*/
 	background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 56px 0;
     color: #FFF;
     background-color: #48569D;
+    position: relative;
 }
+	.b-header-inner picture{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		overflow: hidden; 
+	}
+		.b-header-inner picture img{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			min-width: 100%;
+			min-height: 100%;
+		}
 	.b-header-inner-left{
 		display: inline-block;
 		vertical-align: top;

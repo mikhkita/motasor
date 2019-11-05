@@ -1,9 +1,13 @@
 <?
-$title = "Результат поиска";
+
+$params = array(
+	"TITLE" => "Результат поиска",
+	"WITHOUT_HEADER" => true,
+);
+
 include 'header.php';
+
 ?>
-
-
 	<div class="b-search-page">
 		<div class="b-block">
 			<h1 class="b-title">Результат поиска</h1>

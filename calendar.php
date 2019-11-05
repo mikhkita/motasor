@@ -1,6 +1,12 @@
 <?
-$title = "Календарь событий";
+
+$params = array(
+	"TITLE" => "Календарь событий",
+	"WITHOUT_HEADER" => true,
+);
+
 include 'header.php';
+
 ?>
 
 	<div class="b-calendar-page">
