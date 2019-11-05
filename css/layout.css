@@ -2275,7 +2275,7 @@ h1, h2{
 		    background-size: 25px;
 		}
 	.b-innov-pdf{
-		padding: 24px 31px 26px;
+		padding: 12px 31px 14px;
 		background: #48569D;
 		border-radius: 5px;
 		margin-top: 20px;
@@ -2417,7 +2417,7 @@ h1, h2{
 			.b-form .b-input .input input{
 				border: 1px solid #FFF;
 				border-radius: 5px;
-				padding: 20px 16px;
+				padding: 20px 42px 20px 16px;
 				color: #FFF;
 			}
 			.b-form input::-webkit-input-placeholder {
@@ -2575,10 +2575,13 @@ h1, h2{
 			content: "";
 			position: absolute;
 			top: 14px;
-			right: 0;
+			right: -1px;
 			width: 1px;
 			height: 20px;
 			background-color: #48569D;
+		}
+		.b-news-page .b-filter-days a.active:after{
+			display: none;
 		}
 		.b-news-page .b-filter-days a:last-child:after{
 			display: none;
@@ -2628,7 +2631,7 @@ h1, h2{
 	margin-top: 48px;
 }
 	.b-news-detail .b-block{
-		width: 100%;
+		width: calc(100% - 24px);
 		max-width: 697px;
 	}
 		.b-news-detail .b-breadcrumbs{
@@ -3214,12 +3217,18 @@ form button{
 		vertical-align: top;
 		width: calc(100% - 174px);
 	}
+	.b-popup .b-input .input .icon-clear:before{
+		color: #48569D;
+	}
+	/*.b-popup .b-input .input .icon-clear:hover:before{
+		color: #DDD;
+	}*/
 	.b-popup .b-btn{
 		font-family: 'FiraSans-Regular';
 	}
 		.b-popup .b-input input{
 			border: 1px solid #A3A3A3;
-			padding: 20px 16px;
+			padding: 20px 42px 20px 16px;
 		}
 		.b-popup .b-checkbox{
 			margin-bottom: 16px;

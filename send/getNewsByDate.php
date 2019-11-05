@@ -16,7 +16,7 @@
 			"12" => "декабря",
 		);
 	?>
-	<h2 class="b-title">События <?=$dateParts[0]?> <?=$months[$dateParts[1]]?></h2>
+	<h2>События <?=$dateParts[0]?> <?=$months[$dateParts[1]]?></h2>
 	<div class="b-news-gray">
 		<div class="b-news-list clearfix">
 			<a href="news-detail.php" class="b-news-item">
