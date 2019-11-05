@@ -114,6 +114,8 @@ $(document).ready(function(){
                 }
             });
         }
+
+        // newsDaysRightHeight();
     }
     $(window).resize(resize);
     resize();
@@ -346,6 +348,8 @@ $(document).ready(function(){
     ripple.init();
     $('.b-btn').on('click touchstart', ripple.click);
 
+    // $('.b-news-days-right-bottom').height($('.b-news-days-right').height() - $('.b-news-days-right-top').innerHeight());
+
     // // Первая анимация элементов в слайде
     // $(".b-step-slide[data-slick-index='0'] .slider-anim").addClass("show");
 
@@ -441,3 +445,20 @@ var animation = {
 };
 
 var animationEnd = animation.whichAnimationEvent(); 
+
+// window.onload = function(){
+
+//     function newsDaysRightHeight(){
+
+//         blockHeight = $('.b-news-days-right-top').outerHeight(true) + $('.b-news-days-right-bottom').outerHeight(true);
+
+//         if (($('.b-news-days-list').outerHeight(true) > blockHeight) && myWidth > 1170 ) {
+//             var height = $('.b-news-days-right-top').outerHeight(true);
+//             $('.b-news-days-right-bottom').css('height', 'calc(100% - '+height+'px)');
+//         }
+//     }
+
+//     newsDaysRightHeight();
+// };
+
+
