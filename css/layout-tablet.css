@@ -129,10 +129,10 @@ body {
 			    top: 5px;
 			}
 
-	.b-question-calendar .b-question-calendar-left,
+	/*.b-question-calendar .b-question-calendar-left,
 	.b-news-days .b-news-days-right{
 		display: none;
-	}
+	}*/
 
 	.b-size-3-4 {
 	    width: 100%;

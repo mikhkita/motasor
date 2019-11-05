@@ -438,6 +438,11 @@ h1.b-title, h2.b-title{
 .b-size-3-4.b-size-left{
 	float: left;
 }
+	.b-size-3-4 .mobile-slider{
+		display: flex;
+  		flex-wrap: wrap;
+  		height: 100%;
+	}
 .b-size-3-4.b-size-right{
 	float: right;
 }
@@ -448,7 +453,7 @@ h1.b-title, h2.b-title{
 	float: left;
 }
 .b-size-1-4.b-size-right{
-	float: right;
+	/*float: right;*/
 }
 
 .b-color-blue{
@@ -1050,11 +1055,17 @@ h1.b-title, h2.b-title{
 	.b-news-days{
 		margin-bottom: 20px;
 	}
+		.b-news-b-block{
+			display: flex;
+  			flex-wrap: wrap;
+  			justify-content: space-between;
+  			/*align-items: start;*/
+		}
 			.b-news-days-item{
 				position: relative;
 				float: left;
 				width: calc(100%/3);
-				min-height: 568px;
+				/*min-height: 568px;*/
 				padding: 28px 20px;
 				background-color: #F2F5F7;
 			}
@@ -1064,7 +1075,7 @@ h1.b-title, h2.b-title{
 					margin-bottom: 36px;
 				}
 				.days-list{
-
+					padding-bottom: 59px;
 				}
 				.days-list.hover-children{
 
@@ -1108,11 +1119,12 @@ h1.b-title, h2.b-title{
 				color: #FFF;
 			}
 	.b-news-days-right{
-
+		display: flex;
+  		flex-wrap: wrap;
 	}
 		.b-news-days-right-bottom{
 			position: relative;
-			height: 332px;
+			/*height: 332px;*/
 			padding: 24px;
 			background-color: #6E8EC1;
 		}
@@ -1120,6 +1132,7 @@ h1.b-title, h2.b-title{
 				font-family: 'FiraSans-Medium';
 				font-size: 25px;
 				line-height: 32px;
+				padding-bottom: 124px;
 				color: #FFF;
 			}
 			.b-news-days-person{
@@ -1169,7 +1182,10 @@ h1.b-title, h2.b-title{
 		.b-news-days-right-top{
 			display: block;
 			position: relative;
-			height: 222px;
+			/*height: 222px;*/
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-between;
 			padding: 24px;
 			background-color: #F2F5F7;
 			margin-bottom: 14px;
@@ -1787,7 +1803,7 @@ h1.b-title, h2.b-title{
     background-size: cover;
     padding: 56px 0;
     color: #FFF;
-    background-color: #2E4A8A;
+    background-color: #48569D;
 }
 	.b-header-inner-left{
 		display: inline-block;
