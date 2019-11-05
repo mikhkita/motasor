@@ -35,7 +35,7 @@ $(document).ready(function(){
             isMobileSmall = (myWidth <= 665);
         }
 
-        $(".b-menu-mobile-window").css({"height": (window.innerHeight - 82)+"px"});
+        $(".b-menu-mobile-window").css({"height": (myHeight - 82)+"px"});
 
         if(isMobileSmall){
             $(".mobile-slider").each(function() {//поставить слайдеры

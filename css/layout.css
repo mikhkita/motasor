@@ -117,6 +117,9 @@ input.error,textarea.error{
 	width: 1386px;
 	margin: 0px auto;
 }
+.b-block.b-block-inner{
+	padding-right: 160px;
+}
 input::-webkit-input-placeholder {
 	color: #777;
 }
@@ -461,8 +464,16 @@ h1.b-title, h2.b-title{
 .b-text{
 
 }
+	.b-text h1{
+		font-size: 40px;
+		line-height: 47px;
+		margin-bottom: 40px;
+	}
 	.b-text h2{
-		
+		font-size: 40px;
+		line-height: 47px;
+		margin-top: 56px;
+		margin-bottom: 32px;
 	}
 	.b-text h3{
 		font-size: 24px;
@@ -477,12 +488,10 @@ h1.b-title, h2.b-title{
 	.b-text .blue{
 		color: #2E4A8A;
 	}
-	.b-text .text-block{
-		margin-bottom: 56px;
-	}
-	.b-text > p{
+	.b-text p{
 		font-size: 16px;
 		line-height: 22px;
+		margin-bottom: 25px;
 	}
 	.b-text a{
 		color: #0B6093;
@@ -491,15 +500,6 @@ h1.b-title, h2.b-title{
 	.b-text a:hover{
 		text-decoration: none;
 	}
-	.b-text .with-back{
-		display: inline-block;
-		background-color: #2E4A8A;
-		padding: 21px 40px;
-		margin-bottom: 32px;
-	}
-		.b-text .with-back a{
-			color: #FFF;
-		}
 	.b-text img.wide{
 		width: 100%;
 	}
@@ -508,14 +508,11 @@ h1.b-title, h2.b-title{
 		margin-bottom: 32px;
 	}
 
-	.b-text .img-with-signature img{
-		margin-bottom: 16px;
-	}
-
 	.b-text ul{
 	    list-style: none;
 	    padding-top: 10px;
 	    margin-left: 12px;
+	    margin-bottom: 35px;
 	}
 		.b-text ul li{
 			position: relative;
@@ -536,6 +533,7 @@ h1.b-title, h2.b-title{
 		counter-reset:item;
 		padding-top: 10px;
 		margin-left: 68px;
+		margin-bottom: 35px;
 	}
 		.b-text ol li{
 			position: relative;
@@ -550,9 +548,13 @@ h1.b-title, h2.b-title{
 			color: #0B6093;
 		    font-family: "FiraSans-Bold";
 		}
-	.b-text .small-text{
+
+	.b-text small{
+		display: block;
 		font-size: 14px;
 		line-height: 20px;
+		margin-top: -10px;
+		margin-bottom: 30px;
 	}
 
 .b-quote{
@@ -1716,16 +1718,16 @@ h1.b-title, h2.b-title{
 			left: 14px;
 			width: 32px;
 		}
-		.b-footer-search-form .input .icon-search:before{
+		.b-footer-search-form .b-input .input .icon-search:before{
 			color: #000;
 			font-size: 14px;
 		}
-		.b-footer-search-form .input .icon-clear:before{
+		.b-footer-search-form .b-input .input .icon-clear:before{
 			top: 10px;
     		right: 7px;
 			color: #ECEBED;
 		}
-		.b-footer-search-form .input .icon-clear:hover:before{
+		.b-footer-search-form .b-input .input .icon-clear:hover:before{
 			color: #2E4A8A;
 		}
 		.b-footer-soc{
@@ -1973,8 +1975,7 @@ h1.b-title, h2.b-title{
 	height: 100%;
 	width: calc(100% - 448px);
 	max-width: 683px;
-	padding: 0 50px;
-	padding-top: 30px;
+	padding: 30px 50px 72px 50px;
 	box-shadow: inset 35px 4px 54px -46px rgba(0, 0, 0, 0.1);
 }
 	.b-content-inner h4{
@@ -2125,7 +2126,7 @@ h1.b-title, h2.b-title{
 			margin-right: 0;
 		}
 .b-news-inner{
-	margin-bottom: 56px;
+	margin: 56px 0;
 }
 	.b-news-inner .b-news-list{
 		margin-bottom: 12px;
@@ -2167,6 +2168,7 @@ h1.b-title, h2.b-title{
 	border-radius: 10px;
 	padding: 20px 37px 23px 37px;
 	color: #FFF;
+	margin-top: 40px;
 	margin-bottom: 56px;
 }
 	.b-innov-contacts .b-img{
@@ -2221,7 +2223,6 @@ h1.b-title, h2.b-title{
 		background: #2E4A8A;
 		border-radius: 5px;
 		margin-top: 20px;
-		margin-bottom: 72px;
 	}
 		.b-innov-pdf a{
 			display: inline-block;
@@ -2313,7 +2314,6 @@ h1.b-title, h2.b-title{
 	padding: 34px 125px 45px 32px;
 	background-color: #2E4A8A;
 	max-width: 683px;
-	margin-bottom: 80px;
 }
 	.b-form h2{
 		color: #FFF;

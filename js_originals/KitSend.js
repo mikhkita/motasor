@@ -163,7 +163,7 @@ $(document).ready(function(){
 
 	$(".b-go").click(function(){
 		var block = $( $(this).attr("data-block") ),
-			off = $(this).attr("data-offset")||0,
+			off = $(this).attr("data-offset")||( (window.innerWidth < 768) ? 180 : 20 ),
 			duration = $(this).attr("data-duration")||800;
 		$("body, html").animate({
 			scrollTop : block.offset().top-off

@@ -8,6 +8,7 @@ body {
 }
 .b-block.b-block-inner{
 	width: calc(100% - 27px);
+	padding-right: 0;
 	margin-left: 0;
 }
 
@@ -73,7 +74,7 @@ body {
 	}
 	.b-content-inner{
 		width: calc(100% - 398px);
-		padding: 30px 24px 0 24px;
+		padding: 30px 24px 72px 24px;
 	}
 		.b-nav > li > ul {
 		    padding-left: 26px;
