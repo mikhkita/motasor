@@ -45,43 +45,40 @@ include 'header.php';
 					<p><b>Аванпроект</b> -  это научно-исследовательская работа по обоснованию технического облика, технической и экономической возможности и целесообразности выполнения НИОКР, нацеленных на достижение технологического превосходства отрасли.</p>
 					<p><b>Цель конкурса</b> - обеспечить качественное обоснование будущих НИОКР, снизить вероятность затрат на дорогостоящие работы с низким потенциалом реализации, снизить стоимость и сократить сроки на разработку нового продукта или технологии.</p>
 					<p><b>Результат аванпроекта</b> - обоснованное ТЗ на выполнение НИОКР</p>
-				</div>
-				<div class="b-news-inner clearfix">
-					<h2 class="b-title">Новости</h2>
-					<div class="b-news-list clearfix">
-						<a href="news-detail.php" class="b-news-item">
-							<div class="date">29.6.2017</div>
-							<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
-						</a>
-						<a href="news-detail.php" class="b-news-item">
-							<div class="date">29.6.2017</div>
-							<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
-						</a>
-						<a href="news-detail.php" class="b-news-item">
-							<div class="date">29.6.2017</div>
-							<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
-						</a>
-						<a href="news-detail.php" class="b-news-item">
-							<div class="date">29.6.2017</div>
-							<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
+				
+					<div class="b-news-inner clearfix">
+						<h2>Новости</h2>
+						<div class="b-news-list clearfix">
+							<a href="news-detail.php" class="b-news-item">
+								<div class="date">с 27 сен по 06 окт 2019</div>
+								<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
+							</a>
+							<a href="news-detail.php" class="b-news-item">
+								<div class="date">с 27 сен по 06 окт 2019</div>
+								<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
+							</a>
+							<a href="news-detail.php" class="b-news-item">
+								<div class="date">с 27 сен по 06 окт 2019</div>
+								<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
+							</a>
+							<a href="news-detail.php" class="b-news-item">
+								<div class="date">с 27 сен по 06 окт 2019</div>
+								<p>Более 700 специалистов прошли обучение в школах МАГАТЭ по управлению ядерными знаниями</p>
+							</a>
+						</div>
+						<a href="news.php" class="b-btn b-btn-tr all-news">
+							<span class="b-btn-content">Все новости</span>
+							<div class="icon-arrow-right"></div>
+							<div class="icon-arrow-right-bold"></div>
 						</a>
 					</div>
-					<a href="news.php" class="b-btn b-btn-tr all-news">
-						<span class="b-btn-content">Все новости</span>
-						<div class="icon-arrow-right"></div>
-						<div class="icon-arrow-right-bold"></div>
-					</a>
-				</div>
-				<div class="b-text">
 					<h2>Конкурс аванпроектов 2019</h2>
-				</div>
-				<div class="b-sections-list big">
-					<a href="#" class="b-go" data-block=".b-comm-contacts">Контакты</a>
-					<a href="#" class="b-go" data-block=".b-questions-list">FAQ</a>
-					<a href="#" class="b-go" data-block=".b-news-inner">Новости</a>
-					<a href="#" class="b-go" data-block=".b-materials">Материалы для скачивания</a>
-				</div>
-				<div class="b-text">
+					<div class="b-sections-list big">
+						<a href="#" class="b-go" data-block=".b-comm-contacts">Контакты</a>
+						<a href="#" class="b-go" data-block=".b-questions-list">FAQ</a>
+						<a href="#" class="b-go" data-block=".b-news-inner">Новости</a>
+						<a href="#" class="b-go" data-block=".b-materials">Материалы для скачивания</a>
+					</div>
 					<h4>Сбор заявок на Конкурс аванпроектов завершен.</h4>
 					<p>6 августа 2019 года завершился сбор заявок на Конкурс аванпроектов 2019.  Получена 271 заявка. Сейчас проходит этап экспертизы заявок организационным и экспертным комитетами, который завершится к сентябрю.</p>
 					<p><b>Следите за новостями на сайте!</b></p>
@@ -95,15 +92,15 @@ include 'header.php';
 					<h3>Важная информация:</h3>
 					<p>В расчетах цены аванпроекта ставка накладных расходов рекомендуется в диапазоне от 15% до 100% от фонда оплаты труда. Конкретный размер накладных расходов зависит от состава работ (только аналитическая работа или наличие экспериментальных работ на крупных высокотехнологичных научных установках). Предельное значение прибыли не должно превышать 10% себестоимости НИОКР за вычетом затрат по работам (услугам), выполняемым сторонними организациями, расходов на служебные командировки и иных материальных затрат, не подвергающихся монтажу и (или) дополнительной обработке при производстве продукции.</p>
 					<p>При предоставлении накладных расходов отличающихся от рекомендуемой ставки, необходимо предоставление нормативного документа о расчёте накладных расходов (приказ или письмо на бланке организации).</p>
-				</div>
-				<div class="b-comm-contacts">
-					<h4>Контакты</h4>
-					<a href="mailto:innov@rosatomtech.ru">E-mail:  <b>innov@rosatomtech.ru</b></a><br>
-					<a href="mailto:innov@innov-rosatom.ru">E-mail:  <b>innov@innov-rosatom.ru</b></a>
+					<div class="b-comm-contacts">
+						<h4>Контакты</h4>
+						<a href="mailto:innov@rosatomtech.ru">E-mail:  <b>innov@rosatomtech.ru</b></a><br>
+						<a href="mailto:innov@innov-rosatom.ru">E-mail:  <b>innov@innov-rosatom.ru</b></a>
+					</div>
 				</div>
 
-				<h2 class="b-title">Часто задаваемые вопросы по конкурсу аванпроектов 2019</h2>
 				<div class="b-questions-list">
+					<h2>Часто задаваемые вопросы по конкурсу аванпроектов 2019</h2>
 					<div class="b-questions-item">
 						<div class="b-questions-item-ref">
 							<h4>Вопрос</h4>
@@ -139,7 +136,7 @@ include 'header.php';
 					</div>
 				</div>
 				<div class="b-materials">
-					<h2 class="b-title">Материалы для скачивания</h2>
+					<h2>Материалы для скачивания</h2>
 					<div class="b-materials-list">
 						<a href="#" class="b-materials-item">Презентация_21.05.2019_Методология ТРЛ при планировании реализации НИОКР_СарториАВ</a>
 						<a href="#" class="b-materials-item">Презентация_21.05.2019_Научный мониторинг ЕОТ_АндриановаМС</a>
@@ -150,5 +147,6 @@ include 'header.php';
 			</div>
 		</div>
 	</div>
+	
 <?include 'footer.php';?>
 		

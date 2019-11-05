@@ -174,7 +174,7 @@
 		</div> -->
 
 		<div class="b-popup b-popup-auth" id="b-popup-auth">
-			<h2 class="b-title">Авторизация</h2>
+			<h2>Авторизация</h2>
 			<p class="subtitle">Войдите с помошью социальных сетей</p>
 			<div class="b-popup-auth-soc">
 				<a href="//vk.com" class="auth-soc" target="_blank">
@@ -189,16 +189,16 @@
 			<div class="b-popup-auth-or"><span>или</span><div class="line"></div></div>
 			<form action="" method="POST">
 				<div class="b-input">
-					<p>Логин</p>
+					<label for="label-auth-login">Логин</label>
 					<div class="input">
-						<input type="text" name="login" required>
+						<input id="label-auth-login" type="text" name="login" required>
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input">
-					<p>Пароль</p>
+					<label for="label-auth-password">Пароль</label>
 					<div class="input">
-						<input type="text" name="password" required>
+						<input id="label-auth-password" type="text" name="password" required>
 						<div class="icon-clear"></div>
 					</div>
 				</div>
@@ -222,54 +222,54 @@
 		</div>
 
 		<div class="b-popup b-popup-register" id="b-popup-register">
-			<h2 class="b-title">Регистрация</h2>
+			<h2>Регистрация</h2>
 			<form action="" method="POST">
 				<div class="b-input">
-					<p>Имя</p>
+					<label for="label-reg-name">Имя</label>
 					<div class="input">
-						<input type="text" name="" placeholder="Ваше имя">
+						<input id="label-reg-name" type="text" name="" placeholder="Ваше имя">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input">
-					<p>Фамилия</p>
+					<label for="label-reg-surname">Фамилия</label>
 					<div class="input">
-						<input type="text" name="" placeholder="Ваша фамилия">
+						<input id="label-reg-surname" type="text" name="" placeholder="Ваша фамилия">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input">
-					<p>Логин<span class="required">*</span></p>
+					<label for="label-reg-login">Логин<span class="required">*</span></label>
 					<div class="input">
-						<input type="text" name="login" required>
+						<input id="label-reg-login" type="text" name="login" required>
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input">
-					<p>Пароль<span class="required">*</span></p>
+					<label for="label-reg-password">Пароль<span class="required">*</span></label>
 					<div class="input">
-						<input type="text" name="password" required>
+						<input id="label-reg-password" type="text" name="password" required>
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input">
-					<p>Подтверждение пароля<span class="required">*</span></p>
+					<label for="label-reg-password-conf">Подтверждение пароля<span class="required">*</span></label>
 					<div class="input">
-						<input type="text" name="password-confirmation" required>
+						<input id="label-reg-password-conf" type="text" name="password-confirmation" required>
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input">
-					<p>E-mail<span class="required">*</span></p>
+					<label for="label-reg-email">E-mail<span class="required">*</span></label>
 					<div class="input">
-						<input type="text" name="email">
+						<input id="label-reg-email" type="text" name="email">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input captcha">
-					<p>Код с картинки<span class="required">*</span></p>
+					<label for="label-reg-captcha">Код с картинки<span class="required">*</span></label>
 					<div class="input">
-						<input type="text" name="email">
+						<input id="label-reg-captcha" type="text" name="email">
 						<div class="icon-clear"></div>
 					</div>
 					<img src="i/captcha.jpg">
@@ -297,28 +297,28 @@
 		</div>
 
 		<div class="b-popup b-popup-forgot" id="b-popup-forgot">
-			<h2 class="b-title">Восстановление пароля</h2>
+			<h2>Восстановление пароля</h2>
 			<p class="subtitle">Если вы забыли пароль, введите логин или E-Mail.<br><br> Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам по E-Mail.</p>
 			<form action="" method="POST">
 				<div class="b-input">
-					<p>Логин</p>
+					<label for="label-forgot-login">Логин</label>
 					<div class="input">
-						<input type="text" name="login">
+						<input id="label-forgot-login" type="text" name="login">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-popup-auth-or"><span>или</span><div class="line"></div></div>
 				<div class="b-input">
-					<p>E-mail</p>
+					<label for="label-forgot-email">E-mail</label>
 					<div class="input">
-						<input type="text" name="email">
+						<input id="label-forgot-email" type="text" name="email">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input captcha">
-					<p>Код с картинки<span class="required">*</span></p>
+					<label for="label-forgot-captcha">Код с картинки<span class="required">*</span></label>
 					<div class="input">
-						<input type="text" name="email">
+						<input id="label-forgot-captcha" type="text" name="email">
 						<div class="icon-clear"></div>
 					</div>
 					<img src="i/captcha.jpg">
