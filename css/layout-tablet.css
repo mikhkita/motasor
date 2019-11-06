@@ -45,10 +45,9 @@ body {
 }
 
 .b-sections-list{
-	padding: 14px 10px;
+	
 }
 	.b-sections-list a {
-	    padding: 0 10px;
 	    font-size: 14px;
 	}
 	.b-sections-list a:after {
@@ -364,10 +363,10 @@ body {
 	}
 		.b-sections-list a {
 			display: inline-block;
-		    background-color: #48569D;
-		    padding: 16px 20px;
-		    margin-right: 6px;
-		    margin-bottom: 10px;
+			background-color: #48569D;
+			padding: 16px 20px;
+			margin-right: 10px;
+			margin-bottom: 10px;
 		}
 		.b-sections-list a:after{
 			display: none;

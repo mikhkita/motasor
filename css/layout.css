@@ -2150,10 +2150,9 @@ h4{
 	}
 	.b-sections-list{
 		display: inline-block;
-		background-color: #48569D;
-		padding: 21px 10px;
 		margin-bottom: 32px;
 		color: #FFF;
+		font-size: 0px;
 	}
 	.b-sections-list.big{
 		width: 100%;
@@ -2161,8 +2160,11 @@ h4{
 	}
 		.b-sections-list a{
 			position: relative;
-			padding: 0 32px;
+			padding: 21px 32px;
 			font-size: 16px;
+			display: inline-block;
+			margin-bottom: 10px;
+			background-color: #48569D;
 			line-height: 20px;
 			color: #FFF;
 			text-decoration: underline;
@@ -2173,9 +2175,11 @@ h4{
 		.b-sections-list a:after{
 			content: "";
 			position: absolute;
-			top: 0;
+			top: 50%;
+			margin-top: -10px;
 			right: -1px;
 			width: 1px;
+			z-index: 1;
 			height: 20px;
 			background-color: #FFF;
 		}
