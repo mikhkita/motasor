@@ -18,9 +18,6 @@
 	<link rel="stylesheet" href="css/plugins.min.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
-	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1440px)" href="css/layout-tablet.css">
-	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css">
-
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
