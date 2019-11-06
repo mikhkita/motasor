@@ -169,6 +169,7 @@ include 'header.php';
 								<span class="ask-question">Задать вопрос <div class="icon-arrow-right"></div></span>
 							</a>
 						</div>
+						<div class="b-news-days-right b-news-days-right-tablet" id="bottom-cont"></div>
 					</div>
 					<div class="b-size-3-4 b-size-right b-question-calendar-right">
 						<div class="b-question-calendar-right-wrap">
@@ -302,7 +303,6 @@ include 'header.php';
 							</div>
 						</div> -->
 					</div>
-					<div class="b-news-days-right b-news-days-right-tablet" id="bottom-cont"></div>
 				</div>
 			</div>
 		</div>
