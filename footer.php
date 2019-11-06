@@ -341,6 +341,7 @@
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/imask.min.js"></script>
 	<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+	<script type="text/javascript" src="js/swipe.js"></script>
 	<script type="text/javascript" src="js/KitSend.min.js"></script>
 	<script type="text/javascript" src="js/main.min.js"></script>
  -->
@@ -354,6 +355,7 @@
 	<script type="text/javascript" src="js_originals/slick.min.js"></script>
 	<script type="text/javascript" src="js_originals/imask.min.js"></script>
 	<script type="text/javascript" src="js_originals/chosen.jquery.min.js"></script>
+	<script type="text/javascript" src="js_originals/swipe.js"></script>
 	<script type="text/javascript" src="js_originals/KitSend.js"></script>
 	<script type="text/javascript" src="js_originals/main.js"></script>
 	

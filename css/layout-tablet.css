@@ -46,10 +46,9 @@ body {
 }
 
 .b-sections-list{
-	padding: 14px 10px 14px 10px;
+	
 }
 	.b-sections-list a {
-	    padding: 0 10px;
 	    font-size: 14px;
 	}
 	.b-sections-list a:after {
@@ -92,6 +91,18 @@ body {
 			.b-nav > li > ul > li > ul {
 			    padding-left: 24px;
 			}
+	.b-header-search-form{
+		width: 352px;
+	    top: -5px;
+	    left: -7px;
+	}
+	.b-header-search .b-header-search-input{
+		padding: 12px 18px 12px 40px;
+	}
+	.b-header-search-form button {
+	    left: 8px;
+	    right: auto;
+	}
 	.b-main-slider-cont{
 		height: 262px;
 	}
@@ -412,6 +423,22 @@ body {
 	.b-innov-contacts .b-img{
 		vertical-align: top;
 	}
+
+	.b-sections-list {
+		background-color: transparent;
+	    padding: 0;
+	    margin-bottom: 22px;
+	}
+		.b-sections-list a {
+			display: inline-block;
+			background-color: #48569D;
+			padding: 16px 20px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.b-sections-list a:after{
+			display: none;
+		}
 	.b-news-days{
 		
 	}
@@ -489,7 +516,9 @@ body {
 	.b-header-show-more{
 		display: block;
 	}
-
+	.b-header-search-form{
+		width: 280px;
+	}
 	.b-menu-list-wrap {
 	    width: calc(100% - 158px);
 	}

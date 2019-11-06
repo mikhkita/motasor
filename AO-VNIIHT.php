@@ -57,11 +57,11 @@ include 'header.php';
 				<li><a href="#">Тематические группы </a></li>
 			</ul>
 			<div class="b-content-inner">
-				<div class="b-text">
+				<div class="b-text b-inner-margin">
 					<h1>АО «ВНИИХТ»</h1>
 					<img src="i/VNIIHT-1.jpg">
 					<div class="b-sections-list">
-						<a href=".b-news-inner" class="b-go">Новости</a>
+						<a href="#b-news-inner">Новости</a>
 						<a href="#">Контакты</a>
 						<a href="#">Обратная связь</a>
 					</div>
@@ -85,7 +85,7 @@ include 'header.php';
 						<li>Переработка ОЯТ, РАО и ЖРО</li>
 						<li>РЗЭ-технологии</li>
 				    </ul>
-					<div class="b-news-inner clearfix">
+					<div class="b-news-inner clearfix" id="b-news-inner">
 						<h2>Новости</h2>
 						<div class="b-news-list clearfix">
 							<a href="news-detail.php" class="b-news-item">
