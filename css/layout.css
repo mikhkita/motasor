@@ -613,8 +613,8 @@ h4{
 			height: 119px;
 			background-image: url(../i/quotes-1.svg);
 			background-position: 50% 50%;
-		    background-repeat: no-repeat;
-		    background-size: 147px;
+			background-repeat: no-repeat;
+			background-size: contain;
 		}
 		.b-text blockquote:after{
 			content: "";
@@ -625,8 +625,8 @@ h4{
 			height: 119px;
 			background-image: url(../i/quotes-2.svg);
 			background-position: 50% 50%;
-		    background-repeat: no-repeat;
-		    background-size: 147px;
+			background-repeat: no-repeat;
+			background-size: contain;
 		}
 	.b-links-list{
 
@@ -1645,9 +1645,6 @@ h4{
 			.b-flex-news .b-news-item p{
 				padding-bottom: 70px;
 			}
-		.b-news-gray .b-news-list .b-news-item:hover{
-			background-color: #E7E9EB ;
-		}
 		.b-news-list:hover{
 
 		}
@@ -3697,6 +3694,9 @@ form button{
 	.b-news-list:hover .b-news-item:not(:hover){
 		opacity: 0.5;
 	}	
+	.b-news-gray .b-news-list .b-news-item:hover{
+		background-color: #E7E9EB;
+	}
 }
 
 /* Tablet -------------------------------------------------------------- Tablet */
@@ -5187,7 +5187,7 @@ form button{
 		width: calc(100%/2 - 12px);
 	}
 	.b-flex-news .b-news-item p {
-	    padding-bottom: 40px;
+	    padding-bottom: 50px;
 	}
 	.b-search-page {
 	    margin-bottom: 60px;
@@ -5217,7 +5217,7 @@ form button{
 			padding: 14px 32px 15px 32px;
 			margin-right: 6px;
 			margin-bottom: 10px;
-			box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.05);
+			box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
 		}
 		.b-news-page .b-filter-days a:after{
 			display: none;
@@ -5659,7 +5659,8 @@ form button{
 			}
 			.b-text blockquote:before,
 			.b-text blockquote:after{
-				display: none;
+				width: 90px;
+				height: 69px;
 			}
 		.b-calendar-page-right .b-news-list.b-flex-news .b-news-item{
 			width: 100%;
@@ -5717,6 +5718,20 @@ form button{
 		.b-news-inner .all-news {
 		    float: none;
 		    width: 100%;
+		}
+		.b-sections-list a {
+		    padding: 14px 18px;
+		    margin-right: 6px;
+		    margin-bottom: 6px;
+		}
+		.b-news-item{
+			padding: 16px;
+		}
+		.b-news-item p{
+			font-size: 16px;
+		}
+		.b-news-item .with-arrow{
+			left: 16px;
 		}
 	}
 

@@ -58,7 +58,7 @@ include 'header.php';
 			<div class="b-content-inner">
 				<div class="b-text b-inner-margin">
 					<h1>АО «Наука и инновации»</h1>
-					<img src="i/science-1.jpg">
+					<img src="i/g10.svg">
 				
 					<div class="b-sections-list">
 						<a href="#b-news-inner">Новости</a>
