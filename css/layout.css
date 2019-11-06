@@ -1650,9 +1650,6 @@ h4{
 		.b-news-list:hover{
 
 		}
-			.b-news-list:hover .b-news-item:not(:hover){
-				opacity: 0.5;
-			}
 		.b-news-index .b-news-item:nth-child(3n){
 			margin-right: 0;
 		}
@@ -3695,6 +3692,8 @@ form button{
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	
 }	
-@media screen and (max-width: 1440px){
-	
+@media screen and (min-width: 768px){
+	.b-news-list:hover .b-news-item:not(:hover){
+		opacity: 0.5;
+	}	
 }
