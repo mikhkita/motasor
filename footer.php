@@ -135,7 +135,7 @@
 					<div class="b-input">
 						<div class="input">
 							<button class="icon-search"></button>
-							<input type="text" name="q" class="input-search">
+							<input type="text" name="q" class="input-search" placeholder="Поиск">
 							<div class="icon-clear"></div>
 						</div>
 					</div>
