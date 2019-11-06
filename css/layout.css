@@ -1599,6 +1599,7 @@ h4{
 			border-radius: 100px;
 			border: 1px solid #FFF;
 			color: #FFF;
+			font-size: 16px;
 		}
 
 .b-tablet-block,
@@ -3698,6 +3699,8 @@ form button{
 	}	
 }
 
+/* Tablet -------------------------------------------------------------- Tablet */
+
 @media screen and (min-width: 768px) and (max-width: 1440px){
 	body {
 		min-width: 768px;
@@ -4017,6 +4020,11 @@ form button{
 		.b-form-content{
 			padding-right: 0;
 		}
+		.b-question-calendar-left-cont{
+			width: 100%;
+			justify-content: space-between;
+			order: 99;
+		}
 	}
 
 	@media screen and (max-width: 1024px){
@@ -4149,7 +4157,6 @@ form button{
 			flex-wrap: nowrap;
 			overflow: auto;
 			margin-left: -27px;
-			margin-right: -27px;
 			padding-left: 27px;
 			padding-right: 27px;
 			width: 100%;
@@ -4167,15 +4174,14 @@ form button{
 			height: auto;
 		}
 		.b-question-calendar-left{
-			width: 320px;
-			float: left;
+
 		}
 		.b-question-calendar-right{
 			width: calc(100% - 342px);
-			float: right;
+			margin-bottom: 0;
 		}
 		.b-news-days-right{
-			width: 320px;
+
 		}
 		.b-news-days-right-top, .b-news-days-right-bottom{
 			width: 100%;
@@ -4184,7 +4190,26 @@ form button{
 			width: 100%;
 		}
 		.b-question-calendar{
-			display: block;
+			margin-bottom: 56px;
+		}
+		.b-question-calendar-left-cont{
+			width: 320px;
+			order: 0;
+		}
+		.b-question-calendar-left{
+			width: 100%;
+		}
+		.b-news-days-right{
+			width: 100%;
+			order: 0;
+		}
+		.b-news-days-right-bottom,
+		.b-ask-question,
+		.b-expert-rosatom{
+			margin-top: 8px;
+		}
+		.b-news-days-right-bottom h3{
+			padding-bottom: 0;
 		}
 	}
 
@@ -4333,6 +4358,10 @@ form button{
 		}
 	}
 }
+
+/* Tablet -------------------------------------------------------------- Tablet */
+
+/* Mobile -------------------------------------------------------------- Mobile */
 
 @media screen and (min-width: 240px) and (max-width: 767px){
 
@@ -4821,6 +4850,7 @@ form button{
 
 	.b-news-days {
 	    overflow: auto;
+	    margin-bottom: 8px;
 	}
 	.b-news-days-list{
 		width: 951px;
@@ -4831,10 +4861,26 @@ form button{
 	}
 
 	.b-question-calendar-right-wrap {
-	    height: 100%;
-	    width: 56%;
-	    float: right;
+	    width: 100%;
 	    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+	    display: block;
+	}
+
+	.b-question-calendar-left-cont{
+		order: 99;
+	}
+	.b-expert-rosatom{
+		flex-direction: column;
+		margin-top: 8px;
+		margin-bottom: 11px;
+	}
+	.b-news-days-right-top{
+		margin-top: 8px;
+		margin-bottom: 8px;
+		flex-direction: column;	
+	}
+	.b-news-days-right-bottom h3{
+		padding-bottom: 70px;
 	}
 
 	.b-mobile-block {
@@ -4882,7 +4928,7 @@ form button{
 		    right: -30px;
 		    bottom: 0px;
 		}
-		.question-back-1{
+		/*.question-back-1{
 		    width: 21px;
 		    height: 35px;
 		    top: 41px;
@@ -4902,7 +4948,7 @@ form button{
 		    top: 41px;
 		    left: 70px;
 		    background-size: 25px;
-		}
+		}*/
 	.b-mobile-block .b-expert-rosatom{
 		height: 150px;
 		margin-bottom: 0;
@@ -4919,22 +4965,13 @@ form button{
 			margin-bottom: 14px;
 		}
 
-
-
-	/*.b-news-days-list{
-		
-		overflow: auto;
-	}*/
 	.b-question-calendar .b-question-calendar-left{
-	    display: none;
+	    width: 100%;
 	}
 	.b-mobile-block{
 		display: block;
 	}
-	/*.b-tablet-block .b-news-days-right-bottom,
-	.b-tablet-block .b-news-days-right-top{
-		display: none;
-	}*/
+
 	.b-question-calendar {
 	    height: auto;
 	    margin-bottom: 100px;
@@ -4955,7 +4992,7 @@ form button{
 
 	.b-news-days-right .b-news-days-right-top,
 	.b-news-days-right .b-news-days-right-bottom{
-		display: none;
+		/*display: none;*/
 	}
 
 	.b-calendar-cont {
@@ -4969,13 +5006,10 @@ form button{
 		}
 	.b-events {
 	    float: none;
-	    width: 100%;
-	    padding: 24px 14px 36px 14px;
-	    height: 354px;
+	    width: calc(100% + 24px);
+	    margin-left: -12px;
+	    padding: 24px 14px 116px 14px;
 	}
-		/*.b-events-item:nth-child(n+3) {
-		    display: none;
-		}*/
 		.all-events{
 			left: 14px;
 		}
@@ -5188,6 +5222,9 @@ form button{
 		.b-news-page .b-filter-days a:after{
 			display: none;
 		}
+	.b-news-days-right-tablet{
+		display: flex;
+	}
 
 	@media screen and (max-width: 665px){
 		
@@ -5350,7 +5387,8 @@ form button{
 		.b-news-days-right-bottom h3{
 			font-size: 20px;
 	    	line-height: 24px;
-	    	margin-bottom: 50px;
+	    	margin-bottom: 51px;
+	    	padding-bottom: 0;
 		}
 		.b-news-days-person{
 			width: 100%;
@@ -5392,8 +5430,8 @@ form button{
 			    height: auto;
 			}
 			.b-question-calendar-right-wrap {
-			    height: 100%;
-			    width: 100%;
+			    height: auto;
+			    /*width: 100%;*/
 			    float: none;
 			    margin-bottom: 8px;
 			}
@@ -5432,7 +5470,7 @@ form button{
 			width: 100%;
 		}
 		.b-question-calendar .b-question-calendar-left{
-		    display: none;
+		    /*display: none;*/
 		}
 		.b-calendar th{
 			text-align: center;
@@ -5447,7 +5485,9 @@ form button{
 		.b-question-calendar{
 			margin-bottom: 54px;
 		}
-		
+		.b-events{
+			padding-bottom: 36px;
+		}
 		.all-events {
 		    position: static;
 		    margin-top: 26px;
@@ -5698,4 +5738,6 @@ form button{
 	}
 
 }
+
+/* Mobile -------------------------------------------------------------- Mobile */
 
