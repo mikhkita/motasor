@@ -630,9 +630,9 @@ h1, h2{
     padding: 24px 14px 36px 14px;
     height: 354px;
 }
-	.b-events-item:nth-child(n+3) {
+	/*.b-events-item:nth-child(n+3) {
 	    display: none;
-	}
+	}*/
 	.all-events{
 		left: 14px;
 	}

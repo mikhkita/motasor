@@ -1,6 +1,9 @@
 <?
-$title = "Главная";
+
+$isMain = true;
+$params['TITLE'] = 'Главная';
 include 'header.php';
+
 ?>
 		<div class="b-slider-outer">
 			<div class="b-block">
@@ -122,7 +125,7 @@ include 'header.php';
 								</div>
 							</div>
 						</div>
-						<div class="b-size-1-4 b-size-right b-news-days-right">
+						<div class="b-size-1-4 b-size-right b-news-days-right" id="top-cont">
 							<a href="#" class="b-news-days-right-top">
 								<h3>Программа инновационного развития</h3>
 								<span class="b-tile-bottom">
@@ -145,21 +148,27 @@ include 'header.php';
 					</div>
 				</div>
 				<div class="b-question-calendar">
-					<div href="#" class="b-size-1-4 b-size-left b-question-calendar-left">
-						<a href="#" class="b-expert-rosatom">
-							<h3>Стать экспертом Росатома</h3>
-							<div class="b-line"></div>
-							<span class="with-arrow">
-								<span class="text">Подробнее</span>
-							</span>
-						</a>
-						<a href="#" class="b-ask-question">
-							<span class="ask-question">Задать вопрос <div class="icon-arrow-right"></div></span>
-							<div class="question-back-1"></div>
-							<div class="question-back-2"></div>
-							<div class="question-back-3"></div>
-							<div class="b-question-back"></div>
-						</a>
+					<div class="b-size-1-4 b-question-calendar-left-cont">
+						<div class="b-question-calendar-left">
+							<a href="#" class="b-expert-rosatom">
+								<h3>Стать экспертом Росатома</h3>
+								<span class="b-tile-bottom">
+									<div class="b-line"></div>
+									<span class="with-arrow">
+										<span class="text">Подробнее</span>
+									</span>
+								</span>
+							</a>
+							<a href="#" class="b-ask-question">
+								<div class="b-question-back"></div>
+								<div class="question-back-cont">
+									<div class="question-back-1"></div>
+									<div class="question-back-2"></div>
+									<div class="question-back-3"></div>
+								</div>
+								<span class="ask-question">Задать вопрос <div class="icon-arrow-right"></div></span>
+							</a>
+						</div>
 					</div>
 					<div class="b-size-3-4 b-size-right b-question-calendar-right">
 						<div class="b-question-calendar-right-wrap">
@@ -293,6 +302,7 @@ include 'header.php';
 							</div>
 						</div> -->
 					</div>
+					<div class="b-news-days-right b-news-days-right-tablet" id="bottom-cont"></div>
 				</div>
 			</div>
 		</div>
