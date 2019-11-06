@@ -15,10 +15,7 @@ $isMain = ($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/index.
 	<meta name="format-detection" content="telephone=no">
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" href="css/reset.css" type="text/css">
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css">
-	<link rel="stylesheet" href="css/slick.css" type="text/css">
-	<link rel="stylesheet" href="css/chosen.min.css" type="text/css">
+	<link rel="stylesheet" href="css/plugins.min.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
 	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1440px)" href="css/layout-tablet.css">
@@ -50,7 +47,7 @@ $isMain = ($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/index.
 						<a href="//vk.com" class="icon-vk" target="_blank">Вконтакте</a>
 						<a href="//facebook.com" class="icon-facebook" target="_blank">Facebook</a>
 					</div>
-					<a href="#b-popup-auth" class="b-header-community fancy">Присоединиться к cообществу</a>
+					<a href="#b-popup-auth" class="b-header-community b-header-community-mobile fancy">Присоединиться к cообществу</a>
 				</div>
 				<div class="b-menu-mobile">
 					<div class="b-btn-menu b-btn-menu-mobile">
@@ -61,7 +58,7 @@ $isMain = ($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/index.
 			</div>
 		</div>
 		<div class="b-menu-mobile-cont">
-			<div class="b-menu-mobile-window">
+			<div class="b-menu-mobile-window" id="b-menu-mobile-window">
 				<ul class="b-menu-mobile-list">
 					<li>
 						<a href="#">О нас</a>
