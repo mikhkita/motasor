@@ -456,7 +456,7 @@ h4{
 	width: 75%;
 }
 .b-size-3-4.b-size-left{
-	float: left;
+	/*float: left;*/
 }
 	.b-size-3-4 .mobile-slider{
 		display: flex;
@@ -464,13 +464,13 @@ h4{
   		height: 100%;
 	}
 .b-size-3-4.b-size-right{
-	float: right;
+	/*float: right;*/
 }
 .b-size-1-4{
 	width: calc(25% - 20px);
 }
 .b-size-1-4.b-size-left{
-	float: left;
+	/*float: left;*/
 }
 .b-size-1-4.b-size-right{
 	/*float: right;*/
@@ -1171,8 +1171,12 @@ h4{
 		display: flex;
   		flex-wrap: wrap;
 	}
+	.b-news-days-right-tablet{
+		display: none;
+	}
 		.b-news-days-right-bottom{
 			position: relative;
+			width: 100%;
 			/*height: 332px;*/
 			padding: 24px;
 			background-color: #6E8EC1;
@@ -1235,7 +1239,7 @@ h4{
 		.b-news-days-right-top{
 			display: block;
 			position: relative;
-			/*height: 222px;*/
+			width: 100%;
 			display: flex;
 			flex-wrap: wrap;
 			align-content: space-between;
@@ -1269,23 +1273,30 @@ h4{
 			}
 
 .b-question-calendar{
-	height: 490px;
+	/*height: 490px;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	margin-bottom: 60px;
 }
 .b-question-calendar .b-block{
 	height: 100%;
 }
+	.b-question-calendar-left-cont,
 	.b-question-calendar-left{
-		height: 100%;
+		display: flex;
+  		flex-wrap: wrap;
 	}
 		.b-expert-rosatom{
-			display: block;
 			position: relative;
-			height: 222px;
+			width: 100%;
 			padding: 24px;
 			background-color: #48569D;
 			color: #FFF;
 			margin-bottom: 14px;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-between;
 		}
 			.b-expert-rosatom h3{
 				margin-top: 0;
@@ -1313,10 +1324,13 @@ h4{
 				color: #FFF;
 			}
 		.b-ask-question{
-			display: block;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: flex-end;
 			position: relative;
 			padding: 24px 22px;
-			height: 254px;
+			/*min-height: 254px;*/
+			width: 100%;
 			background-image: url(../i/question-back.jpg);
 			background-position: 50% 50%;
 		    background-repeat: no-repeat;
@@ -1340,81 +1354,93 @@ h4{
 						transition: background-color 100ms;
 			}
 			.b-ask-question .ask-question{
-				position: absolute;
+				position: relative;
 				z-index: 5;
-				left: 22px;
-				bottom: 24px;
+				/*left: 22px;*/
+				/*bottom: 29px;*/
 				display: inline-block;
 				color: #FFF;
 				font-size: 40px;
 				line-height: 47px;
 				font-family: 'FiraSans-Bold';
-				max-width: 150px;
+				/*max-width: 150px;*/
+				padding-right: 34px;
 			}
 				.b-ask-question .ask-question .icon-arrow-right{
 					position: absolute;
-				    right: -34px;
-					bottom: 2px;	
+				    right: 0;
+					bottom: 1px;	
 				}
 				.b-ask-question .ask-question .icon-arrow-right:before{
 					color: #FFF;
 					font-size: 18px;
 				}
+			.question-back-cont{
+				width: 101px;
+				height: 69px;
+				margin-right: calc(100% - 101px);
+				margin-top: 16px;
+				position: relative;
+			}
 			.question-back-1{
 				position: absolute;
-			    width: 35px;
-			    height: 56px;
-			    top: 65px;
-			    left: 29px;
-			    z-index: 2;
-			    background-image: url(../i/question-1.svg);
-			    background-position: 50% 50%;
-			    background-repeat: no-repeat;
-			    background-size: 35px;
-			    opacity: 0.5;
-			    -moz-transform: rotate(-25deg);
-			    -ms-transform: rotate(-25deg);
-			    -webkit-transform: rotate(-25deg);
-			    -o-transform: rotate(-25deg);
-			    transform: rotate(-25deg);
-			}
-			.question-back-2{
-				position: absolute;
-				width: 49px;
-				height: 78px;
-				top: 41px;
-				left: 55px;
+				width: 24px;
+				height: 38px;
+				bottom: 7px;
+				left: 9px;
 				z-index: 2;
 				background-image: url(../i/question-1.svg);
 				background-position: 50% 50%;
-			    background-repeat: no-repeat;
-			    background-size: 49px;
+				background-repeat: no-repeat;
+				background-size: contain;
+				opacity: 0.5;
+				-webkit-transform: rotate(-30deg);
+				-ms-transform: rotate(-30deg);
+				-o-transform: rotate(-30deg);
+				transform: rotate(-30deg);
+			}
+			.question-back-2{
+				position: absolute;
+				width: 38px;
+				height: 61px;
+				top: 0;
+				left: 50%;
+				z-index: 2;
+				background-image: url(../i/question-1.svg);
+				background-position: 50% 50%;
+				background-repeat: no-repeat;
+				background-size: contain;
+				-webkit-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);
+				-o-transform: translateX(-50%);
+				transform: translateX(-50%);
 			}
 			.question-back-3{
 				position: absolute;
-			    width: 40px;
-			    height: 67px;
-			    top: 61px;
-			    left: 94px;
-			    z-index: 2;
-			    background-image: url(../i/question-1.svg);
-			    background-position: 50% 50%;
-			    background-repeat: no-repeat;
-			    background-size: 40px;
-			    opacity: 0.5;
-			    -moz-transform: rotate(25deg);
-			    -ms-transform: rotate(25deg);
-			    -webkit-transform: rotate(25deg);
-			    -o-transform: rotate(25deg);
-			    transform: rotate(25deg);
+				width: 28px;
+				height: 45px;
+				bottom: 4px;
+				right: 7px;
+				z-index: 2;
+				background-image: url(../i/question-1.svg);
+				background-position: 50% 50%;
+				background-repeat: no-repeat;
+				background-size: contain;
+				opacity: 0.5;
+				-webkit-transform: rotate(23deg);
+				-ms-transform: rotate(23deg);
+				-o-transform: rotate(23deg);
+				transform: rotate(23deg);
 			}
 	.b-question-calendar-right-wrap{
 		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 	.b-question-calendar-right{
 		box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
 		background-color: #FFF;
-		height: 100%;
 	}
 	.b-calendar-cont{
 		float: left;
@@ -1541,11 +1567,11 @@ h4{
 					}
 	.b-events{
 		position: relative;
-		float: left;
+		/*float: left;*/
 		width: 47%;
 		padding: 24px 42px 85px 42px;
 		background-color: #F2F5F7;
-		height: 100%;
+		/*height: 100%;*/
 	}
 		.b-events-list{
 
@@ -1589,7 +1615,12 @@ h4{
 	.b-flex-news{
 		display: flex;
 		flex-wrap: wrap;
+		/*flex-flow: row wrap;*/
 		justify-content: space-between;
+	}
+	.b-flex-news:after{
+		content: "";
+  		width: calc(100%/3 - 16px);
 	}
 		.b-news-item{
 			position: relative;

@@ -73,6 +73,8 @@ $(document).ready(function(){
 
         $(".b-menu-mobile-window").css({"height": (myHeight - 82)+"px"});
 
+        toggleTile();
+
         if(isMobile){
             swapSliders(".b-main-slider-mobile",".b-main-slider");
         }else{
@@ -414,6 +416,20 @@ $(document).ready(function(){
 	//     map: map,
 	//     title: "Ярмарка вакансий и стажировок"
 	// });
+
+    function toggleTile(){
+        if (myWidth < 1170 && $('#top-cont').find('.b-news-days-right-top').length) {
+            var html = $('#top-cont').html();
+            $('#top-cont').html('');
+            $('#bottom-cont').html(html);
+        }
+
+        if (myWidth >= 1170 && $('#bottom-cont').find('.b-news-days-right-top').length) {
+            var html = $('#bottom-cont').html();
+            $('#bottom-cont').html('');
+            $('#top-cont').html(html);
+        }
+    }
 
 });
 

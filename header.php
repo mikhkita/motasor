@@ -1,7 +1,7 @@
 <?
 
-//$arPage = explode('/', $_SERVER['REQUEST_URI']);
-$isMain = ($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/index.php");
+// $arPage = explode('/', $_SERVER['REQUEST_URI']);
+// $isMain = ($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/index.php");
 
 ?>
 <!DOCTYPE html>
