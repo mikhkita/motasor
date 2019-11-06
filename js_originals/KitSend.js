@@ -113,6 +113,9 @@ $(document).ready(function(){
                 smallBtn   : '<button data-fancybox-close class="fancybox-close-small" title="Закрыть"></button>',
             },
 			beforeShow: function(){
+				if($this.hasClass("b-header-community")){
+					$(".b-btn-menu-mobile, .b-menu-mobile-window").removeClass("open");
+				}
 				$(".fancybox-wrap").addClass("beforeShow");
 				$popup.find(".custom-field").remove();
 				if( $this.attr("data-value") ){
@@ -161,7 +164,7 @@ $(document).ready(function(){
         }
     });
 
-	$(".b-go").click(function(){
+	$(".b-go, .b-sections-list a, .b-links-list li a").click(function(){
 		var block = $( $(this).attr("href") ),
 			off = $(this).attr("data-offset")||( (window.innerWidth < 768) ? 180 : 20 ),
 			duration = $(this).attr("data-duration")||800;

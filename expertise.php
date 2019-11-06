@@ -35,7 +35,7 @@ include 'header.php';
 				<li><a href="#">Семинары/сессии </a></li>
 			</ul>
 			<div class="b-content-inner">
-				<div class="b-text">
+				<div class="b-text b-inner-margin">
 					<h1>Эксперты Росатома</h1>
 					<p>Статистика по экспертизам обновляется ежегодно, на сегодня уже насчитывается порядка 350 экспертиз.</p>
 					<p>Одной из лучших практик российского и зарубежного опыта является активное привлечение экспертов – как внутренних, так и внешних, к экспертизе научно-технической деятельности.</p>
@@ -114,17 +114,10 @@ include 'header.php';
 									<div class="icon-clear"></div>
 								</div>
 							</div>
-							<!-- <div class="b-input">
-								<label for="label-experience-science">Опыт работы научно-исследовательской деятельности</label>
-								<div class="input">
-									<input id="label-experience-science" type="text" name="" placeholder="7 лет">
-									<div class="icon-clear"></div>
-								</div>
-							</div> -->
 							<div class="b-textarea">
 								<label for="label-experience-science">Опыт работы научно-исследовательской деятельности</label>
 								<div class="textarea">
-									<textarea rows="1" id="label-experience-science" name="" ></textarea>
+									<textarea rows="1" id="label-experience-science" name="" placeholder="7 лет"></textarea>
 								</div>
 							</div>
 						</div>
@@ -165,11 +158,10 @@ include 'header.php';
 									</select>
 								</div>
 							</div>
-							<div class="b-input">
+							<div class="b-textarea">
 								<label for="label-commercial">Опыт коммерциализации научно-технических разработок, запуска инвестиционных/инновационных проектов в качестве руководителя проекта</label>
-								<div class="input">
-									<input id="label-commercial" type="text" name="" placeholder="17 лет">
-									<div class="icon-clear"></div>
+								<div class="textarea">
+									<textarea rows="1" id="label-commercial" name="" placeholder="17 лет"></textarea>
 								</div>
 							</div>
 							<div class="b-input">
