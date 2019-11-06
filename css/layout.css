@@ -1588,10 +1588,10 @@ h1, h2{
 		.b-news-gray .b-news-list .b-news-item:hover{
 			background-color: #E7E9EB ;
 		}
-		.b-news-list.hover-children{
+		.b-news-list:hover{
 
 		}
-			.b-news-list.hover-children .b-news-item:not(.hover){
+			.b-news-list:hover .b-news-item:not(:hover){
 				opacity: 0.5;
 			}
 		.b-news-index .b-news-item:nth-child(3n){
@@ -2826,6 +2826,7 @@ h1, h2{
 			text-transform: uppercase;
 			color: rgba(0, 0, 0, 0.5);
 			font-family: 'FiraSans-Bold';
+			margin-bottom: 32px;
 		}
 			.b-tags a{
 				color: rgba(0, 0, 0, 0.5);
