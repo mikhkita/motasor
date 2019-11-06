@@ -136,7 +136,7 @@ include 'header.php';
 								<h3>Восемьдесят три процента всех дней в году начинаются одинаково: звенит будильник.</h3>
 								<div class="b-news-days-person">
 									<img src="i/person-1.png" class="b-img">
-									<div class="b-name"><b>Мотькина</b><br> Юлия Валерьевна</div>
+									<div class="b-name"><b>Мотькина</b> Юлия Валерьевна</div>
 								</div>
 								<div class="quotes-left"></div>
 								<div class="quotes-right"></div>
@@ -147,14 +147,14 @@ include 'header.php';
 				<div class="b-question-calendar">
 					<div href="#" class="b-size-1-4 b-size-left b-question-calendar-left">
 						<a href="#" class="b-expert-rosatom">
-							<h3>Стать<br> экспертом<br> Росатома</h3>
+							<h3>Стать экспертом Росатома</h3>
 							<div class="b-line"></div>
 							<span class="with-arrow">
 								<span class="text">Подробнее</span>
 							</span>
 						</a>
 						<a href="#" class="b-ask-question">
-							<span class="ask-question">Задать<br> вопрос <div class="icon-arrow-right"></div></span>
+							<span class="ask-question">Задать вопрос <div class="icon-arrow-right"></div></span>
 							<div class="question-back-1"></div>
 							<div class="question-back-2"></div>
 							<div class="question-back-3"></div>

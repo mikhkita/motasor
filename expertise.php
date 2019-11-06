@@ -7,6 +7,7 @@ $params = array(
 		"Сообщества" => 'communities.php',
 	),
 	"BREADCRUMBS_TITLE" => 'Экспертиза',
+	"WITHOUT_HEADER" => false
 );
 
 $innerText = 'Лидерство в атомной энергетике во многом зависит от интеллектуального и технологического превосходства. Ежегодно Росатом наращивает объемы заказа на научно-исследовательские и опытно-конструкторские работы, увеличивает финансирование на эти цели, поэтому подход отраслевых заказчиков к формированию НИОКР должен соответствовать тенденциям времени и профессиональному уровню передовых международных практик. Чтобы увеличить эффективность заказа на НИОКР и повысить «прозрачность» формирования программ исследований и разработок Блок по управлению инновациями Госкорпорации «Росатом» реализует ряд мероприятий в области управления НИОКР.';
@@ -109,15 +110,21 @@ include 'header.php';
 							<div class="b-input">
 								<label for="label-index">Индекс цитирования</label>
 								<div class="input">
-									<input id="label-index" type="text" name="">
+									<input id="label-index" type="text" name="" placeholder="7564">
 									<div class="icon-clear"></div>
 								</div>
 							</div>
-							<div class="b-input">
+							<!-- <div class="b-input">
 								<label for="label-experience-science">Опыт работы научно-исследовательской деятельности</label>
 								<div class="input">
-									<input id="label-experience-science" type="text" name="">
+									<input id="label-experience-science" type="text" name="" placeholder="7 лет">
 									<div class="icon-clear"></div>
+								</div>
+							</div> -->
+							<div class="b-textarea">
+								<label for="label-experience-science">Опыт работы научно-исследовательской деятельности</label>
+								<div class="textarea">
+									<textarea rows="1" id="label-experience-science" name="" ></textarea>
 								</div>
 							</div>
 						</div>
@@ -135,14 +142,14 @@ include 'header.php';
 							<div class="b-input">
 								<label for="label-post">Уровень должности</label>
 								<div class="input">
-									<input id="label-post" type="text" name="">
+									<input id="label-post" type="text" name="" placeholder="Исполнительный директор">
 									<div class="icon-clear"></div>
 								</div>
 							</div>
 							<div class="b-input">
 								<label for="label-academic-degree">Ученая степень</label>
 								<div class="input">
-									<input id="label-academic-degree" type="text" name="">
+									<input id="label-academic-degree" type="text" name="" placeholder="Кандидат наук">
 									<div class="icon-clear"></div>
 								</div>
 							</div>
@@ -161,21 +168,21 @@ include 'header.php';
 							<div class="b-input">
 								<label for="label-commercial">Опыт коммерциализации научно-технических разработок, запуска инвестиционных/инновационных проектов в качестве руководителя проекта</label>
 								<div class="input">
-									<input id="label-commercial" type="text" name="">
+									<input id="label-commercial" type="text" name="" placeholder="17 лет">
 									<div class="icon-clear"></div>
 								</div>
 							</div>
 							<div class="b-input">
 								<label for="label-budget">Бюджет инвестиционных/инновационных проектов</label>
 								<div class="input">
-									<input id="label-budget" type="text" name="" class="divide">
+									<input id="label-budget" type="text" name="" class="divide" placeholder="27 000 000 000">
 									<div class="icon-clear"></div>
 								</div>
 							</div>
 							<div class="b-input">
 								<label for="label-academic-degree-2">Ученая степень</label>
 								<div class="input">
-									<input id="label-academic-degree-2" type="text" name="">
+									<input id="label-academic-degree-2" type="text" name="" placeholder="Кандидат наук">
 									<div class="icon-clear"></div>
 								</div>
 							</div>
@@ -185,14 +192,14 @@ include 'header.php';
 						<div class="b-input">
 							<label for="label-phone">Телефон</label>
 							<div class="input">
-								<input id="label-phone" type="text" name="phone" required>
+								<input id="label-phone" type="text" name="phone" required placeholder="+ 7 (999) 999 99 99">
 								<div class="icon-clear"></div>
 							</div>
 						</div>
 						<div class="b-input">
 							<label for="label-email">E-mail</label>
 							<div class="input">
-								<input id="label-email" type="text" name="email" required>
+								<input id="label-email" type="text" name="email" required placeholder="email@email.ru">
 								<div class="icon-clear"></div>
 							</div>
 						</div>

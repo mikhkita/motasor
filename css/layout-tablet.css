@@ -157,7 +157,7 @@ body {
 		margin-right: 48px;
 	}
 	.b-menu-list-wrap {
-    	width: calc(100% - 172px);
+    	width: calc(100% - 174px);
 	}
 
 	.b-news-item {
@@ -375,7 +375,7 @@ body {
 	}
 
 	.b-menu-list-wrap {
-	    width: calc(100% - 156px);
+	    width: calc(100% - 158px);
 	}
 	.b-header-search{
 		margin-right: 24px;

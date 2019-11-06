@@ -1,7 +1,7 @@
 <?
 
-$arPage = explode('/', $_SERVER['REQUEST_URI']);
-$isMain = (end($arPage) == 'index.php') ? true : false;
+//$arPage = explode('/', $_SERVER['REQUEST_URI']);
+$isMain = ($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/index.php");
 
 ?>
 <!DOCTYPE html>
@@ -41,8 +41,8 @@ $isMain = (end($arPage) == 'index.php') ? true : false;
 					<div class="b-header-search">
 						<a href="#" class="b-header-search-btn icon-search"></a>
 						<form action="search.php" method="GET" class="b-header-search-form">
-							<input type="text" name="" placeholder="Поиск" class="b-header-search-input">
-							<input type="submit" value="Поиск" style="display:none;">
+							<button class="icon-search hide"></button>
+							<input type="text" name="q" placeholder="Поиск" class="b-header-search-input">
 						</form>
 					</div>
 					<span class="b-soc-text">Мы в соцсетях:</span>
@@ -222,7 +222,7 @@ $isMain = (end($arPage) == 'index.php') ? true : false;
 											<ul class="sub-sub-section">
 												<li><a href="#">Прорыв</a></li>
 												<li><a href="#">УИР</a></li>
-												<li><a href="#">Школа инновационного<br> лидера </a></li>
+												<li><a href="#">Школа инновационного лидера </a></li>
 											</ul>
 										</li>
 										<li><a href="#">Конкурсы</a></li>

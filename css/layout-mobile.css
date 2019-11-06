@@ -11,6 +11,9 @@ body {
 .b-block.b-block-inner{
 	padding-right: 0;
 }
+h1{
+	margin-top: 32px;
+}
 h1, h2{
 	font-size: 30px;
 	line-height: 38px;
@@ -169,6 +172,7 @@ h1, h2{
 		padding-bottom: 16px;
 		max-height: calc(100vh - 190px);
 		overflow: auto;
+		margin: 0 7px;
 	}
 		.b-nav-mobile .items > li{
 			position: relative;
@@ -181,7 +185,7 @@ h1, h2{
 			}
 			.b-nav-mobile .items > li > a{
 				padding: 12px 0;
-				color: #2E4A8A;
+				color: #48569D;
 			}
 			/* === третий уровень === */
 			.b-nav-mobile.visible-sub-sub .items > li > ul{
@@ -202,7 +206,7 @@ h1, h2{
 					}
 					.b-nav-mobile .items > li > ul > li > a{
 						padding: 9px 16px 9px 24px;
-						color: #2E4A8A;
+						color: #48569D;
 					}
 					.b-nav-mobile .items > li > ul > li > a:before{
 						position: absolute;
@@ -762,6 +766,7 @@ h1, h2{
 
 .b-sections-list.big{
 	width: 100%;
+	display: block;
 	padding: 10px;
 }
 	.b-sections-list.big a {
@@ -786,6 +791,18 @@ h1, h2{
 }
 .b-flex-news .b-news-item{
 	width: calc(100%/2 - 12px);
+}
+.b-search-page {
+    margin-bottom: 60px;
+}
+	.b-search-page h1{
+		margin-bottom: 16px;
+	}
+.b-search-query {
+    margin-bottom: 28px;
+}
+.b-search-list{
+	margin-bottom: 32px;
 }
 
 @media screen and (max-width: 665px){

@@ -14,8 +14,12 @@
 					<li><a href="#">Сообщества</a></li>
 				</ul>
 				<div class="b-footer-contacts">
-					<a href="mailto:innovation@rosatom.ru" class="email">innovation@rosatom.ru</a><br>
-					<a href="tel:+74955323278" class="phone">+7 (495) 532-32-78</a>
+					<div class="b-footer-contacts-item">
+						<a href="mailto:innovation@rosatom.ru" class="email">innovation@rosatom.ru</a>
+					</div>
+					<div class="b-footer-contacts-item">
+						<a href="tel:+74955323278" class="phone">+7 (495) 532-32-78</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -85,7 +89,7 @@
 										<ul class="sub-sub-section">
 											<li><a href="#">Прорыв</a></li>
 											<li><a href="#">УИР</a></li>
-											<li><a href="#">Школа инновационного<br> лидера </a></li>
+											<li><a href="#">Школа инновационного лидера </a></li>
 										</ul>
 									</li>
 									<li><a href="#">Конкурсы</a></li>
@@ -130,8 +134,8 @@
 				<form action="search.php" method="GET" class="b-footer-search-form">
 					<div class="b-input">
 						<div class="input">
-							<div class="icon-search"></div>
-							<input type="text" name="" class="input-search">
+							<button class="icon-search"></button>
+							<input type="text" name="q" class="input-search">
 							<div class="icon-clear"></div>
 						</div>
 					</div>
@@ -153,35 +157,16 @@
 	</div>
 	
 	<div style="display:none;">
-		<!-- <a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
-		<div class="b-popup" id="b-popup-1">
-			<h3>Оставьте заявку</h3>
-			<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
-			<form action="kitsend.php" data-goal="CALLBACK" method="POST" id="b-form-1">
-				<div class="b-popup-form">
-					<label for="name">Введите Ваше имя</label>
-					<input type="text" id="name" name="name" required/>
-					<label for="tel">Введите Ваш номер телефона</label>
-					<input type="text" id="tel" name="phone" required/>
-					<label for="tel">Введите Ваш E-mail</label>
-					<input type="text" id="tel" name="email" required/>
-					<input type="hidden" name="subject" value="Заказ"/>
-					<input type="submit" style="display:none;">
-					<a href="#" class="b-btn b-blue-btn ajax">Заказать</a>
-					<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
-				</div>
-			</form>
-		</div> -->
 
 		<div class="b-popup b-popup-auth" id="b-popup-auth">
 			<h2>Авторизация</h2>
 			<p class="subtitle">Войдите с помошью социальных сетей</p>
 			<div class="b-popup-auth-soc">
-				<a href="//vk.com" class="auth-soc" target="_blank">
+				<a href="//vk.com" class="auth-soc auth-soc-vk" target="_blank">
 					<span class="icon-vk"></span>
 					<span class="auth-soc-text">Вконтакте</span>
 				</a>
-				<a href="//facebook.com" class="auth-soc" target="_blank">
+				<a href="//facebook.com" class="auth-soc auth-soc-facebook" target="_blank">
 					<span class="icon-facebook"></span>
 					<span class="auth-soc-text">Facebook</span>
 				</a>
@@ -191,14 +176,14 @@
 				<div class="b-input">
 					<label for="label-auth-login">Логин</label>
 					<div class="input">
-						<input id="label-auth-login" type="text" name="login" required>
+						<input id="label-auth-login" placeholder="Логин" type="text" name="login" required>
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input">
 					<label for="label-auth-password">Пароль</label>
 					<div class="input">
-						<input id="label-auth-password" type="text" name="password" required>
+						<input id="label-auth-password" placeholder="Пароль" type="password" name="password" required>
 						<div class="icon-clear"></div>
 					</div>
 				</div>
@@ -210,11 +195,11 @@
 					</label>
 				</div>
 				<div class="clearfix">
-					<a href="#" class="b-btn b-btn-tr ajax">
+					<button class="b-btn b-btn-tr ajax">
 						<span class="b-btn-content">Войти</span>
 						<div class="icon-arrow-right"></div>
 						<div class="icon-arrow-right-bold"></div>
-					</a>
+					</button>
 					<a href="#b-popup-forgot" class="forgot fancy">Забыли пароль?</a>
 				</div>
 				<p class="register">Нет аккаунта? <a href="#b-popup-register" class="fancy">Зарегистрируйтесь</a></p>
@@ -241,35 +226,35 @@
 				<div class="b-input">
 					<label for="label-reg-login">Логин<span class="required">*</span></label>
 					<div class="input">
-						<input id="label-reg-login" type="text" name="login" required>
+						<input id="label-reg-login" type="text" name="login" required placeholder="Логин">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input">
 					<label for="label-reg-password">Пароль<span class="required">*</span></label>
 					<div class="input">
-						<input id="label-reg-password" type="text" name="password" required>
+						<input id="label-reg-password" type="password" name="password" required placeholder="Пароль">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input">
 					<label for="label-reg-password-conf">Подтверждение пароля<span class="required">*</span></label>
 					<div class="input">
-						<input id="label-reg-password-conf" type="text" name="password-confirmation" required>
+						<input id="label-reg-password-conf" type="password" name="password-confirmation" required placeholder="Пароль">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input">
 					<label for="label-reg-email">E-mail<span class="required">*</span></label>
 					<div class="input">
-						<input id="label-reg-email" type="text" name="email">
+						<input id="label-reg-email" type="text" name="email" placeholder="E-mail">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input captcha">
 					<label for="label-reg-captcha">Код с картинки<span class="required">*</span></label>
 					<div class="input">
-						<input id="label-reg-captcha" type="text" name="email">
+						<input id="label-reg-captcha" type="text" name="captcha" placeholder="Код">
 						<div class="icon-clear"></div>
 					</div>
 					<img src="i/captcha.jpg">
@@ -287,23 +272,26 @@
 						<p>Нажимая на кнопку отправки формы, Я принимаю <a href="#">«Пользовательское соглашение»</a> и <a href="#">«Правила рассмотрения жалоб»</a></p>
 					</label>
 				</div>
-				<a href="#" class="b-btn b-btn-tr ajax">
+				<button class="b-btn b-btn-tr ajax">
 					<span class="b-btn-content">Регистрация</span>
 					<div class="icon-arrow-right"></div>
 					<div class="icon-arrow-right-bold"></div>
-				</a>
+				</button>
 				<p class="register">Уже есть аккаунт? <a href="#b-popup-auth" class="fancy">Авторизируйтесь</a></p>
 			</form>
 		</div>
 
 		<div class="b-popup b-popup-forgot" id="b-popup-forgot">
 			<h2>Восстановление пароля</h2>
-			<p class="subtitle">Если вы забыли пароль, введите логин или E-Mail.<br><br> Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам по E-Mail.</p>
+			<div class="subtitle">
+				<p>Если вы забыли пароль, введите логин или E-Mail.</p>
+				<p>Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам по E-Mail.</p>
+			</div>
 			<form action="" method="POST">
 				<div class="b-input">
 					<label for="label-forgot-login">Логин</label>
 					<div class="input">
-						<input id="label-forgot-login" type="text" name="login">
+						<input id="label-forgot-login" type="text" name="login" placeholder="Логин">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
@@ -311,23 +299,23 @@
 				<div class="b-input">
 					<label for="label-forgot-email">E-mail</label>
 					<div class="input">
-						<input id="label-forgot-email" type="text" name="email">
+						<input id="label-forgot-email" type="text" name="email" placeholder="E-mail">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input captcha">
 					<label for="label-forgot-captcha">Код с картинки<span class="required">*</span></label>
 					<div class="input">
-						<input id="label-forgot-captcha" type="text" name="email">
+						<input id="label-forgot-captcha" type="text" name="captcha" placeholder="Код">
 						<div class="icon-clear"></div>
 					</div>
 					<img src="i/captcha.jpg">
 				</div>
-				<a href="#" class="b-btn b-btn-tr ajax">
+				<button class="b-btn b-btn-tr ajax">
 					<span class="b-btn-content">Выслать</span>
 					<div class="icon-arrow-right"></div>
 					<div class="icon-arrow-right-bold"></div>
-				</a>
+				</button>
 				<p class="register">Уже есть аккаунт? <a href="#b-popup-auth" class="fancy">Авторизируйтесь</a></p>
 			</form>
 		</div>
@@ -349,6 +337,7 @@
 	<script type="text/javascript" src="js/jquery.touch.min.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js_originals/autosize.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/imask.min.js"></script>
 	<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
@@ -361,6 +350,7 @@
 	<script type="text/javascript" src="js_originals/jquery.touch.min.js"></script>
 	<script type="text/javascript" src="js_originals/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js_originals/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js_originals/autosize.min.js"></script>
 	<script type="text/javascript" src="js_originals/slick.min.js"></script>
 	<script type="text/javascript" src="js_originals/imask.min.js"></script>
 	<script type="text/javascript" src="js_originals/chosen.jquery.min.js"></script>

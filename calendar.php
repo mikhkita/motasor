@@ -2,6 +2,8 @@
 
 $params = array(
 	"TITLE" => "Календарь событий",
+	"BREADCRUMBS" => array(),
+	"BREADCRUMBS_TITLE" => '',
 	"WITHOUT_HEADER" => true,
 );
 

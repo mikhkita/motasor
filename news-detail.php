@@ -2,6 +2,8 @@
 
 $params = array(
 	"TITLE" => "Детальная",
+	"BREADCRUMBS" => array(),
+	"BREADCRUMBS_TITLE" => 'Наука и инновации',
 	"WITHOUT_HEADER" => true,
 );
 

@@ -287,29 +287,44 @@ $(document).ready(function(){
         return false;
     });
     
+    // поиск в хедере
     $(document).on("click", ".b-header-search-btn", function(){
-        if($(".b-header-search").hasClass("open")){
-            $(".b-header-search-form").submit();
-        }else{
-            setTimeout(function() {
-                $(".b-header-search-input").focus();
-            }, 100);
-            $(".b-header-search").addClass("open");
-        }
+        setTimeout(function() {
+            $(".b-header-search-input").focus();
+        }, 100);
+        $(".b-header-search").addClass("open");
+        $(this).addClass("hide");
+        $(".b-header-search-form button").removeClass("hide");
         return false;
     });
-
-    $(document).on("click", ".b-footer-search-form .icon-search", function(){
-        $(".b-footer-search-form .input-search").focus();
-        return false;
+    $(document).on("submit", ".b-header-search-form", function(){
+        var $input = $(this).find(".b-header-search-input");
+        if(!$input.val()){
+            $input.addClass("error").focus();
+            return false;
+        }
+    });
+    $(document).on("input", ".b-footer-search-form .input-search, .b-header-search-input", function(){
+        $(this).removeClass("error");
+    });
+    // поиск в футере
+    $(document).on("submit", ".b-footer-search-form", function(){
+        var $input = $(this).find(".input-search");
+        if(!$input.val()){
+            $input.addClass("error").focus();
+            return false;
+        }
     });
 
     $(window).scroll(function (){
         if($(this).scrollTop() > 0){
             $(".b-header-top").addClass("fixed");
-            $(".b-nav-mobile").addClass("open");
         }else{
             $(".b-header-top").removeClass("fixed");
+        }
+        if($(this).scrollTop() > (+$(".b-header").outerHeight()) + (+$(".b-header-inner").outerHeight()) - (+$(".b-header-top").outerHeight())){
+            $(".b-nav-mobile").addClass("open");
+        }else{
             $(".b-nav-mobile").removeClass("open");
         }
     });
@@ -347,6 +362,9 @@ $(document).ready(function(){
     $('.b-select-chosen select').on('chosen:hiding_dropdown', function(evt, params) {
         $(this).parents(".b-select").removeClass("open");
     });
+
+    if( typeof autosize == "function" )
+        autosize(document.querySelectorAll('textarea'));
 
     ripple.init();
     $('.b-btn').on('click touchstart', ripple.click);

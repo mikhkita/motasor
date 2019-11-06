@@ -2,6 +2,8 @@
 
 $params = array(
 	"TITLE" => "Результат поиска",
+	"BREADCRUMBS" => array(),
+	"BREADCRUMBS_TITLE" => '',
 	"WITHOUT_HEADER" => true,
 );
 
@@ -11,7 +13,7 @@ include 'header.php';
 	<div class="b-search-page">
 		<div class="b-block">
 			<h1>Результат поиска</h1>
-			<div class="b-search-query">По запросу «<span class="search-query">росатом</span>»</div>
+			<div class="b-search-query">По запросу «<span class="search-query"><?echo $_GET["q"];?></span>»</div>
 			<div class="b-search-list clearfix">
 				<a href="news-detail.php" class="b-search-item">
 					<h3>Инновационная вертикаль</h3>

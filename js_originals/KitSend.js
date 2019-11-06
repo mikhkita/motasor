@@ -162,7 +162,7 @@ $(document).ready(function(){
     });
 
 	$(".b-go").click(function(){
-		var block = $( $(this).attr("data-block") ),
+		var block = $( $(this).attr("href") ),
 			off = $(this).attr("data-offset")||( (window.innerWidth < 768) ? 180 : 20 ),
 			duration = $(this).attr("data-duration")||800;
 		$("body, html").animate({
