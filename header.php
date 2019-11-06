@@ -3,6 +3,7 @@
 // $arPage = explode('/', $_SERVER['REQUEST_URI']);
 // $isMain = ($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/index.php");
 
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -265,7 +266,7 @@
 		
 	</div>
 	<div class="b b-content">
-		<? if (!$isMain): ?>
+		<? if (!isset($isMain)): ?>
 			<div class="b-nav-mobile">
 				<div class="main-section">
 					<a href="#">Инновационная вертикаль</a>
