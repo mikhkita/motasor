@@ -5,41 +5,65 @@ $(document).ready(function(){
         isMobile = false,
         isMobileSmall = false;
 
-    function swapSliders(showSlider, hideSlider) {
-        $(hideSlider).addClass("hide");
-        $(showSlider).removeClass("hide");
-        if($(hideSlider).hasClass("slick-initialized")){
-            $(hideSlider).slick('unslick');
-        }
-        if(!$(showSlider).hasClass("slick-initialized")){
-            $(showSlider).on('init', function(event, slick){
-                $(showSlider).removeClass("slick-loading");
-            });
-            $(showSlider).slick({
-                dots: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                cssEase: 'ease', 
-                speed: 600,
-                autoplay: true,
-                autoplaySpeed: 3000,
-                arrows: true,
-                prevArrow: $(".b-main-slider").parent().find(".desktop-controls .slick-prev"),
-                nextArrow: $(".b-main-slider").parent().find(".desktop-controls .slick-next"),
-                responsive: [
-                    {
-                      breakpoint: 665,
-                      settings: {
-                        prevArrow: $(".b-main-slider").parent().find(".mobile-arrow-left"),
-                        nextArrow: $(".b-main-slider").parent().find(".mobile-arrow-right"),
-                        appendDots: $(".b-main-slider").parent().find(".mobile-dots"),
-                      }
-                    }
-                ]
-            });
-        }
-    }
+    $('.b-main-slider').slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        cssEase: 'ease', 
+        speed: 600,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        arrows: true,
+        prevArrow: $(".b-main-slider").parent().find(".desktop-controls .slick-prev"),
+        nextArrow: $(".b-main-slider").parent().find(".desktop-controls .slick-next"),
+        responsive: [
+            {
+              breakpoint: 665,
+              settings: {
+                prevArrow: $(".b-main-slider").parent().find(".mobile-arrow-left"),
+                nextArrow: $(".b-main-slider").parent().find(".mobile-arrow-right"),
+                appendDots: $(".b-main-slider").parent().find(".mobile-dots"),
+              }
+            }
+        ]
+    });
+
+    // function swapSliders(showSlider, hideSlider) {
+    //     $(hideSlider).addClass("hide");
+    //     $(showSlider).removeClass("hide");
+    //     if($(hideSlider).hasClass("slick-initialized")){
+    //         $(hideSlider).slick('unslick');
+    //     }
+    //     if(!$(showSlider).hasClass("slick-initialized")){
+    //         $(showSlider).on('init', function(event, slick){
+    //             $(showSlider).removeClass("slick-loading");
+    //         });
+    //         $(showSlider).slick({
+    //             dots: true,
+    //             slidesToShow: 1,
+    //             slidesToScroll: 1,
+    //             infinite: true,
+    //             cssEase: 'ease', 
+    //             speed: 600,
+    //             autoplay: false,
+    //             autoplaySpeed: 3000,
+    //             arrows: true,
+    //             prevArrow: $(".b-main-slider").parent().find(".desktop-controls .slick-prev"),
+    //             nextArrow: $(".b-main-slider").parent().find(".desktop-controls .slick-next"),
+    //             responsive: [
+    //                 {
+    //                   breakpoint: 665,
+    //                   settings: {
+    //                     prevArrow: $(".b-main-slider").parent().find(".mobile-arrow-left"),
+    //                     nextArrow: $(".b-main-slider").parent().find(".mobile-arrow-right"),
+    //                     appendDots: $(".b-main-slider").parent().find(".mobile-dots"),
+    //                   }
+    //                 }
+    //             ]
+    //         });
+    //     }
+    // }
 
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
@@ -72,16 +96,20 @@ $(document).ready(function(){
         }
 
         $(".b-menu-mobile-window").css({"height": (myHeight - 82)+"px"});
-        
-        toggleTile();
 
-        if(isMobile){
-            swapSliders(".b-main-slider-mobile",".b-main-slider");
-        }else{
-            swapSliders(".b-main-slider",".b-main-slider-mobile");
-        }
+        toggleTile();
+        resizeSlider();
+
+        // if(isMobile){
+        //     swapSliders(".b-main-slider-mobile",".b-main-slider");
+        // }else{
+        //     swapSliders(".b-main-slider",".b-main-slider-mobile");
+        // }
 
         if(isMobileSmall){
+            if($(".b-employee-desktop .b-employee-text").length){
+                $('.b-employee-mobile').append($(".b-employee-desktop .b-employee-text"));
+            }
             $(".mobile-slider").each(function() {//поставить слайдеры
                 if(!$(this).hasClass("slick-initialized")){
                     $(this).not('.slick-initialized').slick({
@@ -92,6 +120,7 @@ $(document).ready(function(){
                         cssEase: 'ease', 
                         speed: 600,
                         arrows: true,
+                        adaptiveHeight: true,
                         prevArrow: $(this).parent().find(".mobile-arrow-left"),
                         nextArrow: $(this).parent().find(".mobile-arrow-right"),
                         appendDots: $(this).parent().find(".mobile-dots")
@@ -110,6 +139,9 @@ $(document).ready(function(){
                 }
             });
         }else{
+            if($(".b-employee-mobile .b-employee-text").length){
+                $('.b-employee-desktop').append($(".b-employee-mobile .b-employee-text"));
+            }
             $(".mobile-slider").each(function() {//удалить слайдеры
                 if($(this).hasClass("slick-initialized")){
                     $(this).slick('unslick');
@@ -381,6 +413,129 @@ $(document).ready(function(){
     ripple.init();
     $('.b-btn').on('click touchstart', ripple.click);
 
+    if ($('#plup-actions').length){
+        var uploaderAddPhoto = new plupload.Uploader({
+            runtimes : 'html5,flash,silverlight,html4',
+            browse_button : 'pickfiles',
+            container: document.getElementById('plup-actions'),
+            url : '../addFile.php',
+            multi_selection: true,
+            filters : {
+                max_file_size : '20mb',
+                mime_types: [
+                    {title : "Image files", extensions : "jpg,jpeg,gif,png"},
+                    {title : "Documents", extensions : "doc,docx,pdf,rtf,xls,xlsx"},
+                    {title : "Archive", extensions : "zip,rar,7z"},
+                ]
+            },
+            init: {
+                PostInit: function() {
+                    
+                },
+                FilesAdded: function(up, files) {
+                    // progress.start(1.5);
+                    $('.plup-add').addClass('hide');
+                    $('.plup-loading').removeClass('hide complete');
+
+                    changePlupText(files.length);
+
+                    plupload.each(files, function(file) {
+                        var block = 
+                        '<div class="b-plup-file">'+
+                            '<a href="#" class="file-delete"></a>'+
+                            '<span class="file-name">'+file.name+'</span>'+
+                            '<input id="file-'+file.id+'" type="hidden" name="file-'+file.id+'">'+
+                        '</div>';
+
+                        $(block).appendTo('#b-plup-files-list');
+                    });
+                    up.start();
+                },
+                UploadProgress: function(up, file) {
+                    // $('.b-popup-add-link.icon-add-photo:before').css('content', '\e922');
+                },
+                FileUploaded: function(up, file, res) {
+                    var json = JSON.parse(res.response);
+                    $('#file-' + file.id).parents('.b-plup-file').addClass('uploaded');
+                    $('#file-' + file.id).val(json.filePath);
+                },
+                Error: function(up, err) {
+                    if (err.code == -600) {
+                        $("#pickfiles").innerHTML = "Файл слишком большой";
+                        $("#pickfiles").addClass('error');
+                    };
+                    if (err.code == -601) {
+                        $("#pickfiles").innerHTML = "Неверный формат файла";
+                        $("#pickfiles").addClass('error');
+                    };
+                },
+                UploadComplete: function() {
+                    $('.plup-loading').addClass('complete');
+                    changePlupText($('.b-plup-file').length, true);
+                }
+            }
+        });
+
+        uploaderAddPhoto.init();
+    }
+
+
+    $(document).on('dragenter', '.moxie-shim input', function(){
+        $('#plup-actions').addClass('dragenter');
+    });
+
+    $(document).on('dragleave', '.moxie-shim input', function(){
+        $('#plup-actions').removeClass('dragenter');
+    });
+    $(document).on('drop', '.moxie-shim input', function(){
+        $('#plup-actions').removeClass('dragenter');
+    });
+
+    $(document).on('click', '.file-delete', function(){
+        $(this).parents('.b-plup-file').remove();
+        
+        if(!$('.b-plup-file').length){
+            $('.plup-add').removeClass('hide');
+            $('.plup-loading').addClass('hide');
+        } else {
+            changePlupText($('.b-plup-file').length, true);
+        }
+
+        return false;
+    });
+
+    $(document).on('click', '.pickfiles-more', function(){
+        $(document).find('.moxie-shim input').click();
+        return false;
+    });
+
+    function changePlupText(count, upload = false) {
+
+        if (upload) {
+            $('.b-load-text').text(getNoun(count, 'Загружен', 'Загружено', 'Загружено'));
+        } else {
+            $('.b-load-text').text(getNoun(count, 'Загружается', 'Загружаются', 'Загружается'));
+        }
+
+        $('.b-plup-count').text(count + ' ' + getNoun(count, 'файл','файла','файлов'));
+    }
+
+    function getNoun(number, one, two, five) {
+        let n = Math.abs(number);
+        n %= 100;
+        if (n >= 5 && n <= 20) {
+          return five;
+        }
+        n %= 10;
+        if (n === 1) {
+          return one;
+        }
+        if (n >= 2 && n <= 4) {
+          return two;
+        }
+        return five;
+      }
+
     // $('.b-news-days-right-bottom').height($('.b-news-days-right').height() - $('.b-news-days-right-top').innerHeight());
 
     // // Первая анимация элементов в слайде
@@ -424,15 +579,32 @@ $(document).ready(function(){
             $('#bottom-cont').html(html);
         }
 
-        console.log(myWidth);
-        console.log($('#bottom-cont').find('.b-news-days-right-top').length);
-
-
         if ((myWidth >= 1170 || myWidth <= 768) && $('#bottom-cont').find('.b-news-days-right-top').length) {
             console.log('ok');
             var html = $('#bottom-cont').html();
             $('#bottom-cont').html('');
             $('#top-cont').html(html);
+        }
+
+    }
+
+    function resizeSlider(){
+
+        var currentWidth = $('.b-main-slider-cont').width();
+
+        if (myWidth > 665) {
+            
+            var width = 1386;
+            var height = 310;
+
+            $('.b-main-slider-cont').height(currentWidth/width*height);
+
+        } else {
+            
+            var width = 296;
+            var height = 180;
+
+            $('.b-main-slider-cont').height(currentWidth/width*height);
         }
 
     }
@@ -466,8 +638,8 @@ var ripple = {
 
     $ripple.on(animationEnd, function(){ $(this).remove(); });
 
-    $ripples[0].style.webkitTransform = 'translate3d(' + xPos + 'px,' + yPos + 'px,0)';
-    $ripples[0].style.transform = 'translate3d(' + xPos + 'px,' + yPos + 'px,0)';
+    // $ripples[0].style.webkitTransform = 'translate3d(' + xPos + 'px,' + yPos + 'px,0)';
+    // $ripples[0].style.transform = 'translate3d(' + xPos + 'px,' + yPos + 'px,0)';
 
     $ripple.css({ backgroundColor: rippleColor });
 

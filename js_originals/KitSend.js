@@ -224,6 +224,7 @@ $(document).ready(function(){
 				complete: function(){
 					$this.find(".ajax").removeAttr("onclick");
 					$this.find("input[type=text],textarea").val("");
+					$this.find(".icon-clear").removeClass("show");
 				}
 			});
   		}else{

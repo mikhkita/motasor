@@ -10,19 +10,31 @@ include 'header.php';
 				<div class="b-main-slider-cont">
 					<div class="b-main-slider slick-loading">
 						<div class="b-main-slider-item">
-							<div class="b-img" style="background-image: url(i/slider-1.jpg)"></div>
+							<picture>
+								<source srcset="i/slider-mobile-1.jpg" media="(max-width: 665px)">
+								<img src="i/slider-1.jpg" alt="">
+							</picture>
 						</div>
 						<div class="b-main-slider-item">
-							<div class="b-img" style="background-image: url(i/slider-1.jpg)"></div>
+							<picture>
+								<source srcset="i/slider-mobile-1.jpg" media="(max-width: 665px)">
+								<img src="i/slider-1.jpg" alt="">
+							</picture>
 						</div>
 						<div class="b-main-slider-item">
-							<div class="b-img" style="background-image: url(i/slider-1.jpg)"></div>
+							<picture>
+								<source srcset="i/slider-mobile-1.jpg" media="(max-width: 665px)">
+								<img src="i/slider-1.jpg" alt="">
+							</picture>
 						</div>
 						<div class="b-main-slider-item">
-							<div class="b-img" style="background-image: url(i/slider-1.jpg)"></div>
+							<picture>
+								<source srcset="i/slider-mobile-1.jpg" media="(max-width: 665px)">
+								<img src="i/slider-1.jpg" alt="">
+							</picture>
 						</div>
 					</div>
-					<div class="b-main-slider-mobile slick-loading">
+					<!-- <div class="b-main-slider-mobile slick-loading">
 						<div class="b-main-slider-mobile-item">
 							<div class="b-img" style="background-image: url(i/slider-mobile-1.jpg)"></div>
 						</div>
@@ -35,7 +47,7 @@ include 'header.php';
 						<div class="b-main-slider-mobile-item">
 							<div class="b-img" style="background-image: url(i/slider-mobile-1.jpg)"></div>
 						</div>
-					</div>
+					</div> -->
 					<div class="mobile-controls">
 						<div class="mobile-arrow-left">
 							<div class="icon-arrow-left"></div>

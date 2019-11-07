@@ -25,53 +25,53 @@ include 'header.php';
 				<li><a href="#">Фото- и видеоматериалы</a></li>
 			</ul>
 			<div class="b-content-inner">
-				<div class="b-text">
+				<div class="b-text b-inner-margin">
 					<h1>Задайте вопрос</h1>
 					<p>Росатом — высокотехнологичный лидер мировой ядерной энергетики. Для повышения конкурентоспособности Госкорпорация усиливает свой научно-технический потенциал. Ее дивизионы являются активными заказчиками на инновации. Новые достижения в науке и технике реализуются в перспективных отраслевых проектах в России и за рубежом, являются неотъемлемыми составляющими при выполнении государственных заказов</p>
-				</div>
-				<div class="b-employees-list">
-					<a href="employees-detail.php" class="b-employees-item">
-						<div class="b-employees-item-top">
-							<img src="i/employees-1.jpg">
-							<h4>Иванов  Игорь Иванович</h4>
-						</div>
-						<p>Советник Блока по управлению инновациями Госкорпорации «Росатом». Советник Блока по управлению инновациями Госкорпорации «Росатом»</p>
-					</a>
-					<a href="employees-detail.php" class="b-employees-item">
-						<div class="b-employees-item-top">
-							<img src="i/employees-1.jpg">
-							<h4>Иванов  Игорь Иванович</h4>
-						</div>
-						<p>Советник Блока по управлению инновациями Госкорпорации «Росатом» </p>
-					</a>
-					<a href="employees-detail.php" class="b-employees-item">
-						<div class="b-employees-item-top">
-							<img src="i/employees-1.jpg">
-							<h4>Иванов  Игорь Иванович</h4>
-						</div>
-						<p>Советник Блока по управлению инновациями Госкорпорации «Росатом» </p>
-					</a>
-					<a href="employees-detail.php" class="b-employees-item">
-						<div class="b-employees-item-top">
-							<img src="i/employees-1.jpg">
-							<h4>Иванов  Игорь Иванович</h4>
-						</div>
-						<p>Советник Блока по управлению инновациями Госкорпорации «Росатом» </p>
-					</a>
-					<a href="employees-detail.php" class="b-employees-item">
-						<div class="b-employees-item-top">
-							<img src="i/employees-1.jpg">
-							<h4>Иванов  Игорь Иванович</h4>
-						</div>
-						<p>Советник Блока по управлению инновациями Госкорпорации «Росатом» </p>
-					</a>
-					<a href="employees-detail.php" class="b-employees-item">
-						<div class="b-employees-item-top">
-							<img src="i/employees-1.jpg">
-							<h4>Иванов  Игорь Иванович</h4>
-						</div>
-						<p>Советник Блока по управлению инновациями Госкорпорации «Росатом» </p>
-					</a>
+					<div class="b-employees-list">
+						<a href="employees-detail.php" class="b-employees-item">
+							<div class="b-employees-item-top">
+								<img src="i/employees-1.jpg">
+								<h4>Иванов  Игорь Иванович</h4>
+							</div>
+							<p>Советник Блока по управлению инновациями Госкорпорации «Росатом». Советник Блока по управлению инновациями Госкорпорации «Росатом»</p>
+						</a>
+						<a href="employees-detail.php" class="b-employees-item">
+							<div class="b-employees-item-top">
+								<img src="i/employees-1.jpg">
+								<h4>Иванов  Игорь Иванович</h4>
+							</div>
+							<p>Советник Блока по управлению инновациями Госкорпорации «Росатом» </p>
+						</a>
+						<a href="employees-detail.php" class="b-employees-item">
+							<div class="b-employees-item-top">
+								<img src="i/employees-1.jpg">
+								<h4>Иванов  Игорь Иванович</h4>
+							</div>
+							<p>Советник Блока по управлению инновациями Госкорпорации «Росатом» </p>
+						</a>
+						<a href="employees-detail.php" class="b-employees-item">
+							<div class="b-employees-item-top">
+								<img src="i/employees-1.jpg">
+								<h4>Иванов  Игорь Иванович</h4>
+							</div>
+							<p>Советник Блока по управлению инновациями Госкорпорации «Росатом» </p>
+						</a>
+						<a href="employees-detail.php" class="b-employees-item">
+							<div class="b-employees-item-top">
+								<img src="i/employees-1.jpg">
+								<h4>Иванов  Игорь Иванович</h4>
+							</div>
+							<p>Советник Блока по управлению инновациями Госкорпорации «Росатом» </p>
+						</a>
+						<a href="employees-detail.php" class="b-employees-item">
+							<div class="b-employees-item-top">
+								<img src="i/employees-1.jpg">
+								<h4>Иванов  Игорь Иванович</h4>
+							</div>
+							<p>Советник Блока по управлению инновациями Госкорпорации «Росатом» </p>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
