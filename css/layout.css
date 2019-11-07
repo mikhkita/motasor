@@ -2580,7 +2580,7 @@ h4{
 }
 .b-form{
 	padding: 34px 32px 45px 32px;
-	background-color: #48569D;
+	background-color: #F2F5F7;
 	max-width: 683px;
 }
 .b-form.b-form-white{
@@ -2591,7 +2591,6 @@ h4{
 		padding-right: 93px;
 	}
 	.b-form h2{
-		color: #FFF;
 		margin-top: 0;
 		margin-bottom: 32px;
 	}
@@ -2603,17 +2602,17 @@ h4{
 		font-size: 24px;
 		line-height: 29px;
 		font-family: 'FiraSans-Medium';
-		color: #FFF;
 		margin-top: 48px;
 		margin-bottom: 24px;
+		color: #000;
 	}
 	.b-form p,
 	.b-form label{
-		color: #FFF;
+
 	}
 	.b-form.b-form-white p,
 	.b-form.b-form-white label{
-		color: #000;
+
 	}
 	.b-form .b-input,
 	.b-form .b-textarea{
@@ -2628,10 +2627,10 @@ h4{
 		}
 			.b-form .b-input .input input,
 			.b-form .b-textarea .textarea textarea{
-				border: 1px solid #FFF;
+				border: 1px solid #000;
 				border-radius: 5px;
 				padding: 20px 42px 20px 16px;
-				color: #FFF;
+				color: #000;
 			}
 			.b-form.b-form-white .b-input .input input,
 			.b-form.b-form-white .b-textarea .textarea textarea{
@@ -2639,27 +2638,15 @@ h4{
 				color: #000;
 			}
 			.b-form input::-webkit-input-placeholder {
-				color: rgba(255,255,255,0.5);
+				color: rgba(0,0,0,0.5);
 			}
 			.b-form input:-moz-placeholder {
-				color: rgba(255,255,255,0.5);
+				color: rgba(0,0,0,0.5);
 			}
 			.b-form textarea::-webkit-input-placeholder {
-				color: rgba(255,255,255,0.5);
+				color: rgba(0,0,0,0.5);
 			}
 			.b-form textarea:-moz-placeholder {
-				color: rgba(255,255,255,0.5);
-			}
-			.b-form.b-form-white input::-webkit-input-placeholder {
-				color: rgba(0,0,0,0.5);
-			}
-			.b-form.b-form-white input:-moz-placeholder {
-				color: rgba(0,0,0,0.5);
-			}
-			.b-form.b-form-white textarea::-webkit-input-placeholder {
-				color: rgba(0,0,0,0.5);
-			}
-			.b-form.b-form-white textarea:-moz-placeholder {
 				color: rgba(0,0,0,0.5);
 			}
 
@@ -2671,7 +2658,6 @@ h4{
 		}
 			.b-form .b-select .select select{
 				padding: 20px 16px;
-				color: #FFF;
 			}
 	.b-form .b-checkbox{
 		margin-bottom: 36px;
@@ -3105,7 +3091,7 @@ form button{
 	.b-input input{
 		width: 100%;
 		background-color: transparent;
-		border: 1px solid #ECEBED;
+		border: 1px solid #000;
 		border-radius: 5px;
 		padding: 20px 32px 20px 44px;
 		font-size: 16px;
@@ -3133,11 +3119,11 @@ form button{
 			width: 12px;
 			height: 12px;
 			font-size: 12px;
-			color: #FFF;
+			color: #000;
 			padding: 8px;
 		}
 		.b-input .input .icon-clear:hover:before{
-			color: #DDD;
+			
 		}
 .b-input input::-ms-clear {
     display: none;
@@ -3160,7 +3146,7 @@ form button{
 	.b-textarea textarea{
 		width: 100%;
 		background-color: transparent;
-		border: 1px solid #ECEBED;
+		border: 1px solid #000;
 		border-radius: 5px;
 		padding: 20px 32px 20px 44px;
 		font-size: 16px;
@@ -3192,7 +3178,7 @@ form button{
 	.b-select select{
 		width: 100%;
 		background-color: transparent;
-		border: 1px solid #ECEBED;
+		border: 1px solid #000;
 		border-radius: 5px;
 		padding: 20px 32px 20px 44px;
 		font-size: 16px;
@@ -3214,7 +3200,7 @@ form button{
     		right: 22px;
     		font-size: 8px;
 			cursor: pointer;
-			color: #FFF;
+			color: #000;
 		}
 		.b-select.open .select:before{
 			color: #48569D;
@@ -3229,13 +3215,13 @@ form button{
 .icon-checked:before{
 	content: "\e90b";
 	font-size: 12px;
-    color: #FFF;
+    color: #000;
 }
 .b-checkbox{
 	position: relative;
 }
 .b-checkbox a{
-	color: #48569D;
+	color: #000;
 }
 
 .b-checkbox input[type="checkbox"].error + label + label .b-checked,
@@ -3245,7 +3231,7 @@ form button{
 .b-checkbox label{
 	font-size: 16px;
 	line-height: 20px;
-	color: #FFF;
+	color: #000;
 	cursor: pointer;
 }
 
@@ -3264,7 +3250,7 @@ form button{
 		width: 25px;
 		height: 25px;
 		border-radius: 4px;
-		border: 2px solid #FFF;
+		border: 2px solid #000;
 		margin-right: 30px;
 	}
 		.b-checkbox .b-checked:before{
@@ -3294,7 +3280,7 @@ form button{
 		margin-bottom: 0;
 	}
 		.b-checkbox p a{
-			color: #FFF;
+			color: #000;
 			text-decoration: underline;
 		}
 		.b-checkbox p a:hover{
@@ -3309,10 +3295,10 @@ form button{
     font-family: 'FiraSans-Regular';
 }
 	.b-select-chosen .chosen-container-single .chosen-single{
-		border: 1px solid #FFF;
+		border: 1px solid #000;
 	    border-radius: 5px;
 	    padding: 20px 16px;
-	    color: #FFF;
+	    color: #000;
 
 	    height: auto;
 	    background-color: transparent;
@@ -3330,7 +3316,7 @@ form button{
 	    background-image: none;
 	    -webkit-box-shadow: none;
 	    box-shadow: none;
-	    color: #48569D;
+	    color: #000;
 	    background-color: #FFF;
 	}
 
@@ -3341,7 +3327,7 @@ form button{
 	    padding: 0 16px;
 	}
 	.b-select-chosen .chosen-container .chosen-results {
-	    color: #48569D;
+	    color: #000;
 	    border-top: 1px solid rgba(72, 86, 157, 0.22);
 	    margin: 0;
     	padding: 8px 0 12px 0;
@@ -3354,7 +3340,7 @@ form button{
 		.b-select-chosen .chosen-container .chosen-results li.highlighted {
 		    background-color: #FFF;
 		    background-image: none;
-		    color: #48569D;
+		    color: #000;
 		    font-family: 'FiraSans-Bold';
 		}
 	/*chosen-container-active chosen-with-drop*/
@@ -3362,10 +3348,10 @@ form button{
 /* ==== plupload ==== */
 
 .b-file-field{
-	border: 1px dashed #FFF;
+	border: 1px dashed #000;
 	padding: 24px 22px 18px;
 	border-radius: 5px;
-	color: #FFF;
+	color: #000;
 }
 .b-file-field.dragenter{
 	background-color: rgba(255,255,255,0.3);
@@ -3398,7 +3384,7 @@ form button{
 			display: block;
 			font-size: 14px;
 			line-height: 22px;
-			color: rgba(255, 255, 255, 0.4);
+			color: rgba(0, 0, 0, 0.4);
 		}
 		.b-file-field .plup-button{
 			font-size: 14px;
@@ -3413,6 +3399,21 @@ form button{
 		.b-file-field .plup-button .icon-arrow-right-bold:before{
 			top: 9px;
 		}
+
+		.b-file-field .b-btn{
+
+		}
+		.b-file-field .b-btn.b-btn-tr{
+			color: #000;
+			border: 1px solid #000;
+			background-color: transparent;
+		}
+			.b-file-field .b-btn.b-btn-tr .icon-arrow-right:before{
+				color: #000;
+			}
+			.b-file-field .b-btn.b-btn-tr:hover{
+				box-shadow: inset 0 0px 0px 1px #000;
+			}
 .plup-loading{
 
 }
@@ -3567,6 +3568,7 @@ form button{
 			-ms-transform: translateX(-50%) translateY(-50%);
 			-o-transform: translateX(-50%) translateY(-50%);
 			transform: translateX(-50%) translateY(-50%);
+			color: #FFF;
 		}
 		.b-success.b-success-white .icon-checked:before{
 			color: #10995F;
@@ -3645,19 +3647,30 @@ form button{
 .b-employee{
 	margin-top: 33px;
 	margin-bottom: 35px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-	.b-employee img{
-		display: inline-block;
-		vertical-align: top;
-		width: 330px;
-		height: 330px;
-		margin-right: 20px;
-		margin-bottom: 0;
+	.b-employee-img{
+
 	}
+		.b-employee-img img{
+			width: 330px;
+			height: 330px;
+			margin-right: 20px;
+			margin-bottom: 0;
+		}
 	.b-employee-right{
-		display: inline-block;
-		vertical-align: top;
 		width: calc(100% - 356px);
+		display: flex;
+	    flex-wrap: wrap;
+	    align-content: space-between;
+	}
+	.b-employee-right .employee-top{
+
+	}
+	.b-employee-right .employee-bottom{
+		
 	}
 		.b-employee h1{
 			margin-top: 0;
@@ -3959,6 +3972,7 @@ form button{
 					left: 3px;
    					top: 3px;
    					font-size: 8px;
+   					color: #FFF;
 				}
 
 			.b-popup .b-checkbox p{

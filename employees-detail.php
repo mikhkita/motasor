@@ -27,20 +27,26 @@ include 'header.php';
 			<div class="b-content-inner">
 				<div class="b-text b-inner-margin">
 					<div class="b-employee">
-						<img src="i/employees-1.jpg">
+						<div class="b-employee-img">
+							<img src="i/employees-1.jpg">
+						</div>
 						<div class="b-employee-right">
-							<h1>Иванов Игорь Иванович</h1>
-							<div class="post">Советник Блока по управлению инновациями  Госкорпорации «Росатом»</div>
-							<div class="b-employee-mobile">
-								
-							</div>
-							<h3>Контакты</h3>
-							<div class="b-employee-contacts b-footer-contacts">
-								<div class="b-footer-contacts-item">
-									<a href="mailto:innovation@rosatom.ru" class="email">innovation@rosatom.ru</a>
+							<div class="employee-top">
+								<h1>Иванов Игорь Иванович</h1>
+								<div class="post">Советник Блока по управлению инновациями  Госкорпорации «Росатом»</div>
+								<div class="b-employee-mobile">
+									
 								</div>
-								<div class="b-footer-contacts-item">
-									<a href="tel:+74955323278" class="phone">+7 (495) 532-32-78</a>
+							</div>
+							<div class="employee-bottom">
+								<h3>Контакты</h3>
+								<div class="b-employee-contacts b-footer-contacts">
+									<div class="b-footer-contacts-item">
+										<a href="mailto:innovation@rosatom.ru" class="email">innovation@rosatom.ru</a>
+									</div>
+									<div class="b-footer-contacts-item">
+										<a href="tel:+74955323278" class="phone">+7 (495) 532-32-78</a>
+									</div>
 								</div>
 							</div>
 						</div>

@@ -68,7 +68,7 @@ include 'header.php';
 									<p>Я принимаю <a href="#">условия пользовательского соглашения</a></p>
 								</label>
 							</div>
-							<button class="b-btn b-btn-white-border ajax">
+							<button class="b-btn b-btn-tr ajax">
 								<span class="b-btn-content">Отправить</span>
 								<div class="icon-arrow-right"></div>
 								<div class="icon-arrow-right-bold"></div>

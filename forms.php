@@ -146,7 +146,7 @@ include 'header.php';?>
 								<p>Я принимаю <a href="#">условия пользовательского соглашения</a></p>
 							</label>
 						</div>
-						<button class="b-btn b-btn-white-border ajax">
+						<button class="b-btn b-btn-tr ajax">
 							<span class="b-btn-content">Отправить</span>
 							<div class="icon-arrow-right"></div>
 							<div class="icon-arrow-right-bold"></div>
@@ -188,7 +188,7 @@ include 'header.php';?>
 							<p>Я принимаю <a href="#">условия пользовательского соглашения</a></p>
 						</label>
 					</div>
-					<button class="b-btn b-btn-white-border ajax">
+					<button class="b-btn b-btn-tr ajax">
 						<span class="b-btn-content">Отправить</span>
 						<div class="icon-arrow-right"></div>
 						<div class="icon-arrow-right-bold"></div>
@@ -249,7 +249,7 @@ include 'header.php';?>
 							<div class="plup-actions">
 								<div class="plup-add">
 									<p>Перетащите файл<br>  или выберите его на своем компьютере</p>
-									<a id="pickfiles" class="plup-button b-btn b-btn-white-border" href="javascript:;">
+									<a id="pickfiles" class="plup-button b-btn b-btn-tr" href="javascript:;">
 										<div class="add-file">
 											<span class="name">Выбрать файл</span>
 										</div>
@@ -265,7 +265,7 @@ include 'header.php';?>
 										<div class="b-plup-loading-text"><span class="b-load-text">Загружается</span> <span class="b-plup-count"></span>:</div>
 										<div id="b-plup-files-list" class="b-plup-files-list"></div>
 									</div>
-									<a class="plup-button b-btn b-btn-white-border pickfiles-more" href="javascript:;">
+									<a class="plup-button b-btn b-btn-tr pickfiles-more" href="#">
 										<div class="add-file">
 											<span class="name">Загрузить ещё</span>
 										</div>
@@ -283,7 +283,7 @@ include 'header.php';?>
 							<p>Я принимаю <a href="#">условия пользовательского соглашения</a></p>
 						</label>
 					</div>
-					<button class="b-btn b-btn-white-border ajax">
+					<button class="b-btn b-btn-tr ajax">
 						<span class="b-btn-content">Отправить</span>
 						<div class="icon-arrow-right"></div>
 						<div class="icon-arrow-right-bold"></div>

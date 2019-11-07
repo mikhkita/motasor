@@ -210,16 +210,16 @@
 			<h2>Регистрация</h2>
 			<form action="" method="POST">
 				<div class="b-input">
-					<label for="label-reg-name">Имя<span class="required">*</span></label>
+					<label for="label-reg-name">Имя</label>
 					<div class="input">
-						<input id="label-reg-name" type="text" name="name" required placeholder="Ваше имя">
+						<input id="label-reg-name" type="text" name="name" placeholder="Ваше имя">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input">
-					<label for="label-reg-surname">Фамилия<span class="required">*</span></label>
+					<label for="label-reg-surname">Фамилия</label>
 					<div class="input">
-						<input id="label-reg-surname" type="text" name="surname" required placeholder="Ваша фамилия">
+						<input id="label-reg-surname" type="text" name="surname" placeholder="Ваша фамилия">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
