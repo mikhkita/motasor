@@ -3356,10 +3356,114 @@ form button{
 	.b-success-text{
 
 	}
-		.b-success-icon{
-
+		.b-success-text .icon-checked{
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 40px;
+			height: 40px;
+			border-radius: 100px;
+			border: 1px solid #FFF;
+			margin-right: 18px;
+		}
+		.b-success-text .icon-checked:before{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			-ms-transform: translateX(-50%) translateY(-50%);
+			-o-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
 		}
 		.b-success-text p{
+			display: inline-block;
+			vertical-align: top;
+			padding-top: 9px;
+			font-size: 16px;
+			line-height: 22px;
+		}
+
+/* ==== Сотрудники ==== */
+
+.b-employees-list{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 190px;
+}
+	.b-employees-item{
+		display: block;
+		padding: 25px 19px 17px 19px;
+		background-color: #F2F5F7;
+		width: calc(100%/2 - 10px);
+		margin-bottom: 20px;
+		-webkit-transition: background-color 100ms ease-out;
+		   -moz-transition: background-color 100ms ease-out;
+		    -ms-transition: background-color 100ms ease-out;
+		   	 -o-transition: background-color 100ms ease-out;
+				transition: background-color 100ms ease-out;
+	}
+	.b-employees-item:hover{
+		background-color: #48569D;
+	}
+	.b-employees-item h4,
+	.b-employees-item p{
+		-webkit-transition: color 100ms ease-out;
+		   -moz-transition: color 100ms ease-out;
+		    -ms-transition: color 100ms ease-out;
+		   	 -o-transition: color 100ms ease-out;
+				transition: color 100ms ease-out;
+	}
+	.b-employees-item:hover h4,
+	.b-employees-item:hover p{
+		color: #FFF;
+	}
+		.b-employees-item-top{
+			margin-bottom: 15px;
+		}
+			.b-employees-item img{
+				display: inline-block;
+				vertical-align: middle;
+				width: 59px;
+				height: 59px;
+				border-radius: 100px;
+				overflow: hidden;
+				margin-right: 35px;
+			}
+			.b-employees-item h4{
+				width: calc(100% - 100px);
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 18px;
+				line-height: 22px;
+				margin-bottom: 0;
+			}
+		.b-employees-item p{
+			font-size: 16px;
+			line-height: 20px;
+		}
+
+.b-employee{
+
+}
+	.b-employee img{
+		width: 330px;
+		height: 330px;
+	}
+	.b-employee-right{
+
+	}
+		.b-employee h1{
+
+		}
+		.post{
+
+		}
+		.b-employee h3{
+
+		}
+		.b-employee-contacts{
 
 		}
 
@@ -4025,6 +4129,12 @@ form button{
 			justify-content: space-between;
 			order: 99;
 		}
+		.b-employees-item img{
+			margin-right: 16px;
+		}
+		.b-employees-item h4{
+			width: calc(100% - 82px);
+		}
 	}
 
 	@media screen and (max-width: 1024px){
@@ -4355,6 +4465,9 @@ form button{
 		}
 		.b-flex-news:after{
 			width: calc(100%/2 - 12px);
+		}
+		.b-employees-item{
+			width: 100%;
 		}
 	}
 }
@@ -5668,6 +5781,15 @@ form button{
 		.b-flex-news .b-news-item{
 			width: 100%;
 		}
+		.b-employees-item{
+			width: 100%;
+		}
+			.b-employees-item img{
+				margin-right: 16px;
+			}
+			.b-employees-item h4{
+				width: calc(100% - 82px);
+			}
 	}
 
 	@media screen and (max-width: 450px){

@@ -1,7 +1,7 @@
 <?
 
 $params = array(
-	"TITLE" => "Задать вопрос",
+	"TITLE" => "Сотрудники",
 	"BREADCRUMBS" => array(
 		"Главная" => "index.php",
 		"Пункт" => "index.php",
@@ -20,8 +20,8 @@ include 'header.php';
 		<div class="b-content-inner-wrap">
 			<ul class="b-nav">
 				<li><a href="#">Управление инновациями</a></li>
-				<li class="active"><a href="#">Задать вопрос</a></li>
-				<li><a href="#">Сотрудники</a></li>
+				<li><a href="#">Задать вопрос</a></li>
+				<li class="active"><a href="#">Сотрудники</a></li>
 				<li><a href="#">Фото- и видеоматериалы</a></li>
 			</ul>
 			<div class="b-content-inner">
@@ -29,58 +29,49 @@ include 'header.php';
 					<h1>Задайте вопрос</h1>
 					<p>Росатом — высокотехнологичный лидер мировой ядерной энергетики. Для повышения конкурентоспособности Госкорпорация усиливает свой научно-технический потенциал. Ее дивизионы являются активными заказчиками на инновации. Новые достижения в науке и технике реализуются в перспективных отраслевых проектах в России и за рубежом, являются неотъемлемыми составляющими при выполнении государственных заказов</p>
 				</div>
-				<form class="b-form" action="" method="POST">
-					<h2>Задайте вопрос</h2>
-					<div class="b-form-content">
-						<div class="b-input">
-							<label for="label-name">ФИО</label>
-							<div class="input">
-								<input id="label-name" type="text" name="name" placeholder="Иванов Иван Иванович">
-								<div class="icon-clear"></div>
-							</div>
+				<div class="b-employees-list">
+					<a href="employees-detail.php" class="b-employees-item">
+						<div class="b-employees-item-top">
+							<img src="i/employees-1.jpg">
+							<h4>Иванов  Игорь Иванович</h4>
 						</div>
-						<h3>Ваши контакты</h3>
-						<div class="b-input">
-							<label for="label-phone">Телефон</label>
-							<div class="input">
-								<input id="label-phone" type="text" name="phone" required placeholder="+ 7 (999) 999 99 99">
-								<div class="icon-clear"></div>
-							</div>
+						<p>Советник Блока по управлению инновациями Госкорпорации «Росатом». Советник Блока по управлению инновациями Госкорпорации «Росатом»</p>
+					</a>
+					<a href="employees-detail.php" class="b-employees-item">
+						<div class="b-employees-item-top">
+							<img src="i/employees-1.jpg">
+							<h4>Иванов  Игорь Иванович</h4>
 						</div>
-						<div class="b-input">
-							<label for="label-email">E-mail</label>
-							<div class="input">
-								<input id="label-email" type="text" name="email" required placeholder="email@email.ru">
-								<div class="icon-clear"></div>
-							</div>
+						<p>Советник Блока по управлению инновациями Госкорпорации «Росатом» </p>
+					</a>
+					<a href="employees-detail.php" class="b-employees-item">
+						<div class="b-employees-item-top">
+							<img src="i/employees-1.jpg">
+							<h4>Иванов  Игорь Иванович</h4>
 						</div>
-						<h3>Ваш вопрос</h3>
-						<div class="b-textarea">
-							<label for="label-question">Ваш вопрос</label>
-							<div class="textarea">
-								<textarea rows="10" id="label-question" name="" placeholder="Ваш вопрос"></textarea>
-							</div>
+						<p>Советник Блока по управлению инновациями Госкорпорации «Росатом» </p>
+					</a>
+					<a href="employees-detail.php" class="b-employees-item">
+						<div class="b-employees-item-top">
+							<img src="i/employees-1.jpg">
+							<h4>Иванов  Игорь Иванович</h4>
 						</div>
-						<div class="b-checkbox">
-							<input id="checkbox-agreement" type="checkbox" name="agreement" required>
-							<label for="checkbox-agreement">
-								<div class="b-checked icon-checked"></div>
-								<p>Я принимаю условия <a href="#">пользовательского соглашения</a></p>
-							</label>
+						<p>Советник Блока по управлению инновациями Госкорпорации «Росатом» </p>
+					</a>
+					<a href="employees-detail.php" class="b-employees-item">
+						<div class="b-employees-item-top">
+							<img src="i/employees-1.jpg">
+							<h4>Иванов  Игорь Иванович</h4>
 						</div>
-						<button class="b-btn b-btn-white-border ajax">
-							<span class="b-btn-content">Отправить</span>
-							<div class="icon-arrow-right"></div>
-							<div class="icon-arrow-right-bold"></div>
-						</button>
-					</div>
-				</form>
-				<div class="b-success">
-					<h2>Успешно!</h2>
-					<div class="b-success-text">
-						<div class="icon-checked"></div>
-						<p>Ваше сообщение отправлено!</p>
-					</div>
+						<p>Советник Блока по управлению инновациями Госкорпорации «Росатом» </p>
+					</a>
+					<a href="employees-detail.php" class="b-employees-item">
+						<div class="b-employees-item-top">
+							<img src="i/employees-1.jpg">
+							<h4>Иванов  Игорь Иванович</h4>
+						</div>
+						<p>Советник Блока по управлению инновациями Госкорпорации «Росатом» </p>
+					</a>
 				</div>
 			</div>
 		</div>
