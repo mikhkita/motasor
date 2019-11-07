@@ -437,7 +437,7 @@ $(document).ready(function(){
                     $('.plup-add').addClass('hide');
                     $('.plup-loading').removeClass('hide complete');
 
-                    changePlupText(files.length);
+                    changePlupText(files.length, false);
 
                     plupload.each(files, function(file) {
                         var block = 
@@ -509,7 +509,7 @@ $(document).ready(function(){
         return false;
     });
 
-    function changePlupText(count, upload = false) {
+    function changePlupText(count, upload) {
 
         if (upload) {
             $('.b-load-text').text(getNoun(count, 'Загружен', 'Загружено', 'Загружено'));
@@ -521,7 +521,7 @@ $(document).ready(function(){
     }
 
     function getNoun(number, one, two, five) {
-        let n = Math.abs(number);
+        var n = Math.abs(number);
         n %= 100;
         if (n >= 5 && n <= 20) {
           return five;
