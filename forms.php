@@ -143,7 +143,7 @@ include 'header.php';?>
 							<input id="checkbox-agreement" type="checkbox" name="agreement" required>
 							<label for="checkbox-agreement">
 								<div class="b-checked icon-checked"></div>
-								<p>Я принимаю условия <a href="#">пользовательского соглашения</a></p>
+								<p>Я принимаю <a href="#">условия пользовательского соглашения</a></p>
 							</label>
 						</div>
 						<button class="b-btn b-btn-white-border ajax">
@@ -185,7 +185,7 @@ include 'header.php';?>
 						<input id="checkbox-agreement-2" type="checkbox" name="agreement" required>
 						<label for="checkbox-agreement-2">
 							<div class="b-checked icon-checked"></div>
-							<p>Я принимаю условия <a href="#">пользовательского соглашения</a></p>
+							<p>Я принимаю <a href="#">условия пользовательского соглашения</a></p>
 						</label>
 					</div>
 					<button class="b-btn b-btn-white-border ajax">
@@ -267,7 +267,7 @@ include 'header.php';?>
 						<input id="checkbox-agreement-3" type="checkbox" name="agreement" required>
 						<label for="checkbox-agreement-3">
 							<div class="b-checked icon-checked"></div>
-							<p>Я принимаю условия <a href="#">пользовательского соглашения</a></p>
+							<p>Я принимаю <a href="#">условия пользовательского соглашения</a></p>
 						</label>
 					</div>
 					<button class="b-btn b-btn-white-border ajax">
