@@ -29,7 +29,7 @@ include 'header.php';
 					<h1>Задайте вопрос</h1>
 					<p>Росатом — высокотехнологичный лидер мировой ядерной энергетики. Для повышения конкурентоспособности Госкорпорация усиливает свой научно-технический потенциал. Ее дивизионы являются активными заказчиками на инновации. Новые достижения в науке и технике реализуются в перспективных отраслевых проектах в России и за рубежом, являются неотъемлемыми составляющими при выполнении государственных заказов</p>
 				
-					<form class="b-form" action="" method="POST">
+					<form class="b-form b-question-form" action="send/question.php" method="POST">
 						<h2>Задайте вопрос</h2>
 						<div class="b-form-content">
 							<div class="b-input">
@@ -74,14 +74,14 @@ include 'header.php';
 								<div class="icon-arrow-right-bold"></div>
 							</button>
 						</div>
-						<div class="b-success">
-							<h2>Успешно!</h2>
-							<div class="b-success-text">
-								<div class="icon-checked"></div>
-								<p>Ваше сообщение отправлено!</p>
-							</div>
-						</div>
 					</form>
+					<div class="b-success">
+						<h2>Успешно!</h2>
+						<div class="b-success-text">
+							<div class="icon-checked"></div>
+							<p>Ваше сообщение отправлено!</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

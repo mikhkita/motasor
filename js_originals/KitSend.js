@@ -165,12 +165,7 @@ $(document).ready(function(){
     });
 
 	$(".b-go, .b-sections-list a, .b-links-list li a").click(function(){
-		var block = $( $(this).attr("href") ),
-			off = $(this).attr("data-offset")||( (window.innerWidth < 768) ? 180 : 20 ),
-			duration = $(this).attr("data-duration")||800;
-		$("body, html").animate({
-			scrollTop : block.offset().top-off
-		},duration);
+		scrollToElement( $(this).attr("href"), $(this).attr("data-duration"), $(this).attr("data-offset") );
 		return false;
 	});
 
@@ -236,7 +231,9 @@ $(document).ready(function(){
             }else if( typeof json.action != "undefined" ){
             	switch (json.action) {
             		case "questionSuccess":
-            			// $(".")
+            			$(".b-question-form").hide();
+            			$(".b-success").show();
+            			scrollToElement(".b-success", 300);
             			break;
             		case "reload":
             			window.location.reload();
@@ -255,5 +252,24 @@ $(document).ready(function(){
 			
 			$link.click();
         }
+	}
+
+	function scrollToElement(selectorTo, duration, offset){
+		var block = $( selectorTo ),
+			off = offset||( (window.innerWidth < 768) ? 180 : 20 ),
+			duration = duration||800;
+
+		$("body, html").animate({
+			scrollTop : block.offset().top-off
+		},duration);
+	}
+
+	function isValidJSON(src) {
+	    var filtered = src+"";
+	    filtered = filtered.replace(/\\["\\\/bfnrtu]/g, '@');
+	    filtered = filtered.replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g, ']');
+	    filtered = filtered.replace(/(?:^|:|,)(?:\s*\[)+/g, '');
+
+	    return (/^[\],:{}\s]*$/.test(filtered));
 	}
 });

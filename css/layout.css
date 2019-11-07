@@ -3529,6 +3529,7 @@ form button{
 /* ==== Задать вопрос ==== */
 
 .b-success{
+	display: none;
 	background-color: #F2F5F7;
 	padding: 34px 32px 63px 32px;
 	color: #000;
@@ -3543,9 +3544,6 @@ form button{
 		color: #000;
 		margin-top: 0;
 		margin-bottom: 40px;
-	}
-	.b-success h3{
-		margin-top: 0;
 	}
 	.b-success.b-success-white h2,
 	.b-success.b-success-white h3{
