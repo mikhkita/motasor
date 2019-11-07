@@ -56,7 +56,7 @@ include 'header.php';
 							<p>Уравнение времени мгновенно. По космогонической гипотезе Джеймса Джинса, сарос притягивает узел. Хотя хpонологи не увеpены, им кажется, что приливное трение выбирает астероидный дип-скай объект. Астероид, это удалось установить по характеру спектра, разрушаем. Аргумент перигелия, следуя пионерской работе Эдвина Хаббла, существенно колеблет нулевой меридиан. Декретное время, по определению, гасит Ганимед.</p>
 						</div>
 					</div>
-					<form class="b-form b-form-white" action="" method="POST">
+					<form class="b-form b-form-white b-question-form" action="send/question.php" method="POST">
 						<h3>Задайте вопрос</h3>
 						<div class="b-form-content">
 							<div class="b-input">
@@ -92,13 +92,14 @@ include 'header.php';
 								<div class="icon-arrow-right-bold"></div>
 							</button>
 						</div>
-						<div class="b-success b-success-white">
-							<div class="b-success-text">
-								<div class="icon-checked"></div>
-								<p>Ваше сообщение отправлено!</p>
-							</div>
-						</div>
 					</form>
+					<div class="b-success b-success-white">
+						<h3>Успешно!</h3>
+						<div class="b-success-text">
+							<div class="icon-checked"></div>
+							<p>Ваше сообщение отправлено!</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
