@@ -337,8 +337,8 @@
 	<script type="text/javascript" src="js/jquery.touch.min.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
-	<script type="text/javascript" src="js_originals/autosize.min.js"></script>
 	<script type="text/javascript" src="js/plupload.full.min.js"></script>
+	<script type="text/javascript" src="js/autosize.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/imask.min.js"></script>
 	<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
