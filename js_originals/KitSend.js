@@ -203,19 +203,9 @@ $(document).ready(function(){
 			  	url: $(this).attr("action"),
 			  	data:  $this.serialize(),
 				success: function(msg){
-					var $form;
-					if( msg == "1" ){
-						$link = $this.find(".b-thanks-link");
-					}else{
-						$link = $(".b-error-link");
-					}
 
-					if( $this.attr("data-afterAjax") && customHandlers[$this.attr("data-afterAjax")] ){
-						customHandlers[$this.attr("data-afterAjax")]($this);
-					}
+					actionResult(msg);
 
-					$.fancybox.close();
-					$link.click();
 				},
 				error: function(){
 					$.fancybox.close();
@@ -237,4 +227,33 @@ $(document).ready(function(){
 		$(this).parents("form").submit();
 		return false;
 	});
+
+	function actionResult(msg){
+		if( isValidJSON(msg) ){
+            var json = JSON.parse(msg);
+            if( json.result == "error" ){
+            	// alert("Ошибка");
+            }else if( typeof json.action != "undefined" ){
+            	switch (json.action) {
+            		case "questionSuccess":
+            			// $(".")
+            			break;
+            		case "reload":
+            			window.location.reload();
+            			break;
+
+            	}
+            }
+        }else{
+            // alert("Ошибка");
+            
+            if( msg == "1" ){
+				$link = $this.find(".b-thanks-link");
+			}else{
+				$link = $(".b-error-link");
+			}
+			
+			$link.click();
+        }
+	}
 });

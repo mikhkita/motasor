@@ -1703,10 +1703,16 @@ h4{
 .b-directions{
 	margin: 84px 0 74px 0;
 }
+	.b-directions-row{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+	}
 	.b-directions-half{
-		float: left;
+		/*float: left;*/
 		width: calc(50% - 10px);
 		margin-right: 20px;
+		display: flex;
 	}
 	.b-directions-half:nth-child(2n){
 		margin-right: 0;
@@ -1720,7 +1726,7 @@ h4{
 			margin-right: 20px;
 			margin-bottom: 24px;
 			color: #000;
-			height: 324px;
+			/*height: 324px;*/
 		}
 		.b-directions-item:nth-child(2n){
 			margin-right: 0;
@@ -4837,13 +4843,14 @@ form button{
 		    bottom: 1px;
 		}
 		.b-directions-item {
-		    height: 296px;
+		    /*height: 296px;*/
 		}
 		.b-directions-row .b-directions-half,
 		.b-directions-row .b-directions-half:nth-child(2n),
 		.b-directions-row:nth-child(2n) .b-directions-half,
 		.b-directions-row:nth-child(2n) .b-directions-half:nth-child(2n){
 			width: 100%;
+			margin-right: 0;
 		}
 		.b-directions {
 		    margin: 60px 0 50px 0;
