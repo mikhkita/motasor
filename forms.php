@@ -197,7 +197,7 @@ include 'header.php';?>
 			</form>
 			<br>
 			<br>
-			<form class="b-form" action="" method="POST">
+			<form class="b-form" action="" method="POST" data-file-action="addFile.php">
 				<h2>Заголовок</h2>
 				<div class="b-form-content">
 					<div class="b-input">
@@ -244,22 +244,35 @@ include 'header.php';?>
 					</div>
 					<div class="b-file">
 						<p>Загрузите файл</p>
-						<div class="b-file-field">
+						<div class="b-file-field" id="plup-actions">
 							<div class="icon-file"></div>
-							<div class="plup-actions" id="plup-actions">
-								<input id="plup-photo-file" type="hidden" name="FILE">
-								<p>Перетащите файл<br>  или выберите его на своем компьютере</p>
-								<a id="plup-button" class="plup-button b-btn b-btn-white-border" href="javascript:;">
-									<div class="add-file">
-										<span class="name">Выбрать файл</span>
+							<div class="plup-actions">
+								<div class="plup-add">
+									<p>Перетащите файл<br>  или выберите его на своем компьютере</p>
+									<a id="pickfiles" class="plup-button b-btn b-btn-white-border" href="javascript:;">
+										<div class="add-file">
+											<span class="name">Выбрать файл</span>
+										</div>
+										<div class="icon-arrow-right"></div>
+										<div class="icon-arrow-right-bold"></div>
+									</a>
+									<small>Максимальный размер файла 10 Мб</small>
+								</div>
+								<div class="plup-loading hide">
+									<div class="b-plup-preloader"><div></div><div></div><div></div><div></div></div>
+									<div class="b-plup-complete"></div>
+									<div class="b-plup-loading-cont">
+										<div class="b-plup-loading-text"><span class="b-load-text">Загружается</span> <span class="b-plup-count"></span>:</div>
+										<div id="b-plup-files-list" class="b-plup-files-list"></div>
 									</div>
-									<div class="success-file" style="display: none;">
-										<span class="name">Файл загружен</span>
-									</div>
-									<div class="icon-arrow-right"></div>
-									<div class="icon-arrow-right-bold"></div>
-								</a>
-								<small>Максимальный размер файла 10 Мб</small>
+									<a class="plup-button b-btn b-btn-white-border pickfiles-more" href="javascript:;">
+										<div class="add-file">
+											<span class="name">Загрузить ещё</span>
+										</div>
+										<div class="icon-arrow-right"></div>
+										<div class="icon-arrow-right-bold"></div>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
