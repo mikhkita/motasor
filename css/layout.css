@@ -3525,6 +3525,14 @@ form button{
 				.b-plup-file.uploaded .file-name{
 					opacity: 1;
 				}
+	@media screen and (max-width: 450px) {
+		.b-file-field .icon-file{
+			display: none;
+		}
+		.b-file-field .plup-actions{
+			width: 100%;
+		}
+	}
 
 /* ==== Задать вопрос ==== */
 
