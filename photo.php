@@ -86,22 +86,22 @@ include 'header.php';
 					<h2>Видео</h2>
 					<div class="b-video">
 						<div class="b-video-list clearfix">
-							<a class="b-video-item" style="background-image: url(../i/video-1.jpg);" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">
+							<a class="b-video-item" style="background-image: url(i/video-1.jpg);" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">
 								<div class="b-video-back"></div>
 							    <div class="b-play"></div>
 							    <p>Название видео</p>
 							</a>
-							<a class="b-video-item" style="background-image: url(../i/video-2.jpg);" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">
+							<a class="b-video-item" style="background-image: url(i/video-2.jpg);" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">
 								<div class="b-video-back"></div>
 							    <div class="b-play"></div>
 							    <p>Название видео Название видео Название видео Название видео Название видео</p>
 							</a>
-							<a class="b-video-item" style="background-image: url(../i/video-3.jpg);" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">
+							<a class="b-video-item" style="background-image: url(i/video-3.jpg);" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">
 								<div class="b-video-back"></div>
 							    <div class="b-play"></div>
 							    <p>Название видео</p>
 							</a>
-							<a class="b-video-item" style="background-image: url(../i/video-4.jpg);" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">
+							<a class="b-video-item" style="background-image: url(i/video-4.jpg);" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">
 								<div class="b-video-back"></div>
 							    <div class="b-play"></div>
 							    <p>Название видео Название видео</p>

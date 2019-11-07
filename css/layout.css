@@ -2339,20 +2339,20 @@ h4{
 			padding-left: 40px;
 			font-size: 16px;
 			line-height: 22px;
-			color: #0B6093;
+			color: #48569D;
 			margin-bottom: 20px;
 		}
 		.b-materials-item:before{
 			content: "";
 			position: absolute;
-			top: 6px;
+			top: 3px;
 			left: 0;
-			width: 17px;
-			height: 20px;
-			background-image: url(../i/icon-pdf.svg);
+			width: 19px;
+			height: 22px;
+			background-image: url(../i/file-file.svg);
 			background-position: 50% 50%;
 		    background-repeat: no-repeat;
-		    background-size: 17px;
+		    background-size: 19px;
 		}
 		.b-materials-item:last-child{
 			margin-bottom: 0;
@@ -2360,6 +2360,32 @@ h4{
 		.b-materials-item:hover{
 			text-decoration: underline;
 		}
+
+		.b-materials-item.file-doc:before{
+			background-image: url(../i/file-doc.svg);
+		}
+		.b-materials-item.file-jpg:before{
+			background-image: url(../i/file-jpg.svg);
+		}
+		.b-materials-item.file-pdf:before{
+			background-image: url(../i/file-pdf.svg);
+		}
+		.b-materials-item.file-ppt:before{
+			background-image: url(../i/file-ppt.svg);
+		}
+		.b-materials-item.file-pptx:before{
+			background-image: url(../i/file-pptx.svg);
+		}
+		.b-materials-item.file-txt:before{
+			background-image: url(../i/file-txt.svg);
+		}
+		.b-materials-item.file-xlsx:before{
+			background-image: url(../i/file-xlsx.svg);
+		}
+		.b-materials-item.file-zip:before{
+			background-image: url(../i/file-zip.svg);
+		}
+
 	.b-content-inner .b-news{
 		padding: 0;
 		margin-bottom: 80px;
@@ -3537,6 +3563,7 @@ form button{
 /* ==== Задать вопрос ==== */
 
 .b-success{
+	display: none;
 	background-color: #F2F5F7;
 	padding: 34px 32px 63px 32px;
 	color: #000;
@@ -3551,9 +3578,6 @@ form button{
 		color: #000;
 		margin-top: 0;
 		margin-bottom: 40px;
-	}
-	.b-success h3{
-		margin-top: 0;
 	}
 	.b-success.b-success-white h2,
 	.b-success.b-success-white h3{
@@ -3816,7 +3840,8 @@ form button{
 				margin-bottom: 0;
 				font-family: 'FiraSans-Bold';
 			}
-.fancybox-slide--video .fancybox-content {
+.fancybox-slide--video .fancybox-content,
+.fancybox-slide--image .fancybox-content{
     border: 35px solid #FFF;
 }
 
