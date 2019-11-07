@@ -3840,8 +3840,7 @@ form button{
 				margin-bottom: 0;
 				font-family: 'FiraSans-Bold';
 			}
-.fancybox-slide--video .fancybox-content,
-.fancybox-slide--image .fancybox-content{
+.fancybox-slide--video .fancybox-content{
     border: 35px solid #FFF;
 }
 
