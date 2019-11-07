@@ -25,7 +25,7 @@ include 'header.php';
 				<li><a href="#">Фото- и видеоматериалы</a></li>
 			</ul>
 			<div class="b-content-inner">
-				<div class="b-text">
+				<div class="b-text b-inner-margin">
 					<div class="b-employee">
 						<img src="i/employees-1.jpg">
 						<div class="b-employee-right">
@@ -54,23 +54,23 @@ include 'header.php';
 						<h3>Задайте вопрос</h3>
 						<div class="b-form-content">
 							<div class="b-input">
-								<label for="label-name">ФИО</label>
+								<label for="label-name">ФИО<span class="required">*</span></label>
 								<div class="input">
-									<input id="label-name" type="text" name="name" placeholder="ФИО">
+									<input id="label-name" type="text" name="name" required placeholder="ФИО">
 									<div class="icon-clear"></div>
 								</div>
 							</div>
 							<div class="b-input">
-								<label for="label-email">E-mail</label>
+								<label for="label-email">E-mail<span class="required">*</span></label>
 								<div class="input">
 									<input id="label-email" type="text" name="email" required placeholder="Ваш email">
 									<div class="icon-clear"></div>
 								</div>
 							</div>
 							<div class="b-textarea">
-								<label for="label-question">Ваш вопрос</label>
+								<label for="label-question">Ваш вопрос<span class="required">*</span></label>
 								<div class="textarea">
-									<textarea rows="10" id="label-question" name="" placeholder="Вопрос"></textarea>
+									<textarea rows="10" id="label-question" name="" required placeholder="Вопрос"></textarea>
 								</div>
 							</div>
 							<div class="b-checkbox">

@@ -2051,7 +2051,8 @@ h4{
 	}
 	
 	.b-nav > li.active{
-		padding-top: 10px;
+		/*padding-top: 10px;
+		padding-bottom: 10px;*/
 	}
 		.b-nav > li.active > a{
 			padding: 22px 27px;
@@ -3267,6 +3268,7 @@ form button{
 		vertical-align: top;
 		width: calc(100% - 62px);
 		max-width: 273px;
+		margin-bottom: 0;
 	}
 		.b-checkbox p a{
 			color: #FFF;
@@ -3508,6 +3510,7 @@ form button{
 		}
 
 .b-employee{
+	margin-top: 33px;
 	margin-bottom: 35px;
 }
 	.b-employee img{
@@ -3567,7 +3570,7 @@ form button{
 			}
 
 .b-video{
-
+	margin-bottom: 119px;
 }
 	.b-video-list{
 
@@ -5577,6 +5580,9 @@ form button{
 		display: flex;
 	}
 
+	.b-employee{
+		margin-top: 0;
+	}
 	.b-employee img {
 	    width: 260px;
 	    height: 260px;
@@ -5601,6 +5607,9 @@ form button{
 	}
 	.fancybox-slide--video .fancybox-content {
 	    border: 0;
+	}
+	.b-video{
+		margin-bottom: 60px;
 	}
 
 	@media screen and (max-width: 665px){
@@ -6001,7 +6010,7 @@ form button{
 		    width: auto;
 		}
 		.b-form {
-		    padding: 24px 16px;
+		    padding: 24px 16px 40px 16px;
 		}
 		.b-form-content{
 			padding-right: 0;
@@ -6176,6 +6185,10 @@ form button{
 		}
 		.b-news-item .with-arrow{
 			left: 16px;
+		}
+
+		.b-form .b-btn{
+			width: 100%;
 		}
 	}
 

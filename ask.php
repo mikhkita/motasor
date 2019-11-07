@@ -25,7 +25,7 @@ include 'header.php';
 				<li><a href="#">Фото- и видеоматериалы</a></li>
 			</ul>
 			<div class="b-content-inner">
-				<div class="b-text">
+				<div class="b-text b-inner-margin">
 					<h1>Задайте вопрос</h1>
 					<p>Росатом — высокотехнологичный лидер мировой ядерной энергетики. Для повышения конкурентоспособности Госкорпорация усиливает свой научно-технический потенциал. Ее дивизионы являются активными заказчиками на инновации. Новые достижения в науке и технике реализуются в перспективных отраслевых проектах в России и за рубежом, являются неотъемлемыми составляющими при выполнении государственных заказов</p>
 				
@@ -33,22 +33,22 @@ include 'header.php';
 						<h2>Задайте вопрос</h2>
 						<div class="b-form-content">
 							<div class="b-input">
-								<label for="label-name">ФИО</label>
+								<label for="label-name">ФИО<span class="required">*</span></label>
 								<div class="input">
-									<input id="label-name" type="text" name="name" placeholder="Иванов Иван Иванович">
+									<input id="label-name" type="text" name="name" required placeholder="Иванов Иван Иванович">
 									<div class="icon-clear"></div>
 								</div>
 							</div>
 							<h3>Ваши контакты</h3>
 							<div class="b-input">
-								<label for="label-phone">Телефон</label>
+								<label for="label-phone">Телефон<span class="required">*</span></label>
 								<div class="input">
 									<input id="label-phone" type="text" name="phone" required placeholder="+ 7 (999) 999 99 99">
 									<div class="icon-clear"></div>
 								</div>
 							</div>
 							<div class="b-input">
-								<label for="label-email">E-mail</label>
+								<label for="label-email">E-mail<span class="required">*</span></label>
 								<div class="input">
 									<input id="label-email" type="text" name="email" required placeholder="email@email.ru">
 									<div class="icon-clear"></div>
@@ -56,9 +56,9 @@ include 'header.php';
 							</div>
 							<h3>Ваш вопрос</h3>
 							<div class="b-textarea">
-								<label for="label-question">Вопрос</label>
+								<label for="label-question">Вопрос<span class="required">*</span></label>
 								<div class="textarea">
-									<textarea rows="10" id="label-question" name="" placeholder="Ваш вопрос"></textarea>
+									<textarea rows="10" id="label-question" name="" required placeholder="Ваш вопрос"></textarea>
 								</div>
 							</div>
 							<div class="b-checkbox">

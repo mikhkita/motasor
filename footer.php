@@ -210,16 +210,16 @@
 			<h2>Регистрация</h2>
 			<form action="" method="POST">
 				<div class="b-input">
-					<label for="label-reg-name">Имя</label>
+					<label for="label-reg-name">Имя<span class="required">*</span></label>
 					<div class="input">
-						<input id="label-reg-name" type="text" name="" placeholder="Ваше имя">
+						<input id="label-reg-name" type="text" name="name" required placeholder="Ваше имя">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input">
-					<label for="label-reg-surname">Фамилия</label>
+					<label for="label-reg-surname">Фамилия<span class="required">*</span></label>
 					<div class="input">
-						<input id="label-reg-surname" type="text" name="" placeholder="Ваша фамилия">
+						<input id="label-reg-surname" type="text" name="surname" required placeholder="Ваша фамилия">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
@@ -247,14 +247,14 @@
 				<div class="b-input">
 					<label for="label-reg-email">E-mail<span class="required">*</span></label>
 					<div class="input">
-						<input id="label-reg-email" type="text" name="email" placeholder="E-mail">
+						<input id="label-reg-email" type="text" name="email" required placeholder="E-mail">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input captcha">
 					<label for="label-reg-captcha">Код с картинки<span class="required">*</span></label>
 					<div class="input">
-						<input id="label-reg-captcha" type="text" name="captcha" placeholder="Код">
+						<input id="label-reg-captcha" type="text" name="captcha" required placeholder="Код">
 						<div class="icon-clear"></div>
 					</div>
 					<img src="i/captcha.jpg">
@@ -289,24 +289,24 @@
 			</div>
 			<form action="" method="POST">
 				<div class="b-input">
-					<label for="label-forgot-login">Логин</label>
+					<label for="label-forgot-login">Логин<span class="required">*</span></label>
 					<div class="input">
-						<input id="label-forgot-login" type="text" name="login" placeholder="Логин">
+						<input id="label-forgot-login" type="text" name="login" required placeholder="Логин">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-popup-auth-or"><span>или</span><div class="line"></div></div>
 				<div class="b-input">
-					<label for="label-forgot-email">E-mail</label>
+					<label for="label-forgot-email">E-mail<span class="required">*</span></label>
 					<div class="input">
-						<input id="label-forgot-email" type="text" name="email" placeholder="E-mail">
+						<input id="label-forgot-email" type="text" name="email" required placeholder="E-mail">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input captcha">
 					<label for="label-forgot-captcha">Код с картинки<span class="required">*</span></label>
 					<div class="input">
-						<input id="label-forgot-captcha" type="text" name="captcha" placeholder="Код">
+						<input id="label-forgot-captcha" type="text" name="captcha" required placeholder="Код">
 						<div class="icon-clear"></div>
 					</div>
 					<img src="i/captcha.jpg">
@@ -342,7 +342,7 @@
 	<script type="text/javascript" src="js/imask.min.js"></script>
 	<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
 	<script type="text/javascript" src="js/swipe.js"></script>
-	<script type="text/javascript" src="js/KitSend.min.js"></script>
+	<script type="text/javascript" src="js_originals/KitSend.js"></script>
 	<script type="text/javascript" src="js_originals/main.js"></script>
 
 </body>

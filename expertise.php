@@ -79,16 +79,16 @@ include 'header.php';
 					<h2>Стать экспертом Росатома</h2>
 					<div class="b-form-content">
 						<div class="b-input">
-							<label for="label-name">ФИО</label>
+							<label for="label-name">ФИО<span class="required">*</span></label>
 							<div class="input">
-								<input id="label-name" type="text" name="name" placeholder="Иванов Иван Иванович">
+								<input id="label-name" type="text" name="name" required placeholder="Иванов Иван Иванович">
 								<div class="icon-clear"></div>
 							</div>
 						</div>
 						<div class="b-select b-select-chosen">
-							<label for="label-field">Сфера вашей экспертизы</label>
+							<label for="label-field">Сфера вашей экспертизы<span class="required">*</span></label>
 							<div class="select">
-								<select id="label-field" class="select-experts" name="field">
+								<select id="label-field" class="select-experts" required name="field">
 									<option value="scientific-expert" data-block=".scientific-fields">Научный эксперт</option>
 									<option value="tech-expert" data-block=".tech-fields">Технологический эксперт</option>
 									<option value="business-expert" data-block=".business-fields">Бизнес эксперт</option>
@@ -98,7 +98,7 @@ include 'header.php';
 
 						<div class="scientific-fields form-toggle-blocks">
 							<div class="b-select b-select-chosen">
-								<label for="label-degree">Ученая степень, ученое звание</label>
+								<label for="label-degree">Ученая степень, ученое звание<span class="required">*</span></label>
 								<div class="select">
 									<select id="label-degree" name="degree">
 										<option value="">Научный эксперт </option>
@@ -108,24 +108,24 @@ include 'header.php';
 								</div>
 							</div>
 							<div class="b-input">
-								<label for="label-index">Индекс цитирования</label>
+								<label for="label-index">Индекс цитирования<span class="required">*</span></label>
 								<div class="input">
-									<input id="label-index" type="text" name="" placeholder="7564">
+									<input id="label-index" type="text" name="index" required placeholder="7564">
 									<div class="icon-clear"></div>
 								</div>
 							</div>
 							<div class="b-textarea">
-								<label for="label-experience-science">Опыт работы научно-исследовательской деятельности</label>
+								<label for="label-experience-science">Опыт работы научно-исследовательской деятельности<span class="required">*</span></label>
 								<div class="textarea">
-									<textarea rows="1" id="label-experience-science" name="" placeholder="7 лет"></textarea>
+									<textarea rows="1" id="label-experience-science" name="experience-science" required placeholder="7 лет"></textarea>
 								</div>
 							</div>
 						</div>
 						<div class="tech-fields form-toggle-blocks hide">
 							<div class="b-select b-select-chosen">
-								<label for="label-experience">Стаж работы на управленческих должностях</label>
+								<label for="label-experience">Стаж работы на управленческих должностях<span class="required">*</span></label>
 								<div class="select">
-									<select id="label-experience" name="">
+									<select id="label-experience" required name="experience">
 										<option value="">9 лет </option>
 										<option value="">8 лет </option>
 										<option value="">7 лет </option>
@@ -133,25 +133,25 @@ include 'header.php';
 								</div>
 							</div>
 							<div class="b-input">
-								<label for="label-post">Уровень должности</label>
+								<label for="label-post">Уровень должности<span class="required">*</span></label>
 								<div class="input">
-									<input id="label-post" type="text" name="" placeholder="Исполнительный директор">
+									<input id="label-post" type="text" name="post" required placeholder="Исполнительный директор">
 									<div class="icon-clear"></div>
 								</div>
 							</div>
 							<div class="b-input">
-								<label for="label-academic-degree">Ученая степень</label>
+								<label for="label-academic-degree">Ученая степень<span class="required">*</span></label>
 								<div class="input">
-									<input id="label-academic-degree" type="text" name="" placeholder="Кандидат наук">
+									<input id="label-academic-degree" type="text" name="academic-degree" required placeholder="Кандидат наук">
 									<div class="icon-clear"></div>
 								</div>
 							</div>
 						</div>
 						<div class="business-fields form-toggle-blocks hide">
 							<div class="b-select b-select-chosen">
-								<label for="label-experience-managerial">Стаж работы на управленческих должностях</label>
+								<label for="label-experience-managerial">Стаж работы на управленческих должностях<span class="required">*</span></label>
 								<div class="select">
-									<select id="label-experience-managerial" name="">
+									<select id="label-experience-managerial" name="experience-managerial" required>
 										<option value="">9 лет </option>
 										<option value="">8 лет </option>
 										<option value="">7 лет </option>
@@ -159,22 +159,22 @@ include 'header.php';
 								</div>
 							</div>
 							<div class="b-textarea">
-								<label for="label-commercial">Опыт коммерциализации научно-технических разработок, запуска инвестиционных/инновационных проектов в качестве руководителя проекта</label>
+								<label for="label-commercial">Опыт коммерциализации научно-технических разработок, запуска инвестиционных/инновационных проектов в качестве руководителя проекта<span class="required">*</span></label>
 								<div class="textarea">
-									<textarea rows="1" id="label-commercial" name="" placeholder="17 лет"></textarea>
+									<textarea rows="1" id="label-commercial" name="commercial" required placeholder="17 лет"></textarea>
 								</div>
 							</div>
 							<div class="b-input">
-								<label for="label-budget">Бюджет инвестиционных/инновационных проектов</label>
+								<label for="label-budget">Бюджет инвестиционных/инновационных проектов<span class="required">*</span></label>
 								<div class="input">
-									<input id="label-budget" type="text" name="" class="divide" placeholder="27 000 000 000">
+									<input id="label-budget" type="text" name="budget" class="divide" required placeholder="27 000 000 000">
 									<div class="icon-clear"></div>
 								</div>
 							</div>
 							<div class="b-input">
-								<label for="label-academic-degree-2">Ученая степень</label>
+								<label for="label-academic-degree-2">Ученая степень<span class="required">*</span></label>
 								<div class="input">
-									<input id="label-academic-degree-2" type="text" name="" placeholder="Кандидат наук">
+									<input id="label-academic-degree-2" type="text" name="academic-degree-2" required placeholder="Кандидат наук">
 									<div class="icon-clear"></div>
 								</div>
 							</div>
@@ -182,14 +182,14 @@ include 'header.php';
 
 						<h3>Ваши контакты</h3>
 						<div class="b-input">
-							<label for="label-phone">Телефон</label>
+							<label for="label-phone">Телефон<span class="required">*</span></label>
 							<div class="input">
 								<input id="label-phone" type="text" name="phone" required placeholder="+ 7 (999) 999 99 99">
 								<div class="icon-clear"></div>
 							</div>
 						</div>
 						<div class="b-input">
-							<label for="label-email">E-mail</label>
+							<label for="label-email">E-mail<span class="required">*</span></label>
 							<div class="input">
 								<input id="label-email" type="text" name="email" required placeholder="email@email.ru">
 								<div class="icon-clear"></div>
