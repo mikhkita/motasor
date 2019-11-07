@@ -1220,7 +1220,7 @@ h4{
 			}
 				.b-news-days-person .b-img{
 					display: inline-block;
-					vertical-align: top;
+					vertical-align: middle;
 					width: 45px;
 					height: 45px;
 					border-radius: 100px;
@@ -1228,7 +1228,7 @@ h4{
 				}
 				.b-news-days-person .b-name{
 					display: inline-block;
-					vertical-align: top;
+					vertical-align: middle;
 					width: calc(100% - 74px);
 					color: #FFF;
 					line-height: 20px;
@@ -1867,6 +1867,7 @@ h4{
 		.b-footer-search-form .input input{
 			background-color: #FFF;
 			padding: 14px 32px 14px 44px;
+			border: 1px solid #ECEBED;
 		}
 		.b-footer-search-form .input .icon-search{
 			position: absolute;
@@ -3354,7 +3355,7 @@ form button{
 	color: #000;
 }
 .b-file-field.dragenter{
-	background-color: rgba(255,255,255,0.3);
+	background-color: rgba(0,0,0,0.3);
 }
 	.b-file-field .icon-file{
 		display: inline-block;
@@ -3451,10 +3452,10 @@ form button{
 	  width: 39px;
 	  height: 39px;
 	  margin: 5px;
-	  border: 5px solid #fff;
+	  border: 5px solid #000;
 	  border-radius: 50%;
 	  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-	  border-color: #fff transparent transparent transparent;
+	  border-color: #000 transparent transparent transparent;
 	}
 	.b-plup-preloader div:nth-child(1) {
 	  animation-delay: -0.45s;
@@ -3506,7 +3507,7 @@ form button{
 						height: 100%;
 						left: 2px;
 						top: -8px;
-						color: #fff;
+						color: #000;
 					}
 				.file-name{
 					width: calc(100% - 20px);
@@ -3522,10 +3523,10 @@ form button{
 /* ==== Задать вопрос ==== */
 
 .b-success{
-	background-color: #48569D;
+	background-color: #F2F5F7;
 	padding: 34px 32px 63px 32px;
-	color: #FFF;
-	margin-bottom: 144px;
+	color: #000;
+	max-width: 683px;
 }
 .b-success.b-success-white{
 	background-color: transparent;
@@ -3533,7 +3534,7 @@ form button{
 	color: #000;
 }
 	.b-success h2{
-		color: #FFF;
+		color: #000;
 		margin-top: 0;
 		margin-bottom: 40px;
 	}
@@ -3554,7 +3555,7 @@ form button{
 			width: 40px;
 			height: 40px;
 			border-radius: 100px;
-			border: 1px solid #FFF;
+			border: 1px solid #000;
 			margin-right: 18px;
 		}
 		.b-success.b-success-white .icon-checked{
@@ -3568,7 +3569,7 @@ form button{
 			-ms-transform: translateX(-50%) translateY(-50%);
 			-o-transform: translateX(-50%) translateY(-50%);
 			transform: translateX(-50%) translateY(-50%);
-			color: #FFF;
+			color: #000;
 		}
 		.b-success.b-success-white .icon-checked:before{
 			color: #10995F;
@@ -3685,6 +3686,7 @@ form button{
 		}
 		.b-employee h3{
 			color: #101010;
+			margin-top: 32px;
 		}
 		.b-footer-contacts.b-employee-contacts{
 			float: none;
@@ -3705,6 +3707,14 @@ form button{
 			height: auto;
 			margin-right: 20px;
 			margin-bottom: 20px;
+			-webkit-transition: box-shadow 100ms ease-out;
+		    -moz-transition: box-shadow 100ms ease-out;
+		    -ms-transition: box-shadow 100ms ease-out;
+		    -o-transition: box-shadow 100ms ease-out;
+		    transition: box-shadow 100ms ease-out;
+		}
+		.b-photo-list a:hover{
+			box-shadow: 0px 0px 18px rgba(72, 86, 157, 0.45);
 		}
 		.b-photo-list a:nth-child(3n){
 			margin-right: 0;
@@ -3732,6 +3742,11 @@ form button{
 			background-position: 50% 50%;
 		    background-repeat: no-repeat;
 		    background-size: cover;
+		    -webkit-transition: box-shadow 100ms ease-out;
+		    -moz-transition: box-shadow 100ms ease-out;
+		    -ms-transition: box-shadow 100ms ease-out;
+		    -o-transition: box-shadow 100ms ease-out;
+		    transition: box-shadow 100ms ease-out;
 		}
 		.b-video-item:nth-child(2n){
 			margin-right: 0;
@@ -3748,6 +3763,7 @@ form button{
 				background-image: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #48569D 93.23%);
 			}
 			.b-video-item .b-play{
+				opacity: 0.4;
 				position: absolute;
 				z-index: 2;
 			    width: 42px;
@@ -3762,6 +3778,17 @@ form button{
 				background-position: 50% 50%;
 			    background-repeat: no-repeat;
 			    background-size: 42px;
+			    -webkit-transition: opacity 100ms ease-out;
+			    -moz-transition: opacity 100ms ease-out;
+			    -ms-transition: opacity 100ms ease-out;
+			    -o-transition: opacity 100ms ease-out;
+			    transition: opacity 100ms ease-out;
+			}
+			.b-video-item:hover{
+				box-shadow: 0px 0px 18px rgba(72, 86, 157, 0.45);
+			}
+			.b-video-item:hover .b-play{
+				opacity: 1;
 			}
 			.b-video-item p{
 				width: calc(100% - 44px);
