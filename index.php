@@ -139,7 +139,7 @@ include 'header.php';
 								<h3>Восемьдесят три процента всех дней в году начинаются одинаково: звенит будильник.</h3>
 								<div class="b-news-days-person">
 									<img src="i/person-1.png" class="b-img">
-									<div class="b-name"><b>Мотькина</b> Юлия Валерьевна</div>
+									<div class="b-name"><b>Смирнова</b> Валерия Петровна</div>
 								</div>
 								<div class="quotes-left"></div>
 								<div class="quotes-right"></div>
