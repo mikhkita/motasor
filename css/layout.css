@@ -1977,7 +1977,7 @@ h4{
 		display: inline-block;
 		vertical-align: top;
 		width: 456px;
-		margin-right: 40px;
+		margin-right: 38px;
 	}
 		.b-breadcrumbs{
 			margin-bottom: 16px;
@@ -4525,7 +4525,7 @@ form button,
 
 		.b-header-inner-left {
 		    width: 370px;
-	    	margin-right: 24px;
+	    	margin-right: 23px;
 		}	
 			.b-header-inner-left h2 {
 			    font-size: 40px;
@@ -6387,6 +6387,12 @@ form button,
 	}
 
 	@media screen and (max-width: 450px){
+		.b-questions-item{
+			padding: 20px 16px;
+		}
+		.b-answer{
+			padding: 16px;
+		}
 		.b-footer-menu-mobile {
 		    -webkit-column-count: auto;
 		       -moz-column-count: auto;

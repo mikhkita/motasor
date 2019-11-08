@@ -152,9 +152,9 @@ include 'header.php';
 								<label for="label-experience-managerial">Стаж работы на управленческих должностях<span class="required">*</span></label>
 								<div class="select">
 									<select id="label-experience-managerial" name="experience-managerial" required>
-										<option value="">9 лет </option>
-										<option value="">8 лет </option>
-										<option value="">7 лет </option>
+										<option value="9 лет">9 лет </option>
+										<option value="8 лет">8 лет </option>
+										<option value="7 лет">7 лет </option>
 									</select>
 								</div>
 							</div>
