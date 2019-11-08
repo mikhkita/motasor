@@ -172,7 +172,8 @@
 				</a>
 			</div>
 			<div class="b-popup-auth-or"><span>или</span><div class="line"></div></div>
-			<form action="" method="POST">
+			<div class="b-popup-auth-wrong hide">Неверный логин или пароль</div>
+			<form action="" method="POST" class="b-form-auth">
 				<div class="b-input">
 					<label for="label-auth-login">Логин</label>
 					<div class="input">
@@ -208,7 +209,7 @@
 
 		<div class="b-popup b-popup-register" id="b-popup-register">
 			<h2>Регистрация</h2>
-			<form action="" method="POST">
+			<form action="" method="POST" class="b-form-register">
 				<div class="b-input">
 					<label for="label-reg-name">Имя</label>
 					<div class="input">
@@ -287,26 +288,27 @@
 				<p>Если вы забыли пароль, введите логин или E-Mail.</p>
 				<p>Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам по E-Mail.</p>
 			</div>
-			<form action="" method="POST">
+			<form action="" method="POST" class="b-form-forgot">
 				<div class="b-input">
-					<label for="label-forgot-login">Логин<span class="required">*</span></label>
+					<label for="label-forgot-login">Логин</label>
 					<div class="input">
-						<input id="label-forgot-login" type="text" name="login" required placeholder="Логин">
+						<input id="label-forgot-login" type="text" name="login" placeholder="Логин">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-popup-auth-or"><span>или</span><div class="line"></div></div>
+				<div class="b-popup-forgot-wrong hide">Введите логин или E-Mail</div>
 				<div class="b-input">
-					<label for="label-forgot-email">E-mail<span class="required">*</span></label>
+					<label for="label-forgot-email">E-mail</label>
 					<div class="input">
-						<input id="label-forgot-email" type="text" name="email" required placeholder="E-mail">
+						<input id="label-forgot-email" type="text" name="email" placeholder="E-mail">
 						<div class="icon-clear"></div>
 					</div>
 				</div>
 				<div class="b-input captcha">
-					<label for="label-forgot-captcha">Код с картинки<span class="required">*</span></label>
+					<label for="label-forgot-captcha">Код с картинки</label>
 					<div class="input">
-						<input id="label-forgot-captcha" type="text" name="captcha" required placeholder="Код">
+						<input id="label-forgot-captcha" type="text" name="captcha" placeholder="Код">
 						<div class="icon-clear"></div>
 					</div>
 					<img src="i/captcha.jpg">
@@ -320,16 +322,24 @@
 			</form>
 		</div>
 
-		<div class="b-thanks b-popup" id="b-popup-success">
-			<h3>Спасибо!</h3>
-			<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
-			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		<div class="b-thanks b-popup" id="b-reg-success">
+			<h2>Регистрация</h2>
+			<p class="b-thanks-result">Вы были успешно зарегистрированы.</p>
+			<p class="b-thanks-msg">На указанный в форме e-mail было выслано письмо с информацией о подтверждении регистрации.</p>
 		</div>
+
+		<div class="b-thanks b-popup" id="b-reg-error">
+			<h2>Регистрация</h2>
+			<p class="b-thanks-result error">Произошла ошибка</p>
+			<p class="b-thanks-msg">Пожалуйста, пройдите процесс регистрации заново.</p>
+		</div>
+
+		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
 		<div class="b-thanks b-popup" id="b-popup-error">
-			<h3>Ошибка отправки!</h3>
-			<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
-			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+			<h2>Ошибка отправки!</h2>
+			<p>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</p>
 		</div>
+
 	</div>
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -343,8 +353,8 @@
 	<script type="text/javascript" src="js/imask.min.js"></script>
 	<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
 	<script type="text/javascript" src="js/swipe.js"></script>
-	<script type="text/javascript" src="js/KitSend.min.js?<?=$version?>"></script>
-	<script type="text/javascript" src="js/main.min.js?<?=$version?>"></script>
+	<script type="text/javascript" src="js_originals/KitSend.js?<?=$version?>"></script>
+	<script type="text/javascript" src="js_originals/main.js?<?=$version?>"></script>
 
 </body>
 </html>

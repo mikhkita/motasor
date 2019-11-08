@@ -53,7 +53,16 @@ $(document).ready(function(){
 		$(this).validate({
 			rules: {
 				email: 'email',
-				phone: 'customPhone'
+				phone: 'customPhone',
+				'password': {
+					required: true,
+					minlength: 6
+			    },
+			    'password-confirmation': {
+			    	required: true,
+					minlength: 6,
+					equalTo: $(this).find("input[name='password']")
+			    },
 			}
 		});
 		if( $(this).find("input[name=phone]").length ){
@@ -86,6 +95,8 @@ $(document).ready(function(){
 	    required: "Ошибка: значение не может быть пустым",
 	    email: "Ошибка: недопустимое значение",
 	    customPhone: "Ошибка: недопустимое значение",
+	    minlength: "Ошибка: пароль должен быть не менее 6 символов длиной",
+	    equalTo: "Ошибка: пароли не совпадают",
 	});
 
 	function whenScroll(){
@@ -191,6 +202,15 @@ $(document).ready(function(){
 
 			if( $this.attr("data-goal") ){
 				yaCounter12345678.reachGoal($this.attr("data-goal"));
+			}
+
+			if ($this.hasClass("b-form-forgot")) {
+				if(!$this.find("input[name='login']").val() && !$this.find("input[name='email']").val()){
+					$(".b-popup-forgot-wrong").removeClass("hide");
+					return false;
+				}else{
+					$(".b-popup-forgot-wrong").addClass("hide");
+				}
 			}
 
   			$.ajax({

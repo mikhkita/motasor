@@ -1935,12 +1935,12 @@ h4{
 }
 
 .b-header-inner{
-	min-height: 334px;
+	min-height: 215px;
 	/*background-image: url(../i/header-inner.jpg);*/
 	/*background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;*/
-    padding: 56px 0;
+    padding: 56px 0 76px 0;
     color: #FFF;
     /*background-color: #48569D;*/
     position: relative;
@@ -2011,6 +2011,7 @@ h4{
 		.b-header-inner-left h2{
 			font-size: 55px;
 			line-height: 56px;
+			margin-bottom: 0;
 		}
 	.b-header-inner-right{
 		display: inline-block;
@@ -3091,7 +3092,8 @@ h4{
 
 /* ==== */
 
-form button{
+form button,
+.b-thanks button{
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -4150,6 +4152,12 @@ form button{
 			background-color: rgba(0, 0, 0, 0.15);
 			float: right;
 		}
+	.b-popup-auth-wrong,
+	.b-popup-forgot-wrong{
+		color: #F90C0C;
+		margin-bottom: 24px;
+    	line-height: 16px;
+	}
 	.b-popup-auth .forgot{
 		float: right;
 		margin-top: 13px;
@@ -4191,6 +4199,32 @@ form button{
 	.b-popup-forgot .b-btn{
 		margin-bottom: 16px;
 	}
+
+.b-thanks{
+	background-color: #FFF;
+	padding: 66px 117px 82px 117px;
+}	
+	.b-thanks h2{
+		margin-bottom: 32px;
+	}
+	.b-thanks-result{
+		font-size: 16px;
+		line-height: 22px;
+		color: #2E8037;
+		margin-bottom: 16px;
+	}
+	.b-thanks-result.error{
+		color: #F90C0C;
+	}
+	.b-thanks-msg{
+
+	}
+	/*.b-thanks .b-btn{
+		color: #FFF;
+	    border: 1px solid #FFF;
+	    background-color: transparent;
+		line-height: 25px;
+	}*/
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	
@@ -6346,6 +6380,9 @@ form button{
 			}
 		.days-list{
 			padding-bottom: 0;
+		}
+		.b-thanks h2{
+			margin-bottom: 24px;
 		}
 	}
 
