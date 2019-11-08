@@ -354,7 +354,7 @@
 	<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
 	<script type="text/javascript" src="js/swipe.js"></script>
 	<script type="text/javascript" src="js/KitSend.min.js?<?=$version?>"></script>
-	<script type="text/javascript" src="js/main.min.js?<?=$version?>"></script>
+	<script type="text/javascript" src="js_originals/main.js?<?=$version?>"></script>
 
 </body>
 </html>

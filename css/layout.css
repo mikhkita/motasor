@@ -2348,12 +2348,12 @@ h4{
 			position: absolute;
 			top: 3px;
 			left: 0;
-			width: 19px;
+			width: 22px;
 			height: 22px;
 			background-image: url(../i/file-file.svg);
 			background-position: 50% 50%;
 		    background-repeat: no-repeat;
-		    background-size: 19px;
+		    background-size: contain;
 		}
 		.b-materials-item:last-child{
 			margin-bottom: 0;
@@ -2506,29 +2506,29 @@ h4{
 		.b-innov-share a:hover{
 			text-decoration: underline;
 		}
-	.b-innov-pdf{
+	.b-innov-file{
 		padding: 12px 31px 14px;
 		background: #48569D;
 		border-radius: 5px;
 		margin-top: 20px;
 	}
-		.b-innov-pdf-item{
+		.b-innov-file-item{
 			display: block;
 			position: relative;
 		}
-		.b-innov-pdf-item:last-child{
+		.b-innov-file-item:last-child{
 			margin-bottom: 0;
 		}
-			.b-innov-pdf a{
+			.b-innov-file a{
 				display: inline-block;
 				padding: 12px 0 12px 52px;
 				color: #FFF;
 				text-decoration: underline;
 			}
-			.b-innov-pdf a:hover{
+			.b-innov-file a:hover{
 				text-decoration: none;
 			}
-			.b-innov-pdf a:before {
+			.b-innov-file a:before {
 			    content: "";
 			    position: absolute;
 			    top: 50%;
@@ -5728,14 +5728,14 @@ form button,
 	    padding: 20px 24px 23px 24px;
 	    margin-bottom: 30px;
 	}
-	.b-innov-pdf{
+	.b-innov-file{
 		padding: 16px 24px;
 		margin-bottom: 50px;
 	}
-		/*.b-innov-pdf a{
+		/*.b-innov-file a{
 			padding-left: 52px;
 		}
-		.b-innov-pdf a:before {
+		.b-innov-file a:before {
 		    top: -7px;
 		}*/
 	.b-innov-share a{
