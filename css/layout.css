@@ -2417,16 +2417,13 @@ h4{
 			margin-bottom: 20px;
 		}
 		.b-materials-item:before{
-			content: "";
+			content: '\e90e';
 			position: absolute;
 			top: 3px;
 			left: 0;
 			width: 22px;
 			height: 22px;
-			background-image: url(../i/file-file.svg);
-			background-position: 50% 50%;
-		    background-repeat: no-repeat;
-		    background-size: contain;
+			font-size: 22px;
 		}
 		.b-materials-item:last-child{
 			margin-bottom: 0;
@@ -2434,30 +2431,29 @@ h4{
 		.b-materials-item:hover{
 			text-decoration: underline;
 		}
-
-		.b-materials-item.file-doc:before{
-			background-image: url(../i/file-doc.svg);
+		.b-materials-item.icon-doc:before{
+			content: '\e90f';
 		}
-		.b-materials-item.file-jpg:before{
-			background-image: url(../i/file-jpg.svg);
+		.b-materials-item.icon-jpg:before{
+			content: '\e910';
 		}
-		.b-materials-item.file-pdf:before{
-			background-image: url(../i/file-pdf.svg);
+		.b-materials-item.icon-pdf:before{
+			content: '\e911';
 		}
-		.b-materials-item.file-ppt:before{
-			background-image: url(../i/file-ppt.svg);
+		.b-materials-item.icon-ppt:before{
+			content: '\e913';
 		}
-		.b-materials-item.file-pptx:before{
-			background-image: url(../i/file-pptx.svg);
+		.b-materials-item.icon-pptx:before{
+			content: '\e912';
 		}
-		.b-materials-item.file-txt:before{
-			background-image: url(../i/file-txt.svg);
+		.b-materials-item.icon-txt:before{
+			content: '\e914';
 		}
-		.b-materials-item.file-xlsx:before{
-			background-image: url(../i/file-xlsx.svg);
+		.b-materials-item.icon-xlsx:before{
+			content: '\e915';
 		}
-		.b-materials-item.file-zip:before{
-			background-image: url(../i/file-zip.svg);
+		.b-materials-item.icon-zip:before{
+			content: '\e916';
 		}
 
 	.b-content-inner .b-news{
