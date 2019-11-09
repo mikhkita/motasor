@@ -2683,9 +2683,12 @@ h4{
 				text-decoration: none;
 			}
 			.b-innov-file a:before {
-			    content: "";
+			    content: '\e90e';
 			    position: absolute;
 			    top: 50%;
+			    font-family: 'icomoon';
+			    font-size: 35px;
+			    line-height: 35px;
 			    -webkit-transform: translateY(-50%);
 			    -moz-transform: translateY(-50%);
 			    -ms-transform: translateY(-50%);
@@ -2694,7 +2697,7 @@ h4{
 			    left: 0;
 			    width: 31px;
 			    height: 35px;
-			    background-image: url(../i/icon-pdf-white.svg);
+			    /*background-image: url(../i/icon-pdf-white.svg);*/
 			    background-position: 50% 50%;
 			    background-repeat: no-repeat;
 			    background-size: 31px;
