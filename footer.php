@@ -171,9 +171,9 @@
 					<span class="auth-soc-text">Facebook</span>
 				</a>
 			</div>
-			<div class="b-popup-auth-or"><span>или</span><div class="line"></div></div>
-			<div class="b-popup-auth-wrong hide">Неверный логин или пароль</div>
-			<form action="" method="POST" class="b-form-auth">
+			<form action="send/auth.php" method="POST" class="b-form-auth">
+				<div class="b-popup-auth-or"><span>или</span><div class="line"></div></div>
+				<div class="b-popup-auth-wrong hide"></div>
 				<div class="b-input">
 					<label for="label-auth-login">Логин</label>
 					<div class="input">
@@ -209,7 +209,8 @@
 
 		<div class="b-popup b-popup-register" id="b-popup-register">
 			<h2>Регистрация</h2>
-			<form action="" method="POST" class="b-form-register">
+			<form action="send/registration.php" method="POST" class="b-form-register">
+				<div class="b-popup-auth-wrong hide"></div>
 				<div class="b-input">
 					<label for="label-reg-name">Имя</label>
 					<div class="input">
@@ -288,7 +289,8 @@
 				<p>Если вы забыли пароль, введите логин или E-Mail.</p>
 				<p>Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам по E-Mail.</p>
 			</div>
-			<form action="" method="POST" class="b-form-forgot">
+			<form action="send/forgot.php" method="POST" class="b-form-forgot">
+				<div class="b-popup-auth-wrong hide">Введите логин или E-Mail</div>
 				<div class="b-input">
 					<label for="label-forgot-login">Логин</label>
 					<div class="input">
@@ -297,7 +299,6 @@
 					</div>
 				</div>
 				<div class="b-popup-auth-or"><span>или</span><div class="line"></div></div>
-				<div class="b-popup-forgot-wrong hide">Введите логин или E-Mail</div>
 				<div class="b-input">
 					<label for="label-forgot-email">E-mail</label>
 					<div class="input">
@@ -308,7 +309,7 @@
 				<div class="b-input captcha">
 					<label for="label-forgot-captcha">Код с картинки</label>
 					<div class="input">
-						<input id="label-forgot-captcha" type="text" name="captcha" placeholder="Код">
+						<input id="label-forgot-captcha" type="text" name="captcha" required placeholder="Код">
 						<div class="icon-clear"></div>
 					</div>
 					<img src="i/captcha.jpg">
@@ -322,19 +323,19 @@
 			</form>
 		</div>
 
-		<div class="b-thanks b-popup" id="b-reg-success">
+		<div class="b-thanks b-popup" id="b-text-popup-result">
 			<h2>Регистрация</h2>
 			<p class="b-thanks-result">Вы были успешно зарегистрированы.</p>
 			<p class="b-thanks-msg">На указанный в форме e-mail было выслано письмо с информацией о подтверждении регистрации.</p>
 		</div>
 
-		<div class="b-thanks b-popup" id="b-reg-error">
+		<div class="b-thanks b-popup" id="b-text-popup-error">
 			<h2>Регистрация</h2>
 			<p class="b-thanks-result error">Произошла ошибка</p>
 			<p class="b-thanks-msg">Пожалуйста, пройдите процесс регистрации заново.</p>
 		</div>
 
-		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
+		<a href="#b-text-popup-result" class="b-success-link fancy" style="display:none;"></a>
 		<div class="b-thanks b-popup" id="b-popup-error">
 			<h2>Ошибка отправки!</h2>
 			<p>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</p>

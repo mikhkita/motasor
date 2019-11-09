@@ -2089,7 +2089,7 @@ h4{
 	.b-header-inner-right{
 		display: inline-block;
 		vertical-align: top;
-		width: calc(100% - 590px);
+		width: calc(100% - 708px);
 	}
 	.b-header-show-more{
 		position: relative;
@@ -2580,6 +2580,7 @@ h4{
 		background: #48569D;
 		border-radius: 5px;
 		margin-top: 20px;
+		margin-bottom: 32px;
 	}
 		.b-innov-file-item{
 			display: block;
@@ -3673,10 +3674,10 @@ form button,
 
 .b-success{
 	display: none;
-	background-color: #F2F5F7;
+	/*background-color: #F2F5F7;
 	padding: 34px 32px 63px 32px;
 	color: #000;
-	max-width: 683px;
+	max-width: 683px;*/
 }
 .b-success.b-success-white{
 	background-color: transparent;
@@ -4259,8 +4260,7 @@ form button,
 			background-color: rgba(0, 0, 0, 0.15);
 			float: right;
 		}
-	.b-popup-auth-wrong,
-	.b-popup-forgot-wrong{
+	.b-popup-auth-wrong{
 		color: #F90C0C;
 		margin-bottom: 24px;
     	line-height: 16px;
@@ -4359,7 +4359,9 @@ form button,
 		padding-right: 0;
 		margin-left: 0;
 	}
-
+	.b-header-inner-right{
+		width: calc(100% - 473px);
+	}
 	.b-news-days-right-bottom h3{
 		/*font-size: 23px;*/
 	}
