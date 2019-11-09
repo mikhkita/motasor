@@ -153,7 +153,7 @@ include 'header.php';?>
 					<div class="b-input">
 						<label for="label-name-2">ФИО<span class="required">*</span></label>
 						<div class="input">
-							<input id="label-name-2" type="text" name="" required placeholder="Иванов Иван Иванович">
+							<input id="label-name-2" type="text" name="name" required placeholder="Иванов Иван Иванович">
 							<div class="icon-clear"></div>
 						</div>
 					</div>
@@ -195,14 +195,14 @@ include 'header.php';?>
 					<div class="b-input">
 						<label for="label-name-3">ФИО<span class="required">*</span></label>
 						<div class="input">
-							<input id="label-name-3" type="text" name="" required placeholder="Иванов Иван Иванович">
+							<input id="label-name-3" type="text" name="name" required placeholder="Иванов Иван Иванович">
 							<div class="icon-clear"></div>
 						</div>
 					</div>
 					<div class="b-select b-select-chosen">
 						<label for="label-list">Выпадающий список<span class="required">*</span></label>
 						<div class="select">
-							<select id="label-list" class="" name="" required>
+							<select id="label-list" class="" name="list" required>
 								<option value="p1">Пункт 1</option>
 								<option value="p2">Пункт 2</option>
 								<option value="p3">Пункт 3</option>
@@ -213,21 +213,21 @@ include 'header.php';?>
 					<div class="b-checkbox-list">
 						<p>Список с чекбоксами</p>
 						<div class="b-checkbox">
-							<input id="checkbox-1" type="checkbox" name="">
+							<input id="checkbox-1" type="checkbox" name="checkbox-1">
 							<label for="checkbox-1">
 								<div class="b-checked icon-checked"></div>
 								<p>Работники инновационных служб</p>
 							</label>
 						</div>
 						<div class="b-checkbox">
-							<input id="checkbox-2" type="checkbox" name="">
+							<input id="checkbox-2" type="checkbox" name="checkbox-2">
 							<label for="checkbox-2">
 								<div class="b-checked icon-checked"></div>
 								<p>Служб управления интеллектуальной собственностью</p>
 							</label>
 						</div>
 						<div class="b-checkbox">
-							<input id="checkbox-3" type="checkbox" name="">
+							<input id="checkbox-3" type="checkbox" name="checkbox-3">
 							<label for="checkbox-3">
 								<div class="b-checked icon-checked"></div>
 								<p>Работники спасательных служб</p>
