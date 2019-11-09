@@ -180,12 +180,19 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
 
-    $(".b-answer").each(function () {
+    $(".b-accordeon-body").each(function () {
         $(this).slideUp(0);
     });
 
-    $(".b-questions-item-ref").click(function () {
-        var $block = $(this).parent().find(".b-answer");
+    $(".b-accordeon-head").click(function () {
+        
+        if ($(this).hasClass('open')) {
+            $(this).removeClass('open');
+        } else {
+            $(this).addClass('open');
+        }
+
+        var $block = $(this).parent().find(".b-accordeon-body");
         $block.slideToggle(500);
         return false;
     });

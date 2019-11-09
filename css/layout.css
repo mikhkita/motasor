@@ -2694,6 +2694,9 @@ h4{
 	padding: 0;
 	background-color: transparent;
 }
+.b-accordeon-form{
+	padding-bottom: 0;
+}
 	.b-form-content{
 		padding-right: 93px;
 	}
@@ -2725,6 +2728,41 @@ h4{
 	.b-form .b-textarea{
 		margin-bottom: 32px;
 	}
+	.b-form .b-accordeon-head{
+		font-family: 'FiraSans-Bold';
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #231E78;
+		margin-bottom: 32px;
+		display: inline-block;
+	}
+	.b-form .b-accordeon-body{
+		padding-bottom: 41px;
+	}
+		.b-form .b-accordeon-head .icon-select{
+			display: inline-block;
+			margin-left: 44px;
+			width: 13px;
+			height: 8px;
+			-webkit-transition: transform .3s;
+			-o-transition: transform .3s;
+			transition: transform .3s;
+			position: relative;
+		}
+		.b-form .b-accordeon-head.open .icon-select{
+			-webkit-transform: scale(-1, -1);
+			-ms-transform: scale(-1, -1);
+			-o-transform: scale(-1, -1);
+			transform: scale(-1, -1);
+		}
+		.b-form .b-accordeon-head .icon-select:before{
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-size: 8px;
+		}
 		.b-form .b-input label,
 		.b-form .b-select label{
 
@@ -6341,6 +6379,9 @@ form button,
 		}
 		.b-form {
 		    padding: 24px 16px 40px 16px;
+		}
+		.b-accordeon-form{
+			padding-bottom: 0;
 		}
 		.b-form-content{
 			padding-right: 0;

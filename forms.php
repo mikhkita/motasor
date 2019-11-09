@@ -290,6 +290,59 @@ include 'header.php';?>
 					</button>
 				</div>
 			</form>
+			<br>
+			<br>
+			<form class="b-form b-accordeon-form" action="" method="POST">
+				<h2>Задайте вопрос</h2>
+				<a href="#" class="b-accordeon-head">Задать вопрос<div class="icon-select"></div></a>
+				<div class="b-accordeon-body">
+					<div class="b-form-content">
+						<div class="b-input">
+							<label for="label-name-2">ФИО</label>
+							<div class="input">
+								<input id="label-name-2" type="text" name="" placeholder="Иванов Иван Иванович">
+								<div class="icon-clear"></div>
+							</div>
+						</div>
+
+						<h3>Ваши контакты</h3>
+						<div class="b-input">
+							<label for="label-phone-2">Телефон</label>
+							<div class="input">
+								<input id="label-phone-2" type="text" name="phone" required placeholder="+ 7 (999) 999 99 99">
+								<div class="icon-clear"></div>
+							</div>
+						</div>
+						<div class="b-input">
+							<label for="label-email-2">E-mail</label>
+							<div class="input">
+								<input id="label-email-2" type="text" name="email" required placeholder="email@email.ru">
+								<div class="icon-clear"></div>
+							</div>
+						</div>
+
+						<h3>Ваш вопрос</h3>
+						<div class="b-textarea">
+							<label for="label-question">Вопрос</label>
+							<div class="textarea">
+								<textarea rows="10" id="label-question" name="" placeholder="Ваш вопрос"></textarea>
+							</div>
+						</div>
+						<div class="b-checkbox">
+							<input id="checkbox-agreement-2" type="checkbox" name="agreement" required>
+							<label for="checkbox-agreement-2">
+								<div class="b-checked icon-checked"></div>
+								<p>Я принимаю <a href="#">условия пользовательского соглашения</a></p>
+							</label>
+						</div>
+						<button class="b-btn b-btn-tr ajax">
+							<span class="b-btn-content">Отправить</span>
+							<div class="icon-arrow-right"></div>
+							<div class="icon-arrow-right-bold"></div>
+						</button>
+					</div>
+				</div>
+			</form>
 		</div>
 <?include 'footer.php';?>
 		
