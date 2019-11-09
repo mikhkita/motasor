@@ -188,16 +188,14 @@ include 'header.php';
 							<div class="b-calendar-cont">
 								<h2>Календарь событий</h2>
 								<div class="b-calendar-months">
-									<a href="#" class="icon-arrow-left"></a>
+									<!-- <a href="#" class="icon-arrow-left"></a> -->
 									<div class="b-month-list">
-										<a href="#" class="month active">Октябрь</a>
-										<a href="#" class="month">Ноябрь</a>
-										<a href="#" class="month">Декабрь</a>
+
 									</div>
-									<a href="#" class="icon-arrow-right"></a>
+									<!-- <a href="#" class="icon-arrow-right"></a> -->
 								</div>
-								
-								<table class="b-calendar">
+								<div class="datepicker-calendar"></div>
+								<!-- <table class="b-calendar">
 									<tr>
 										<th>Пн</th>
 										<th>Вт</th>
@@ -252,7 +250,7 @@ include 'header.php';
 										<td></td>
 										<td></td>
 									</tr>
-								</table>
+								</table> -->
 							</div>
 							<div class="b-events">
 								<div class="b-events-list">

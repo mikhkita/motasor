@@ -353,7 +353,8 @@
 	<script type="text/javascript" src="js/imask.min.js"></script>
 	<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
 	<script type="text/javascript" src="js/swipe.js"></script>
-	<script type="text/javascript" src="js/KitSend.min.js?<?=$version?>"></script>
+	<script type="text/javascript" src="js/datepicker.min.js"></script>
+	<script type="text/javascript" src="js_originals/KitSend.js?<?=$version?>"></script>
 	<script type="text/javascript" src="js_originals/main.js?<?=$version?>"></script>
 
 </body>

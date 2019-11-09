@@ -413,6 +413,74 @@ $(document).ready(function(){
     ripple.init();
     $('.b-btn').on('click touchstart', ripple.click);
 
+    // Календарь
+
+    var curDate = new Date(),
+        curMonth = curDate.getMonth(),
+        curYear = curDate.getFullYear(),
+        arMonths  = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+    // Сгенерить 12 месяцев
+    for (var i = 0, active = true; i < 12; i++) {
+        $(".b-month-list").append("<a href='#' data-month="+(curMonth+1)+" data-year="+curYear+" class='month "+((active)?'active':'')+"'>"+arMonths[curMonth]+"</a>");
+        curMonth++;
+        if(curMonth >= 12){
+            curMonth = 0;
+            curYear++;
+        }
+        active = false;
+    }
+    // Slick
+    $('.b-month-list').slick({
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        cssEase: 'ease', 
+        speed: 600,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        arrows: true,
+        focusOnSelect: true,
+        prevArrow: "<a href='#' class='icon-arrow-left'></a>",
+        nextArrow: "<a href='#' class='icon-arrow-right'></a>",
+    });
+
+    var eventDates = ["17.11.2019","25.11.2019","3.12.2019","1.01.2020","1.1.2020"];
+        eventDatesObj = [];
+    for (var i = eventDates.length - 1; i >= 0; i--) {
+        var arDate = eventDates[i].split('.');
+        eventDatesObj.push((new Date(arDate[2],arDate[1]-1,arDate[0])).getTime());
+    }
+
+    var datepicker = $('.datepicker-calendar').datepicker({
+        inline: true,
+        showOtherMonths: false,
+        onRenderCell: function (date, cellType) {
+            if (cellType == 'day' && eventDatesObj.indexOf(date.getTime()) != -1) {
+                var compositeDate = date.getDate()+"."+(date.getMonth()+1)+"."+date.getFullYear();
+                return {
+                    html: "<a href='#' data-date='"+compositeDate+"'>"+date.getDate()+"</a>"
+                }
+            }
+        },
+        onSelect: function onSelect(fd, date) {
+            
+        }
+    });
+
+    $(document).on("click", ".b-month-list .month", function(){
+        var m = $(this).attr("data-month");
+        var y = $(this).attr("data-year");
+        console.log(new Date(y,m-1,1));
+        var dataDP = datepicker.data('datepicker');
+        console.log(dataDP);
+        datepicker.selectDate = new Date(y,m-1,1);
+        return false;
+    });
+
+    // var dataDP = datepicker .data('datepicker')
+    // datepicker.update('startDate', new Date(2020,1,1));
+
     if ($('#plup-actions').length){
         var uploaderAddPhoto = new plupload.Uploader({
             runtimes : 'html5,flash,silverlight,html4',
