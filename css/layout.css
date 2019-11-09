@@ -1507,7 +1507,7 @@ h4{
 	.b-calendar-cont{
 		float: left;
 		width: 53%;
-		padding: 32px 40px;
+		padding: 32px 20px 32px 40px;
 		height: 100%;
 	}
 		.b-calendar-cont h2{
@@ -1582,7 +1582,7 @@ h4{
 			.b-calendar-months .icon-arrow-right{
 				position: absolute;
 				top: 0;
-				right: 5px;
+				right: 0px;
 			}
 			.b-calendar-months .icon-arrow-left:before,
 			.b-calendar-months .icon-arrow-right:before{
@@ -1732,21 +1732,21 @@ h4{
 				.datepicker--cell a{
 					pointer-events: auto;
 					position: relative;
-				    padding: 5px 0;
-				    display: inline-block;
-				    background-color: #48569D;
-				    border-radius: 100px;
-				    color: #FFF;
-				    font-family: 'FiraSans-Bold';
-				    left: -8px;
-				    text-align: center;
-				    line-height: 25px;
+					padding: 5px 0;
+					display: inline-block;
+					background-color: #48569D;
+					border-radius: 100px;
+					color: #FFF;
+					font-family: 'FiraSans-Bold';
+					left: -8px; 
+					text-align: center;
+					line-height: 25px;
 					width: 35px;
 					-webkit-transition: box-shadow 100ms;
-					   -moz-transition: box-shadow 100ms;
-					    -ms-transition: box-shadow 100ms;
-					   	 -o-transition: box-shadow 100ms;
-							transition: box-shadow 100ms;
+					-moz-transition: box-shadow 100ms;
+					-ms-transition: box-shadow 100ms;
+					-o-transition: box-shadow 100ms;
+					transition: box-shadow 100ms;
 				}
 				.datepicker--cell a:hover{
 					box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
@@ -1851,11 +1851,11 @@ h4{
 		-webkit-transform: translateY(30px);
 	        -ms-transform: translateY(30px);
 	            transform: translateY(30px);
-		-webkit-transition: opacity 400ms ease-in, visibility 400ms ease-in, transform 400ms ease-in;
-		   -moz-transition: opacity 400ms ease-in, visibility 400ms ease-in, transform 400ms ease-in;
-		    -ms-transition: opacity 400ms ease-in, visibility 400ms ease-in, transform 400ms ease-in;
-		   	 -o-transition: opacity 400ms ease-in, visibility 400ms ease-in, transform 400ms ease-in;
-				transition: opacity 400ms ease-in, visibility 400ms ease-in, transform 400ms ease-in;
+		-webkit-transition: opacity 400ms ease-out, visibility 400ms ease-out, transform 400ms ease-out;
+		   -moz-transition: opacity 400ms ease-out, visibility 400ms ease-out, transform 400ms ease-out;
+		    -ms-transition: opacity 400ms ease-out, visibility 400ms ease-out, transform 400ms ease-out;
+		   	 -o-transition: opacity 400ms ease-out, visibility 400ms ease-out, transform 400ms ease-out;
+				transition: opacity 400ms ease-out, visibility 400ms ease-out, transform 400ms ease-out;
 	}
 	.b-events-list-main.show{
 		opacity: 1;
@@ -5304,7 +5304,17 @@ form button,
 	h4{
 		margin-bottom: 24px;
 	}
-
+	.datepicker--day-name{
+		text-align: center;
+    	justify-content: center;
+	}
+	.datepicker--cell {
+	    text-align: center;
+	    justify-content: center;
+	}
+	.datepicker--cell a{
+		left: 0px;
+	}
 	.b-header-top.fixed{
 		position: fixed;
 		box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
@@ -5774,6 +5784,8 @@ form button,
 
 	.b-question-calendar-right{
 		box-shadow: none;
+		width: calc(100% + 24px) !important;
+		margin-left: -12px;
 	}
 
 	.b-question-calendar-right-wrap {
@@ -5915,7 +5927,7 @@ form button,
 	.b-calendar-cont {
 	    float: none;
 	    width: 100%;
-	    padding: 18px 14px 0 14px;
+	    padding: 18px 14px 14px 14px;
 	    height: 480px;
 	}
 		.b-calendar-page-right{
@@ -5923,8 +5935,8 @@ form button,
 		}
 	.b-events {
 	    float: none;
-	    width: calc(100% + 24px);
-	    margin-left: -12px;
+	    width: 100%;
+	    /* margin-left: -12px; */
 	    padding: 24px 14px 116px 14px;
 	}
 		.all-events{
