@@ -1480,13 +1480,16 @@ h4{
 
 		}
 		.b-month-list{
+			position: relative;
+			width: 420px;
+			padding: 0 30px;
 			display: inline-block;
 			margin-bottom: 32px;
 		}
 			.b-month-list .month{
+				text-align: center;
 				display: inline-block;
-				width: 95px;
-				margin-right: 4px;
+				margin-right: 26px;
 				font-family: 'FiraSans-Medium';
 				font-size: 19px;
 				line-height: 29px;
@@ -1501,7 +1504,6 @@ h4{
 				opacity: 1;
 			}
 			.b-month-list .month.active{
-				width: 125px;
 				font-size: 24px;
 				line-height: 29px;
 				opacity: 1;
@@ -1523,19 +1525,28 @@ h4{
 						transition: background-color 100ms, box-shadow 100ms;
 			}
 			.b-calendar-months .icon-arrow-left{
-				position: relative;
-				left: -9px;
+				position: absolute;
+				top: 0;
+				left: -5px;
+			}
+			.b-calendar-months .icon-arrow-right{
+				position: absolute;
+				top: 0;
+				right: 10px;
 			}
 			.b-calendar-months .icon-arrow-left:before,
 			.b-calendar-months .icon-arrow-right:before{
 				position: absolute;
 				top: 6px;
-				left: 9px;
+				left: 8px;
 			    -webkit-transition: color 100ms;
 				   -moz-transition: color 100ms;
 				    -ms-transition: color 100ms;
 				   	 -o-transition: color 100ms;
 						transition: color 100ms;
+			}
+			.b-calendar-months .icon-arrow-right:before{
+				left: 9px;
 			}
 			.b-calendar-months .icon-arrow-left:hover,
 			.b-calendar-months .icon-arrow-right:hover{
@@ -1545,7 +1556,69 @@ h4{
 			.b-calendar-months .icon-arrow-right:hover:before{
 				color: #48569D;
 			}
-		.b-calendar{
+		.slick-disabled{
+			
+		}
+
+		.datepicker--nav{
+			display: none !important;
+		}
+
+		.datepicker-inline .datepicker{
+			width: 100%;
+			border: none;
+		}
+			.datepicker--days-names{
+				 margin: 0;
+			}
+				.datepicker--day-name{
+					width: 60px;
+					padding-bottom: 20px;
+					color: #B0B0B0;
+					font-family: 'FiraSans-Bold';
+					font-size: 17px;
+					line-height: 22px;
+					text-transform: none;
+					text-align: left;
+					justify-content: left;
+				}
+				.datepicker--cell{
+					text-align: left;
+					justify-content: left;
+					height: 44px;
+					font-size: 17px;
+					line-height: 22px;
+					font-family: 'FiraSans-Regular';
+					color: #48569D;
+				}
+				.datepicker--cell a{
+					position: relative;
+				    padding: 5px 0;
+				    display: inline-block;
+				    background-color: #48569D;
+				    border-radius: 100px;
+				    color: #FFF;
+				    font-family: 'FiraSans-Bold';
+				    left: -9px;
+				    text-align: center;
+				    line-height: 25px;
+					width: 35px;
+					-webkit-transition: box-shadow 100ms;
+					   -moz-transition: box-shadow 100ms;
+					    -ms-transition: box-shadow 100ms;
+					   	 -o-transition: box-shadow 100ms;
+							transition: box-shadow 100ms;
+				}
+				.datepicker--cell a:hover{
+					box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+				}
+				.datepicker--cell a.selected{
+					background-color: transparent;
+					border: 1px solid #48569D;
+					color: #48569D;
+					padding: 4px 0;
+				}
+		/*.b-calendar{
 			width: 100%;
 		}
 			.b-calendar th{
@@ -1587,7 +1660,7 @@ h4{
 						border: 1px solid #48569D;
 						color: #48569D;
 						padding: 4px 0;
-					}
+					}*/
 	.b-events{
 		position: relative;
 		/*float: left;*/
@@ -1935,12 +2008,12 @@ h4{
 }
 
 .b-header-inner{
-	min-height: 334px;
+	min-height: 215px;
 	/*background-image: url(../i/header-inner.jpg);*/
 	/*background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;*/
-    padding: 56px 0;
+    padding: 56px 0 76px 0;
     color: #FFF;
     /*background-color: #48569D;*/
     position: relative;
@@ -1977,7 +2050,7 @@ h4{
 		display: inline-block;
 		vertical-align: top;
 		width: 456px;
-		margin-right: 40px;
+		margin-right: 38px;
 	}
 		.b-breadcrumbs{
 			margin-bottom: 16px;
@@ -2011,6 +2084,7 @@ h4{
 		.b-header-inner-left h2{
 			font-size: 55px;
 			line-height: 56px;
+			margin-bottom: 0;
 		}
 	.b-header-inner-right{
 		display: inline-block;
@@ -2347,12 +2421,12 @@ h4{
 			position: absolute;
 			top: 3px;
 			left: 0;
-			width: 19px;
+			width: 22px;
 			height: 22px;
 			background-image: url(../i/file-file.svg);
 			background-position: 50% 50%;
 		    background-repeat: no-repeat;
-		    background-size: 19px;
+		    background-size: contain;
 		}
 		.b-materials-item:last-child{
 			margin-bottom: 0;
@@ -2505,29 +2579,29 @@ h4{
 		.b-innov-share a:hover{
 			text-decoration: underline;
 		}
-	.b-innov-pdf{
+	.b-innov-file{
 		padding: 12px 31px 14px;
 		background: #48569D;
 		border-radius: 5px;
 		margin-top: 20px;
 	}
-		.b-innov-pdf-item{
+		.b-innov-file-item{
 			display: block;
 			position: relative;
 		}
-		.b-innov-pdf-item:last-child{
+		.b-innov-file-item:last-child{
 			margin-bottom: 0;
 		}
-			.b-innov-pdf a{
+			.b-innov-file a{
 				display: inline-block;
 				padding: 12px 0 12px 52px;
 				color: #FFF;
 				text-decoration: underline;
 			}
-			.b-innov-pdf a:hover{
+			.b-innov-file a:hover{
 				text-decoration: none;
 			}
-			.b-innov-pdf a:before {
+			.b-innov-file a:before {
 			    content: "";
 			    position: absolute;
 			    top: 50%;
@@ -3016,12 +3090,12 @@ h4{
 			.b-calendar-page-left .b-calendar td a{
 				left: 12px;
 			}
-			.b-calendar-page-left .b-month-list .month.active {
+			/*.b-calendar-page-left .b-month-list .month.active {
 			    width: 114px;
 			}
 			.b-calendar-page-left .b-month-list .month {
 			    width: 85px;
-			}
+			}*/
 	.b-calendar-page-right{
 		float: right;
 		width: calc(100%/3*2);
@@ -3091,7 +3165,8 @@ h4{
 
 /* ==== */
 
-form button{
+form button,
+.b-thanks button{
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -4150,6 +4225,12 @@ form button{
 			background-color: rgba(0, 0, 0, 0.15);
 			float: right;
 		}
+	.b-popup-auth-wrong,
+	.b-popup-forgot-wrong{
+		color: #F90C0C;
+		margin-bottom: 24px;
+    	line-height: 16px;
+	}
 	.b-popup-auth .forgot{
 		float: right;
 		margin-top: 13px;
@@ -4192,6 +4273,32 @@ form button{
 		margin-bottom: 16px;
 	}
 
+.b-thanks{
+	background-color: #FFF;
+	padding: 66px 117px 82px 117px;
+}	
+	.b-thanks h2{
+		margin-bottom: 32px;
+	}
+	.b-thanks-result{
+		font-size: 16px;
+		line-height: 22px;
+		color: #2E8037;
+		margin-bottom: 16px;
+	}
+	.b-thanks-result.error{
+		color: #F90C0C;
+	}
+	.b-thanks-msg{
+
+	}
+	/*.b-thanks .b-btn{
+		color: #FFF;
+	    border: 1px solid #FFF;
+	    background-color: transparent;
+		line-height: 25px;
+	}*/
+
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	
 }	
@@ -4228,12 +4335,12 @@ form button{
 		padding-left: 32px;
 		min-height: 490px;
 	}
-		.b-month-list .month{
+		/*.b-month-list .month{
 			width: 95px;
 		}
 		.b-month-list .month.active{
 			width: 120px;
-		}
+		}*/
 
 		/*.b-events-item:nth-child(n+4){
 			display: none;
@@ -4491,7 +4598,7 @@ form button{
 
 		.b-header-inner-left {
 		    width: 370px;
-	    	margin-right: 24px;
+	    	margin-right: 23px;
 		}	
 			.b-header-inner-left h2 {
 			    font-size: 40px;
@@ -4829,12 +4936,12 @@ form button{
 			padding: 24px;
 		}
 		.b-month-list .month{
-			width: 80px;
+			
 			font-size: 16px;
 			line-height: 24px;
 		}
 		.b-month-list .month.active{
-			width: 100px;
+			
 			font-size: 20px;
 			line-height: 24px;
 		}
@@ -5548,11 +5655,11 @@ form button{
 	    margin-bottom: 22px;
 	}
 	.b-month-list .month{
-		width: 75px;
+		
 	    font-size: 14px;
 	}
 	.b-month-list .month.active {
-	    width: 88px;
+	    
 	    font-size: 16px;
 	}
 
@@ -5694,14 +5801,14 @@ form button{
 	    padding: 20px 24px 23px 24px;
 	    margin-bottom: 30px;
 	}
-	.b-innov-pdf{
+	.b-innov-file{
 		padding: 16px 24px;
 		margin-bottom: 50px;
 	}
-		/*.b-innov-pdf a{
+		/*.b-innov-file a{
 			padding-left: 52px;
 		}
-		.b-innov-pdf a:before {
+		.b-innov-file a:before {
 		    top: -7px;
 		}*/
 	.b-innov-share a{
@@ -6347,9 +6454,18 @@ form button{
 		.days-list{
 			padding-bottom: 0;
 		}
+		.b-thanks h2{
+			margin-bottom: 24px;
+		}
 	}
 
 	@media screen and (max-width: 450px){
+		.b-questions-item{
+			padding: 20px 16px;
+		}
+		.b-answer{
+			padding: 16px;
+		}
 		.b-footer-menu-mobile {
 		    -webkit-column-count: auto;
 		       -moz-column-count: auto;
