@@ -2173,7 +2173,7 @@ h4{
 	.b-header-inner-right{
 		display: inline-block;
 		vertical-align: top;
-		width: calc(100% - 590px);
+		width: calc(100% - 708px);
 	}
 	.b-header-show-more{
 		position: relative;
@@ -2501,16 +2501,13 @@ h4{
 			margin-bottom: 20px;
 		}
 		.b-materials-item:before{
-			content: "";
+			content: '\e90e';
 			position: absolute;
 			top: 3px;
 			left: 0;
 			width: 22px;
 			height: 22px;
-			background-image: url(../i/file-file.svg);
-			background-position: 50% 50%;
-		    background-repeat: no-repeat;
-		    background-size: contain;
+			font-size: 22px;
 		}
 		.b-materials-item:last-child{
 			margin-bottom: 0;
@@ -2518,30 +2515,29 @@ h4{
 		.b-materials-item:hover{
 			text-decoration: underline;
 		}
-
-		.b-materials-item.file-doc:before{
-			background-image: url(../i/file-doc.svg);
+		.b-materials-item.icon-doc:before{
+			content: '\e90f';
 		}
-		.b-materials-item.file-jpg:before{
-			background-image: url(../i/file-jpg.svg);
+		.b-materials-item.icon-jpg:before{
+			content: '\e910';
 		}
-		.b-materials-item.file-pdf:before{
-			background-image: url(../i/file-pdf.svg);
+		.b-materials-item.icon-pdf:before{
+			content: '\e911';
 		}
-		.b-materials-item.file-ppt:before{
-			background-image: url(../i/file-ppt.svg);
+		.b-materials-item.icon-ppt:before{
+			content: '\e913';
 		}
-		.b-materials-item.file-pptx:before{
-			background-image: url(../i/file-pptx.svg);
+		.b-materials-item.icon-pptx:before{
+			content: '\e912';
 		}
-		.b-materials-item.file-txt:before{
-			background-image: url(../i/file-txt.svg);
+		.b-materials-item.icon-txt:before{
+			content: '\e914';
 		}
-		.b-materials-item.file-xlsx:before{
-			background-image: url(../i/file-xlsx.svg);
+		.b-materials-item.icon-xlsx:before{
+			content: '\e915';
 		}
-		.b-materials-item.file-zip:before{
-			background-image: url(../i/file-zip.svg);
+		.b-materials-item.icon-zip:before{
+			content: '\e916';
 		}
 
 	.b-content-inner .b-news{
@@ -2668,6 +2664,7 @@ h4{
 		background: #48569D;
 		border-radius: 5px;
 		margin-top: 20px;
+		margin-bottom: 32px;
 	}
 		.b-innov-file-item{
 			display: block;
@@ -2778,6 +2775,9 @@ h4{
 	padding: 0;
 	background-color: transparent;
 }
+.b-accordeon-form{
+	padding-bottom: 0;
+}
 	.b-form-content{
 		padding-right: 93px;
 	}
@@ -2809,6 +2809,41 @@ h4{
 	.b-form .b-textarea{
 		margin-bottom: 32px;
 	}
+	.b-form .b-accordeon-head{
+		font-family: 'FiraSans-Bold';
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #231E78;
+		margin-bottom: 32px;
+		display: inline-block;
+	}
+	.b-form .b-accordeon-body{
+		padding-bottom: 41px;
+	}
+		.b-form .b-accordeon-head .icon-select{
+			display: inline-block;
+			margin-left: 44px;
+			width: 13px;
+			height: 8px;
+			-webkit-transition: transform .3s;
+			-o-transition: transform .3s;
+			transition: transform .3s;
+			position: relative;
+		}
+		.b-form .b-accordeon-head.open .icon-select{
+			-webkit-transform: scale(-1, -1);
+			-ms-transform: scale(-1, -1);
+			-o-transform: scale(-1, -1);
+			transform: scale(-1, -1);
+		}
+		.b-form .b-accordeon-head .icon-select:before{
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-size: 8px;
+		}
 		.b-form .b-input label,
 		.b-form .b-select label{
 
@@ -3724,10 +3759,10 @@ form button,
 
 .b-success{
 	display: none;
-	background-color: #F2F5F7;
+	/*background-color: #F2F5F7;
 	padding: 34px 32px 63px 32px;
 	color: #000;
-	max-width: 683px;
+	max-width: 683px;*/
 }
 .b-success.b-success-white{
 	background-color: transparent;
@@ -4310,8 +4345,7 @@ form button,
 			background-color: rgba(0, 0, 0, 0.15);
 			float: right;
 		}
-	.b-popup-auth-wrong,
-	.b-popup-forgot-wrong{
+	.b-popup-auth-wrong{
 		color: #F90C0C;
 		margin-bottom: 24px;
     	line-height: 16px;
@@ -4410,7 +4444,9 @@ form button,
 		padding-right: 0;
 		margin-left: 0;
 	}
-
+	.b-header-inner-right{
+		width: calc(100% - 473px);
+	}
 	.b-news-days-right-bottom h3{
 		/*font-size: 23px;*/
 	}
@@ -6429,6 +6465,9 @@ form button,
 		}
 		.b-form {
 		    padding: 24px 16px 40px 16px;
+		}
+		.b-accordeon-form{
+			padding-bottom: 0;
 		}
 		.b-form-content{
 			padding-right: 0;

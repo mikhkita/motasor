@@ -74,14 +74,13 @@ include 'header.php';
 								<div class="icon-arrow-right-bold"></div>
 							</button>
 						</div>
-					</form>
-					<div class="b-success">
-						<h2>Успешно!</h2>
-						<div class="b-success-text">
-							<div class="icon-checked"></div>
-							<p>Ваше сообщение отправлено!</p>
+						<div class="b-success">
+							<div class="b-success-text">
+								<div class="icon-checked"></div>
+								<p>Ваше сообщение отправлено!</p>
+							</div>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>

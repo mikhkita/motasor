@@ -6,6 +6,19 @@ function getNextField($form){
 	return j;
 }
 
+function scrollToElement($el, duration, offset, $customCont){
+	var off = offset||( (window.innerWidth < 768) ? 180 : 20 ),
+		duration = duration||800;
+
+	if( typeof $customCont == "undefined" ){
+		$customCont = $("body, html");
+	}
+
+	$customCont.animate({
+		scrollTop : $el.offset().top-off
+	},duration);
+}
+
 function fancyOpen(el){
     $.fancybox(el,{
     	padding:0,
@@ -129,6 +142,9 @@ $(document).ready(function(){
 				}
 				$(".fancybox-wrap").addClass("beforeShow");
 				$popup.find(".custom-field").remove();
+				$popup.find(".b-popup-auth-wrong").addClass("hide");
+				$popup.find("label.error").remove();
+				$popup.find("input.error, textarea.error, select.error").removeClass("error");
 				if( $this.attr("data-value") ){
 					var name = getNextField($popup.find("form"));
 					$popup.find("form").append("<input type='hidden' class='custom-field' name='"+name+"' value='"+$this.attr("data-value")+"'/><input type='hidden' class='custom-field' name='"+name+"-name' value='"+$this.attr("data-name")+"'/>");
@@ -176,7 +192,7 @@ $(document).ready(function(){
     });
 
 	$(".b-go, .b-sections-list a, .b-links-list li a").click(function(){
-		scrollToElement( $(this).attr("href"), $(this).attr("data-duration"), $(this).attr("data-offset") );
+		scrollToElement( $($(this).attr("href")), $(this).attr("data-duration"), $(this).attr("data-offset") );
 		return false;
 	});
 
@@ -190,10 +206,19 @@ $(document).ready(function(){
 	});
 
 	$(".ajax").parents("form").submit(function(){
-  		if( $(this).find("input.error,select.error,textarea.error").length == 0 ){
-  			var $this = $(this),
-  				$thanks = $($this.attr("data-block"));
+		var $this = $(this),
+			$thanks = $($this.attr("data-block"));
 
+		if ($this.hasClass("b-form-forgot")) {
+			if(!$this.find("input[name='login']").val().trim() && !$this.find("input[name='email']").val().trim()){
+				$this.find(".b-popup-auth-wrong").removeClass("hide");
+				return false;
+			}else{
+				$this.find(".b-popup-auth-wrong").addClass("hide");
+			}
+		}
+
+  		if( $(this).find("input.error,select.error,textarea.error").length == 0 ){
   			$this.find(".ajax").attr("onclick", "return false;");
 
   			if( $this.attr("data-beforeAjax") && customHandlers[$this.attr("data-beforeAjax")] ){
@@ -204,22 +229,13 @@ $(document).ready(function(){
 				yaCounter12345678.reachGoal($this.attr("data-goal"));
 			}
 
-			if ($this.hasClass("b-form-forgot")) {
-				if(!$this.find("input[name='login']").val() && !$this.find("input[name='email']").val()){
-					$(".b-popup-forgot-wrong").removeClass("hide");
-					return false;
-				}else{
-					$(".b-popup-forgot-wrong").addClass("hide");
-				}
-			}
-
   			$.ajax({
 			  	type: $(this).attr("method"),
 			  	url: $(this).attr("action"),
 			  	data:  $this.serialize(),
 				success: function(msg){
 
-					actionResult(msg);
+					customHandlers["actionResult"](msg, $this);
 
 				},
 				error: function(){
@@ -228,7 +244,6 @@ $(document).ready(function(){
 				},
 				complete: function(){
 					$this.find(".ajax").removeAttr("onclick");
-					$this.find("input[type=text],textarea").val("");
 					$this.find(".icon-clear").removeClass("show");
 				}
 			});
@@ -242,54 +257,4 @@ $(document).ready(function(){
 		$(this).parents("form").submit();
 		return false;
 	});
-
-	function actionResult(msg){
-		if( isValidJSON(msg) ){
-            var json = JSON.parse(msg);
-            if( json.result == "error" ){
-            	// alert("Ошибка");
-            }else if( typeof json.action != "undefined" ){
-            	switch (json.action) {
-            		case "questionSuccess":
-            			$(".b-question-form").hide();
-            			$(".b-success").show();
-            			scrollToElement(".b-success", 300);
-            			break;
-            		case "reload":
-            			window.location.reload();
-            			break;
-
-            	}
-            }
-        }else{
-            // alert("Ошибка");
-            
-            if( msg == "1" ){
-				$link = $this.find(".b-thanks-link");
-			}else{
-				$link = $(".b-error-link");
-			}
-			
-			$link.click();
-        }
-	}
-
-	function scrollToElement(selectorTo, duration, offset){
-		var block = $( selectorTo ),
-			off = offset||( (window.innerWidth < 768) ? 180 : 20 ),
-			duration = duration||800;
-
-		$("body, html").animate({
-			scrollTop : block.offset().top-off
-		},duration);
-	}
-
-	function isValidJSON(src) {
-	    var filtered = src+"";
-	    filtered = filtered.replace(/\\["\\\/bfnrtu]/g, '@');
-	    filtered = filtered.replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g, ']');
-	    filtered = filtered.replace(/(?:^|:|,)(?:\s*\[)+/g, '');
-
-	    return (/^[\],:{}\s]*$/.test(filtered));
-	}
 });
