@@ -14,73 +14,28 @@ include 'header.php';
 	<div class="b-calendar-page">
 		<div class="b-block clearfix">
 			<h1>Календарь событий</h1>
-			<div class="b-calendar-page-left b-calendar-cont">
+			<div class="b-calendar-page-left b-calendar-cont" data-url="/send/getEventsCalendar.php">
+				<?
+					$activeDateDPC = "3.12.2019";
+					$eventDatesDPC_Raw = array("17.11.2019","25.11.2019","3.12.2019","9.01.2020");
+					$eventDatesDPC = json_encode($eventDatesDPC_Raw);
+				?>
+				<script type="text/javascript">
+					var activeDateDPC = '<?=$activeDateDPC?>';
+					var eventDatesDPC = '<?=$eventDatesDPC?>';
+				</script>
 				<div class="b-calendar-months">
-					<a href="#" class="icon-arrow-left"></a>
+
 					<div class="b-month-list">
-						<a href="#" class="month active">Октябрь</a>
-						<a href="#" class="month">Ноябрь</a>
-						<a href="#" class="month">Декабрь</a>
+
 					</div>
-					<a href="#" class="icon-arrow-right"></a>
+
+				</div>
+				<div class="datepicker-cont">
+					<div class="datepicker-calendar show"></div>
+					<div class="datepicker-calendar"></div>
 				</div>
 				
-				<table class="b-calendar">
-					<tr>
-						<th>Пн</th>
-						<th>Вт</th>
-						<th>Ср</th>
-						<th>Чт</th>
-						<th>Пт</th>
-						<th>Сб</th>
-						<th>Вс</th>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>2</td>
-						<td><a href="#" data-date="3.10.2019">3</a></td>
-						<td>4</td>
-						<td>5</td>
-						<td>6</td>
-						<td>7</td>
-					</tr>
-					<tr>
-						<td>8</td>
-						<td>9</td>
-						<td>10</td>
-						<td>11</td>
-						<td><a href="#" data-date="12.10.2019">12</a></td>
-						<td>13</td>
-						<td>14</td>
-					</tr>
-					<tr>
-						<td>15</td>
-						<td>16</td>
-						<td>17</td>
-						<td>18</td>
-						<td>19</td>
-						<td>20</td>
-						<td>21</td>
-					</tr>
-					<tr>
-						<td>22</td>
-						<td>23</td>
-						<td>24</td>
-						<td>25</td>
-						<td>26</td>
-						<td>27</td>
-						<td>28</td>
-					</tr>
-					<tr>
-						<td>29</td>
-						<td>30</td>
-						<td>31</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-				</table>
 			</div>
 			<div class="b-calendar-page-right">
 				<h2>Все события</h2>

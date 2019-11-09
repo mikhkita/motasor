@@ -185,8 +185,17 @@ include 'header.php';
 					</div>
 					<div class="b-size-3-4 b-size-right b-question-calendar-right">
 						<div class="b-question-calendar-right-wrap">
-							<div class="b-calendar-cont">
+							<div class="b-calendar-cont b-calendar-main-cont" data-url="/send/getEventsMain.php">
 								<h2>Календарь событий</h2>
+								<?
+									$activeDateDPC = "3.12.2019";
+									$eventDatesDPC_Raw = array("17.11.2019","25.11.2019","3.12.2019","9.01.2020");
+									$eventDatesDPC = json_encode($eventDatesDPC_Raw);
+								?>
+								<script type="text/javascript">
+									var activeDateDPC = '<?=$activeDateDPC?>';
+    								var eventDatesDPC = '<?=$eventDatesDPC?>';
+								</script>
 								<div class="b-calendar-months">
 									<!-- <a href="#" class="icon-arrow-left"></a> -->
 									<div class="b-month-list">
@@ -256,23 +265,26 @@ include 'header.php';
 								</table> -->
 							</div>
 							<div class="b-events">
-								<div class="b-events-list">
-									<a href="#" class="b-events-item">
-										<div class="date">с 27 сен по 06 окт 2019</div>
-										<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
-									</a>
-									<a href="#" class="b-events-item">
-										<div class="date">с 27 сен по 04 окт 2019</div>
-										<p>"Росатом" предложит комплекс мер по развитию водородной энергетики в России</p>
-									</a>
-									<a href="#" class="b-events-item">
-										<div class="date">с 27 сен по 06 окт 2019</div>
-										<p>На семинаре в МГСУ был представлен проект «Новый дизайн рабочего пространства Росатома»</p>
-									</a>
-									<a href="#" class="b-events-item">
-										<div class="date">с 27 сен по 06 окт 2019</div>
-										<p>На семинаре в МГСУ был представлен проект «Новый дизайн рабочего пространства Росатома»</p>
-									</a>
+								<div class="b-events-list-cont">
+									<div class="b-events-list b-events-list-main b-events-list-content show">
+										<a href="#" class="b-events-item">
+											<div class="date">с 27 сен по 06 окт 2019</div>
+											<p>Путин отметил заслуги работников атомной промышленности перед государством</p>
+										</a>
+										<a href="#" class="b-events-item">
+											<div class="date">с 27 сен по 04 окт 2019</div>
+											<p>"Росатом" предложит комплекс мер по развитию водородной энергетики в России</p>
+										</a>
+										<a href="#" class="b-events-item">
+											<div class="date">с 27 сен по 06 окт 2019</div>
+											<p>На семинаре в МГСУ был представлен проект «Новый дизайн рабочего пространства Росатома»</p>
+										</a>
+										<a href="#" class="b-events-item">
+											<div class="date">с 27 сен по 06 окт 2019</div>
+											<p>На семинаре в МГСУ был представлен проект «Новый дизайн рабочего пространства Росатома»</p>
+										</a>
+									</div>
+									<div class="b-events-list b-events-list-main b-events-list-ajax"></div>
 								</div>
 								<a href="calendar.php" class="b-btn b-btn-tr all-events">
 									<span class="b-btn-content">Все события</span>
