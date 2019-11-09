@@ -299,12 +299,12 @@ $(document).ready(function(){
     };
 
     var calendarAjax;
-    $(document).on("click", ".b-calendar-page-left .b-calendar a", function(){
+    $(document).on("click", ".b-calendar-cont .event-ajax", function(){
         if(calendarAjax){
             calendarAjax.abort();
         }
         var $this = $(this);
-        $(".b-calendar-page-left .b-calendar a").removeClass("selected");
+        $(".b-calendar-cont .event-ajax").removeClass("selected");
         $this.addClass("selected");
         calendarAjax = $.ajax({
             type: "GET",
@@ -422,13 +422,16 @@ $(document).ready(function(){
 
     // Календарь
 
+    var activeDateDPC = "3.12.2019";
+    var eventDatesDPC = ["17.11.2019","25.11.2019","3.12.2019","9.01.2020","9.1.2020"];
+
     var curDate = new Date(),
         curMonth = curDate.getMonth(),
         curYear = curDate.getFullYear(),
         arMonths  = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
     // Сгенерить 12 месяцев
     for (var i = 0, active = true; i < 12; i++) {
-        $(".b-month-list").append("<a href='#' data-month="+(curMonth+1)+" data-year="+curYear+" class='month "+((active)?'active':'')+"'>"+arMonths[curMonth]+"</a>");
+        $(".b-month-list").append("<div data-month="+(curMonth+1)+" data-year="+curYear+" class='month'>"+arMonths[curMonth]+"</div>");
         curMonth++;
         if(curMonth >= 12){
             curMonth = 0;
@@ -444,49 +447,68 @@ $(document).ready(function(){
         infinite: false,
         cssEase: 'ease', 
         speed: 600,
-        autoplay: false,
-        autoplaySpeed: 3000,
         arrows: true,
+        swipe: false,
         focusOnSelect: true,
         prevArrow: "<a href='#' class='icon-arrow-left'></a>",
         nextArrow: "<a href='#' class='icon-arrow-right'></a>",
     });
 
-    var eventDates = ["17.11.2019","25.11.2019","3.12.2019","1.01.2020","1.1.2020"];
-        eventDatesObj = [];
-    for (var i = eventDates.length - 1; i >= 0; i--) {
-        var arDate = eventDates[i].split('.');
+    var eventDatesObj = [];
+    for (var i = eventDatesDPC.length - 1; i >= 0; i--) {
+        var arDate = eventDatesDPC[i].split('.');
         eventDatesObj.push((new Date(arDate[2],arDate[1]-1,arDate[0])).getTime());
     }
 
-    var datepicker = $('.datepicker-calendar').datepicker({
+    var datepickerOptions = {
         inline: true,
         showOtherMonths: false,
         onRenderCell: function (date, cellType) {
             if (cellType == 'day' && eventDatesObj.indexOf(date.getTime()) != -1) {
                 var compositeDate = date.getDate()+"."+(date.getMonth()+1)+"."+date.getFullYear();
                 return {
-                    html: "<a href='#' data-date='"+compositeDate+"'>"+date.getDate()+"</a>"
+                    classes: 'active-date',
+                    html: "<a href='#' class='event-ajax' data-date='"+compositeDate+"'>"+date.getDate()+"</a>"
                 }
             }
-        },
-        onSelect: function onSelect(fd, date) {
-            
+        }
+    };
+
+    //Получить первый доступный месяц
+    if(activeDateDPC == undefined){
+        var activeDateDPC = eventDatesDPC[0];
+    }
+    var arFirstDate = activeDateDPC.split('.');
+    firstDate = new Date(arFirstDate[2],arFirstDate[1]-1,arFirstDate[0]);
+    console.log(firstDate);
+    //Вывести полученный месяц
+    var datepickerBack, datepickerFront;
+    datepickerFront = $('.datepicker-calendar').eq(0)
+        .datepicker($.extend(datepickerOptions,{startDate: firstDate}));
+    $('.datepicker-calendar').eq(0).height($('.datepicker-calendar').eq(0).height());
+
+    $('.b-month-list').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        var $current = $(slick.$slides.get(nextSlide)),
+            m = $current.attr("data-month"),
+            y = $current.attr("data-year"),
+            hiddenClass = (currentSlide < nextSlide) ? "hidden-left" : "hidden-right";
+        $('.datepicker-calendar').eq(0).removeClass("show").addClass(hiddenClass);
+        datepickerBack = $('.datepicker-calendar').eq(1)
+            .datepicker($.extend(datepickerOptions,{startDate: new Date(y,m-1,1)}));
+        $('.datepicker-calendar').eq(1).addClass("show");
+        var h = $('.datepicker-calendar').eq(1).height();
+        $('.datepicker-calendar').height(h);
+    });
+
+    $('.b-month-list').on('afterChange', function(event, slick, currentSlide){
+        if($('.datepicker-calendar').eq(1).hasClass("show")){
+            //setTimeout(function(){
+            $('.datepicker-calendar').eq(0).datepicker().data('datepicker').destroy();
+            $('.datepicker-calendar').eq(0).remove();
+            $('.datepicker-cont').append("<div class='datepicker-calendar'></div>");
+            //}, 10);
         }
     });
-
-    $(document).on("click", ".b-month-list .month", function(){
-        var m = $(this).attr("data-month");
-        var y = $(this).attr("data-year");
-        console.log(new Date(y,m-1,1));
-        var dataDP = datepicker.data('datepicker');
-        console.log(dataDP);
-        datepicker.selectDate = new Date(y,m-1,1);
-        return false;
-    });
-
-    // var dataDP = datepicker .data('datepicker')
-    // datepicker.update('startDate', new Date(2020,1,1));
 
     if ($('#plup-actions').length){
         var uploaderAddPhoto = new plupload.Uploader({
