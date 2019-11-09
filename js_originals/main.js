@@ -189,6 +189,13 @@ $(document).ready(function(){
         if ($(this).hasClass('open')) {
             $(this).removeClass('open');
         } else {
+            if ($(this).parents('.b-accordeon-form')) {
+                var $this = $(this);
+                setTimeout(function(){
+                    $this.parents('.b-accordeon-form').find('input:not([type=hidden]), textarea').eq(0).focus();
+                    console.log('focus');
+                }, 100);
+            }
             $(this).addClass('open');
         }
 
