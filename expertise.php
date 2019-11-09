@@ -75,7 +75,7 @@ include 'header.php';
 						<li>Инновационная экономика атомной отрасли</li>
 					</ol>
 				</div>
-				<form class="b-form" action="" method="POST">
+				<form class="b-form" action="send/question.php" method="POST">
 					<h2>Стать экспертом Росатома</h2>
 					<div class="b-form-content">
 						<div class="b-input">
@@ -207,6 +207,12 @@ include 'header.php';
 							<div class="icon-arrow-right"></div>
 							<div class="icon-arrow-right-bold"></div>
 						</button>
+					</div>
+					<div class="b-success">
+						<div class="b-success-text">
+							<div class="icon-checked"></div>
+							<p>Ваше сообщение отправлено!</p>
+						</div>
 					</div>
 				</form>
 			</div>

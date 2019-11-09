@@ -4321,7 +4321,7 @@ form button,
 		}
 		.b-popup .b-checkbox input[type="checkbox"].error + label + label .b-checked,
 		.b-popup .b-checkbox input[type="checkbox"].error + label .b-checked{
-			border: 1px solid #206CD1
+			border: 1px solid #FF7B7B;
 		}
 		.b-popup .b-checkbox label{
 			color: #000;
@@ -4336,7 +4336,8 @@ form button,
 		.b-popup .b-checkbox input[type="checkbox"]:checked + label:hover .b-checked{
 			background-color: rgba(72, 86, 157, 1);
 		}
-		.b-popup .b-checkbox input[type="checkbox"]:checked + label .b-checked{
+		.b-popup .b-checkbox input[type="checkbox"]:checked + label .b-checked,
+		.b-popup .b-checkbox input[type="checkbox"]:checked + label + label .b-checked{
 			background-color: rgba(72, 86, 157, 1);
 		}
 			.b-popup .b-checkbox .b-checked{
@@ -6366,6 +6367,7 @@ form button,
 			.b-news-days-item{
 				min-height: auto;
 				padding: 30px 19px 102px 19px;
+				width: 100%;
 			}
 				.days-item .date{
 					font-size: 12px;

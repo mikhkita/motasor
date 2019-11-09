@@ -92,14 +92,13 @@ include 'header.php';
 								<div class="icon-arrow-right-bold"></div>
 							</button>
 						</div>
-					</form>
-					<div class="b-success b-success-white">
-						<h3>Успешно!</h3>
-						<div class="b-success-text">
-							<div class="icon-checked"></div>
-							<p>Ваше сообщение отправлено!</p>
+						<div class="b-success b-success-white">
+							<div class="b-success-text">
+								<div class="icon-checked"></div>
+								<p>Ваше сообщение отправлено!</p>
+							</div>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
