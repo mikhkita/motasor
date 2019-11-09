@@ -210,10 +210,10 @@ $(document).ready(function(){
         $(this).removeClass("show");
     });
 
-    $(document).on("input", ".divide", function(){
-        var value = $(this).val();
-        $(this).val(String(value).replace(/[^0-9.]/g,'').replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 '));
-    });
+    // $(document).on("input", ".divide", function(){
+    //     var value = $(this).val();
+    //     $(this).val(String(value).replace(/[^0-9.]/g,'').replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 '));
+    // });
 
     $(document).on("change", ".select-experts", function(){
         var $block = $(this).find("option:selected").attr("data-block");
