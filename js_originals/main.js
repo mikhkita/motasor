@@ -486,7 +486,7 @@ $(document).ready(function(){
             runtimes : 'html5,flash,silverlight,html4',
             browse_button : 'pickfiles',
             container: document.getElementById('plup-actions'),
-            url : '../addFile.php',
+            url : 'addFile.php',
             multi_selection: true,
             filters : {
                 max_file_size : '20mb',
