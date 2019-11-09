@@ -2819,7 +2819,7 @@ h4{
 	background-color: transparent;
 }
 .b-accordeon-form{
-	padding-bottom: 0;
+	padding-bottom: 32px;
 }
 	.b-form-content{
 		padding-right: 93px;
@@ -2859,11 +2859,12 @@ h4{
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
 		color: #231E78;
-		margin-bottom: 32px;
+		/*margin-bottom: 32px;*/
 		display: inline-block;
 	}
 	.b-form .b-accordeon-body{
-		padding-bottom: 41px;
+		margin-top: 32px;
+		padding-bottom: 9px;
 	}
 		.b-form .b-accordeon-head .icon-select{
 			display: inline-block;
@@ -6517,7 +6518,7 @@ form button,
 		    padding: 24px 16px 40px 16px;
 		}
 		.b-accordeon-form{
-			padding-bottom: 0;
+			padding-bottom: 32px;
 		}
 		.b-form-content{
 			padding-right: 0;
