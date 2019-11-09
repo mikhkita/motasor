@@ -3640,10 +3640,10 @@ form button,
 
 .b-success{
 	display: none;
-	background-color: #F2F5F7;
+	/*background-color: #F2F5F7;
 	padding: 34px 32px 63px 32px;
 	color: #000;
-	max-width: 683px;
+	max-width: 683px;*/
 }
 .b-success.b-success-white{
 	background-color: transparent;
@@ -4226,8 +4226,7 @@ form button,
 			background-color: rgba(0, 0, 0, 0.15);
 			float: right;
 		}
-	.b-popup-auth-wrong,
-	.b-popup-forgot-wrong{
+	.b-popup-auth-wrong{
 		color: #F90C0C;
 		margin-bottom: 24px;
     	line-height: 16px;

@@ -679,6 +679,79 @@ $(document).ready(function(){
 
 });
 
+customHandlers["actionResult"] = function(msg, $form){
+    if( isValidJSON(msg) ){
+        var json = JSON.parse(msg);
+        if( typeof json.action != "undefined" ){
+            if( json.action != "authError" ){
+                $form.find("input[type=text], input[type=email], input[type=password], textarea").val("");
+            }
+            
+            switch (json.action) {
+                case "questionSuccess":
+                    $form.find(".b-form-content").hide();
+                    $form.find(".b-success").show();
+                    $form.find("h2").html("Успешно!");
+                    scrollToElement($form, 300, 32);
+                    break;
+                case "reload":
+                    window.location.reload();
+                    break;
+                case "redirect":
+                    window.location.href = json.href;
+                    break;
+                case "authError":
+                    $form.find(".b-popup-auth-wrong").html(json.text).removeClass("hide");
+                    scrollToElement($form.find(".b-popup-auth-wrong"), 300, 32, $(".fancybox-slide"));
+                    break;
+                case "showPopup":
+                    showPopup(json.success, json.title, json.subtitle, json.text);
+                    break;
+            }
+        }else{
+            showPopup(false);
+        }
+    }else{
+        if( msg == "1" ){
+            $link = $this.find(".b-thanks-link").click();
+        }
+        
+        showPopup(false);
+    }
+}
+
+function showPopup(success, title, subtitle, text){
+    if( typeof title == "undefined" ){
+        title = "Отправка формы";
+    }
+    if( typeof subtitle == "undefined" ){
+        subtitle = "Произошла ошибка отправки";
+    }
+    if( typeof text == "undefined" ){
+        text = "Пожалуйста, попробуйте отправить форму повторно";
+    }
+    $("#b-text-popup-result h2").html(title);
+    $("#b-text-popup-result .b-thanks-result").html(subtitle);
+    $("#b-text-popup-result .b-thanks-msg").html(text);
+
+    if( success ){
+        $("#b-text-popup-result .b-thanks-result").removeClass("error");
+    }else{
+        $("#b-text-popup-result .b-thanks-result").addClass("error");
+    }
+
+    $(".b-success-link").click();
+}
+
+function isValidJSON(src) {
+    var filtered = src+"";
+    filtered = filtered.replace(/\\["\\\/bfnrtu]/g, '@');
+    filtered = filtered.replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g, ']');
+    filtered = filtered.replace(/(?:^|:|,)(?:\s*\[)+/g, '');
+
+    return (/^[\],:{}\s]*$/.test(filtered));
+}
+
 var ripple = {
     click: function(event){
 
