@@ -518,7 +518,7 @@ $(document).ready(function(){
             url : 'addFile.php',
             multi_selection: true,
             filters : {
-                max_file_size : '20mb',
+                max_file_size : '10mb',
                 mime_types: [
                     {title : "Image files", extensions : "jpg,jpeg,gif,png"},
                     {title : "Documents", extensions : "doc,docx,pdf,rtf,xls,xlsx"},
