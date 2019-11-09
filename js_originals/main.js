@@ -191,6 +191,13 @@ $(document).ready(function(){
         if ($(this).hasClass('open')) {
             $(this).removeClass('open');
         } else {
+            if ($(this).parents('.b-accordeon-form')) {
+                var $this = $(this);
+                setTimeout(function(){
+                    $this.parents('.b-accordeon-form').find('input:not([type=hidden]), textarea').eq(0).focus();
+                    console.log('focus');
+                }, 100);
+            }
             $(this).addClass('open');
         }
 
@@ -212,10 +219,10 @@ $(document).ready(function(){
         $(this).removeClass("show");
     });
 
-    $(document).on("input", ".divide", function(){
-        var value = $(this).val();
-        $(this).val(String(value).replace(/[^0-9.]/g,'').replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 '));
-    });
+    // $(document).on("input", ".divide", function(){
+    //     var value = $(this).val();
+    //     $(this).val(String(value).replace(/[^0-9.]/g,'').replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 '));
+    // });
 
     $(document).on("change", ".select-experts", function(){
         var $block = $(this).find("option:selected").attr("data-block");
@@ -536,7 +543,7 @@ if($(".b-calendar-cont").length){
             url : 'addFile.php',
             multi_selection: true,
             filters : {
-                max_file_size : '20mb',
+                max_file_size : '10mb',
                 mime_types: [
                     {title : "Image files", extensions : "jpg,jpeg,gif,png"},
                     {title : "Documents", extensions : "doc,docx,pdf,rtf,xls,xlsx"},
