@@ -2542,6 +2542,7 @@ h4{
 		.b-materials-item:before{
 			content: '\e90e';
 			position: absolute;
+			font-family: 'icomoon';
 			top: 3px;
 			left: 0;
 			width: 22px;
@@ -2740,6 +2741,30 @@ h4{
 			    background-position: 50% 50%;
 			    background-repeat: no-repeat;
 			    background-size: 31px;
+			}
+			.b-innov-file a.icon-doc:before{
+				content: '\e90f';
+			}
+			.b-innov-file a.icon-jpg:before{
+				content: '\e910';
+			}
+			.b-innov-file a.icon-pdf:before{
+				content: '\e911';
+			}
+			.b-innov-file a.icon-ppt:before{
+				content: '\e913';
+			}
+			.b-innov-file a.icon-pptx:before{
+				content: '\e912';
+			}
+			.b-innov-file a.icon-txt:before{
+				content: '\e914';
+			}
+			.b-innov-file a.icon-xlsx:before{
+				content: '\e915';
+			}
+			.b-innov-file a.icon-zip:before{
+				content: '\e916';
 			}
 	.b-innov-contacts .mobile{
 		display: none;
