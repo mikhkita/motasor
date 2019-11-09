@@ -2016,7 +2016,7 @@ h4{
 	.b-header-inner-right{
 		display: inline-block;
 		vertical-align: top;
-		width: calc(100% - 590px);
+		width: calc(100% - 708px);
 	}
 	.b-header-show-more{
 		position: relative;
@@ -2511,6 +2511,7 @@ h4{
 		background: #48569D;
 		border-radius: 5px;
 		margin-top: 20px;
+		margin-bottom: 32px;
 	}
 		.b-innov-file-item{
 			display: block;
@@ -4252,7 +4253,9 @@ form button,
 		padding-right: 0;
 		margin-left: 0;
 	}
-
+	.b-header-inner-right{
+		width: calc(100% - 473px);
+	}
 	.b-news-days-right-bottom h3{
 		/*font-size: 23px;*/
 	}
