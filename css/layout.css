@@ -100,7 +100,7 @@ input.error,textarea.error{
 .fancybox-inner{
 	overflow: visible !important;
 }
-.bold, b{
+.bold, b, strong{
 	font-family: 'FiraSans-Bold';
 }
 .underline{
@@ -1488,11 +1488,13 @@ h4{
 		}
 			.b-month-list .month{
 				text-align: center;
+				padding: 0 2px;
 				display: inline-block;
 				margin-right: 26px;
 				font-family: 'FiraSans-Medium';
 				font-size: 19px;
 				line-height: 29px;
+				cursor: pointer;
 				opacity: 0.5;
 				-webkit-transition: opacity 100ms;
 				   -moz-transition: opacity 100ms;
@@ -1503,10 +1505,12 @@ h4{
 			.b-month-list .month:hover{
 				opacity: 1;
 			}
-			.b-month-list .month.active{
+			.b-month-list .month.active,
+			.b-month-list .month.slick-current{
 				font-size: 24px;
 				line-height: 29px;
 				opacity: 1;
+				pointer-events: none;
 			}
 			.b-calendar-months .icon-arrow-left,
 			.b-calendar-months .icon-arrow-right{
@@ -1532,7 +1536,7 @@ h4{
 			.b-calendar-months .icon-arrow-right{
 				position: absolute;
 				top: 0;
-				right: 10px;
+				right: 5px;
 			}
 			.b-calendar-months .icon-arrow-left:before,
 			.b-calendar-months .icon-arrow-right:before{
@@ -1556,9 +1560,69 @@ h4{
 			.b-calendar-months .icon-arrow-right:hover:before{
 				color: #48569D;
 			}
-		.slick-disabled{
-			
+		.b-calendar-months .slick-disabled:before{
+			color: #C4C4C4;
 		}
+		.b-calendar-months .slick-disabled.icon-arrow-left:hover,
+		.b-calendar-months .slick-disabled.icon-arrow-right:hover{
+			box-shadow: none;
+		}
+		.b-calendar-months .slick-disabled.icon-arrow-left:hover:before,
+		.b-calendar-months .slick-disabled.icon-arrow-right:hover:before{
+			color: #C4C4C4;
+		}
+
+		.datepicker-cont{
+			position: relative;
+		}
+			.datepicker-calendar{
+				position: relative;
+			}
+			.datepicker-calendar + .datepicker-calendar{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+			}
+
+			.datepicker-calendar{
+				opacity: 0;
+				visibility: hidden;
+				-webkit-transform: scale(0.7) translateX(0);
+			        -ms-transform: scale(0.7) translateX(0);
+			            transform: scale(0.7) translateX(0);
+			    -webkit-transition: opacity 300ms 100ms linear, visibility 400ms ease-in, transform 400ms ease-in, height 400ms ease-in;
+				   -moz-transition: opacity 300ms 100ms linear, visibility 400ms ease-in, transform 400ms ease-in, height 400ms ease-in;
+				    -ms-transition: opacity 300ms 100ms linear, visibility 400ms ease-in, transform 400ms ease-in, height 400ms ease-in;
+				   	 -o-transition: opacity 300ms 100ms linear, visibility 400ms ease-in, transform 400ms ease-in, height 400ms ease-in;
+						transition: opacity 300ms 100ms linear, visibility 400ms ease-in, transform 400ms ease-in, height 400ms ease-in;
+			}
+			.datepicker-calendar.hidden-left{
+				opacity: 0;
+				visibility: hidden;
+				-webkit-transform: scale(1) translateX(-40px);
+			        -ms-transform: scale(1) translateX(-40px);
+			            transform: scale(1) translateX(-40px);
+			}
+			.datepicker-calendar.hidden-right{
+				opacity: 0;
+				visibility: hidden;
+				-webkit-transform: scale(1) translateX(40px);
+			        -ms-transform: scale(1) translateX(40px);
+			            transform: scale(1) translateX(40px);
+			}
+			.datepicker-calendar.show{
+				opacity: 1;
+				visibility: visible;
+				-webkit-transform: scale(1) translateX(0);
+			        -ms-transform: scale(1) translateX(0);
+			            transform: scale(1) translateX(0);
+			    -webkit-transition: opacity 300ms 200ms ease-out, visibility 300ms 200ms ease-out, transform 300ms 200ms ease-out;
+				   -moz-transition: opacity 300ms 200ms ease-out, visibility 300ms 200ms ease-out, transform 300ms 200ms ease-out;
+				    -ms-transition: opacity 300ms 200ms ease-out, visibility 300ms 200ms ease-out, transform 300ms 200ms ease-out;
+				   	 -o-transition: opacity 300ms 200ms ease-out, visibility 300ms 200ms ease-out, transform 300ms 200ms ease-out;
+						transition: opacity 300ms 200ms ease-out, visibility 300ms 200ms ease-out, transform 300ms 200ms ease-out;
+			}
 
 		.datepicker--nav{
 			display: none !important;
@@ -1590,8 +1654,28 @@ h4{
 					line-height: 22px;
 					font-family: 'FiraSans-Regular';
 					color: #48569D;
+					pointer-events: none;
+				}
+				.datepicker--cell.active-date{
+					cursor: pointer;
+				}
+				.datepicker--cell.-current- {
+				    color: #48569D;
+				}
+				.datepicker--cell.-focus- {
+				    background: transparent !important;
+				    cursor: pointer;
+				}
+				.datepicker--cell.-other-month-{
+					opacity: 0 !important;
+					visibility: hidden !important;
+				}
+				.datepicker--cell.-selected-, 
+				.datepicker--cell.-selected-.-current-{
+					background: transparent !important;
 				}
 				.datepicker--cell a{
+					pointer-events: auto;
 					position: relative;
 				    padding: 5px 0;
 				    display: inline-block;
@@ -1599,7 +1683,7 @@ h4{
 				    border-radius: 100px;
 				    color: #FFF;
 				    font-family: 'FiraSans-Bold';
-				    left: -9px;
+				    left: -8px;
 				    text-align: center;
 				    line-height: 25px;
 					width: 35px;
@@ -3090,7 +3174,8 @@ h4{
 			.b-calendar-page-left .b-calendar td a{
 				left: 12px;
 			}
-			/*.b-calendar-page-left .b-month-list .month.active {
+			/*.b-calendar-page-left .b-month-list .month.active,
+			.b-month-list .month.slick-current {
 			    width: 114px;
 			}
 			.b-calendar-page-left .b-month-list .month {
@@ -4338,7 +4423,8 @@ form button,
 		/*.b-month-list .month{
 			width: 95px;
 		}
-		.b-month-list .month.active{
+		.b-month-list .month.active,
+		.b-month-list .month.slick-current{
 			width: 120px;
 		}*/
 
@@ -4940,7 +5026,8 @@ form button,
 			font-size: 16px;
 			line-height: 24px;
 		}
-		.b-month-list .month.active{
+		.b-month-list .month.active,
+		.b-month-list .month.slick-current{
 			
 			font-size: 20px;
 			line-height: 24px;
@@ -5658,7 +5745,8 @@ form button,
 		
 	    font-size: 14px;
 	}
-	.b-month-list .month.active {
+	.b-month-list .month.active,
+	.b-month-list .month.slick-current{
 	    
 	    font-size: 16px;
 	}
@@ -6537,7 +6625,8 @@ form button,
 	@media screen and (max-width: 374px){
 
 		.b-month-list .month,
-		.b-month-list .month.active{
+		.b-month-list .month.active,
+		.b-month-list .month.slick-current{
 			width: auto;
 			margin-right: 12px;
 		}

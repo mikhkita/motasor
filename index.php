@@ -194,7 +194,10 @@ include 'header.php';
 									</div>
 									<!-- <a href="#" class="icon-arrow-right"></a> -->
 								</div>
-								<div class="datepicker-calendar"></div>
+								<div class="datepicker-cont">
+									<div class="datepicker-calendar show"></div>
+									<div class="datepicker-calendar"></div>
+								</div>
 								<!-- <table class="b-calendar">
 									<tr>
 										<th>Пн</th>
