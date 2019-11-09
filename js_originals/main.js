@@ -401,12 +401,16 @@ $(document).ready(function(){
 
 if($(".b-calendar-cont").length){
     var calendarAjax = false;
-    $(document).on("click", ".event-ajax", function(){
+    $(document).on("click", ".b-calendar-main-cont .event-ajax", function(){
         var $this = $(this);
         if(!calendarAjax && !$this.parent().hasClass("-selected-")){
             calendarAjax = true;
-            // $(".event-ajax").removeClass("selected");
+            $(".-selected-").removeClass("-selected-");
             $this.parent().addClass("-selected-");
+
+            var arFirstDate = $(this).attr("data-date").split('.');
+            firstDate = new Date(arFirstDate[2],arFirstDate[1]-1,arFirstDate[0]);
+
             $.ajax({
                 type: "GET",
                 url: $this.parents(".b-calendar-cont").attr("data-url"),
@@ -418,14 +422,15 @@ if($(".b-calendar-cont").length){
                         $(".b-events-list-content").remove();
                         $(".b-events-list-ajax").html($events).addClass("show b-events-list-content").removeClass("b-events-list-ajax")
                         $('.b-events-list-cont').append("<div class='b-events-list b-events-list-main b-events-list-ajax'></div>");
-                    }else{//Страница календаря
-                        var $title = $html.find("h2.b-title").html();
-                        $(".b-calendar-page-right h2").html($title);
-                        var $news = $html.find(".b-news-list").html();
-                        $(".b-calendar-page-right .b-news-list").html($news);
-                        var $nav = $html.find(".b-page-nav").html();
-                        $(".b-calendar-page-right .b-page-nav").html($nav);
                     }
+                    // else{//Страница календаря
+                    //     var $title = $html.find("h2.b-title").html();
+                    //     $(".b-calendar-page-right h2").html($title);
+                    //     var $news = $html.find(".b-news-list").html();
+                    //     $(".b-calendar-page-right .b-news-list").html($news);
+                    //     var $nav = $html.find(".b-page-nav").html();
+                    //     $(".b-calendar-page-right .b-page-nav").html($nav);
+                    // }
                 },
                 complete: function(){
                     calendarAjax = false;
@@ -443,14 +448,14 @@ if($(".b-calendar-cont").length){
         curYear = curDate.getFullYear(),
         arMonths  = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
     // Сгенерить 12 месяцев
-    for (var i = 0, active = true; i < 12; i++) {
-        $(".b-month-list").append("<div data-month="+(curMonth+1)+" data-year="+curYear+" class='month'>"+arMonths[curMonth]+"</div>");
+    for (var i = 0, active = true; i < 14; i++) {
+        $(".b-month-list").append("<div data-month="+(curMonth+1)+" data-year="+curYear+" class='month"+((i >= 12)?' disabled':'')+"'>"+arMonths[curMonth]+"</div>");
         curMonth++;
         if(curMonth >= 12){
             curMonth = 0;
             curYear++;
         }
-        active = false;
+        //active = false;
     }
 
     window.eventDatesDPC = JSON.parse(window.eventDatesDPC);
@@ -487,19 +492,22 @@ if($(".b-calendar-cont").length){
 
     var datepickerOptions = {
         inline: true,
+        multipleDates: false,
         showOtherMonths: false,
         onRenderCell: function (date, cellType) {
             if (cellType == 'day' && eventDatesObj.indexOf(date.getTime()) != -1) {
                 var compositeDate = date.getDate()+"."+(date.getMonth()+1)+"."+date.getFullYear();
+                if((date.getTime() == firstDate.getTime())) console.log("123451345");
                 return {
                     disabled: true,
-                    classes: 'active-date',
-                    html: "<a href='#' class='event-ajax' data-date='"+compositeDate+"'>"+date.getDate()+"</a>"
+                    classes: 'active-date'+((date.getTime() == firstDate.getTime()) ? " -selected-" : ""),
+                    html: "<a href='"+$(".b-calendar-cont").attr("data-url")+"?date="+compositeDate
+                        +"' class='event-ajax' data-date='"+compositeDate+"'>"+date.getDate()+"</a>"
                 }
             }
         },
         onSelect: function onSelect(fd, date) {
-            
+
         }
     };
 
@@ -517,8 +525,9 @@ if($(".b-calendar-cont").length){
             y = $current.attr("data-year"),
             hiddenClass = (currentSlide < nextSlide) ? "hidden-left" : "hidden-right";
         $('.datepicker-calendar').eq(0).removeClass("show").addClass(hiddenClass);
-        datepickerBack = $('.datepicker-calendar').eq(1)
-            .datepicker($.extend(datepickerOptions,{startDate: new Date(y,m-1,1)}));
+        var datepickerBack = $('.datepicker-calendar').eq(1);
+        datepickerBack.datepicker($.extend(datepickerOptions,{startDate: new Date(y,m-1,1)}));
+        // datepickerBack.data('datepicker').selectDate(firstDate);
         $('.datepicker-calendar').eq(1).addClass("show");
         var h = $('.datepicker-calendar').eq(1).height();
         $('.datepicker-calendar').height(h);

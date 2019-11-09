@@ -14,7 +14,7 @@ include 'header.php';
 	<div class="b-calendar-page">
 		<div class="b-block clearfix">
 			<h1>Календарь событий</h1>
-			<div class="b-calendar-page-left b-calendar-cont" data-url="/send/getEventsCalendar.php">
+			<div class="b-calendar-page-left b-calendar-cont" data-url="calendar.php">
 				<?
 					$activeDateDPC = "3.12.2019";
 					$eventDatesDPC_Raw = array("17.11.2019","25.11.2019","3.12.2019","9.01.2020");

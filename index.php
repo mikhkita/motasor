@@ -193,7 +193,7 @@ include 'header.php';
 									$eventDatesDPC = json_encode($eventDatesDPC_Raw);
 								?>
 								<script type="text/javascript">
-									var activeDateDPC = '<?=$activeDateDPC?>';
+									//var activeDateDPC = '<?=$activeDateDPC?>';
     								var eventDatesDPC = '<?=$eventDatesDPC?>';
 								</script>
 								<div class="b-calendar-months">

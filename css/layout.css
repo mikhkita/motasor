@@ -1552,6 +1552,12 @@ h4{
 				opacity: 1;
 				pointer-events: none;
 			}
+			.b-month-list .month.disabled,
+			.b-month-list .month.disabled:hover{
+				cursor: default;
+				color: #C4C4C4;
+				opacity: 0.5;
+			}
 			.b-calendar-months .icon-arrow-left,
 			.b-calendar-months .icon-arrow-right{
 				display: inline-block;
