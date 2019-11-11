@@ -261,29 +261,112 @@ $(document).ready(function(){
         }
     });
 
-    $(document).on("click", ".b-menu-mobile-list a, .sub-section-slide a", function(){
-        if($(this).siblings(".open-section").length > 0){//если есть вложенные секции
-            var $section = $(this).siblings(".open-section"),
-                depth = $section.attr("data-depth"),
-                $items = $section.children("li"),
-                $clone = $items.clone();
-            if(depth == "1"){
-                fillSection(".sub-section-slide", $(this).text(), $clone);
-            }else{
-                fillSection(".sub-sub-section-slide", $(this).text(), $clone);
+    // Мобильное меню
+    // var mobileMenu = "<ul class='b-menu-mobile-list'>";
+    // $(".b-header-menu-window .menu-window-item").each(function () {
+    //     $(this).children(".section").each(function () {
+    //         mobileMenu += "<li>";
+    //         $(this).children("li").each(function () {
+    //             mobileMenu += ($(this).children("a").length) ? $(this).children("a")[0].outerHTML : "";
+    //             $(this).children(".sub-section").each(function () {
+    //                 mobileMenu += "<ul class='open-section' data-depth='1'>";
+    //                 $(this).children("li").each(function () {
+    //                     mobileMenu += "<li>";
+    //                     mobileMenu += ($(this).children("a").length) ? $(this).children("a")[0].outerHTML : "";
+    //                     $(this).children(".sub-sub-section").each(function () {
+    //                         mobileMenu += "<ul class='open-section' data-depth='2'>";
+    //                         mobileMenu += $(this).html();
+    //                         mobileMenu += "</ul>";
+    //                     });
+    //                     mobileMenu += "</li>";
+    //                 });
+    //                 mobileMenu += "</ul>";
+    //             });
+    //         });
+    //         mobileMenu += "</li>";
+    //     });
+    // });
+    // mobileMenu += "</ul>";
+    // //var mobileMenuClear = $(mobileMenu).removeClass();
+    // console.log(mobileMenu);
+    // $(".b-menu-mobile-list-cont").prepend(mobileMenu);
+
+    //сгенерить id
+    var curID = 1;
+    $(".b-header-menu-window a").each(function () {
+        $(this).attr("data-id", "m-ref-"+curID);
+        if($(this).next("ul").length){
+            $(this).next("ul").attr("data-id", "m-ref-"+curID);
+        }
+        curID++;
+    });
+    //генерим первый уровень
+    $(".b-header-menu-window .main-item").each(function () {
+        var $link = $(this)[0].outerHTML;
+        $(".b-menu-mobile-list").append("<li>"+$link+"</li>");
+        $(".b-menu-mobile-list a[data-id="+$(this).attr("data-id")+"]").click(function(){
+            if(openMobileSubmenu($(this).attr("data-id"), $(this).text())){
+                return false;
             }
+        });
+    });
+
+    function openMobileSubmenu(id, textItem) {
+        if($(".b-header-menu-window ul[data-id="+id+"]").length){
+            //генерим контейнер (будет последним)
+            $(".slide-cont-list").append("<div class='slide-cont'></div>");
+            var $cont = $(".slide-cont-list .slide-cont").last();
+            $cont.append("<h4 class='mobile-window-back'>"+textItem+"</h4>");
+            $cont.append("<ul></ul>");
+            var $ul = $cont.children("ul");
+            $(".b-header-menu-window ul[data-id="+id+"] > li > a").each(function() {
+                $ul.append("<li>"+$(this)[0].outerHTML+"</li>");
+                $ul.find("a[data-id="+$(this).attr("data-id")+"]").click(function(){
+                    if(openMobileSubmenu($(this).attr("data-id"), $(this).text())){
+                        return false;
+                    }
+                });
+            });
+            setTimeout(function () {
+                $cont.addClass("open");
+            }, 10);
+
+            $(".mobile-window-back").click(function(){
+                var $target = $(this).parent();
+                $target.removeClass("open");
+                setTimeout(function () {
+                    $target.remove();
+                }, 200);
+            });
+            return true;
+        }else{
             return false;
         }
-    });
-    function fillSection($block, text, $items) {
-        $($block).html("");
-        $($block).append("<h4 class='mobile-window-back'>"+text+"</h4>");
-        $($block).append("<ul></ul>");
-        $($block).addClass("open").children("ul").append($items);
-        $(".mobile-window-back").click(function(){
-            $(this).parent().removeClass("open");
-        });
     }
+
+    // $(document).on("click", ".b-menu-mobile-list a, .sub-section-slide a", function(){
+    //     if($(this).siblings(".open-section").length > 0){//если есть вложенные секции
+    //         var $section = $(this).siblings(".open-section"),
+    //             depth = $section.attr("data-depth"),
+    //             $items = $section.children("li"),
+    //             $clone = $items.clone();
+    //         if(depth == "1"){
+    //             fillSection(".sub-section-slide", $(this).text(), $clone);
+    //         }else{
+    //             fillSection(".sub-sub-section-slide", $(this).text(), $clone);
+    //         }
+    //         return false;
+    //     }
+    // });
+    // function fillSection($block, text, $items) {
+    //     $($block).html("");
+    //     $($block).append("<h4 class='mobile-window-back'>"+text+"</h4>");
+    //     $($block).append("<ul></ul>");
+    //     $($block).addClass("open").children("ul").append($items);
+    //     $(".mobile-window-back").click(function(){
+    //         $(this).parent().removeClass("open");
+    //     });
+    // }
     // $(document).on("click", ".mobile-window-back", function(){
     //     $(this).parent().removeClass("open");
     // });
@@ -299,11 +382,11 @@ $(document).ready(function(){
     var swipeh = new MobiSwipe("b-menu-mobile-window");
     swipeh.direction = swipeh.HORIZONTAL;
     swipeh.onswiperight = function(){
-        if($(".sub-sub-section-slide").hasClass("open")){
-            $(".sub-sub-section-slide").removeClass("open");
-        }else{
-            $(".sub-section-slide").removeClass("open");
-        }
+        var $target = $(".slide-cont.open").last();
+        $target.removeClass("open");
+        setTimeout(function () {
+            $target.remove();
+        }, 200);
     };
     
     // поиск в хедере
@@ -324,9 +407,30 @@ $(document).ready(function(){
         }
     });
     $(document).mouseup(function (e){
-        var cont = $(".b-header-search");
-        if (!cont.is(e.target) && cont.has(e.target).length === 0) {
-            $(".b-header-search").removeClass("open");
+        if($(".b-header-search").hasClass("open")){
+            var cont = $(".b-header-search");
+            if (!cont.is(e.target) && cont.has(e.target).length === 0) {
+                $(".b-header-search").removeClass("open");
+                $(".b-header-search-btn").removeClass("hide");
+                $(".b-header-search-form button").addClass("hide");
+            }
+        }
+        if($(".b-header-menu-window").hasClass("open")){
+            var cont = $(".b-header-menu-window, .b-btn-menu-desktop");
+            if (!cont.is(e.target) && cont.has(e.target).length === 0) {
+                $(".b-header-menu-window, .b-btn-menu-desktop").removeClass("open");
+            }
+        }
+    });
+    $(document).keydown(function (e){
+        e = e || window.event;
+        if ("key" in e) {
+            isEscape = (e.key === "Escape" || e.key === "Esc");
+        } else {
+            isEscape = (e.keyCode === 27);
+        }
+        if(isEscape){
+            $(".b-header-search, .b-header-menu-window, .b-btn-menu-desktop").removeClass("open");
             $(".b-header-search-btn").removeClass("hide");
             $(".b-header-search-form button").addClass("hide");
         }
@@ -530,7 +634,7 @@ if($(".b-calendar-cont").length){
         onRenderCell: function (date, cellType) {
             if (cellType == 'day' && eventDatesObj.indexOf(date.getTime()) != -1) {
                 var compositeDate = date.getDate()+"."+(date.getMonth()+1)+"."+date.getFullYear();
-                if((date.getTime() == firstDate.getTime())) console.log("123451345");
+                //if((date.getTime() == firstDate.getTime())) console.log("123451345");
                 return {
                     disabled: true,
                     classes: 'active-date'+((date.getTime() == firstDate.getTime()) ? " -selected-" : ""),
