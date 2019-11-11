@@ -29,6 +29,7 @@ $version = 5;
 	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
+	<a class="up b-go" href=".b-header" data-duration="200" data-offset="0"></a>
 	<div class="b b-header">
 		<div class="b-header-top clearfix">
 			<div class="b-block">
