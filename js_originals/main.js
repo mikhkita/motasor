@@ -397,6 +397,20 @@ $(document).ready(function(){
     ripple.init();
     $('.b-btn').on('click touchstart', ripple.click);
 
+    $(window).scroll(function(){
+        var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+        console.log(scroll);
+        if (scroll > 400) {
+            if (!$('.up').hasClass('show')){
+                $('.up').addClass('show')
+            }
+        } else {
+            if ($('.up').hasClass('show')) {
+                $('.up').removeClass('show');
+            }
+        }
+    });
+
     // Календарь
 
 if($(".b-calendar-cont").length){

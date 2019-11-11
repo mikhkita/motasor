@@ -4536,7 +4536,37 @@ form button,
 	    background-color: transparent;
 		line-height: 25px;
 	}*/
-
+	.up{
+		display: block;
+		position: fixed;
+		bottom: 57px;
+		left: 27px;
+		width: 41px;
+		height: 41px;
+		background-color: #48569D;
+		border-radius: 14px;
+		z-index: 100;
+		text-align: center;
+		-webkit-transition: -webkit-box-shadow .1s, opacity .2s, visibility .2s;
+		-o-transition: box-shadow .1s, opacity .2s, visibility .2s;
+		transition: box-shadow .1s, opacity .2s, visibility .2s;
+		opacity: 0;
+		visibility: 0;
+	}
+	.up.show{
+		opacity: 1;
+		visibility: 1;
+	}
+	.up:before{
+		content: '\e917';
+		font-family: 'icomoon';
+		font-size: 20px;
+		line-height: 41px;
+		color: #fff;
+	}
+	.up:hover{
+		box-shadow: 0px 0px 18px rgba(72, 86, 157, 0.45);
+	}
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	
 }	

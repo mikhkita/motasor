@@ -18,7 +18,7 @@ $version = 5;
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="css/plugins.min.css" type="text/css">
-	<link rel="stylesheet" href="css/layout.min.css?<?=$version?>" type="text/css">
+	<link rel="stylesheet" href="css/layout.css?<?=$version?>" type="text/css">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -29,6 +29,7 @@ $version = 5;
 	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
+	<a class="up b-go" href=".b-header" data-duration="200" data-offset="0"></a>
 	<div class="b b-header">
 		<div class="b-header-top clearfix">
 			<div class="b-block">
