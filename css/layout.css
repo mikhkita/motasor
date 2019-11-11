@@ -4661,7 +4661,7 @@ form button,
 		opacity: 0;
 		visibility: hidden;
 	}
-	@media screen and (min-width: 1440px) {
+	@media screen and (min-width: 1530px) {
 		.up{
 			left: calc(50% - 750px);
 		}	
