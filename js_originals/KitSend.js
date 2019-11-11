@@ -7,7 +7,7 @@ function getNextField($form){
 }
 
 function scrollToElement($el, duration, offset, $customCont){
-	var off = offset||( (window.innerWidth < 768) ? 180 : 20 ),
+	var off = (window.innerWidth < 768) ? 180 : 32,
 		duration = duration||800;
 
 	if( typeof $customCont == "undefined" ){
@@ -197,7 +197,10 @@ $(document).ready(function(){
 	});
 
 	$(".fancy-img").fancybox({
-		padding : 0
+		padding : 0,
+		buttons: [
+			"close"
+		]
 	});
 
 	$(".goal-click").click(function(){

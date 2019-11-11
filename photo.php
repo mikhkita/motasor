@@ -29,49 +29,49 @@ include 'header.php';
 					<h1>Фото</h1>
 					<div class="b-photo">
 						<div class="b-photo-list clearfix">
-							<a href="i/photo-1.jpg" data-fancybox="gallery">
+							<a href="i/photo-1.jpg" class="fancy-img" data-fancybox="gallery">
 								<img src="i/photo-1.jpg" alt="" />
 							</a>
-							<a href="i/photo-2.jpg" data-fancybox="gallery">
+							<a href="i/photo-2.jpg" class="fancy-img" data-fancybox="gallery">
 								<img src="i/photo-2.jpg" alt="" />
 							</a>
-							<a href="i/photo-3.jpg" data-fancybox="gallery">
+							<a href="i/photo-3.jpg" class="fancy-img" data-fancybox="gallery">
 								<img src="i/photo-3.jpg" alt="" />
 							</a>
-							<a href="i/photo-4.jpg" data-fancybox="gallery">
+							<a href="i/photo-4.jpg" class="fancy-img" data-fancybox="gallery">
 								<img src="i/photo-4.jpg" alt="" />
 							</a>
-							<a href="i/photo-5.jpg" data-fancybox="gallery">
+							<a href="i/photo-5.jpg" class="fancy-img" data-fancybox="gallery">
 								<img src="i/photo-5.jpg" alt="" />
 							</a>
-							<a href="i/photo-6.jpg" data-fancybox="gallery">
+							<a href="i/photo-6.jpg" class="fancy-img" data-fancybox="gallery">
 								<img src="i/photo-6.jpg" alt="" />
 							</a>
-							<a href="i/photo-7.jpg" data-fancybox="gallery">
+							<a href="i/photo-7.jpg" class="fancy-img" data-fancybox="gallery">
 								<img src="i/photo-7.jpg" alt="" />
 							</a>
-							<a href="i/photo-8.jpg" data-fancybox="gallery">
+							<a href="i/photo-8.jpg" class="fancy-img" data-fancybox="gallery">
 								<img src="i/photo-8.jpg" alt="" />
 							</a>
-							<a href="i/photo-9.jpg" data-fancybox="gallery">
+							<a href="i/photo-9.jpg" class="fancy-img" data-fancybox="gallery">
 								<img src="i/photo-9.jpg" alt="" />
 							</a>
-							<a href="i/photo-10.jpg" data-fancybox="gallery">
+							<a href="i/photo-10.jpg" class="fancy-img" data-fancybox="gallery">
 								<img src="i/photo-10.jpg" alt="" />
 							</a>
-							<a href="i/photo-11.jpg" data-fancybox="gallery">
+							<a href="i/photo-11.jpg" class="fancy-img" data-fancybox="gallery">
 								<img src="i/photo-11.jpg" alt="" />
 							</a>
-							<a href="i/photo-12.jpg" data-fancybox="gallery">
+							<a href="i/photo-12.jpg" class="fancy-img" data-fancybox="gallery">
 								<img src="i/photo-12.jpg" alt="" />
 							</a>
-							<a href="i/photo-13.jpg" data-fancybox="gallery">
+							<a href="i/photo-13.jpg" class="fancy-img" data-fancybox="gallery">
 								<img src="i/photo-13.jpg" alt="" />
 							</a>
-							<a href="i/photo-14.jpg" data-fancybox="gallery">
+							<a href="i/photo-14.jpg" class="fancy-img" data-fancybox="gallery">
 								<img src="i/photo-14.jpg" alt="" />
 							</a>
-							<a href="i/photo-15.jpg" data-fancybox="gallery">
+							<a href="i/photo-15.jpg" class="fancy-img" data-fancybox="gallery">
 								<img src="i/photo-15.jpg" alt="" />
 							</a>
 						</div>
