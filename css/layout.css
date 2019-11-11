@@ -531,7 +531,13 @@ h4{
 	.b-text p{
 		font-size: 16px;
 		line-height: 22px;
-		margin-bottom: 25px;
+		margin-bottom: 22px;
+	}
+	.b-text p.small-margin{
+		margin-bottom: 10px;
+	}
+	.b-text p.big-margin{
+		margin-bottom: 40px;
 	}
 	.b-text a{
 		color: #0B6093;
@@ -2522,7 +2528,43 @@ h4{
 		.b-comm-contacts h4{
 			margin-bottom: 22px;
 		}
-		.b-comm-contacts-item{
+		.icon-email{
+			position: relative;
+			display: inline-block;
+			color: #fff;
+			padding-left: 37px;
+		}
+			.icon-email:before{
+				content: "";
+				position: absolute;
+				top: 4px;
+				left: 0;
+				width: 18px;
+				height: 15px;
+				background-position: 50% 50%;
+			    background-repeat: no-repeat;
+			    background-size: contain;
+			    background-image: url(../i/icon-email-white.svg);
+			}
+		.icon-phone{
+			position: relative;
+			display: inline-block;
+			color: #fff;
+			padding-left: 37px;
+		}
+			.icon-phone:before{
+				content: "";
+				position: absolute;
+				top: 4px;
+				left: 0;
+				width: 18px;
+				height: 15px;
+				background-position: 50% 50%;
+			    background-repeat: no-repeat;
+			    background-size: contain;
+			    background-image: url(../i/icon-phone-white.svg);
+			}
+		/*.b-comm-contacts-item{
 			margin-top: 12px;
 			margin-bottom: 40px;
 		}
@@ -2565,7 +2607,7 @@ h4{
 				}
 				.b-comm-contacts a:last-child{
 					margin-bottom: 0;
-				}
+				}*/
 	.b-questions-list{
 		margin-bottom: 56px;
 	}
