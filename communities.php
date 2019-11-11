@@ -95,24 +95,13 @@ include 'header.php';
 					<p>При предоставлении накладных расходов отличающихся от рекомендуемой ставки, необходимо предоставление нормативного документа о расчёте накладных расходов (приказ или письмо на бланке организации).</p>
 					<div class="b-comm-contacts" id="b-comm-contacts">
 						<h4>Контакты</h4>
-						<div class="b-comm-contacts-item">
-							<div class="b-comm-contacts-name"><b>Иванов</b> Игорь Николаевич</div>
-							<div class="b-comm-contacts-mail">
-								<a href="mailto:innov@rosatomtech.ru"><b>innov</b>@rosatomtech.ru</a>
-							</div>
-							<div class="b-comm-contacts-phone">
-								<a href="tel:+78990189191">+7 899 018 91 91</a>
-							</div>
-						</div>
-						<div class="b-comm-contacts-item">
-							<div class="b-comm-contacts-name"><b>Селиванов</b> Игорь Николаевич</div>
-							<div class="b-comm-contacts-mail">
-								<a href="mailto:innov@rosatomtech.ru"><b>innov</b>@rosatomtech.ru</a>
-							</div>
-							<div class="b-comm-contacts-phone">
-								<a href="tel:+78990189191">+7 899 018 91 91</a>
-							</div>
-						</div>
+						<p>При предоставлении накладных расходов отличающихся от рекомендуемой ставки, необходимо предоставление нормативного документа о расчёте накладных расходов (приказ или письмо на бланке организации).</p>
+						<p><b>Иванов</b> Игорь Николаевич</p>
+						<p class="small-margin"><a href="mailto:innov@rosatomtech.ru" class="icon-email"><b>innov</b>@rosatomtech.ru</a></p>
+						<p class="big-margin"><a href="tel:+78990189191" class="icon-phone">+7 899 018 91 91</a></p>
+						<p><b>Иванов</b> Игорь Николаевич</p>
+						<p class="small-margin"><a href="mailto:innov@rosatomtech.ru" class="icon-email"><b>innov</b>@rosatomtech.ru</a></p>
+						<p class="big-margin"><a href="tel:+78990189191" class="icon-phone">+7 899 018 91 91</a></p>
 					</div>
 				</div>
 
