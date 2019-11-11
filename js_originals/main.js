@@ -293,7 +293,7 @@ $(document).ready(function(){
 
     //сгенерить id
     var curID = 1;
-    $(".b-section-menu a").each(function () {
+    $(".b-header-menu-window a").each(function () {
         $(this).attr("data-id", "m-ref-"+curID);
         if($(this).next("ul").length){
             $(this).next("ul").attr("data-id", "m-ref-"+curID);
@@ -301,7 +301,7 @@ $(document).ready(function(){
         curID++;
     });
     //генерим первый уровень
-    $(".b-section-menu .main-item").each(function () {
+    $(".b-header-menu-window .main-item").each(function () {
         var $link = $(this)[0].outerHTML;
         $(".b-menu-mobile-list").append("<li>"+$link+"</li>");
         $(".b-menu-mobile-list a[data-id="+$(this).attr("data-id")+"]").click(function(){
@@ -312,14 +312,14 @@ $(document).ready(function(){
     });
 
     function openMobileSubmenu(id, textItem) {
-        if($(".b-section-menu ul[data-id="+id+"]").length){
+        if($(".b-header-menu-window ul[data-id="+id+"]").length){
             //генерим контейнер (будет последним)
             $(".slide-cont-list").append("<div class='slide-cont'></div>");
             var $cont = $(".slide-cont-list .slide-cont").last();
             $cont.append("<h4 class='mobile-window-back'>"+textItem+"</h4>");
             $cont.append("<ul></ul>");
             var $ul = $cont.children("ul");
-            $(".b-section-menu ul[data-id="+id+"] > li > a").each(function() {
+            $(".b-header-menu-window ul[data-id="+id+"] > li > a").each(function() {
                 $ul.append("<li>"+$(this)[0].outerHTML+"</li>");
                 $ul.find("a[data-id="+$(this).attr("data-id")+"]").click(function(){
                     if(openMobileSubmenu($(this).attr("data-id"), $(this).text())){
