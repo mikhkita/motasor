@@ -452,6 +452,27 @@ h4{
     }
 }
 
+@keyframes cookie-arrow-move {
+    from {
+    	-webkit-transform: translateX(0) translateY(-50%);
+    	-ms-transform: translateX(0) translateY(-50%);
+    	-o-transform: translateX(0) translateY(-50%);
+    	transform: translateX(0) translateY(-50%);
+    }
+    60% {
+    	-webkit-transform: translateX(-6px) translateY(-50%);
+		-ms-transform: translateX(-6px) translateY(-50%);
+		-o-transform: translateX(-6px) translateY(-50%);
+		transform: translateX(-6px) translateY(-50%);
+    }
+    to {
+		-webkit-transform: translateX(0) translateY(-50%);
+		-ms-transform: translateX(0) translateY(-50%);
+		-o-transform: translateX(0) translateY(-50%);
+		transform: translateX(0) translateY(-50%);
+    }
+}
+
 .b-size-3-4{
 	width: 75%;
 }
@@ -2496,35 +2517,52 @@ h4{
 		margin-bottom: 56px;
 	}
 		.b-comm-contacts h4{
-			margin-bottom: 24px;
+			margin-bottom: 22px;
 		}
 		.b-comm-contacts-item{
-			margin-bottom: 26px;
+			margin-top: 12px;
+			margin-bottom: 40px;
 		}
 		.b-comm-contacts-item:last-child{
 			margin-bottom: 0;
 		}
-			.b-comm-contacts a{
-				position: relative;
-				display: inline-block;
-				padding-left: 58px;
-				color: #FFF;
+			.b-comm-contacts-name{
+				margin-bottom: 19px;
 			}
-			.b-comm-contacts a:before{
-				content: "";
-				position: absolute;
-				top: 5px;
-				left: 0;
-				width: 18px;
-				height: 15px;
-				background-image: url(../i/icon-email-white.svg);
-				background-position: 50% 50%;
-			    background-repeat: no-repeat;
-			    background-size: 18px;
+			.b-comm-contacts-mail{
+				margin-bottom: 10px;
 			}
-		.b-comm-contacts a:last-child{
-			margin-bottom: 0;
-		}
+				.b-comm-contacts-mail a:before{
+					background-image: url(../i/icon-email-white.svg);
+				}
+			.b-comm-contacts-phone{
+
+			}
+				.b-comm-contacts-phone a:before{
+					background-image: url(../i/icon-phone-white.svg);
+				}
+				.b-comm-contacts a{
+					position: relative;
+					display: inline-block;
+					padding-left: 37px;
+					color: #FFF;
+					font-size: 16px;
+					line-height: 21px;
+				}
+				.b-comm-contacts a:before{
+					content: "";
+					position: absolute;
+					top: 4px;
+					left: 0;
+					width: 18px;
+					height: 15px;
+					background-position: 50% 50%;
+				    background-repeat: no-repeat;
+				    background-size: contain;
+				}
+				.b-comm-contacts a:last-child{
+					margin-bottom: 0;
+				}
 	.b-questions-list{
 		margin-bottom: 56px;
 	}
@@ -4544,18 +4582,22 @@ form button,
 		width: 41px;
 		height: 41px;
 		background-color: #48569D;
-		border-radius: 14px;
+		border-radius: 5px;
 		z-index: 100;
 		text-align: center;
 		-webkit-transition: -webkit-box-shadow .1s, opacity .2s, visibility .2s;
 		-o-transition: box-shadow .1s, opacity .2s, visibility .2s;
 		transition: box-shadow .1s, opacity .2s, visibility .2s;
 		opacity: 0;
-		visibility: 0;
+		visibility: hidden;
 	}
 	.up.show{
 		opacity: 1;
-		visibility: 1;
+		visibility: visible;
+	}
+	.up.fix{
+		position: absolute;
+		bottom: 105px;
 	}
 	.up:before{
 		content: '\e917';
@@ -4567,6 +4609,43 @@ form button,
 	.up:hover{
 		box-shadow: 0px 0px 18px rgba(72, 86, 157, 0.45);
 	}
+	.b-cookies-block{
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		padding: 23px 71px 23px 45px;
+		background-color: #43469A;
+		z-index: 100;
+		color: #fff;
+	}
+		.b-cookies-text{
+			display: inline-block;
+			width: calc(100% - 340px);
+			margin-right: 55px;
+			vertical-align: middle;
+		}
+		.b-btn-tr.close-cookie{
+			vertical-align: middle;
+			width: 280px;
+			max-width: 100%;
+			display: inline-block;
+			color: #fff;
+			border-color: #fff;
+		}
+		.b-btn-tr.close-cookie:after{
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			transform: translateY(-50%);
+			right: 24px;
+		}
+		.b-btn-tr.close-cookie:hover:after{
+			-webkit-animation: cookie-arrow-move .25s;
+			-o-animation: cookie-arrow-move .25s;
+			animation: cookie-arrow-move .25s;
+		}
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	
 }	
@@ -5321,6 +5400,17 @@ form button,
 		.b-month-list{
 			width: 100%;
 		}
+	}
+}
+
+@media screen and (max-width: 960px){
+	.b-cookies-block{
+		padding: 24px 12px;
+	}
+	.b-cookies-text{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
 	}
 }
 
@@ -6249,6 +6339,9 @@ form button,
 	.datepicker--day-name,
 	.datepicker--cell{
 		font-size: 15px;
+	}
+	.up{
+		display: none;
 	}
 
 	@media screen and (max-width: 665px){

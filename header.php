@@ -3,7 +3,7 @@
 // $arPage = explode('/', $_SERVER['REQUEST_URI']);
 // $isMain = ($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/index.php");
 $version = 5;
-
+setcookie('isFirstTime', 'Y', time() + (86400 * 30), "/");
 
 ?>
 <!DOCTYPE html>
@@ -30,6 +30,14 @@ $version = 5;
 </head>
 <body>
 	<a class="up b-go" href=".b-header" data-duration="200" data-offset="0"></a>
+	
+	<? if(!isset($_COOKIE['isFirstTime'])):?>
+	<div class="b-cookies-block">
+		<div class="b-cookies-text">Текст файлов куки Согласие на обработку персональных данных» – текст является ссылкой на одноимённую страницу. Ссылка на Портал независимой оценки качества условий оказания услуг медицинскими организациями. </div>
+		<a href="#" class="b-btn close-cookie b-btn-tr with-arrow">Принять</a>
+	</div>
+	<? endif;?>
+
 	<div class="b b-header">
 		<div class="b-header-top clearfix">
 			<div class="b-block">
