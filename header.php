@@ -2,7 +2,7 @@
 
 // $arPage = explode('/', $_SERVER['REQUEST_URI']);
 // $isMain = ($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/index.php");
-$version = 5;
+$version = 6;
 setcookie('isFirstTime', 'Y', time() + (86400 * 30), "/");
 
 ?>
@@ -74,7 +74,7 @@ setcookie('isFirstTime', 'Y', time() + (86400 * 30), "/");
 					<div class="b-menu-search">
 						<form action="search.php" method="GET" class="b-menu-search-form">
 							<button class="icon-search"></button>
-							<input type="text" name="q" class="b-menu-search-input">
+							<input type="text" name="q" placeholder="Поиск" class="b-menu-search-input">
 						</form>
 					</div>
 				</div>
