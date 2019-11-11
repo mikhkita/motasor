@@ -197,6 +197,14 @@ h4{
 	margin-bottom: 22px;
 	word-wrap: break-word;
 }
+h5{
+	font-family: "FiraSans-Regular";
+	font-size: 16px;
+	line-height: 22px;
+	margin-top: 32px;
+	margin-bottom: 22px;
+	word-wrap: break-word;
+}
 
 .b-btn{
 	position: relative;
@@ -532,12 +540,6 @@ h4{
 		font-size: 16px;
 		line-height: 22px;
 		margin-bottom: 22px;
-	}
-	.b-text p.small-margin{
-		margin-bottom: 10px;
-	}
-	.b-text p.big-margin{
-		margin-bottom: 40px;
 	}
 	.b-text a{
 		color: #0B6093;
@@ -2520,11 +2522,18 @@ h4{
 			display: none;
 		}
 	.b-comm-contacts{
-		padding: 20px 40px 40px 40px;
+		padding: 20px 40px;
 		color: #FFF;
 		background-color: #48569D;
 		margin-bottom: 56px;
 	}
+		.b-comm-contacts a{
+			color: #FFF;
+			text-decoration: none;
+		}
+		.b-comm-contacts a:hover{
+			text-decoration: underline;
+		}
 		.b-comm-contacts h4{
 			margin-bottom: 22px;
 		}
@@ -5565,6 +5574,7 @@ form button,
 			font-size: 14px;
 			line-height: 22px;
 		}
+
 		/*.b-text > p{
 			margin-bottom: 20px;
 		}*/
