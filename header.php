@@ -18,7 +18,7 @@ $version = 5;
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="css/plugins.min.css" type="text/css">
-	<link rel="stylesheet" href="css/layout.min.css?<?=$version?>" type="text/css">
+	<link rel="stylesheet" href="css/layout.css?<?=$version?>" type="text/css">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -60,72 +60,8 @@ $version = 5;
 			<div class="b-menu-mobile-window" id="b-menu-mobile-window">
 				<div class="b-menu-mobile-list-cont">
 					<ul class="b-menu-mobile-list">
-						<li>
-							<a href="#">О нас</a>
-							<ul class="open-section" data-depth="1">
-								<li>
-									<a href="#">Фото- и видеоматериалы</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">Контент</a>
-							<ul class="open-section" data-depth="1">
-								<li><a href="#">Научные достижения</a></li>
-								<li>
-									<a href="#">Нормативная документация</a>
-									<ul class="open-section" data-depth="2">
-										<li><a href="#">Программа инновационного развития</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Портал НТИ</a></li>
-								<li><a href="#">Единый отраслевой тематический план</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">РИД</a>
-							<ul class="open-section" data-depth="1">
-								<li><a href="#">ИС УПРИД </a></li>
-								<li><a href="#">Портфели</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="news.php">Новости</a>
-						</li>
-						<li>
-							<a href="#">Опросы</a>
-						</li>
-						<li>
-							<a href="#">Контакты</a>
-							<ul class="open-section" data-depth="1">
-								<li><a href="#">Задать вопрос </a></li>
-								<li><a href="#">Портфели</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">Сообщества</a>
-							<ul class="open-section" data-depth="1">
-								<li><a href="#">Инновационная вертикаль</a></li>
-								<li>
-									<a href="#">Мероприятия</a>
-									<ul class="open-section" data-depth="2">
-										<li><a href="#">Прорыв </a></li>
-										<li><a href="#">УИР </a></li>
-										<li><a href="#">Школа инновационного  лидера </a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Конкурсы</a>
-									<ul class="open-section" data-depth="2">
-										<li><a href="#">Конкурс аванпроектов </a></li>
-										<li><a href="#">Инновационный лидер </a></li>
-										<li><a href="#">Премия молодым ученым</a></li>
-									</ul>
-								</li>
-							</ul>
 
-						</li>
-					</ul>
+					</ul> 
 					<div class="b-menu-search">
 						<form action="search.php" method="GET" class="b-menu-search-form">
 							<button class="icon-search"></button>
@@ -133,8 +69,9 @@ $version = 5;
 						</form>
 					</div>
 				</div>
-				<div class="slide-cont sub-section-slide"></div>
-				<div class="slide-cont sub-sub-section-slide"></div>
+				<div class="slide-cont-list">
+					
+				</div>
 				<div class="community">
 					<a href="#b-popup-auth" class="b-header-community fancy">Присоединиться к cообществу</a>
 				</div>
@@ -162,108 +99,91 @@ $version = 5;
 			<div class="b-header-menu-window-cont">
 				<div class="b-header-menu-window clearfix">
 					<div class="b-block">
-						<ul class="menu-window-item">
-							<ul class="section">
-								<li><a href="#" class="bold">О нас</a></li>
-								<li>
-									<ul class="sub-section">
-										<li><a href="#">Фото- и видеоматериалы</a></li>
-									</ul>
-								</li>
-							</ul>
-							<ul class="section">
-								<li><a href="#" class="bold">Контент</a></li>
-								<li>
-									<ul class="sub-section">
-										<li><a href="#">Научные достижения</a></li>
-										<li><a href="#">Нормативная документация</a></li>
-										<li>
-											<ul class="sub-sub-section">
-												<li><a href="#">Программа инновационного развития</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Портал НТИ</a></li>
-										<li><a href="#">Единый отраслевой тематический план</a></li>
-									</ul>
-								</li>
-							</ul>
-						</ul>
-						<ul class="menu-window-item">
-							<ul class="section">
-								<li><a href="#" class="bold">РИД</a></li>
-								<li>
-									<ul class="sub-section">
-										<li><a href="#">ИС УПРИД </a></li>
-										<li><a href="#">Портфели</a></li>
-									</ul>
-								</li>
-							</ul>
-							<ul class="section">
-								<li><a href="news.php" class="bold">Новости</a></li>
-							</ul>
-							<ul class="section">
-								<li><a href="#" class="bold">Опросы</a></li>
-							</ul>
-							<ul class="section">
-								<li><a href="#" class="bold">Контакты</a></li>
-								<li>
-									<ul class="sub-section">
-										<li><a href="#">Задать вопрос</a></li>
-										<li><a href="#">Портфели</a></li>
-									</ul>
-								</li>
-							</ul>
-
-						</ul>
-						<ul class="menu-window-item">
-							<ul class="section">
-								<li><a href="#" class="bold">Сообщества</a></li>
-								<li>
-									<ul class="sub-section">
-										<li><a href="#">Инновационная вертикаль</a></li>
-										<li><a href="#">Мероприятия</a></li>
-										<li>
-											<ul class="sub-sub-section">
-												<li><a href="#">Прорыв</a></li>
-												<li><a href="#">УИР</a></li>
-												<li><a href="#">Школа инновационного лидера </a></li>
-											</ul>
-										</li>
-										<li><a href="#">Конкурсы</a></li>
-										<li>
-											<ul class="sub-sub-section">
-												<li><a href="#">Конкурс аванпроектов </a></li>
-												<li><a href="#">Инновационный лидер</a></li>
-												<li><a href="#">Премия молодым ученым</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</ul>
-						<ul class="menu-window-item">
-							<li>
-								<ul class="section">
-									<li><a href="#">Alumni</a></li>
-									<li><a href="#">Экспертиза </a></li>
+						<div class="b-section-menu">
+							<div class="b-parent-item">
+								<a href="#" class="main-item">О нас</a>
+								<ul>
+									<li><a href="#">Фото- и видеоматериалы</a></li>
+								</ul>
+							</div>
+							<div class="b-parent-item">
+								<a href="#" class="main-item">Контент</a>
+								<ul>
+									<li><a href="#">Научные достижения</a></li>
 									<li>
-										<ul class="sub-sub-section">
+										<a href="#">Нормативная документация</a>
+										<ul>
+											<li><a href="#">Программа инновационного развития</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Портал НТИ</a></li>
+									<li><a href="#">Единый отраслевой тематический план</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="b-section-menu">
+							<div class="b-parent-item">
+								<a href="#" class="main-item">РИД</a>
+								<ul>
+									<li><a href="#">ИС УПРИД </a></li>
+									<li><a href="#">Портфели</a></li>
+								</ul>
+							</div>
+							<div class="b-parent-item">
+								<a href="news.php" class="main-item">Новости</a>
+							</div>
+							<div class="b-parent-item">
+								<a href="#" class="main-item">Опросы</a>
+							</div>
+							<div class="b-parent-item">
+								<a href="#" class="main-item">Контакты</a>
+								<ul>
+									<li><a href="#">Задать вопрос</a>
+									<li><a href="#">Портфели</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="b-section-menu two-col">
+							<div class="b-parent-item">
+								<a href="#" class="main-item">Сообщества</a>
+								<ul>
+									<li><a href="#">Инновационная вертикаль</a></li>
+									<li>
+										<a href="#">Мероприятия</a>
+										<ul>
+											<li><a href="#">Прорыв</a></li>
+											<li><a href="#">УИР</a></li>
+											<li><a href="#">Школа инновационного лидера </a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Конкурсы</a>
+										<ul>
+											<li><a href="#">Конкурс аванпроектов </a></li>
+											<li><a href="#">Инновационный лидер</a></li>
+											<li><a href="#">Премия молодым ученым</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Alumni</a></li>
+									<li>
+										<a href="#">Экспертиза </a>
+										<ul>
 											<li><a href="#">База экспертов</a></li>
 											<li><a href="#">Цифровая платформа экспертизы </a></li>
 											<li><a href="#">Стать экспертом Росатома</a></li>
 										</ul>
 									</li>
 									<li><a href="#">Научно-технический совет</a></li>
-									<li><a href="#">Тематические группы </a></li>
 									<li>
-										<ul class="sub-sub-section">
+										<a href="#">Тематические группы </a>
+										<ul>
 											<li><a href="#">ЕОТП</a></li>
 											<li><a href="#">Аванпроекты</a></li>
 										</ul>
 									</li>
 								</ul>
-							</li>
-						</ul>
+							</div>
+						</div>
 
 					</div>
 				</div>
