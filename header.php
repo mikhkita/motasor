@@ -29,9 +29,8 @@ setcookie('isFirstTime', 'Y', time() + (86400 * 30), "/");
 	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
-	<!-- <div class="b-block b-block-up"> -->
-		<a class="up b-go" href=".b-header" data-duration="200" data-offset="0"></a>
-	<!-- </div> -->
+	
+	<a class="up b-go" href=".b-header" data-duration="200" data-offset="0"></a>
 	
 	<? if(!isset($_COOKIE['isFirstTime'])):?>
 	<div class="b-cookies-block">

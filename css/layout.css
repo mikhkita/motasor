@@ -4644,20 +4644,6 @@ form button,
 	.b-thanks-msg{
 
 	}
-	/*.b-thanks .b-btn{
-		color: #FFF;
-	    border: 1px solid #FFF;
-	    background-color: transparent;
-		line-height: 25px;
-	}*/
-	/*.b-block-up{
-		position: fixed;
-		bottom: 0;
-		height: 50px;
-		left: 50%;
-		transform: translateX(-50%);
-		z-index: 100;
-	}*/
 	.up{
 		display: block;
 		position: fixed;
