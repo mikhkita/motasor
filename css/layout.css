@@ -2527,6 +2527,9 @@ h5{
 		background-color: #48569D;
 		margin-bottom: 56px;
 	}
+		.b-comm-contacts *{
+			color: #FFF;
+		}
 		.b-comm-contacts a{
 			color: #FFF;
 			text-decoration: none;
@@ -4647,6 +4650,14 @@ form button,
 	    background-color: transparent;
 		line-height: 25px;
 	}*/
+	/*.b-block-up{
+		position: fixed;
+		bottom: 0;
+		height: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 100;
+	}*/
 	.up{
 		display: block;
 		position: fixed;
@@ -4663,6 +4674,11 @@ form button,
 		transition: box-shadow .1s, opacity .2s, visibility .2s;
 		opacity: 0;
 		visibility: hidden;
+	}
+	@media screen and (min-width: 1440px) {
+		.up{
+			left: calc(50% - 750px);
+		}	
 	}
 	.up.show{
 		opacity: 1;
