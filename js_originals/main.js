@@ -195,7 +195,6 @@ $(document).ready(function(){
                 var $this = $(this);
                 setTimeout(function(){
                     $this.parents('.b-accordeon-form').find('input:not([type=hidden]), textarea').eq(0).focus();
-                    console.log('focus');
                 }, 100);
             }
             $(this).addClass('open');
@@ -502,9 +501,11 @@ $(document).ready(function(){
     $('.b-btn').on('click touchstart', ripple.click);
 
     $(window).scroll(function(){
-        var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-        console.log(scroll);
-        if (scroll > 400) {
+
+        var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+        var scrollBottom = document.documentElement.clientHeight + scrollTop;
+
+        if (scrollTop > 400) {
             if (!$('.up').hasClass('show')){
                 $('.up').addClass('show')
             }
@@ -513,6 +514,24 @@ $(document).ready(function(){
                 $('.up').removeClass('show');
             }
         }
+
+        arrowOffset = $('.up').offset().top;;
+        footerOffset = $('.b-footer-bottom').offset().top;
+
+        if(scrollBottom - 15 > footerOffset){
+            if (!$('.up').hasClass('fix')) {
+                $('.up').addClass('fix');
+            }
+        }else{
+            if ($('.up').hasClass('fix')) {
+                $('.up').removeClass('fix');
+            }
+        }
+    });
+
+    $(document).on('click', '.close-cookie', function(){
+        $(this).parents('.b-cookies-block').fadeOut();
+        return false;
     });
 
     // Календарь
@@ -829,7 +848,6 @@ if($(".b-calendar-cont").length){
         }
 
         if ((myWidth >= 1170 || myWidth <= 768) && $('#bottom-cont').find('.b-news-days-right-top').length) {
-            console.log('ok');
             var html = $('#bottom-cont').html();
             $('#bottom-cont').html('');
             $('#top-cont').html(html);

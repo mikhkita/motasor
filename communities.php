@@ -96,10 +96,22 @@ include 'header.php';
 					<div class="b-comm-contacts" id="b-comm-contacts">
 						<h4>Контакты</h4>
 						<div class="b-comm-contacts-item">
-							<a href="mailto:innov@rosatomtech.ru">E-mail:  <b>innov@rosatomtech.ru</b></a>
+							<div class="b-comm-contacts-name"><b>Иванов</b> Игорь Николаевич</div>
+							<div class="b-comm-contacts-mail">
+								<a href="mailto:innov@rosatomtech.ru"><b>innov</b>@rosatomtech.ru</a>
+							</div>
+							<div class="b-comm-contacts-phone">
+								<a href="tel:+78990189191">+7 899 018 91 91</a>
+							</div>
 						</div>
 						<div class="b-comm-contacts-item">
-							<a href="mailto:innov@innov-rosatom.ru">E-mail:  <b>innov@innov-rosatom.ru</b></a>
+							<div class="b-comm-contacts-name"><b>Селиванов</b> Игорь Николаевич</div>
+							<div class="b-comm-contacts-mail">
+								<a href="mailto:innov@rosatomtech.ru"><b>innov</b>@rosatomtech.ru</a>
+							</div>
+							<div class="b-comm-contacts-phone">
+								<a href="tel:+78990189191">+7 899 018 91 91</a>
+							</div>
 						</div>
 					</div>
 				</div>
