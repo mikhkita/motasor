@@ -114,10 +114,12 @@ $(document).ready(function(){
             }
             $(".mobile-slider").each(function() {//поставить слайдеры
                 if(!$(this).hasClass("slick-initialized")){
+                    var $this = $(this);
                     $(this).not('.slick-initialized').slick({
                         dots: true,
                         slidesToShow: 1,
                         slidesToScroll: 1,
+                        initialSlide: 1,
                         infinite: true,
                         cssEase: 'ease', 
                         speed: 600,
@@ -127,17 +129,29 @@ $(document).ready(function(){
                         nextArrow: $(this).parent().find(".mobile-arrow-right"),
                         appendDots: $(this).parent().find(".mobile-dots")
                     });
+                    $(".mobile-controls").addClass("white-controls");
+                    $(".b-mobile-filter .active").removeClass("active");
+                    $(".b-mobile-filter .today").addClass("active");
                     if($(this).parent().hasClass("b-news-days-list")){
                         var $slider = $(this);
                         $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
                             var $current = $(slick.$slides.get(nextSlide));
+
                             if($current.hasClass("b-news-days-today")){
                                 $current.closest(".b-news-days-list").find(".mobile-controls").addClass("white-controls");
                             }else{
                                 $current.closest(".b-news-days-list").find(".mobile-controls").removeClass("white-controls");
                             }
+                            $(".b-mobile-filter .active").removeClass("active");
+                            $(".b-mobile-filter a").eq(nextSlide).addClass("active");
                         });
                     }
+
+                    $(".b-mobile-filter a").unbind("click");
+                    $(".b-mobile-filter a").bind("click", function(){
+                        $this.slick("slickGoTo", $(this).index());
+                        return false;
+                    });
                 }
             });
         }else{

@@ -66,6 +66,11 @@ include 'header.php';
 		</div>
 		<div class="b-top-tiles">
 			<div class="b-block">
+				<div class="b-filter-days b-mobile-filter">
+					<a href="#" class="yesterday">Вчера</a>
+					<a href="#" class="today active">Сегодня</a>
+					<a href="#" class="tomorrow">Завтра</a>
+				</div>
 				<div class="b-news-days">
 					<div class="b-news-b-block">
 						<div class="b-news-days-list b-size-3-4 b-size-left">
@@ -185,7 +190,7 @@ include 'header.php';
 					</div>
 					<div class="b-size-3-4 b-size-right b-question-calendar-right">
 						<div class="b-question-calendar-right-wrap">
-							<div class="b-calendar-cont b-calendar-main-cont" data-url="send/getEventsMain.php">
+							<div class="b-calendar-cont b-calendar-main-cont" data-url="mobile-dotssend/getEventsMain.php">
 								<h2>Календарь событий</h2>
 								<?
 									$activeDateDPC = "3.12.2019";
